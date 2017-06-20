@@ -1,0 +1,440 @@
+.offert-section{
+    display:none;
+    min-height:100vh;
+    position:fixed;
+    z-index: 5000;
+    overflow:scroll !important;
+    background: linear-gradient(90deg, rgb(78, 205, 196) 50%, rgb(162, 222, 208) 50%);
+    padding-top:2%;
+    padding-bottom:7%;
+
+    .fa{
+        font-size: 26px;
+        position:absolute;
+        padding:10px;
+        top:20px;
+        left:20px;
+        z-index:5001;
+    }
+
+    .container{
+        width:100%;
+    }
+}
+
+#offertSystem{
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .offert-content-head{
+        width:100%;
+        margin-bottom:30px;
+
+        h2{
+            text-align: center;
+            font-weight: 800;
+            margin-bottom:0;
+        }
+
+        .lead{
+            text-align: center;
+            font-size: 1em;
+            margin-bottom:1rem !important;
+        }
+    }
+
+    .page-mover{
+        padding-left: 0;
+        padding-right:6rem;
+    }
+
+    .stages{
+        font-size: 0;
+        text-align: center;
+    }
+
+    .stages:after{
+        content:'';
+        display:inline-block;
+        font-size: 0;
+        text-align: center;
+        width:100%;
+    }
+
+    .progressRadiobuttons{
+        display:none;
+    }
+
+    .stages label{
+        background:#fff;
+        margin:2rem;
+        border:solid 5px #c0c0c0;
+        border-radius:50%;
+        cursor:pointer;
+        display:inline-block;
+        font-size: 0;
+        font-weight: 700;
+        height:40px;
+        line-height: 30px;
+        position:relative;
+        text-align: center;
+        vertical-align: top;
+        width:40px;
+        z-index:1;
+        -webkit-touch-callout:none;
+        -webkit-user-callout:none;
+        -khtml-user-callout:none;
+        -moz-user-callout:none;
+        -ms-user-callout:none;
+        user-select:none;
+    }
+
+    .stages label:after{
+        content: '\2713';
+        color: #0cc39f;
+        display:inline-block;
+        font-size: 16px;
+    }
+
+    #yx:checked ~ .stages label[for="yx"],
+    #kax:checked ~ .stages label[for="kax"],
+    #kolme:checked ~ .stages label[for="kolme"],
+    #nelja:checked ~ .stages label[for="nelja"],
+    #viisi:checked ~ .stages label[for="viisi"]{
+        border-color:#0cc39f;
+    }
+
+    .stages label .active{
+        border-color: purple !important;
+    }
+
+    #yx:checked ~ .stages label,
+    #kax:checked ~ .stages label[for="yx"] ~ label,
+    #kolme:checked ~ .stages label[for="kax"] ~ label,
+    #nelja:checked ~ .stages label[for="kolme"] ~ label,
+    #viisi:checked ~ .stages label[for="nelja"] ~ label{
+	font-size: 1rem;
+    }
+
+    #yx:checked ~ .stages label:after,
+    #kax:checked ~ .stages label[for="yx"] ~ label:after,
+    #kolme:checked ~ .stages label[for="kax"] ~ label:after,
+    #nelja:checked ~ .stages label[for="kolme"] ~ label:after,
+    #viisi:checked ~ .stages label[for="nelja"] ~ label:after{
+	    display: none;
+    }
+
+    .progressBaren{
+        width:80%;
+        margin-left: 10%;
+    }
+
+    .progressBaren > span{
+        background: #c0c0c0;
+        display: inline-block;
+        height: 5px;
+        transform: translateY(-3.55em);
+        transition: 0.3s;
+        width:0;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    #kax:checked ~ .progressBaren span{
+        width: calc(80%/4*1);
+    }
+
+    #kolme:checked ~ .progressBaren span{
+        width: calc(80%/4*2);
+    }
+
+    #nelja:checked ~ .progressBaren span{
+        width: calc(80%/4*3);
+    }
+
+    #viisi:checked ~ .progressBaren span{
+        width: calc(80%/4*4);
+    }
+
+    .offert-content-pages {
+        display:none;
+    }
+
+    .offert-content-pages > button{
+
+    }
+
+    #yx:checked ~ [data-panel="yx"],
+    #kax:checked ~ [data-panel="kax"],
+    #kolme:checked ~ [data-panel="kolme"],
+    #nelja:checked ~ [data-panel="nelja"],
+    #viisi:checked ~ [data-panel="viisi"]{
+        display:block;
+    }
+
+    .handyInfo{
+
+        p{
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+
+        ul > li{
+            font-size: 1.1em;
+        }
+    }
+
+    #offertRightSection{
+        //background:#89C4F4;
+        //padding:50px;
+    }
+
+    .advancedOptions{
+        color:#663399;
+    }
+
+    #takModell{
+        display:flex;
+        flex-wrap:wrap;
+
+        input{
+            margin:0;
+            padding:0;
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            appearance:none;
+        }
+
+        .un{
+            background:#D24D57;
+            //background:url(../img/showcase.jpeg);
+        }
+
+        .deux{
+            background:#F5D76E;
+            //background:url(../img/showcase.jpeg);
+        }
+
+        .trois{
+            background:#03C9A9;
+            //background:url(../img/showcase.jpeg);
+        }
+
+        .quatre{
+            background:#663399;
+            //background:url(../img/showcase.jpeg);
+        }
+
+        .cinq{
+            background:#663399;
+            //background:url(../img/showcase.jpeg);
+        }
+
+        .six{
+            background:#03C9A9;
+            //background:url(../img/showcase.jpeg);
+        }
+
+        .sept{
+            background:#F5D76E;
+            //background:url(../img/showcase.jpeg);
+        }
+
+        .huit{
+            background:#D24D57;
+            //background:url(../img/showcase.jpeg);
+        }
+
+        input:checked + .offert-takmodeller{
+            -webkit-filter:none;
+            -moz-filter:none;
+            filter:none;
+            opacity:1;
+        }
+
+        .offert-takmodeller{
+            cursor:pointer;
+            background-size:cover;
+            background-repeat:no-repeat;
+            display:inline-block;
+            width:80px;
+            height:80px;
+            margin:1%;
+            -webkit-transition: all 100ms ease-in;
+            -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+            opacity:0.7;
+
+            -webkit-filter: brightness(1.8) greyscale(1) opacity(0.7);
+            -moz-filter: brightness(1.8) greyscale(1) opacity(0.7);
+            filter: brightness(1.8) greyscale(1) opacity(0.7);
+        }
+
+        .offert-takmodeller:hover{
+            opacity:0.9;
+            -webkit-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
+            -moz-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
+            filter: brightness(1.2) greyscale(0.5) opacity(0.9);
+        }
+    }
+
+
+    .roofJobToDo,
+    .roofModels,
+    .roofMaterials,
+    .roofMeasurements,
+    .roofToWho,
+    .roofWhenToBegin,
+    .roofSecurity,
+    .roofWaterDrainage,
+    .roofOther,
+    .roofExtra,
+    .roofPersonalInfo{
+
+        fieldset{
+            border:1px groove #333333 !important;
+            padding:0 1.4em 1.4em 1.4em !important;
+            margin:0 0 1.5em 0 !important;
+
+            legend{
+                width: auto;
+                padding: 0 10px;
+                border-bottom:none;
+            }
+
+            .input-Holder{
+                margin-bottom:17px;
+
+                label{
+
+                    details{
+
+                        p{
+                            margin-bottom:0;
+                        }
+                    }
+                }
+            }
+
+            #toDoCheckBoxes, #roofMaterial, #roofToWho, #securityCheckBoxes, #waterCheckBoxes, #otherCheckBoxes {
+
+                .box-Holder{
+
+                    input[type="checkbox"],
+                    input[type="radio"]{
+                        position:absolute;
+                        opacity:0;
+                        z-index:-1;
+                    }
+
+                    label{
+                        position:relative;
+                        display:inline-block;
+                        margin-right:10px;
+                        margin-bottom:10px;
+                        padding-left:30px;
+                        padding-right:10px;
+                        line-height: 36px;
+                        cursor:pointer;
+                        z-index: 701;
+                    }
+
+                    label::before{
+                        content:' ';
+                        position:absolute;
+                        top:6px;
+                        left:0;
+                        display:block;
+                        width:24px;
+                        height:24px;
+                        border:2px solid #333;
+                        border-radius:4px;
+                        z-index: -1;
+                    }
+
+                    input[type="radio"] + label::before{
+                        border-radius: 18px;
+                    }
+
+                    //Checked inputs
+
+                    input[type="checkbox"]:checked + label,
+                    input[type="radio"]:checked + label{
+                        padding-left:10px;
+                        color:#fff;
+                    }
+
+                    input[type="checkbox"]:checked + label::before,
+                    input[type="radio"]:checked + label::before{
+                        top:0;
+                        width:100%;
+                        height:100%;
+                        border-color: rgb(79, 190, 121);
+                        background: rgb(79, 190, 121);
+                    }
+
+                    label, label::before{
+                        -webkit-transition: 0.25s all ease;
+                        -moz-transition: 0.25s all ease;
+                        transition: 0.25s all ease;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .offert-advanced-content{
+        display:none;
+
+        .roofPaper{
+
+            div{
+                width:8.5rem;
+                height:3.5rem;
+                position:relative;
+            }
+
+            > div > input{
+                opacity:0;
+            }
+
+            > div > label{
+                position:absolute;
+                background:#e9513a;
+                width:100%;
+                height:100%;
+                top:0;
+                left:0;
+                border-radius:3.125rem;
+                -webkit-transition: background-color 0.2s ease-in-out;
+                transition: background-color 0.2s ease-in-out;
+            }
+
+            > div label:after{
+                content: "";
+                display: block;
+                width: 2.875rem;
+                height: 2.875rem;
+                border-radius: 3.125rem;
+                cursor: pointer;
+                position: absolute;
+                top: 0.3125rem;
+                z-index: 700;
+                left: 0.5rem;
+                background-color: #fffffd;
+                -webkit-transition:left 0.2s ease-in-out;
+                transition:left 0.2s ease-in-out;
+            }
+
+            > div input[type=checkbox]:checked ~ label{
+                background-color:#4fbe79;
+            }
+
+            > div input[type=checkbox]:checked ~ label:after{
+                left: 5.125rem;
+            }
+        }
+    }
+}

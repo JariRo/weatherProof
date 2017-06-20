@@ -1,0 +1,84 @@
+.contact-slide{
+    display:none;
+    position:fixed;
+    height:80vh;
+    top:13%;
+    padding:0;
+    border:1px solid #ccc;
+    border-left:none;
+    background:rgb(255,255,255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 998;
+
+    .info-form-holder{
+        height:100%;
+
+        .form-holder{
+            position:relative;
+            background:rgb(82, 179, 217);
+            top:-19px;
+            left:0;
+            height:106%;
+            padding-top:20px;
+            box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2);
+            z-index:999;
+
+            h4{
+                text-align: center;
+            }
+
+            form{
+                padding:10px;
+
+                textarea{
+                    resize:none;
+                }
+                .send-message-btn{
+                    border-radius: 30px !important;
+                }
+            }
+        }
+
+        .contact-slide-info{
+            height:100%;
+            padding:0 0 0 0;
+
+            h4{
+                text-align: right;
+                margin:4px;
+                font-size: 20px;
+            }
+
+            .contact-slide-info-content{
+                height:100%;
+                padding-left:30px;
+
+                .icons-career{
+                    width:90%;
+                    position:absolute;
+                    bottom:10px;
+
+                    .fa-icons{
+                        font-size: 2.5rem;
+                        float:left;
+                    }
+                    .career-link{
+                        position:absolute;
+                        right:10px;
+                        bottom:0;
+                    }
+                }
+            }
+
+            .theMaps{
+                width:100%;
+                overflow: hidden;
+                height:300px;
+
+                iframe{
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}

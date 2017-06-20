@@ -1,0 +1,49 @@
+@mixin backgrounds(){
+    background-attachment: fixed;
+    background-size:cover !important;
+    background-position:center;
+    background-blend-mode:screen;
+}
+
+html, body{
+    margin:0;
+    height:100%;
+}
+
+.parallax-showcase{
+    height:100%;
+    margin:0;
+    padding:0;
+
+    article{
+        position:fixed;
+        width:40%;
+        background:#fff;
+        color:#333;
+        padding:20px;
+        top:15%;
+        left:5%;
+        z-index:800;
+    }
+
+    figure{
+        position:relative;
+        height:100%;
+        @include backgrounds();
+
+        &:nth-of-type(1){
+            height:100%;
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            @include backgrounds();
+            background-image: url(../img/geometry2.png);
+        }
+        &:nth-of-type(2){
+            background-image: url(../img/showcase.jpeg);
+        }
+        &:nth-of-type(3){
+            background-image: url(../img/concrete-texture.png);
+        }
+    }
+}

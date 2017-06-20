@@ -1,0 +1,174 @@
+.navbar{
+    //padding-bottom:8px;
+    padding-top:50px;
+    border-bottom:none;
+
+    background-color:rgba(0, 0, 0, 0);
+    z-index: 997;
+
+    a{
+        color: set-text-color($main-color) !important;
+        font-weight: 400;
+    }
+
+    ul > li > a:hover{
+        color:darken(set-text-color($main-color), 6.5%) !important;
+    }
+
+    .subNav{
+        display:none;
+        position:fixed;
+        height:100px;
+        color:#fff;
+        background-color: rgb(244, 83, 69);
+        min-width:100%;
+        left:0;
+        padding:0;
+        //opacity:0;
+        //-webkit-transition: all 250ms cubic-bezier(0.68, 0.02, 0.46, 0.99);
+        //-moz-transition: all 250ms cubic-bezier(0.68, 0.02, 0.46, 0.99);
+        //-o-transition: all 250ms cubic-bezier(0.68, 0.02, 0.46, 0.99);
+        //transition: all 250ms cubic-bezier(0.68, 0.02, 0.46, 0.99);
+
+        .fake-table{
+            display:table;
+            width:100%;
+            height:100%;
+
+            .fake-cell{
+                display:table-cell;
+                vertical-align: middle;
+
+                .inner-subNav{
+                    padding-right:50px;
+                    padding-left: 50px;
+
+                    .subnav-menu{
+                        margin:0;
+                        padding:0;
+                        list-style: none;
+
+                        li{
+                            margin-top:0;
+                            line-height: 100px;
+                            width:20%;
+                            float:left;
+                            text-align: center;
+
+                            a{
+                                position:relative;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #brandLogo{
+        position:relative;
+        bottom:8px;
+    }
+
+    #brandLogo p{
+        margin:0;
+        width:70%;
+        text-align: right;
+        color:#000;
+    }
+
+    #brandLogo > p:nth-child(1){
+        font-weight: 500;
+        font-size: 1.7em;
+    }
+
+    #brandLogo > p:nth-child(2){
+        font-weight: 200;
+        font-size: 0.9em;
+    }
+
+    #navbar > ul > li{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fa{
+        font-size: 18px;
+    }
+}
+
+// Navbar On-scroll animatio + design
+.shrinkNav{
+    padding-top:10px;
+    background-color: rgba(0,0,0,0.2); 
+}
+
+.shrinkLogo{
+    font-size: 15px;
+}
+
+.navbar, #brandLogo, .shrinkContactInfo{
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+//Navbar On-scroll ends
+
+.contact-button{
+    position:fixed;
+    -ms-writing-mode:tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    -webkit-text-orientation:upright;
+    -moz-text-orientation:upright;
+    -ms-text-orientation:upright;
+    text-orientation:upright;
+
+    border:1px solid #ccc;
+    background-color:rgb(3, 201, 169);
+    padding:5px;
+    right:10px;
+    width:2%;
+    top:50%;
+    z-index:500;
+}
+
+#contactInfo{
+    display:none;
+    padding:5px;
+    position:fixed;
+    right:25px;
+    top:50%;
+    z-index: 100;
+
+    p{
+        text-align: right;
+        color: set-text-color($main-color) !important;
+        margin:0;
+    }
+
+    p > a{
+        color: set-text-color($main-color) !important;
+        font-weight: 300;
+    }
+
+    p:nth-child(1){
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+    p:nth-child(2){
+        font-weight: 500;
+    }
+
+    p:nth-child(3){
+        word-spacing: 0.5px;
+        letter-spacing: 0.4px;
+        font-size:0.7em;
+    }
+}

@@ -1,0 +1,92 @@
+footer{
+    border-top:1px solid #ccc;
+
+
+    img{
+        width:20%;
+    }
+
+
+    .container{
+        padding:4% 0 0 0;
+        width:100%;
+
+    .content{
+        padding-left:10%;
+    }
+
+    .footer-contact > .footer-contact-list > li{
+        letter-spacing: 1px;
+    }
+
+    #contact-heading{
+        margin:0;
+    }
+
+        #footer-brand{
+            height:330px;
+
+            img{
+                width:130px;
+                float:left;
+            }
+
+            #footer-wpf-text{
+                float:right;
+                width:60%;
+            }
+
+            #footer-wpfLogo{
+                width:75%;
+                margin-right: 10%;
+            }
+
+            #footer-wpf-content{
+                width:80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #footer-wpfLogo p{
+                width:100%;
+                margin:0 0 7px;
+                text-align: right;
+                color:#000;
+                line-height: 1.8rem;
+            }
+
+            #footer-wpfLogo > p:nth-child(1){
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+
+            #footer-wpfLogo > p:nth-child(2){
+                font-weight: 700;
+                font-size: 0.9em;
+            }
+
+            .fa-icons{
+
+                a{
+                    padding:5px;
+
+                    .fa{
+                        font-size: 23px;
+                    }
+                }
+
+            }
+        }
+
+        #legals-copy{
+            text-align: right;
+            border-top:1px solid #ccc;
+            margin-top:5px;
+            font-size: 10px;
+
+            #legals{
+                margin:0;
+            }
+        }
+    }
+}
