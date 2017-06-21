@@ -10,6 +10,7 @@
 
 .material-page{
     text-align: center;
+    background-color:#fff;
 
     .material-content{
         margin-top:11.5%;
@@ -83,11 +84,11 @@
                 padding:0;
 
                 > li{
-                    width:25%;
+                    width:20%;
                     min-width:140px;
                     //min-width:160px;
                     //height:20vw;
-                    padding-top:25%;
+                    padding-top:20%;
                     //min-height:160px;
                     float:left;
                     color:set-text-color($main-text-color);
@@ -119,10 +120,7 @@
                     z-index: 2;
                 }
 
-                > #material-name-plate{
-                    background-color:#D24D57;
-                    color:set-text-color(#D24D57);
-                }
+
 
                 > #material-name-savann{
                     background-color:#EC644B;
@@ -133,42 +131,129 @@
                     background-color:#A2DED0;
                     color:set-text-color(#A2DED0);
                 }
+            }
 
-                > #material-name-honey{
-                    background-color:#FDE3A7;
-                    color:set-text-color(#FDE3A7);
+            [data-material="type1"]{
+
+                > #material-name-plate-black{
+                    background-color:#000;
+                    color:set-text-color(#000);
                 }
 
-                > #material-name-deepBlue{
-                    background-color:#2C3E50;
-                    color:set-text-color(#2C3E50);
+                > #material-name-plate-darkRed{
+                    background-color:#832412;
+                    color:set-text-color(#832412);
                 }
 
-                > #material-name-forestFire{
-                    background-color:#D35400;
-                    color:set-text-color(#D35400);
+                > #material-name-plate-white{
+                    background-color:#eceded;
+                    color:set-text-color(#eceded);
                 }
 
-                > #material-name-silverSand{
-                    background-color:#BDC3C7;
-                    color:set-text-color(#BDC3C7);
+                >#material-name-plate-antiquWhite{
+                    background-color:#f3f3f2;
+                    color:set-text-color(#f3f3f2);
                 }
 
-                > #material-name-lynch{
-                    background-color:#6C7A89;
-                    color:set-text-color(#6C7A89);
+                > #material-name-plate-warmWhite{
+                    background-color:#f6f5ee;
+                    color:set-text-color(#f6f5ee);
                 }
 
-                > #material-name-galvanized{
-                    background-color:#D2D7D3;
-                    color:set-text-color(#D2D7D3);
+                > #material-name-plate-silverMetallic-light{
+                    background-color:#dddedd;
+                    color:set-text-color(#dddedd);
                 }
 
-                > #material-name-madang{
-                    background-color:#C8F7C5;
-                    color:set-text-color(#C8F7C5);
+                > #material-name-plate-silverMetallic-dark{
+                    background-color:#929395;
+                    color:set-text-color(#929395);
+                }
+
+                > #material-name-plate-graphite{
+                    background-color:#47535b;
+                    color:set-text-color(#47535b);
+                }
+
+                > #material-name-plate-darkGrey{
+                    background-color:#4b5054;
+                    color:set-text-color(#4b5054);
+                }
+
+                > #material-name-plate-grey{
+                    background-color:#ababa1;
+                    color:set-text-color(#ababa1);
+                }
+
+                > #material-name-plate-lightGrey{
+                    background-color:#dddbcf;
+                    color:set-text-color(#dddbcf);
+                }
+
+                > #material-name-plate-doveGrey{
+                    background-color:#bcbdae;
+                    color:set-text-color(#bcbdae);
+                }
+
+                > #material-name-plate-zinkGrey{
+                    background-color:#b5bbbf;
+                    color:set-text-color(#b5bbbf);
+                }
+
+                > #material-name-plate-verdigris{
+                    background-color:#95b897;
+                    color:set-text-color(#95b897);
+                }
+
+                > #material-name-plate-moss{
+                    background-color:#3b5b44;
+                    color:set-text-color(#3b5b44);
+                }
+
+                > #material-name-plate-darkBlue{
+                    background-color:#245180;
+                    color:set-text-color(#245180);
+                }
+
+                > #material-name-plate-brickRed{
+                    background-color:#9d490e;
+                    color:set-text-color(#9d490e);
+                }
+
+                > #material-name-plate-brown{
+                    background-color:#3f1509;
+                    color:set-text-color(#3f1509);
+                }
+
+                > #material-name-plate-darkBrown{
+                    background-color:#5e3b24;
+                    color:set-text-color(#5e3b24);
+                }
+
+                > #material-name-plate-lightYellow{
+                    background-color:#f1dbb2;
+                    color: set-text-color(#f1dbb2);
                 }
             }
+
+            [data-material="type2"]{
+
+                > #material-name-zink-bright{
+                    background-color:#d8dede;
+                    color: set-text-color(#d8dede);
+                }
+
+                > #material-name-zink-blueGrey{
+                    background-color:#abb0a9;
+                    color: set-text-color(#abb0a9);
+                }
+
+                > #material-name-zink-graphiteGrey{
+                    background-color:#44453f;
+                    color: set-text-color(#44453f);
+                }
+            }
+
         }
 
         .type-holder{
@@ -211,6 +296,7 @@
 
                 > li{
                     width:25%;
+                    min-width:200px;
                     float:left;
                     text-align: left;
                     border-right:1px solid #aaa;
@@ -245,9 +331,7 @@
         #type-5:checked ~ [data-material-content="type5"],
         #type-5:checked ~ .type-holder-box > [data-material="type5"],
         #type-6:checked ~ [data-material-content="type6"],
-        #type-6:checked ~ .type-holder-box > [data-material="type6"],
-        #type-7:checked ~ [data-material-content="type7"],
-        #type-7:checked ~ .type-holder-box > [data-material="type7"]{
+        #type-6:checked ~ .type-holder-box > [data-material="type6"]{
             display:block;
         }
     }

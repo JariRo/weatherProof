@@ -79,7 +79,7 @@
                     <label for="type-0">Alla<span>Välj material</span></label>
 
                     <input type="radio" name="materialz" id="type-1">
-                    <label for="type-1">Plåt</label>
+                    <label for="type-1">Byggplåt</label>
 
                     <input type="radio" name="materialz" id="type-2">
                     <label for="type-2">Zink</label>
@@ -88,16 +88,13 @@
                     <label for="type-3">Aluminium</label>
 
                     <input type="radio" name="materialz" id="type-4">
-                    <label for="type-4">Koppar</label>
+                    <label for="type-4">Rostfritt</label>
 
                     <input type="radio" name="materialz" id="type-5">
-                    <label for="type-5">Mässing</label>
+                    <label for="type-5">Koppar</label>
 
                     <input type="radio" name="materialz" id="type-6">
-                    <label for="type-6">Rostfritt</label>
-
-                    <input type="radio" name="materialz" id="type-7">
-                    <label for="type-7">Galvaniserat</label>
+                    <label for="type-6">Mässing</label>
 
                     <div class="col-md-12 material-text-content" data-material-content="type0">
                         <h3>Alla typer</h3>
@@ -112,7 +109,7 @@
                             </li>
                             <li>
                                 <p><span>Tjocklek:</span> 22mm</p>
-                                <p><span>ca.kvm pris:</span> 10 miljoner/kvm</p>
+                                <p><span>ca.pris:</span> 10 milj/kvm</p>
                             </li>
                             <li>
                                 <p><span>Livslängd:</span> 2 miljarder år</p>
@@ -126,7 +123,7 @@
                     </div>
 
                     <div class="col-md-12 material-text-content" data-material-content="type1">
-                        <h3>Plåt</h3>
+                        <h3>Byggplåt</h3>
                         <p class="material-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -138,7 +135,7 @@
                             </li>
                             <li>
                                 <p><span>Tjocklek:</span> 22mm</p>
-                                <p><span>ca.kvm pris:</span> 10 miljoner/kvm</p>
+                                <p><span>ca.pris:</span> 10 milj/kvm</p>
                             </li>
                             <li>
                                 <p><span>Livslängd:</span> 2 miljarder år</p>
@@ -164,7 +161,7 @@
                             </li>
                             <li>
                                 <p><span>Tjocklek:</span> 22mm</p>
-                                <p><span>ca.kvm pris:</span> 10 miljoner/kvm</p>
+                                <p><span>ca.pris:</span> 10 milj/kvm</p>
                             </li>
                             <li>
                                 <p><span>Livslängd:</span> 2 miljarder år</p>
@@ -205,59 +202,169 @@
 
                     <div class="type-holder-box">
                         <ul class="type-holder" data-material="type1">
-                            <li id="material-name-plate">
+                            <li id="material-name-plate-black">
                                 <ul class="list-unstyled material-specifics">
-                                    <li class="material-header"><h2 >Plåt</h2></li>
+                                    <li class="material-header"><h2>Svart</h2></li>
                                     <li class="material-type">Material: Plåt</li>
-                                    <li class="material-surface">Yta: Obehandlad</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
                                 </ul>
                             </li>
-                            <li id="material-name-savann">
+                            <li id="material-name-plate-darkRed">
                                 <ul class="list-unstyled material-specifics">
-                                    <li class="material-header"><h2>Savann</h2></li>
+                                    <li class="material-header"><h2>Mörkröd</h2></li>
                                     <li class="material-type">Material: Plåt</li>
-                                    <li class="material-surface">Yta: Borstad</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
                                 </ul>
                             </li>
-                            <li id="material-name-moss">
+                            <li id="material-name-plate-white">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Vit</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-antiquWhite">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Antikvit</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-warmWhite">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Varmvit</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-silverMetallic-light">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Silvermetallic Ljus</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-silverMetallic-dark">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Silvermetallic Mörk</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-graphite">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Grafitgrå</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-darkGrey">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Mörkgrå</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-grey">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Grå</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-lightGrey">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Ljus-grå</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-doveGrey">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Duv-grå</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-zinkGrey">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Zink-grå</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-verdigris">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Ärg</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-moss">
                                 <ul class="list-unstyled material-specifics">
                                     <li class="material-header"><h2>Moss</h2></li>
                                     <li class="material-type">Material: Plåt</li>
-                                    <li class="material-surface">Yta: Borstad</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-darkBlue">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Mörkblå</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-brickRed">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Tegelröd</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-brown">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Brun</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-darkBrown">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Mörkbrun</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
+                                </ul>
+                            </li>
+                            <li id="material-name-plate-lightYellow">
+                                <ul class="list-unstyled material-specifics">
+                                    <li class="material-header"><h2>Ljusgul</h2></li>
+                                    <li class="material-type">Material: Plåt</li>
+                                    <li class="material-surface">Yta: Lackerad</li>
                                 </ul>
                             </li>
                         </ul>
+
 
                         <ul class="type-holder" data-material="type2">
-                            <li id="material-name-honey">
+                            <li id="material-name-zink-bright">
                                 <ul class="list-unstyled material-specifics">
-                                    <li class="material-header"><h2>Honey</h2></li>
+                                    <li class="material-header"><h2>Valsblank</h2></li>
                                     <li class="material-type">Material: Zink</li>
-                                    <li class="material-surface">Yta: Borstad</li>
+                                    <li class="material-surface">Yta: Förpatinerad</li>
                                 </ul>
                             </li>
-                            <li id="material-name-deepBlue">
+                            <li id="material-name-zink-blueGrey">
                                 <ul class="list-unstyled material-specifics">
-                                    <li class="material-header"><h2>Deep Blue</h2></li>
+                                    <li class="material-header"><h2>Blå-grå</h2></li>
                                     <li class="material-type">Material: Zink</li>
-                                    <li class="material-surface">Yta: Borstad</li>
+                                    <li class="material-surface">Yta: Förpatinerad, förstärkt el. titanzink</li>
                                 </ul>
                             </li>
-                        </ul>
-
-                        <ul class="type-holder" data-material="type3">
-                            <li id="material-name-forestFire">
+                            <li id="material-name-zink-graphiteGrey">
                                 <ul class="list-unstyled material-specifics">
-                                    <li class="material-header"><h2>Forest Fire</h2></li>
-                                    <li class="material-type">Material: Aluminium</li>
-                                    <li class="material-surface">Yta: Borstad</li>
-                                </ul>
-                            </li>
-                            <li id="material-name-silverSand">
-                                <ul class="list-unstyled material-specifics">
-                                    <li class="material-header"><h2>Silver Sand</h2></li>
-                                    <li class="material-type">Material: Aluminium</li>
-                                    <li class="material-surface">Yta: Borstad</li>
+                                    <li class="material-header"><h2>Grafit-grå</h2></li>
+                                    <li class="material-type">Material: Zink</li>
+                                    <li class="material-surface">Yta: Förpatinerad, förstärkt el. titanzink</li>
                                 </ul>
                             </li>
                         </ul>

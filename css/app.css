@@ -10173,7 +10173,8 @@ footer{
   font-size: 15px; }
 
 .material-page {
-  text-align: center; }
+  text-align: center;
+  background-color: #fff; }
   .material-page .material-content {
     margin-top: 11.5%;
     margin-bottom: 7%; }
@@ -10222,9 +10223,9 @@ footer{
         margin: 0;
         padding: 0; }
         .material-page #matNav .type-holder-box .type-holder > li {
-          width: 25%;
+          width: 20%;
           min-width: 140px;
-          padding-top: 25%;
+          padding-top: 20%;
           float: left;
           color: #fff;
           position: relative;
@@ -10245,36 +10246,81 @@ footer{
           -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
           z-index: 2; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-plate {
-          background-color: #D24D57;
-          color: #000000; }
         .material-page #matNav .type-holder-box .type-holder > #material-name-savann {
           background-color: #EC644B;
           color: #000000; }
         .material-page #matNav .type-holder-box .type-holder > #material-name-moss {
           background-color: #A2DED0;
           color: #000000; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-honey {
-          background-color: #FDE3A7;
-          color: #000000; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-deepBlue {
-          background-color: #2C3E50;
-          color: #fff; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-forestFire {
-          background-color: #D35400;
-          color: #fff; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-silverSand {
-          background-color: #BDC3C7;
-          color: #000000; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-lynch {
-          background-color: #6C7A89;
-          color: #fff; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-galvanized {
-          background-color: #D2D7D3;
-          color: #000000; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-madang {
-          background-color: #C8F7C5;
-          color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-black {
+        background-color: #000;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-darkRed {
+        background-color: #832412;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-white {
+        background-color: #eceded;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-antiquWhite {
+        background-color: #f3f3f2;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-warmWhite {
+        background-color: #f6f5ee;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-silverMetallic-light {
+        background-color: #dddedd;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-silverMetallic-dark {
+        background-color: #929395;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-graphite {
+        background-color: #47535b;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-darkGrey {
+        background-color: #4b5054;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-grey {
+        background-color: #ababa1;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-lightGrey {
+        background-color: #dddbcf;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-doveGrey {
+        background-color: #bcbdae;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-zinkGrey {
+        background-color: #b5bbbf;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-verdigris {
+        background-color: #95b897;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-moss {
+        background-color: #3b5b44;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-darkBlue {
+        background-color: #245180;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-brickRed {
+        background-color: #9d490e;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-brown {
+        background-color: #3f1509;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-darkBrown {
+        background-color: #5e3b24;
+        color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-lightYellow {
+        background-color: #f1dbb2;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type2"] > #material-name-zink-bright {
+        background-color: #d8dede;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type2"] > #material-name-zink-blueGrey {
+        background-color: #abb0a9;
+        color: #000000; }
+      .material-page #matNav .type-holder-box [data-material="type2"] > #material-name-zink-graphiteGrey {
+        background-color: #44453f;
+        color: #fff; }
     .material-page #matNav .type-holder {
       display: none; }
     .material-page #matNav .material-text-content {
@@ -10304,6 +10350,7 @@ footer{
         padding: 10px 0; }
         .material-page #matNav .material-text-content ul > li {
           width: 25%;
+          min-width: 200px;
           float: left;
           text-align: left;
           border-right: 1px solid #aaa;
@@ -10328,9 +10375,7 @@ footer{
     .material-page #matNav #type-5:checked ~ [data-material-content="type5"],
     .material-page #matNav #type-5:checked ~ .type-holder-box > [data-material="type5"],
     .material-page #matNav #type-6:checked ~ [data-material-content="type6"],
-    .material-page #matNav #type-6:checked ~ .type-holder-box > [data-material="type6"],
-    .material-page #matNav #type-7:checked ~ [data-material-content="type7"],
-    .material-page #matNav #type-7:checked ~ .type-holder-box > [data-material="type7"] {
+    .material-page #matNav #type-6:checked ~ .type-holder-box > [data-material="type6"] {
       display: block; }
 
 html, body {
