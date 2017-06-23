@@ -18,6 +18,45 @@ var setItUp = (function(){
             }
         });
 
+
+        $('#matNav > .input-box > input').on('click', function(){
+            showCategories();
+        });
+
+        $('#productNavigation > .input-box > input').on('click', function(){
+            showCategories();
+        });
+
+        var showCategories = function(){
+
+            if ( $('#matNav').length ){
+                $('.material-text-content').hide();
+                $('.type-holder').hide();
+                var checkedRadio = $('#matNav > .input-box > input:checked').attr('id');
+                $('.material-text-content[data-material-content="' +checkedRadio+ '"]').show();
+
+                if ( checkedRadio == "type-0"){
+                    $('.type-holder').show()
+                }
+                else{
+                    $('.type-holder[data-material="' +checkedRadio+ '"]').show();
+                }
+            }
+            else if ( $('#productNavigation').length ){
+                $('.product-category').hide();
+                var checkedRadio = $('#productNavigation > .input-box > input:checked').attr('id');
+                $('.product-category[data-category-type="' +checkedRadio+ '"]').show();
+
+                if ( checkedRadio == "category-0" ){
+                    $('.product-category').show();
+                    console.log('holla')
+                }
+                else{
+                    $('.product-category[data-category-type="' +checkedRadio+ '"]').show();
+                }
+            }
+        };
+
         $('.productList').hover(function(){
             $('> .subNav', this).stop().fadeIn(270);
         }, function(){
@@ -61,6 +100,8 @@ var setItUp = (function(){
         $('#close-offert').on('click', function(){
             $('.offert-section').hide(400);
         })
+
+        showCategories();
     };
 
     var setAngleColor = function(){

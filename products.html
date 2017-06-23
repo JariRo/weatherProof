@@ -71,10 +71,10 @@
     </nav>
 
     <section class="col-md-12 showcase">
-        <div class="container about-page">
-            <div class="about-page-header">
-                <h2>We enable weatherproof living.</h2>
-                <h2>Year around.</h2>
+        <div class="container products-page">
+            <div class="products-page-header">
+                <h2>Våra produkter</h2>
+                <h4>Skräddarsydda plåtprodukter har blivit enkelt.</h4>
             </div>
         </div>
         <div class="triangles-bottom">
@@ -85,140 +85,177 @@
 
 
     <section class="section-a col-md-12">
-        <div class="container about-page">
+        <div class="container products-page">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="about-wpf-1">
-                        <h3>The goal for out company:</h3>
-                        <h2>We want to make the world a weatherproof place to live in</h2>
-                        <p><strong>Our goal</strong> show can be very effective method of promoting your company
-                            and its products. And one of the most effective ways to optimize your trade show display.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-wpf-2 col-md-8">
-                        <ul class="list-unstyled">
-                            <li>Vädersäkert +</li>
-                            <li>Hållbara material +</li>
-                            <li>Service i världsklass =</li>
+                <div class="product-content">
+                    <div id="productNavigation" class="col-md-8 col-md-offset-2">
+                        <h2>Välj din produkt efter kategori</h2>
+                        <div class="input-box product-input-box">
+                            <input type="radio" name="materialz" id="category-0" checked="checked">
+                            <label for="category-0">Alla</label>
+
+                            <input type="radio" name="materialz" id="category-1">
+                            <label for="category-1">Bleck & Beslag</label>
+
+                            <input type="radio" name="materialz" id="category-2">
+                            <label for="category-2">Skorstenar</label>
+
+                            <input type="radio" name="materialz" id="category-3">
+                            <label for="category-3">Taksäkerhet</label>
+
+                            <input type="radio" name="materialz" id="category-4">
+                            <label for="category-4">Takavvattning</label>
+
+                            <input type="radio" name="materialz" id="category-5">
+                            <label for="category-5">Ventilation</label>
+                        </div>
+
+                        <ul class="list-unstyled col-md-12 product-categories">
+                            <li class="product-category" data-category-type="category-1">
+                                <div class="category-line"></div>
+                                <div class="category-line-header">Bleck</div>
+                                <div class="category-line"></div>
+
+                                <ul class="list-unstyled col-md-12">
+                                    <li class="product col-md-6">
+                                        <figure class="col-md-6">
+                                            <img src="http://placehold.it/160x140" alt="Image of product">
+                                            <figcaption>
+                                                <h2>Skorsten X5 <a href="#" class="btn btn-default">?</a></h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat.
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="col-md-6">
+                                            <h3>Ange mått & välj färg</h3>
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2" for="A-input-5X">A</label>
+                                                    <div class="col-md-10">
+                                                        <input type="number" class="form-control" id="A-input-5X" placeholder="ex: 0.2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2" for="B-input-5X">B</label>
+                                                    <div class="col-md-10">
+                                                        <input type="number" class="form-control" id="B-input-5X" placeholder="ex: 0.2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2" for="C-input-5X">C</label>
+                                                    <div class="col-md-10">
+                                                        <input type="number" class="form-control" id="C-input-5X" placeholder="ex: 0.2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2" for="D-input-5X">D</label>
+                                                    <div class="col-md-10">
+                                                        <input type="number" class="form-control" id="D-input-5X" placeholder="ex: 0.2">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2">Färg:</label>
+                                                    <div class="col-md-10">
+                                                        <input id="5X1" type="radio" name="skortsten5X">
+                                                        <label for="5X1" class="product-color-1"></label>
+
+                                                        <input id="5X2" type="radio" name="skortsten5X">
+                                                        <label for="5X2" class="product-color-2"></label>
+
+                                                        <input id="5X3" type="radio" name="skortsten5X">
+                                                        <label for="5X3" class="product-color-3"></label>
+
+                                                        <input id="5X4" type="radio" name="skortsten5X">
+                                                        <label for="5X4" class="product-color-4"></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-7">SEK: 5.999kr</label>
+                                                    <div class="col-md-5">
+                                                        <input type="button" class="form-control btn btn-default add-product-btn" value="Lägg till">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li class="product col-md-6">
+                                        <figure class="col-md-6">
+                                            <img src="http://placehold.it/230x140" alt="Image of product">
+                                            <figcaption>
+                                                <h2>Skorsten X6 <a href="#" class="btn btn-default">?</a></h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                    consequat.
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="col-md-6">
+                                            <h3>Ange mått & välj färg</h3>
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2" for="A-input-X6">A</label>
+                                                    <div class="col-md-10">
+                                                        <input type="number" class="form-control" id="A-input-X6" placeholder="ex: 0.2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2" for="B-input-X6">B</label>
+                                                    <div class="col-md-10">
+                                                        <input type="number" class="form-control" id="B-input-X6" placeholder="ex: 0.2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2" for="C-input-X6">C</label>
+                                                    <div class="col-md-10">
+                                                        <input type="number" class="form-control" id="C-input-X6" placeholder="ex: 0.2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2" for="D-input-X6">D</label>
+                                                    <div class="col-md-10">
+                                                        <input type="number" class="form-control" id="D-input-X6" placeholder="ex: 0.2">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-2">Färg:</label>
+                                                    <div class="col-md-10">
+                                                        <input id="6X1" type="radio" name="skortsten6X">
+                                                        <label for="6X1" class="product-color-1"></label>
+
+                                                        <input id="6X2" type="radio" name="skortsten6X">
+                                                        <label for="6X2" class="product-color-2"></label>
+
+                                                        <input id="6X3" type="radio" name="skortsten6X">
+                                                        <label for="6X3" class="product-color-3"></label>
+
+                                                        <input id="6X4" type="radio" name="skortsten6X">
+                                                        <label for="6X4" class="product-color-4"></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-7">SEK: 5.999kr</label>
+                                                    <div class="col-md-5">
+                                                        <input type="button" class="form-control btn btn-default add-product-btn" value="Lägg till">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </li>
                         </ul>
-                        <h2>Weatherproof Family</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-b col-md-12">
-        <div class="triangles-top">
-            <div class="triangle-left-top"></div>
-            <div class="triangle-right-top"></div>
-        </div>
-        <div class="container about-page">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 about-content">
-                    <h2>Ok, vad är Weatherproof Family?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum. In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                           officia deserunt mollit anim id est laborum.
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                 ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                 deserunt mollit anim id est laborum. In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                  officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                              deserunt mollit anim id est laborum. In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                               officia deserunt mollit anim id est laborum.
-                    </p>
-                    <div>
-                        <h3>Vi utför:</h3>
-                        <ul class="list-unstyled">
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Tak & Fasad tillverkning</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Montering av tak & fasad</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Legotillverkning</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Tak & Fasad konsultation</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Prototyp framtagning</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Produktion av designprodukter</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section-c col-md-12">
-        <div class="triangles-top">
-            <div class="triangle-left-top"></div>
-            <div class="triangle-right-top"></div>
-        </div>
-        <div class="container about-page">
-            <div class="row content">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2>Vi är Weatherproof family</h2>
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="http://placehold.it/240x200">
-                            <figcaption>
-                                <h5>Albin Svensson - CEO</h5>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in,
-                                     egestas eget quam. Donec id elit non mi porta
-                                     gravida at eget metus.
-                                </p>
-                                <p class="linkedIn-btn"><a href="#" class="btn btn-default linkedIn-btn" role="button">Button</a></p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="http://placehold.it/240x200">
-                            <figcaption>
-                                <h5>Peter Edlund - Problem solver</h5>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in,
-                                     egestas eget quam. Donec id elit non mi porta
-                                     gravida at eget metus.
-                                </p>
-                                <p class="linkedIn-btn"><a href="#" class="btn btn-default linkedIn-btn" role="button">Button</a></p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="http://placehold.it/240x200">
-                            <figcaption>
-                                <h5>Juha Rosenström - Bussiness Developer</h5>
-                                <p>
-                                    Cras justo odio, dapibus ac facilisis in,
-                                     egestas eget quam. Donec id elit non mi porta
-                                     gravida at eget metus.
-                                </p>
-                                <p class="linkedIn-btn"><a href="#" class="btn btn-default" role="button">Button</a></p>
-                            </figcaption>
-                        </figure>
                     </div>
                 </div>
             </div>

@@ -9603,19 +9603,19 @@ select.selectpicker {
     background: url(../img/showcase.jpeg) no-repeat 0 -100px; }
     .showcase .index-page h1 {
       font-size: 60px; }
-  .showcase .about-page {
+  .showcase .about-page, .showcase .products-page {
     background: url(../img/showcase.jpeg) no-repeat 0 -100px;
     margin: 0;
     width: 100%;
     height: 70vh;
     padding: 30px 0; }
-    .showcase .about-page .about-page-header {
+    .showcase .about-page .about-page-header, .showcase .about-page .products-page-header, .showcase .products-page .about-page-header, .showcase .products-page .products-page-header {
       width: 100%;
       color: #fff;
       text-align: center;
       position: relative;
       top: 35%; }
-      .showcase .about-page .about-page-header h2 {
+      .showcase .about-page .about-page-header h2, .showcase .about-page .products-page-header h2, .showcase .products-page .about-page-header h2, .showcase .products-page .products-page-header h2 {
         margin: 0; }
   .showcase .services-page {
     background: url(../img/showcase.jpeg) no-repeat 0 -100px;
@@ -10172,57 +10172,69 @@ footer{
 .when-on-materialz-brand {
   font-size: 15px; }
 
-.material-page {
+.material-page, .section-a > .products-page {
   text-align: center;
   background-color: #fff; }
-  .material-page .material-content {
+  .material-page .material-content, .material-page .product-content, .section-a > .products-page .material-content, .section-a > .products-page .product-content {
     margin-top: 11.5%;
     margin-bottom: 7%; }
-  .material-page #matNav {
-    width: 100%;
+  .material-page #matNav, .material-page #productNavigation, .section-a > .products-page #matNav, .section-a > .products-page #productNavigation {
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px #aaa solid; }
-    .material-page #matNav input[type="radio"] {
-      position: absolute;
-      opacity: 0;
-      z-index: -1; }
-    .material-page #matNav label {
-      position: relative;
-      display: inline-block;
-      text-align: center;
-      border: 1px solid #444;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-      line-height: 36px;
-      cursor: pointer; }
-      .material-page #matNav label span {
+    .material-page #matNav .input-box, .material-page #productNavigation .input-box, .section-a > .products-page #matNav .input-box, .section-a > .products-page #productNavigation .input-box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto; }
+      .material-page #matNav .input-box > input[type="radio"], .material-page #productNavigation .input-box > input[type="radio"], .section-a > .products-page #matNav .input-box > input[type="radio"], .section-a > .products-page #productNavigation .input-box > input[type="radio"] {
         position: absolute;
-        top: -35px;
-        left: 0;
-        width: 200%;
-        color: #000;
-        text-align: left; }
-    .material-page #matNav input[type="radio"]:checked + label {
-      color: #fff;
-      background: #8e44ad; }
-      .material-page #matNav input[type="radio"]:checked + label span {
-        color: #000; }
-    .material-page #matNav label {
-      -webkit-transition: 0.25s all ease;
-      -moz-transition: 0.25s all ease;
-      transition: 0.25s all ease; }
-    .material-page #matNav .type-holder-box {
+        opacity: 0;
+        z-index: -1; }
+      .material-page #matNav .input-box > label, .material-page #productNavigation .input-box > label, .section-a > .products-page #matNav .input-box > label, .section-a > .products-page #productNavigation .input-box > label {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        border: 1px solid #444;
+        border-radius: 2px;
+        margin: 0 5px 5px 5px;
+        padding: 5px;
+        width: 23%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 36px;
+        cursor: pointer; }
+        .material-page #matNav .input-box > label span, .material-page #productNavigation .input-box > label span, .section-a > .products-page #matNav .input-box > label span, .section-a > .products-page #productNavigation .input-box > label span {
+          position: absolute;
+          top: -35px;
+          left: 0;
+          width: 200%;
+          color: #000;
+          text-align: left; }
+      .material-page #matNav .input-box > input[type="radio"]:checked + label, .material-page #productNavigation .input-box > input[type="radio"]:checked + label, .section-a > .products-page #matNav .input-box > input[type="radio"]:checked + label, .section-a > .products-page #productNavigation .input-box > input[type="radio"]:checked + label {
+        color: #fff;
+        background: #8e44ad; }
+        .material-page #matNav .input-box > input[type="radio"]:checked + label span, .material-page #productNavigation .input-box > input[type="radio"]:checked + label span, .section-a > .products-page #matNav .input-box > input[type="radio"]:checked + label span, .section-a > .products-page #productNavigation .input-box > input[type="radio"]:checked + label span {
+          color: #000; }
+      .material-page #matNav .input-box > label, .material-page #productNavigation .input-box > label, .section-a > .products-page #matNav .input-box > label, .section-a > .products-page #productNavigation .input-box > label {
+        -webkit-transition: 0.25s all ease;
+        -moz-transition: 0.25s all ease;
+        transition: 0.25s all ease; }
+    .material-page #matNav .type-holder-box, .material-page #productNavigation .type-holder-box, .section-a > .products-page #matNav .type-holder-box, .section-a > .products-page #productNavigation .type-holder-box {
       width: 90%;
       margin-right: auto;
       margin-left: auto; }
-      .material-page #matNav .type-holder-box .type-holder {
+      .material-page #matNav .type-holder-box .type-holder, .material-page #productNavigation .type-holder-box .type-holder, .section-a > .products-page #matNav .type-holder-box .type-holder, .section-a > .products-page #productNavigation .type-holder-box .type-holder {
+        display: none;
         list-style: none;
         margin: 0;
         padding: 0; }
-        .material-page #matNav .type-holder-box .type-holder > li {
+        .material-page #matNav .type-holder-box .type-holder > li, .material-page #productNavigation .type-holder-box .type-holder > li, .section-a > .products-page #matNav .type-holder-box .type-holder > li, .section-a > .products-page #productNavigation .type-holder-box .type-holder > li {
           width: 20%;
           min-width: 140px;
           padding-top: 20%;
@@ -10230,15 +10242,15 @@ footer{
           color: #fff;
           position: relative;
           overflow: hidden; }
-          .material-page #matNav .type-holder-box .type-holder > li .material-specifics {
+          .material-page #matNav .type-holder-box .type-holder > li .material-specifics, .material-page #productNavigation .type-holder-box .type-holder > li .material-specifics, .section-a > .products-page #matNav .type-holder-box .type-holder > li .material-specifics, .section-a > .products-page #productNavigation .type-holder-box .type-holder > li .material-specifics {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0; }
-            .material-page #matNav .type-holder-box .type-holder > li .material-specifics h2 {
+            .material-page #matNav .type-holder-box .type-holder > li .material-specifics h2, .material-page #productNavigation .type-holder-box .type-holder > li .material-specifics h2, .section-a > .products-page #matNav .type-holder-box .type-holder > li .material-specifics h2, .section-a > .products-page #productNavigation .type-holder-box .type-holder > li .material-specifics h2 {
               font-size: 2em; }
-        .material-page #matNav .type-holder-box .type-holder > li:hover {
+        .material-page #matNav .type-holder-box .type-holder > li:hover, .material-page #productNavigation .type-holder-box .type-holder > li:hover, .section-a > .products-page #matNav .type-holder-box .type-holder > li:hover, .section-a > .products-page #productNavigation .type-holder-box .type-holder > li:hover {
           cursor: pointer;
           -webkit-transform: scale(1.01);
           -moz-transform: scale(1.01);
@@ -10246,137 +10258,191 @@ footer{
           -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
           z-index: 2; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-savann {
-          background-color: #EC644B;
+      .material-page #matNav .type-holder-box [data-material="type-1"], .material-page #productNavigation .type-holder-box [data-material="type-1"], .section-a > .products-page #matNav .type-holder-box [data-material="type-1"], .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] {
+        /*              WHITE COLORS                                 */
+        /*              GREY COLORS                                 */
+        /*              GREEN COLORS                                 */
+        /*              BLUE COLORS                                 */
+        /*              BROWN COLORS                                 */
+        /*              RED COLORS                                 */
+        /*              YELLOW COLORS                                 */
+        /*              METALLIC COLORS                                 */ }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-white, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-white, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-white, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-white {
+          background-color: #fff;
           color: #000000; }
-        .material-page #matNav .type-holder-box .type-holder > #material-name-moss {
-          background-color: #A2DED0;
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-antiquWhite, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-antiquWhite, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-antiquWhite, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-antiquWhite {
+          background-color: #E4E4E4;
           color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-black {
-        background-color: #000;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-darkRed {
-        background-color: #832412;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-white {
-        background-color: #eceded;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-antiquWhite {
-        background-color: #f3f3f2;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-warmWhite {
-        background-color: #f6f5ee;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-silverMetallic-light {
-        background-color: #dddedd;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-silverMetallic-dark {
-        background-color: #929395;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-graphite {
-        background-color: #47535b;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-darkGrey {
-        background-color: #4b5054;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-grey {
-        background-color: #ababa1;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-lightGrey {
-        background-color: #dddbcf;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-doveGrey {
-        background-color: #bcbdae;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-zinkGrey {
-        background-color: #b5bbbf;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-verdigris {
-        background-color: #95b897;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-moss {
-        background-color: #3b5b44;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-darkBlue {
-        background-color: #245180;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-brickRed {
-        background-color: #9d490e;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-brown {
-        background-color: #3f1509;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-darkBrown {
-        background-color: #5e3b24;
-        color: #fff; }
-      .material-page #matNav .type-holder-box [data-material="type1"] > #material-name-plate-lightYellow {
-        background-color: #f1dbb2;
-        color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type2"] > #material-name-zink-bright {
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-ivoryWhite, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-ivoryWhite, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-ivoryWhite, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-ivoryWhite {
+          background-color: #EBEBE7;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-warmWhite, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-warmWhite, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-warmWhite, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-warmWhite {
+          background-color: #f6f5ee;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-greyWhite, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-greyWhite, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-greyWhite, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-greyWhite {
+          background-color: #D4D4CC;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-doveGrey, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-doveGrey, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-doveGrey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-doveGrey {
+          background-color: #A29F96;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-zinkGrey, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-zinkGrey, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-zinkGrey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-zinkGrey {
+          background-color: #7B7A78;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-antracitGrey, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-antracitGrey, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-antracitGrey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-antracitGrey {
+          background-color: #2F343A;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-blyertsGrey, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-blyertsGrey, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-blyertsGrey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-blyertsGrey {
+          background-color: #362D20;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightGrey, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-lightGrey, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightGrey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-lightGrey {
+          background-color: #dddbcf;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-grey, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-grey, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-grey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-grey {
+          background-color: #ababa1;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkGrey, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-darkGrey, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkGrey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-darkGrey {
+          background-color: #4b5054;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-graphite, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-graphite, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-graphite, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-graphite {
+          background-color: #47535b;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-black, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-black, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-black, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-black {
+          background-color: #000;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-verdigris, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-verdigris, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-verdigris, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-verdigris {
+          background-color: #94C4B2;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-green, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-green, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-green, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-green {
+          background-color: #195D3A;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-forestGreen, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-forestGreen, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-forestGreen, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-forestGreen {
+          background-color: #354928;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-coniferousGreen, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-coniferousGreen, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-coniferousGreen, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-coniferousGreen {
+          background-color: #414329;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-moss, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-moss, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-moss, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-moss {
+          background-color: #28310B;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkBlue, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-darkBlue, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkBlue, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-darkBlue {
+          background-color: #152D4B;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-blue, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-blue, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-blue, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-blue {
+          background-color: #203E71;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-clearBlue, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-clearBlue, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-clearBlue, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-clearBlue {
+          background-color: #265397;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightBlue, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-lightBlue, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightBlue, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-lightBlue {
+          background-color: #56748C;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-brown, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-brown, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-brown, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-brown {
+          background-color: #3f1509;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkBrown, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-darkBrown, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkBrown, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-darkBrown {
+          background-color: #372517;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-chocolateBrown, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-chocolateBrown, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-chocolateBrown, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-chocolateBrown {
+          background-color: #2E180E;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-redBrown, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-redBrown, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-redBrown, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-redBrown {
+          background-color: #512218;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-brickRed, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-brickRed, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-brickRed, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-brickRed {
+          background-color: #6A2C20;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-wineRed, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-wineRed, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-wineRed, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-wineRed {
+          background-color: #582423;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkRed, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-darkRed, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkRed, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-darkRed {
+          background-color: #5B130F;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-red, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-red, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-red, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-red {
+          background-color: #672724;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-terrakottaRed, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-terrakottaRed, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-terrakottaRed, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-terrakottaRed {
+          background-color: #7E1B1D;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-coralRed, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-coralRed, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-coralRed, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-coralRed {
+          background-color: #6B2518;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-clearRed, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-clearRed, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-clearRed, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-clearRed {
+          background-color: #8A1B13;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-classicRed, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-classicRed, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-classicRed, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-classicRed {
+          background-color: #864F0C;
+          color: #fff; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-yellow, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-yellow, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-yellow, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-yellow {
+          background-color: #F1E50B;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightYellow, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-lightYellow, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightYellow, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-lightYellow {
+          background-color: #F4E287;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-sandYellow, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-sandYellow, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-sandYellow, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-sandYellow {
+          background-color: #F5E972;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-vanillaYellow, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-vanillaYellow, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-vanillaYellow, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-vanillaYellow {
+          background-color: #E5DBA3;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-light, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-light, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-light, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-light {
+          background-color: #B3B4B3;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-dark, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-dark, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-dark, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-dark {
+          background-color: #838588;
+          color: #000000; }
+        .material-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-copper, .material-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-copper, .section-a > .products-page #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-copper, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-1"] > #material-name-plate-copper {
+          background-color: #9E7A4E;
+          color: #fff; }
+      .material-page #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-bright, .material-page #productNavigation .type-holder-box [data-material="type-2"] > #material-name-zink-bright, .section-a > .products-page #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-bright, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-2"] > #material-name-zink-bright {
         background-color: #d8dede;
         color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type2"] > #material-name-zink-blueGrey {
+      .material-page #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-blueGrey, .material-page #productNavigation .type-holder-box [data-material="type-2"] > #material-name-zink-blueGrey, .section-a > .products-page #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-blueGrey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-2"] > #material-name-zink-blueGrey {
         background-color: #abb0a9;
         color: #000000; }
-      .material-page #matNav .type-holder-box [data-material="type2"] > #material-name-zink-graphiteGrey {
+      .material-page #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-graphiteGrey, .material-page #productNavigation .type-holder-box [data-material="type-2"] > #material-name-zink-graphiteGrey, .section-a > .products-page #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-graphiteGrey, .section-a > .products-page #productNavigation .type-holder-box [data-material="type-2"] > #material-name-zink-graphiteGrey {
         background-color: #44453f;
         color: #fff; }
-    .material-page #matNav .type-holder {
-      display: none; }
-    .material-page #matNav .material-text-content {
-      display: none;
+    .material-page #matNav .material-text-content, .material-page #productNavigation .material-text-content, .section-a > .products-page #matNav .material-text-content, .section-a > .products-page #productNavigation .material-text-content {
       padding: 0;
       width: 90%;
       margin-left: 5%;
       margin-right: 5%;
       margin-top: 10px;
       margin-bottom: 30px; }
-      .material-page #matNav .material-text-content .material-intro {
+      .material-page #matNav .material-text-content .material-intro, .material-page #productNavigation .material-text-content .material-intro, .section-a > .products-page #matNav .material-text-content .material-intro, .section-a > .products-page #productNavigation .material-text-content .material-intro {
         width: 70%;
         text-align: justify;
         margin-right: auto;
         margin-left: auto;
         padding-bottom: 20px; }
-      .material-page #matNav .material-text-content h3 {
+      .material-page #matNav .material-text-content h3, .material-page #productNavigation .material-text-content h3, .section-a > .products-page #matNav .material-text-content h3, .section-a > .products-page #productNavigation .material-text-content h3 {
         text-transform: uppercase;
         font-size: 2.7rem;
         color: #000;
         margin: 35px 0 15px 0;
         font-weight: bold; }
-      .material-page #matNav .material-text-content span {
+      .material-page #matNav .material-text-content span, .material-page #productNavigation .material-text-content span, .section-a > .products-page #matNav .material-text-content span, .section-a > .products-page #productNavigation .material-text-content span {
         font-weight: bold;
         color: black; }
-      .material-page #matNav .material-text-content ul {
+      .material-page #matNav .material-text-content ul, .material-page #productNavigation .material-text-content ul, .section-a > .products-page #matNav .material-text-content ul, .section-a > .products-page #productNavigation .material-text-content ul {
         padding: 10px 0; }
-        .material-page #matNav .material-text-content ul > li {
+        .material-page #matNav .material-text-content ul > li, .material-page #productNavigation .material-text-content ul > li, .section-a > .products-page #matNav .material-text-content ul > li, .section-a > .products-page #productNavigation .material-text-content ul > li {
           width: 25%;
           min-width: 200px;
           float: left;
           text-align: left;
           border-right: 1px solid #aaa;
           color: #444; }
-          .material-page #matNav .material-text-content ul > li p {
+          .material-page #matNav .material-text-content ul > li p, .material-page #productNavigation .material-text-content ul > li p, .section-a > .products-page #matNav .material-text-content ul > li p, .section-a > .products-page #productNavigation .material-text-content ul > li p {
             width: 90%;
             padding-left: 10%; }
-        .material-page #matNav .material-text-content ul > li:first-of-type {
+        .material-page #matNav .material-text-content ul > li:first-of-type, .material-page #productNavigation .material-text-content ul > li:first-of-type, .section-a > .products-page #matNav .material-text-content ul > li:first-of-type, .section-a > .products-page #productNavigation .material-text-content ul > li:first-of-type {
           border-left: 1px solid #aaa; }
-      .material-page #matNav .material-text-content p {
+      .material-page #matNav .material-text-content p, .material-page #productNavigation .material-text-content p, .section-a > .products-page #matNav .material-text-content p, .section-a > .products-page #productNavigation .material-text-content p {
         margin: 0; }
-    .material-page #matNav #type-0:checked ~ [data-material-content="type0"],
-    .material-page #matNav #type-0:checked ~ .type-holder-box > .type-holder,
-    .material-page #matNav #type-1:checked ~ [data-material-content="type1"],
-    .material-page #matNav #type-1:checked ~ .type-holder-box > [data-material="type1"],
-    .material-page #matNav #type-2:checked ~ [data-material-content="type2"],
-    .material-page #matNav #type-2:checked ~ .type-holder-box > [data-material="type2"],
-    .material-page #matNav #type-3:checked ~ [data-material-content="type3"],
-    .material-page #matNav #type-3:checked ~ .type-holder-box > [data-material="type3"],
-    .material-page #matNav #type-4:checked ~ [data-material-content="type4"],
-    .material-page #matNav #type-4:checked ~ .type-holder-box > [data-material="type4"],
-    .material-page #matNav #type-5:checked ~ [data-material-content="type5"],
-    .material-page #matNav #type-5:checked ~ .type-holder-box > [data-material="type5"],
-    .material-page #matNav #type-6:checked ~ [data-material-content="type6"],
-    .material-page #matNav #type-6:checked ~ .type-holder-box > [data-material="type6"] {
-      display: block; }
+
+#productNavigation .product-input-box > label {
+  width: 25%; }
 
 html, body {
   margin: 0;
