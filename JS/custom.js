@@ -27,6 +27,18 @@ var setItUp = (function(){
             showCategories();
         });
 
+        $('#systemsNavigation > .input-box > input').on('click', function(){
+            showCategories();
+        });
+
+        $('#systemsNavigation-roof > .input-box > input').on('click', function(){
+            showRoofs();
+        });
+
+        $('#systemsNavigation-facade > .input-box > input').on('click', function(){
+            showFacade();
+        });
+
         var showCategories = function(){
 
             if ( $('#matNav').length ){
@@ -55,7 +67,36 @@ var setItUp = (function(){
                     $('.product-category[data-category-type="' +checkedRadio+ '"]').show();
                 }
             }
+            else if ( $('#systemsNavigation').length ){
+                $('.system-category').hide()
+                $('.triangles-bottom > h1').fadeTo('fast', 0);
+                var checkedRadio = $('#systemsNavigation > .input-box > input:checked').attr('id');
+                $('.system-category[data-systems="' +checkedRadio+ '"]').show()
+                $('.'+checkedRadio).fadeTo('fast', 1);
+
+                /*
+                if ( $('#systemsNavigation-roof').length ){
+                    showRoofs();
+                }
+                */
+            }
         };
+
+        var showRoofs = function(){
+            $('.roof-system').fadeTo('fast', 0);
+            $('.roof-system').hide();
+            var checkedRoofSystem = $('#systemsNavigation-roof > .input-box > input:checked').attr('id');
+            $('.roof-system[data-roof-system="' +checkedRoofSystem+ '"]').show().fadeTo('fast', 1);
+            console.log(checkedRoofSystem);
+        }
+
+        var showFacade = function(){
+            $('.facade-system').fadeTo('fast', 0);
+            $('.facade-system').hide();
+            var checkedFacadeSystem = $('#systemsNavigation-facade > .input-box > input:checked').attr('id');
+            $('.facade-system[data-facade-system="' +checkedFacadeSystem+ '"]').show().fadeTo('fast', 1);
+            console.log(checkedFacadeSystem);
+        }
 
         $('.productList').hover(function(){
             $('> .subNav', this).stop().fadeIn(270);
@@ -102,6 +143,8 @@ var setItUp = (function(){
         })
 
         showCategories();
+        showRoofs();
+        showFacade();
     };
 
     var setAngleColor = function(){

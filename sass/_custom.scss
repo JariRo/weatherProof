@@ -8,6 +8,14 @@ body{
     background-color:rgb(238, 238, 238);
 }
 
+.row{
+    margin:0;
+}
+
+.container{
+    padding:0;
+}
+
 .opacity-overlay{
     display:none;
     background:rgba(0, 0, 0, 0.6);
@@ -16,50 +24,62 @@ body{
     z-index:998;
 }
 
-.triangle-left-bottom{
-    position: absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    width:0;
-    height:0;
-    border-style: solid;
-    border-width:0 0 5.1vw 50vw;
+
+.triangles-top{
+    position:relative;
     z-index: 99;
+
+    .triangle-left-top{
+        position:absolute;
+        left:0;
+        top:0;
+        right:0;
+        width:0;
+        height:0;
+        border-style:solid;
+        border-width:5.1vw 50vw 0 0;
+        overflow: hidden;
+    }
+
+    .triangle-right-top{
+        position:absolute;
+        left:50vw;
+        top:0;
+        width:0;
+        height:0;
+        border-style:solid;
+        border-width:0 50vw 5.1vw 0;
+        overflow: hidden;
+    }
 }
 
-.triangle-right-bottom{
-    position: absolute;
-    left:50vw;
-    bottom:0;
-    width:0;
-    height:0;
-    border-style: solid;
-    border-width:5.1vw 0 0 50vw;
-    z-index: 99;
-}
 
-.triangle-left-top{
-    position:absolute;
-    left:0;
-    top:0;
-    right:0;
-    width:0;
-    height:0;
-    border-style:solid;
-    border-width:5.1vw 50vw 0 0;
+.triangles-bottom{
+    position:relative;
     z-index: 99;
-}
 
-.triangle-right-top{
-    position:absolute;
-    left:50vw;
-    top:0;
-    width:0;
-    height:0;
-    border-style:solid;
-    border-width:0 50vw 5.1vw 0;
-    z-index: 99;
+    .triangle-left-bottom{
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        width:0;
+        height:0;
+        border-style: solid;
+        border-width:0 0 5.1vw 50vw;
+        overflow: hidden;
+    }
+
+    .triangle-right-bottom{
+        position: absolute;
+        left:50vw;
+        bottom:0;
+        width:0;
+        height:0;
+        border-style: solid;
+        border-width:5.1vw 0 0 50vw;
+        overflow: hidden;
+    }
 }
 
 

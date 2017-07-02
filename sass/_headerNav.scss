@@ -1,7 +1,14 @@
+*{
+    -webkit-font-smoothing: antialiased;
+    font-smoothing:antiliased;
+    box-sizing: border-box;
+}
+
 .navbar{
     //padding-bottom:8px;
     padding-top:50px;
     border-bottom:none;
+    overflow:hidden;
 
     background-color:rgba(0, 0, 0, 0);
     z-index: 997;
@@ -102,7 +109,7 @@
 // Navbar On-scroll animatio + design
 .shrinkNav{
     padding-top:10px;
-    background-color: rgba(0,0,0,0.2); 
+    background-color: rgba(0,0,0,0.2);
 }
 
 .shrinkLogo{

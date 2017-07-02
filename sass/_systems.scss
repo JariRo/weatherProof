@@ -1,0 +1,309 @@
+.showcase > .systems-page{
+    padding-top:12.5%;
+    height:56vh;
+
+    #systemsNavigation{
+        border:none;
+
+    }
+}
+
+.showcase > .triangles-bottom{
+
+    h1 {
+        margin:0;
+        font-size: 5em;
+        font-weight: 800;
+        color:#fff;
+        text-shadow: 1px 1px 5px #555;
+        position:absolute;
+        top:-70px;
+        left:50px;
+        right:0;
+        bottom:0;
+        opacity:0;
+        z-index: 101;
+    }
+
+    .roofs{
+        position:absolute;
+        top:-70px;
+        left:50px;
+        right:0;
+        bottom:0;
+        z-index: 101;
+        text-align: left;
+    }
+
+    .facade{
+        position:absolute;
+        top:-70px;
+        left:0px;
+        right:50px;
+        bottom:0;
+        z-index: 101;
+        text-align: right;
+    }
+}
+
+
+.section-a > .systems-page{
+    background: rgb(255, 255, 255);
+    padding-top:7%;
+
+    .row > h1{
+        font-size: 5em;
+        font-weight: 800;
+        color:#fff;
+        text-shadow: 1px 1px 5px #555;
+        position:relative;
+        left:-30%;
+        z-index: 100;
+    }
+
+    #systemsNavigation-roof > .input-box > label, #systemsNavigation-facade > .input-box > label{
+        width:20%;
+        font-size: 1rem;
+        padding:3px;
+    }
+
+    #systemsNavigation-roof, #systemsNavigation-facade{
+        padding-bottom:2%;
+    }
+
+
+    .roof-systems, .facade-systems{
+        padding:0;
+
+        .roof-system, .facade-system{
+            padding:0;
+            display:none;
+
+            .roof-section-1, .facade-section-1{
+                padding:0;
+
+                .container{
+                    background:#fff;
+                }
+
+                > h2{
+                    margin-top:5%;
+                }
+
+                > p{
+                    width:50%;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                .roof-systems-pictureBox, .facade-systems-pictureBox{
+                    display:flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-top:3%;
+                    padding-bottom:7%;
+
+                    figure{
+                        padding:0;
+
+                        img{
+                            width:100%;
+
+                        }
+                    }
+                }
+
+                .come-in-three{
+                    display:flex;
+                    flex-direction: row;
+                    flex-wrap:wrap;
+                    justify-content: center;
+                    text-align: center;
+                    padding-top:3%;
+
+                    .the-three{
+
+                        figcaption{
+                            display:flex;
+                            flex-direction: row;
+                            flex-wrap:wrap;
+                            justify-content: center;
+
+                            h4{
+
+                            }
+
+                            p{
+                                width:80%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .roof-section-2, .facade-section-2{
+
+                .container{
+                    display:flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding:0;
+                    background:#fff;
+
+                    > div{
+                        width:50%;
+                        float:left;
+                        padding-bottom:7%;
+                    }
+
+                    .roof-section-2-content, .roof-section-2-facts, .facade-section-2-content, .facade-section-2-facts{
+                        padding:8% 0 0% 0;
+                    }
+
+                    .roof-section-2-content, .facade-section-2-content{
+                        background:#999;
+                        //padding:50px 0;
+                        color:#fff;
+
+                        article{
+                            width:80%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            text-align: justify;
+
+                            h2{
+                                text-align: center;
+                            }
+
+                            p{
+                                font-size: 1.5em;
+                            }
+
+                            > div{
+                                padding:15px 0;
+                                margin-top:10px;
+                                border-top:1px solid #fff;
+                                border-bottom:1px solid #fff;
+                                float:left;
+                                text-align: center;
+
+                                h5{
+                                    font-weight: 600;
+                                }
+
+                                p{
+                                    font-weight: 200;
+                                    font-size: 1.2em;
+                                }
+                            }
+
+                            .content-details-left{
+                                width:40%;
+                                border-right:1px solid #fff;
+
+                            }
+
+                            .content-details-right{
+                                width:60%;
+                            }
+                        }
+                    }
+
+                    .roof-section-2-facts, .facade-section-2-facts{
+                        background: #A2DED0;
+                        display:flex;
+
+                        article{
+                            position:relative;
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            min-width:45%;
+                            max-width:70%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            background:orange;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                            z-index: 101;
+
+
+                            h2, ul{
+                                width:80%;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+
+                            h2{
+                                font-size: 2.5em;
+                                color:#fff;
+                                margin-top: 10%;
+                                margin-bottom:10%;
+                            }
+
+                            ul{
+                                display:flex;
+                                flex-direction: column;
+                                flex-wrap: wrap;
+                                letter-spacing: 1.5px;
+                                align-content: space-between;
+                                padding:10px;
+
+                                li{
+                                    font-size: 1.5em;
+                                    text-align: justify;
+                                    margin-bottom: 10px;
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .roof-section-3, .facade-section-3{
+                .container{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding-top:7%;
+                    padding-bottom:7%;
+                    background:#fff;
+
+                    > figure, > div{
+                        width:50%;
+                        padding:20px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .icon-row, img{
+                            width:70%;
+                        }
+
+                        .icon-row{
+                            display:flex;
+                            flex-direction: row;
+
+                            .fa{
+                                font-size: 5em;
+                                line-height: inherit;
+                                vertical-align: middle;
+                            }
+
+                            .icon-caption{
+                                margin:auto;
+
+                                > h3, > p{
+                                    margin:0;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,7 +8,7 @@
     font-size: 15px;
 }
 
-.material-page, .section-a > .products-page{
+.material-page, .section-a > .products-page, .showcase > .systems-page, .section-a > .systems-page{
     text-align: center;
     background-color:#fff;
 
@@ -17,13 +17,13 @@
         margin-bottom:7%;
     }
 
-    #matNav, #productNavigation{
+    #matNav, #productNavigation, #systemsNavigation, #systemsNavigation-roof, #systemsNavigation-facade{
         width:90%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5%;
+        margin-right: 5%;
         border-bottom:1px #aaa solid;
 
-        .input-box{
+        > .input-box{
             display:flex;
             flex-direction: row;
             flex-wrap: wrap;

@@ -1,9 +1,5 @@
 .offert-section{
-    display:none;
     min-height:100vh;
-    position:fixed;
-    z-index: 5000;
-    overflow:scroll !important;
     background: linear-gradient(90deg, rgb(78, 205, 196) 50%, rgb(162, 222, 208) 50%);
     padding-top:2%;
     padding-bottom:7%;
@@ -23,7 +19,6 @@
 }
 
 #offertSystem{
-
     padding-left: 5%;
     padding-right: 5%;
 
@@ -54,6 +49,7 @@
         text-align: center;
     }
 
+    /*
     .stages:after{
         content:'';
         display:inline-block;
@@ -61,6 +57,7 @@
         text-align: center;
         width:100%;
     }
+    */
 
     .progressRadiobuttons{
         display:none;
@@ -69,8 +66,8 @@
     .stages label{
         background:#fff;
         margin:2rem;
-        border:solid 5px #c0c0c0;
-        border-radius:50%;
+        //border:solid 5px #c0c0c0;
+        //border-radius:50%;
         cursor:pointer;
         display:inline-block;
         font-size: 0;
@@ -90,12 +87,14 @@
         user-select:none;
     }
 
+    /*
     .stages label:after{
         content: '\2713';
         color: #0cc39f;
         display:inline-block;
         font-size: 16px;
     }
+    */
 
     #yx:checked ~ .stages label[for="yx"],
     #kax:checked ~ .stages label[for="kax"],
@@ -109,6 +108,7 @@
         border-color: purple !important;
     }
 
+    /*
     #yx:checked ~ .stages label,
     #kax:checked ~ .stages label[for="yx"] ~ label,
     #kolme:checked ~ .stages label[for="kax"] ~ label,
@@ -116,7 +116,9 @@
     #viisi:checked ~ .stages label[for="nelja"] ~ label{
 	font-size: 1rem;
     }
+    */
 
+    /*
     #yx:checked ~ .stages label:after,
     #kax:checked ~ .stages label[for="yx"] ~ label:after,
     #kolme:checked ~ .stages label[for="kax"] ~ label:after,
@@ -124,6 +126,8 @@
     #viisi:checked ~ .stages label[for="nelja"] ~ label:after{
 	    display: none;
     }
+    */
+
 
     .progressBaren{
         width:80%;
@@ -161,37 +165,12 @@
         display:none;
     }
 
-    .offert-content-pages > button{
-
-    }
-
     #yx:checked ~ [data-panel="yx"],
     #kax:checked ~ [data-panel="kax"],
     #kolme:checked ~ [data-panel="kolme"],
     #nelja:checked ~ [data-panel="nelja"],
     #viisi:checked ~ [data-panel="viisi"]{
         display:block;
-    }
-
-    .handyInfo{
-
-        p{
-            font-weight: 800;
-            font-size: 1.1em;
-        }
-
-        ul > li{
-            font-size: 1.1em;
-        }
-    }
-
-    #offertRightSection{
-        //background:#89C4F4;
-        //padding:50px;
-    }
-
-    .advancedOptions{
-        color:#663399;
     }
 
     #takModell{
@@ -294,8 +273,8 @@
 
         fieldset{
             border:1px groove #333333 !important;
-            padding:0 1.4em 1.4em 1.4em !important;
-            margin:0 0 1.5em 0 !important;
+            padding:0 0.5em 0em 0.5em !important;
+            margin:0 0 0.4em 0 !important;
 
             legend{
                 width: auto;
@@ -304,7 +283,7 @@
             }
 
             .input-Holder{
-                margin-bottom:17px;
+                margin-bottom:5px;
 
                 label{
 
@@ -386,7 +365,6 @@
 
 
     .offert-advanced-content{
-        display:none;
 
         .roofPaper{
 
