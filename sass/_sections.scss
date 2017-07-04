@@ -415,11 +415,15 @@
         }
     }
 
-    .services-page{
+    .services-page, .special-page{
         background:#E4F1FE;
 
         .content{
             text-align: center;
+
+            > div{
+                padding-bottom:30px;
+            }
         }
 
         hr{

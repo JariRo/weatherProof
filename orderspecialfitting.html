@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherProof Family</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+    <body>
+        <a id="brandLogo" class="col-md-4 navbar-brand special-fitting-page" href="index.html">
+            <p>WeatherProof</p>
+            <p>Family</p>
+        </a>
+
+        <aside id="menu-side-bar">
+            <ul id="side-bar-nav">
+
+<!--                SPECIALBESLAG PAGE1           -->
+                <li class="menu-1" data-offert="the-fitting" data-page="fitting-page" title="The fitting information" >
+                    <a href class="activated" data-page="fitting-page">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        PRODUKT
+                    </a>
+                    <section class="the-fitting">
+                        <div class="wrapper">
+                            <div class="fitting-information">
+                                <fieldset class="form-group">
+                                    <legend>Specialbeslag</legend>
+                                    <div class="col-md-12 form-group" id="fitting-info">
+                                        <div class="form-group input-Holder">
+                                            <label for="fitting-titel">Titel:</label>
+                                            <input type="text" class="form-control" id="fitting-titel">
+                                        </div>
+                                        <div class="form-group input-Holder">
+                                            <label for="fitting-description">Produktbeskrivning:</label>
+                                            <textarea class="form-control" rows="6" id="fitting-description"></textarea>
+                                        </div>
+                                        <div class="form-group input-Holder">
+                                            <label for="howMany">Antal</label>
+                                            <input type="number" class="form-control" id="howMany">
+                                        </div>
+                                        <div class="form-group input-Holder">
+                                            <label for="fitting-fileUpload">
+                                                <details>
+                                                    <summary>Bifoga fil</summary>
+                                                    <p>Ex: ritning eller bild av produkten</p>
+                                                </details>
+                                            </label>
+                                            <input id="fitting-fileUpload" class="btn btn-primary" type="file" name="fittingFile">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+
+<!--                SPECIALBESLAG PAGE 2          -->
+                <li class="menu-2" data-offert="fitting-checkout" data-page="fitting-page" title="Special fittings Checkout">
+                    <a href="#" id="checkoutMenuItem" data-page="fitting-page">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Checkout
+                    </a>
+                    <section class="fitting-checkout">
+                        <div class="wrapper">
+                            <div class="fitting-summary">
+                                <h2>Sammanställning</h2>
+                                <fieldset class="form-group">
+                                    <legend>Tak</legend>
+                                    <div class="col-md-12 control-group">
+
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </aside>
+
+<!--                SPECIALBESLAG CHECKOUT          -->
+        <main id="checkout-wrapper">
+            <div class="container">
+                <header>
+                    <h3>Checkout</h3>
+                    <p>Fyll i kontaktuppgifter och skicka in offertförfrågan så kontaktar vi er</p>
+                </header>
+
+                <div class="offert-process">
+                    <div class="row">
+                        <div class="col-md-4 process-step">
+                            <p><i class="fa fa-paper-plane-o" aria-hidden="true"></i></p>
+                            <h5>Skicka</h5>
+                        </div>
+
+                        <div class="col-md-4 process-step">
+                            <p><i class="fa fa-bar-chart" aria-hidden="true"></i></p>
+                            <h5>Vi räknar</h5>
+                        </div>
+
+                        <div class="col-md-4 process-step">
+                            <p><i class="fa fa-handshake-o" aria-hidden="true"></i></p>
+                            <h5>Specificerat prisförslag</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offert-contact-info">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <h4>Kontakuppgifter</h4>
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label for="offert-email">Email<span>*</span></label>
+                                        <input type="email" id="offert-email" class="form-control" title="Du behöver fylla i en email. Vi kan inte ens skicka dig ett email om hur man skaffar en email om du inte har en email" name="offertEmail" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label for="offert-firstname">Namn<span>*</span></label>
+                                        <input type="text" id="offert-firstname" class="form-control" name="offertFirstname" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label for="offert-lastname">Efternamn<span>*</span></label>
+                                        <input type="text" id="offert-lastname" class="form-control" name="offertLastname" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label for="offert-adress">Adress<span>*</span></label>
+                                        <input placeholder="Gata" type="text" id="offert-gata" class="form-control" name="offertAdressStreet" required>
+                                        <input placeholder="Postnummer" type="number" id="offert-postnummer" class="form-control" name="offertAdressZip" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 form-group">
+                                        <label for="offert-city">Stad<span>*</span></label>
+                                        <input type="text" id="offert-city" class="form-control" name="offertCity" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 checkbox">
+                                        <label><input type="checkbox" value="" name="offertCallMe">Bli uppringd</label>
+                                    </div>
+                                    <div class="col-md-12 form-group">
+                                        <label for="offert-phone">Telefonnummer</label>
+                                        <input type="tel" id="offert-phone" class="form-control" name="offertPhonenNumber" disabled>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="offert-submit-holder" class="row">
+                            <div class="col-md-12">
+                                <button id="submit-offert" name="offertSubmit" disabled>
+                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                    <strong>Skicka offertförfrågan</strong>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="JS/offerten.js"></script>
+  </body>
+</html>

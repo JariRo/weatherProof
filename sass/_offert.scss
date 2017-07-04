@@ -1,417 +1,590 @@
-.offert-section{
-    min-height:100vh;
-    background: linear-gradient(90deg, rgb(78, 205, 196) 50%, rgb(162, 222, 208) 50%);
-    padding-top:2%;
-    padding-bottom:7%;
+body{
+    min-height:100%;
+    margin:0;
+}
 
-    .fa{
-        font-size: 26px;
-        position:absolute;
-        padding:10px;
-        top:20px;
-        left:20px;
-        z-index:5001;
-    }
+#brandLogo.offert-page, #brandLogo.special-fitting-page{
+    position:fixed;
+    top:10px;
+    right:10px;
+    z-index:150;
+    text-align-last: right;
+    width:14%;
+}
 
-    .container{
-        width:100%;
+#menu-side-bar{
+    position:relative;
+    background:#fff;
+    display:block;
+
+    #side-bar-nav{
+        background:#3c4e5a;
+        position:fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        height:100%;
+        display:block;
+        z-index: 200;
+        margin:0;
+        padding:0;
+        list-style-type: none;
+        width:500px;
+        box-shadow: 0 0 20px rgba(0,0,0, 0.5);
+
+        > li[data-page="offert-page"]{
+            width:25%;
+        }
+
+        > li[data-page="fitting-page"]{
+            width:50%;
+        }
+
+        > li{
+            margin-bottom:2px;
+            background:#32414b;
+            //width:25%;
+            float:left;
+            display:inline-block;
+
+            > a[data-page="offert-page"], a[data-page="fitting-page"]{
+                font-family: ProximaNova-Bold,sans-serif, sans-serif;
+                font-weight: 400;
+                display:block;
+                font-size: 12px;
+                padding:20px;
+                width:100%;
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: none;
+                outline:0;
+                position:relative;
+
+                i{
+                    color:rgba(255, 255, 255, 0.8);
+                    text-align: center;
+                    display:block;
+                    font-size: 40px;
+                    margin-bottom:10px;
+                }
+            }
+
+            > section{
+                position:absolute;
+                left:0;
+                top:106px;
+                bottom:0;
+                padding:20px 25px 20px 25px;
+                width:100%;
+                overflow:scroll;
+                padding-bottom:100px;
+                overflow-x: hidden;
+                z-index: -1;
+
+                .wrapper, .wrapper .extras{
+                    margin-top:-10px;
+                    opacity:0;
+
+                    .back-forth-menu{
+                        width:100%;
+                        margin-bottom:20px;
+                        position:relative;
+
+                        a:first-child, a:nth-child(2){
+                            font-family:ProximaNova-Bold,sans-serif;
+                            font-weight: 400;
+                            font-size: 12px;
+                            margin:0 0 10px;;
+                            padding:8px 10px 5px;
+                            border:0;
+                            display:block;
+                            width:49%;
+                            background:rgba(0,0,0,0.2);
+                            color:rgba(255, 255, 255, 0.8);
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            text-decoration: none;
+
+                            .fa{
+                                font-size: 14px;
+                            }
+                        }
+
+                        a:first-child:hover,a:nth-child(2):hover{
+                            background:rgba(0,0,0,0.5);
+                            color:#fff;
+                        }
+
+                        a:first-child{
+                            text-align: left;
+                            float:left;
+                        }
+
+                        a:nth-child(2){
+                            float:right;
+                            text-align: right;
+                        }
+                    }
+
+                    fieldset{
+                        border: 1px groove #333;
+                        padding:0 0.5em 0 0.5em;
+                        margin:0 0 0.4em 0;
+
+                        legend{
+                            width:auto;
+                            padding:0 10px;
+                            border-bottom: none;
+                        }
+
+                        .input-Holder{
+                            margin-bottom:5px;
+                            position:relative;
+                            z-index:701;
+
+                            label > details > p{
+                                margin-bottom:0;
+                            }
+                        }
+                    }
+
+                    .box-Holder{
+                        display:none;
+
+                        input[type="checkbox"],
+                        input[type="radio"]{
+                            position:absolute;
+                            opacity:0;
+                            z-index:-1;
+                        }
+
+                        label{
+                            position:relative;
+                            display:inline-block;
+                            margin-right:10px;
+                            margin-bottom:10px;
+                            padding-left:30px;
+                            padding-right:10px;
+                            line-height: 36px;
+                            cursor:pointer;
+                            z-index: 701;
+                        }
+
+                        label::before{
+                            content:' ';
+                            position:absolute;
+                            top:6px;
+                            left:0;
+                            display:block;
+                            width:24px;
+                            height:24px;
+                            border:2px solid #333;
+                            border-radius:4px;
+                            z-index: -1;
+                        }
+
+                        input[type="radio"] + label::before{
+                            border-radius: 18px;
+                        }
+
+                        input[type="checkbox"]:checked + label,
+                        input[type="radio"]:checked + label{
+                            padding-left:10px;
+                            color:#fff;
+                        }
+
+                        input[type="checkbox"]:checked + label::before,
+                        input[type="radio"]:checked + label::before{
+                            top:0;
+                            width:100%;
+                            height:100%;
+                            border-color: rgb(79, 190, 121);
+                            background: rgb(79, 190, 121);
+                        }
+
+                        label, label::before{
+                            -webkit-transition: 0.25s all ease;
+                            -moz-transition: 0.25s all ease;
+                            transition: 0.25s all ease;
+                        }
+                    }
+
+                    #takModell{
+                        display:none;
+
+                        input{
+                            position:relative;
+                            margin:0;
+                            padding:0;
+                            -webkit-appearance:none;
+                            -moz-appearance:none;
+                            appearance:none;
+                            z-index: -1;
+                        }
+
+                        label{
+                            position:relative;
+                            z-index: 701;
+                        }
+
+                        .un{
+                            background:#D24D57;
+                            //background:url(../img/showcase.jpeg);
+                        }
+
+                        .deux{
+                            background:#F5D76E;
+                            //background:url(../img/showcase.jpeg);
+                        }
+
+                        .trois{
+                            background:#03C9A9;
+                            //background:url(../img/showcase.jpeg);
+                        }
+
+                        .quatre{
+                            background:#663399;
+                            //background:url(../img/showcase.jpeg);
+                        }
+
+                        .cinq{
+                            background:#663399;
+                            //background:url(../img/showcase.jpeg);
+                        }
+
+                        .six{
+                            background:#03C9A9;
+                            //background:url(../img/showcase.jpeg);
+                        }
+
+                        .sept{
+                            background:#F5D76E;
+                            //background:url(../img/showcase.jpeg);
+                        }
+
+                        .huit{
+                            background:#D24D57;
+                            //background:url(../img/showcase.jpeg);
+                        }
+
+                        input:checked + .offert-takmodeller{
+                            -webkit-filter:none;
+                            -moz-filter:none;
+                            filter:none;
+                            opacity:1;
+                        }
+
+                        .offert-takmodeller{
+                            cursor:pointer;
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            display:inline-block;
+                            width:80px;
+                            height:80px;
+                            margin:1%;
+                            -webkit-transition: all 100ms ease-in;
+                            -moz-transition: all 100ms ease-in;
+                            transition: all 100ms ease-in;
+                            opacity:0.7;
+
+                            -webkit-filter: brightness(1.8) greyscale(1) opacity(0.7);
+                            -moz-filter: brightness(1.8) greyscale(1) opacity(0.7);
+                            filter: brightness(1.8) greyscale(1) opacity(0.7);
+                        }
+
+                        .offert-takmodeller:hover{
+                            opacity:0.9;
+                            -webkit-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
+                            -moz-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
+                            filter: brightness(1.2) greyscale(0.5) opacity(0.9);
+                        }
+                    }
+
+                    .roofPaper{
+
+                        div{
+                            width:8.5rem;
+                            height:3.5rem;
+                            position:relative;
+                        }
+
+                        > div > input{
+                            opacity:0;
+                        }
+
+                        > div > label{
+                            position:absolute;
+                            background:#e9513a;
+                            width:100%;
+                            height:100%;
+                            top:0;
+                            left:0;
+                            border-radius:3.125rem;
+                            -webkit-transition: background-color 0.2s ease-in-out;
+                            transition: background-color 0.2s ease-in-out;
+                        }
+
+                        > div label:after{
+                            content: "";
+                            display: block;
+                            width: 2.875rem;
+                            height: 2.875rem;
+                            border-radius: 3.125rem;
+                            cursor: pointer;
+                            position: absolute;
+                            top: 0.3125rem;
+                            z-index: 700;
+                            left: 0.5rem;
+                            background-color: #fffffd;
+                            -webkit-transition:left 0.2s ease-in-out;
+                            transition:left 0.2s ease-in-out;
+                        }
+
+                        > div input[type=checkbox]:checked ~ label{
+                            background-color:#4fbe79;
+                        }
+
+                        > div input[type=checkbox]:checked ~ label:after{
+                            left: 5.125rem;
+                        }
+                    }
+                }
+
+                .wrapper .extras{
+                    transition: all 0.5s ease;
+                    position:relative;
+                    z-index: -1;
+                }
+            }
+        }
+
+        a[data-page="offert-page"].activated{
+            background:#e96656;
+
+            ~ section{
+                background:#e96656;
+            }
+        }
+
+        a[data-page="fitting-page"].activated{
+            background:#86E2D5;
+
+            ~ section{
+                background:#86E2D5;
+            }
+        }
+
+        a.activated{
+            //background:#e96656;
+
+            ~ section{
+                //background:#e96656;
+                color:#fff;
+                z-index:705;
+
+                > .wrapper,
+                > .wrapper .extras.showing{
+                    transition: all 0.6s ease;
+                    margin-top:0px;
+                    opacity:1;
+                    z-index:705;
+
+                    fieldset > #takModell{
+                        display:flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+
+                    fieldset .box-Holder{
+                        display:block;
+                    }
+
+                    fieldset text-area{
+                        text-align: left !important;
+                    }
+
+                    .caret-up{
+                        display: inline-block;
+                        width:0;
+                        height:0;
+                        margin-left:2px;
+                        vertical-align: middle;
+                        border-bottom:4px dashed;
+                        border-right: 4px solid transparent;
+                        border-left:4px solid transparent;
+                    }
+                }
+            }
+        }
+
+        > li:first-child{
+            border-left:0;
+        }
     }
 }
 
-#offertSystem{
-    padding-left: 5%;
-    padding-right: 5%;
 
-    .offert-content-head{
+#checkout-wrapper{
+    padding-left:500px;
+    display:none;
+
+    .container{
         width:100%;
-        margin-bottom:30px;
+        padding:8% 10% 4%;
+        margin-top:-10px;
+        opacity:0;
+        transition: all 0.3s ease;
 
-        h2{
+        header{
             text-align: center;
-            font-weight: 800;
-            margin-bottom:0;
+
+            h3{
+                font-size: 40px;
+                font-weight: 400;
+            }
+            p{
+                font-family: ProximaNova-Thin, sans-serif;
+                font-weight: 200;
+                max-width: 500px;
+                margin:0 auto;
+                font-size: 18px;
+                letter-spacing: .5px;
+
+            }
         }
 
-        .lead{
+        .offert-process{
             text-align: center;
-            font-size: 1em;
-            margin-bottom:1rem !important;
-        }
-    }
+            padding:20px 0;
+            max-width:600px;
+            margin:20px auto 0;
+            border-bottom:1px solid #666;
 
-    .page-mover{
-        padding-left: 0;
-        padding-right:6rem;
-    }
-
-    .stages{
-        font-size: 0;
-        text-align: center;
-    }
-
-    /*
-    .stages:after{
-        content:'';
-        display:inline-block;
-        font-size: 0;
-        text-align: center;
-        width:100%;
-    }
-    */
-
-    .progressRadiobuttons{
-        display:none;
-    }
-
-    .stages label{
-        background:#fff;
-        margin:2rem;
-        //border:solid 5px #c0c0c0;
-        //border-radius:50%;
-        cursor:pointer;
-        display:inline-block;
-        font-size: 0;
-        font-weight: 700;
-        height:40px;
-        line-height: 30px;
-        position:relative;
-        text-align: center;
-        vertical-align: top;
-        width:40px;
-        z-index:1;
-        -webkit-touch-callout:none;
-        -webkit-user-callout:none;
-        -khtml-user-callout:none;
-        -moz-user-callout:none;
-        -ms-user-callout:none;
-        user-select:none;
-    }
-
-    /*
-    .stages label:after{
-        content: '\2713';
-        color: #0cc39f;
-        display:inline-block;
-        font-size: 16px;
-    }
-    */
-
-    #yx:checked ~ .stages label[for="yx"],
-    #kax:checked ~ .stages label[for="kax"],
-    #kolme:checked ~ .stages label[for="kolme"],
-    #nelja:checked ~ .stages label[for="nelja"],
-    #viisi:checked ~ .stages label[for="viisi"]{
-        border-color:#0cc39f;
-    }
-
-    .stages label .active{
-        border-color: purple !important;
-    }
-
-    /*
-    #yx:checked ~ .stages label,
-    #kax:checked ~ .stages label[for="yx"] ~ label,
-    #kolme:checked ~ .stages label[for="kax"] ~ label,
-    #nelja:checked ~ .stages label[for="kolme"] ~ label,
-    #viisi:checked ~ .stages label[for="nelja"] ~ label{
-	font-size: 1rem;
-    }
-    */
-
-    /*
-    #yx:checked ~ .stages label:after,
-    #kax:checked ~ .stages label[for="yx"] ~ label:after,
-    #kolme:checked ~ .stages label[for="kax"] ~ label:after,
-    #nelja:checked ~ .stages label[for="kolme"] ~ label:after,
-    #viisi:checked ~ .stages label[for="nelja"] ~ label:after{
-	    display: none;
-    }
-    */
-
-
-    .progressBaren{
-        width:80%;
-        margin-left: 10%;
-    }
-
-    .progressBaren > span{
-        background: #c0c0c0;
-        display: inline-block;
-        height: 5px;
-        transform: translateY(-3.55em);
-        transition: 0.3s;
-        width:0;
-        margin-right: auto !important;
-        margin-left: auto !important;
-    }
-
-    #kax:checked ~ .progressBaren span{
-        width: calc(80%/4*1);
-    }
-
-    #kolme:checked ~ .progressBaren span{
-        width: calc(80%/4*2);
-    }
-
-    #nelja:checked ~ .progressBaren span{
-        width: calc(80%/4*3);
-    }
-
-    #viisi:checked ~ .progressBaren span{
-        width: calc(80%/4*4);
-    }
-
-    .offert-content-pages {
-        display:none;
-    }
-
-    #yx:checked ~ [data-panel="yx"],
-    #kax:checked ~ [data-panel="kax"],
-    #kolme:checked ~ [data-panel="kolme"],
-    #nelja:checked ~ [data-panel="nelja"],
-    #viisi:checked ~ [data-panel="viisi"]{
-        display:block;
-    }
-
-    #takModell{
-        display:flex;
-        flex-wrap:wrap;
-
-        input{
-            margin:0;
-            padding:0;
-            -webkit-appearance:none;
-            -moz-appearance:none;
-            appearance:none;
-        }
-
-        .un{
-            background:#D24D57;
-            //background:url(../img/showcase.jpeg);
-        }
-
-        .deux{
-            background:#F5D76E;
-            //background:url(../img/showcase.jpeg);
-        }
-
-        .trois{
-            background:#03C9A9;
-            //background:url(../img/showcase.jpeg);
-        }
-
-        .quatre{
-            background:#663399;
-            //background:url(../img/showcase.jpeg);
-        }
-
-        .cinq{
-            background:#663399;
-            //background:url(../img/showcase.jpeg);
-        }
-
-        .six{
-            background:#03C9A9;
-            //background:url(../img/showcase.jpeg);
-        }
-
-        .sept{
-            background:#F5D76E;
-            //background:url(../img/showcase.jpeg);
-        }
-
-        .huit{
-            background:#D24D57;
-            //background:url(../img/showcase.jpeg);
-        }
-
-        input:checked + .offert-takmodeller{
-            -webkit-filter:none;
-            -moz-filter:none;
-            filter:none;
-            opacity:1;
-        }
-
-        .offert-takmodeller{
-            cursor:pointer;
-            background-size:cover;
-            background-repeat:no-repeat;
-            display:inline-block;
-            width:80px;
-            height:80px;
-            margin:1%;
-            -webkit-transition: all 100ms ease-in;
-            -moz-transition: all 100ms ease-in;
-            transition: all 100ms ease-in;
-            opacity:0.7;
-
-            -webkit-filter: brightness(1.8) greyscale(1) opacity(0.7);
-            -moz-filter: brightness(1.8) greyscale(1) opacity(0.7);
-            filter: brightness(1.8) greyscale(1) opacity(0.7);
-        }
-
-        .offert-takmodeller:hover{
-            opacity:0.9;
-            -webkit-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
-            -moz-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
-            filter: brightness(1.2) greyscale(0.5) opacity(0.9);
-        }
-    }
-
-
-    .roofJobToDo,
-    .roofModels,
-    .roofMaterials,
-    .roofMeasurements,
-    .roofToWho,
-    .roofWhenToBegin,
-    .roofSecurity,
-    .roofWaterDrainage,
-    .roofOther,
-    .roofExtra,
-    .roofPersonalInfo{
-
-        fieldset{
-            border:1px groove #333333 !important;
-            padding:0 0.5em 0em 0.5em !important;
-            margin:0 0 0.4em 0 !important;
-
-            legend{
-                width: auto;
-                padding: 0 10px;
-                border-bottom:none;
+            i {
+                font-size: 50px;
+                margin-bottom:10px;
             }
 
-            .input-Holder{
-                margin-bottom:5px;
+            h5{
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color:#666;
+                margin-bottom:10px;
+            }
+        }
 
-                label{
+        .offert-contact-info{
+            margin:30px auto 0;
 
-                    details{
+            > .row {
+                position:relative;
+                overflow:hidden;
+                margin-left: 0;
+                margin-right: 0;
+                z-index:-1;
 
-                        p{
-                            margin-bottom:0;
+                > div {
+                    position:relative;
+                    padding:30px;
+
+                    > form {
+
+                        > h4{
+                            font-weight: 400;
+                            border-bottom:1px solid #666;
+                            padding-bottom:5px;
+                            margin-bottom:20px;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            color:#666,
+                        }
+
+                        .row{
+                            color:#666;
+                            font-size: 14px;
+                            > div{
+
+                                label{
+                                    margin-bottom:5px;
+
+                                    span{
+                                        color:#e96656;
+                                    }
+                                }
+
+                                input{
+                                    margin-bottom:10px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+                > #offert-submit-holder{
+                    overflow:hidden;
+                    margin-left: 0;
+                    margin-right: 0;
+
+                    > div{
+                        text-align: center;
+
+                        #submit-offert{
+                            position:relative;
+                            background:#34d293;
+                            color:#fff;
+                            border-radius:99em;
+                            text-align: left;
+                            text-transform: none;
+                            font-size: 13px;
+                            padding:15px 50px 15px 70px;
+                            font-weight: 400;
+                            cursor:pointer;
+                            z-index: -1;
+
+                            i{
+                                position:absolute;
+                                color:#fff;
+                                font-size: 30px;
+                                top:50%;
+                                transform:translateY(-50%);
+                                left:25px;
+                            }
+
+                            strong{
+                                display:block;
+                                font-size: 400;
+                                font-size: 20px;
+                            }
                         }
                     }
                 }
             }
-
-            #toDoCheckBoxes, #roofMaterial, #roofToWho, #securityCheckBoxes, #waterCheckBoxes, #otherCheckBoxes {
-
-                .box-Holder{
-
-                    input[type="checkbox"],
-                    input[type="radio"]{
-                        position:absolute;
-                        opacity:0;
-                        z-index:-1;
-                    }
-
-                    label{
-                        position:relative;
-                        display:inline-block;
-                        margin-right:10px;
-                        margin-bottom:10px;
-                        padding-left:30px;
-                        padding-right:10px;
-                        line-height: 36px;
-                        cursor:pointer;
-                        z-index: 701;
-                    }
-
-                    label::before{
-                        content:' ';
-                        position:absolute;
-                        top:6px;
-                        left:0;
-                        display:block;
-                        width:24px;
-                        height:24px;
-                        border:2px solid #333;
-                        border-radius:4px;
-                        z-index: -1;
-                    }
-
-                    input[type="radio"] + label::before{
-                        border-radius: 18px;
-                    }
-
-                    //Checked inputs
-
-                    input[type="checkbox"]:checked + label,
-                    input[type="radio"]:checked + label{
-                        padding-left:10px;
-                        color:#fff;
-                    }
-
-                    input[type="checkbox"]:checked + label::before,
-                    input[type="radio"]:checked + label::before{
-                        top:0;
-                        width:100%;
-                        height:100%;
-                        border-color: rgb(79, 190, 121);
-                        background: rgb(79, 190, 121);
-                    }
-
-                    label, label::before{
-                        -webkit-transition: 0.25s all ease;
-                        -moz-transition: 0.25s all ease;
-                        transition: 0.25s all ease;
-                    }
-                }
-            }
         }
     }
+}
 
+#checkout-wrapper.showing{
+    display:block;
 
-    .offert-advanced-content{
+    .container{
+        overflow: hidden;
+        opacity:1;
+        margin-top:0;
+        transition: all 0.5s ease;
+    }
 
-        .roofPaper{
+    .offert-contact-info > .row{
+        z-index:705;
 
-            div{
-                width:8.5rem;
-                height:3.5rem;
-                position:relative;
-            }
+        #offert-submit-holder{
 
-            > div > input{
-                opacity:0;
-            }
-
-            > div > label{
-                position:absolute;
-                background:#e9513a;
-                width:100%;
-                height:100%;
-                top:0;
-                left:0;
-                border-radius:3.125rem;
-                -webkit-transition: background-color 0.2s ease-in-out;
-                transition: background-color 0.2s ease-in-out;
-            }
-
-            > div label:after{
-                content: "";
-                display: block;
-                width: 2.875rem;
-                height: 2.875rem;
-                border-radius: 3.125rem;
-                cursor: pointer;
-                position: absolute;
-                top: 0.3125rem;
-                z-index: 700;
-                left: 0.5rem;
-                background-color: #fffffd;
-                -webkit-transition:left 0.2s ease-in-out;
-                transition:left 0.2s ease-in-out;
-            }
-
-            > div input[type=checkbox]:checked ~ label{
-                background-color:#4fbe79;
-            }
-
-            > div input[type=checkbox]:checked ~ label:after{
-                left: 5.125rem;
+            > div > #submit-offert{
+                z-index:705;
             }
         }
     }

@@ -1,0 +1,209 @@
+.lego-page-btn{
+    background:#03C9A9;
+    border-radius:25px;
+    margin-top:20px;
+    color:#fff;
+    padding:15px 22px 17px 22px;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 2px 10px -1px rgba(0,0,0,0.68);
+    -moz-box-shadow: 1px 2px 10px -1px rgba(0,0,0,0.68);
+    box-shadow: 1px 2px 10px -1px rgba(0,0,0,0.68);
+}
+
+.lego-page-btn:hover{
+    background:darken(#03C9A9, 5%);
+    color:darken(#fff, 1%);
+}
+
+.lego-page-btn:active{
+    -webkit-box-shadow: inset 11px -1px 143px -27px rgba(0,0,0,0.68);
+    -moz-box-shadow: inset 11px -1px 143px -27px rgba(0,0,0,0.68);
+    box-shadow: inset 11px -1px 143px -27px rgba(0,0,0,0.68);
+}
+
+
+section.showcase > .special-page{
+    margin:0;
+    width:100%;
+    height:50vh;
+    padding:30px 0;
+    background:url(../img/showcase.jpeg) no-repeat 0 -100px;
+
+    .special-page-header{
+        width:100%;
+        color:#fff;
+        text-align: center;
+        position:relative;
+        top:35%;
+    }
+}
+
+
+section.section-a > .special-page{
+    background: #ccc;
+    padding:1% 0 12% 0;
+
+    .special-content{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width:70%;
+        margin:0px auto 10px auto;
+        padding:30px;
+        box-sizing: padding-box;
+        border-top:1px solid #bbb;
+
+        .special-figures{
+            width:20%;
+
+            figure > i{
+                font-size: 3.5em;
+            }
+
+            figure > figcaption{
+
+                h4{
+                    font-size: 1.2em;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size: 1em;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}
+
+
+section.section-b > .special-page{
+    background:#eee;
+    padding:4% 0 0 0;
+
+    .special-content-heading{
+
+        h5 {
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+    }
+
+    .special-content-figures{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width:70%;
+        margin:0px auto 10px auto;
+        padding:30px 0 0;
+        box-sizing: padding-box;
+
+        figure{
+            width:30%;
+        }
+
+        figure > i{
+            font-size: 3.5em;
+        }
+
+        figure > figcaption{
+
+            h4{
+                font-size: 1.2em;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 1em;
+                font-weight: 200;
+            }
+        }
+    }
+
+    .special-testimonials{
+        margin-top:40px;
+        border-top:1px solid #bbb;
+        border-bottom:1px solid #bbb;
+
+        h4{
+            font-weight: 600;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top:20px
+        }
+
+        .special-content-customers{
+            padding:30px 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content:space-around;
+        }
+    }
+}
+
+section.section-c > .special-page{
+
+}
+
+section.section-d > .special-page{
+    padding-bottom:7%;
+
+    .special-text-content{
+        margin:7% 0 3% 0;
+        text-align: center;
+
+        h3{
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color:#777;
+        }
+    }
+
+    .special-product-holder{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        figure{
+            height:350px;
+            margin:1px;
+            background:red;
+        }
+    }
+
+    .special-product-holder.first-holder{
+
+        figure:nth-child(1){
+            flex:55%;
+        }
+        figure:nth-child(2){
+            flex:22.5%;
+        }
+        figure:nth-child(3){
+            flex:22.5%;
+        }
+    }
+
+    .special-product-holder.second-holder{
+        figure:nth-child(1){
+            flex:22.5%;
+        }
+        figure:nth-child(2){
+            flex:22.5%;
+        }
+        figure:nth-child(3){
+            flex:55%;
+        }
+    }
+}
