@@ -119,12 +119,19 @@ var setItUp = (function(){
         });
 
         $('.contact-button').on('click', function(){
-            $('.contact-slide').fadeIn(700);
+            var contactSlide = $('.contact-slide');
+            $(contactSlide).addClass('display-contact');
+            
+
+            //$('.contact-slide').addClass('display-contact').fadeIn(700);
+            //$('.contact-slide').fadeIn(700);
             $('.opacity-overlay').fadeIn(300);
         });
 
         $('.opacity-overlay, .contact-close-button').on('click', function(){
-            $('.contact-slide').fadeOut(700);
+            $('.contact-slide').removeClass('display-contact');
+
+            //$('.contact-slide').fadeOut(700);
             $('.opacity-overlay').fadeOut(300);
         });
 
