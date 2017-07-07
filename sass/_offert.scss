@@ -81,6 +81,13 @@ body{
                 overflow-x: hidden;
                 z-index: -1;
 
+                .wrapper > .extra-roof-dropBtn{
+                    font-size: 1.1em;
+                    color:#333;
+                    padding:10px;
+                    position:relative;
+                    top:-5px;
+                }
                 .wrapper, .wrapper .extras{
                     margin-top:-10px;
                     opacity:0;
@@ -127,14 +134,17 @@ body{
                     }
 
                     fieldset{
-                        border: 1px groove #333;
+                        border: 1px groove rgba(51, 51, 51, 0.4);
                         padding:0 0.5em 0 0.5em;
-                        margin:0 0 0.4em 0;
+                        margin:0 0 1.3em 0;
 
                         legend{
                             width:auto;
                             padding:0 10px;
                             border-bottom: none;
+                            font-size: 1.3em;
+                            font-weight: 600;
+                            letter-spacing: 1px;
                         }
 
                         .input-Holder{
@@ -144,6 +154,53 @@ body{
 
                             label > details > p{
                                 margin-bottom:0;
+                            }
+                        }
+
+                        > .security-obstacles{
+
+                            table{
+                                width:100%;
+                                border-collapse:collapse;
+                                background:#e96656;
+                                border-bottom:2rem solid #e96656;
+                                //border:1px solid #fff;
+                                text-align: center;
+
+                                tbody{
+                                    display:table-row-group;
+                                    vertical-align: middle;
+                                    border-color:inherit;
+                                    border:1px solid #ccc;
+
+                                    tr{
+                                        padding:5px;
+                                        margin:1px;
+
+                                        td{
+                                            border:5px solid #e96656;
+                                            background:rgba(0, 0, 0, .2);
+                                        }
+
+                                        td.item{
+                                            text-align: left;
+                                            padding-left:20px;
+                                        }
+
+                                        a{
+                                            display:block;
+                                            color:#fff;
+                                            padding:5px;
+                                            text-decoration: none;
+                                            background-color:transparent;
+                                            text-align: center;
+                                        }
+
+                                        a:hover{
+                                            background:rgba(0,0,0,0.5);
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -297,6 +354,40 @@ body{
                             -webkit-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
                             -moz-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
                             filter: brightness(1.2) greyscale(0.5) opacity(0.9);
+                        }
+                    }
+
+                    #standardized-obstacles{
+                        display:flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        //padding:0 1.4em;
+
+                        .standard-explanation{
+                            flex:calc(100% / 3);
+                            margin-right:2.5em;
+                            border-right:1px groove rgba(51, 51, 51, 0.4);
+                            h4{
+                                margin:0;
+                            }
+
+                            #standard-obstacle-list{
+                                padding-left:10px;
+                                padding-top:10px;
+
+                                li{
+                                    margin-bottom:3px;
+                                }
+                            }
+                        }
+
+                        .standard-choices{
+                            flex:calc(100% / 3);
+                            //margin:0 auto;
+                        }
+
+                        .standard-advanced-instructions{
+                            border-top:1px groove rgba(51, 51, 51, 0.4);
                         }
                     }
 

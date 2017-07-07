@@ -8667,6 +8667,12 @@ body {
         padding-bottom: 100px;
         overflow-x: hidden;
         z-index: -1; }
+        #menu-side-bar #side-bar-nav > li > section .wrapper > .extra-roof-dropBtn {
+          font-size: 1.1em;
+          color: #333;
+          padding: 10px;
+          position: relative;
+          top: -5px; }
         #menu-side-bar #side-bar-nav > li > section .wrapper, #menu-side-bar #side-bar-nav > li > section .wrapper .extras {
           margin-top: -10px;
           opacity: 0; }
@@ -8700,19 +8706,51 @@ body {
               float: right;
               text-align: right; }
           #menu-side-bar #side-bar-nav > li > section .wrapper fieldset, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset {
-            border: 1px groove #333;
+            border: 1px groove rgba(51, 51, 51, 0.4);
             padding: 0 0.5em 0 0.5em;
-            margin: 0 0 0.4em 0; }
+            margin: 0 0 1.3em 0; }
             #menu-side-bar #side-bar-nav > li > section .wrapper fieldset legend, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset legend {
               width: auto;
               padding: 0 10px;
-              border-bottom: none; }
+              border-bottom: none;
+              font-size: 1.3em;
+              font-weight: 600;
+              letter-spacing: 1px; }
             #menu-side-bar #side-bar-nav > li > section .wrapper fieldset .input-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset .input-Holder {
               margin-bottom: 5px;
               position: relative;
               z-index: 701; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset .input-Holder label > details > p, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset .input-Holder label > details > p {
                 margin-bottom: 0; }
+            #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table {
+              width: 100%;
+              border-collapse: collapse;
+              background: #e96656;
+              border-bottom: 2rem solid #e96656;
+              text-align: center; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody {
+                display: table-row-group;
+                vertical-align: middle;
+                border-color: inherit;
+                border: 1px solid #ccc; }
+                #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr {
+                  padding: 5px;
+                  margin: 1px; }
+                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr td, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr td {
+                    border: 5px solid #e96656;
+                    background: rgba(0, 0, 0, 0.2); }
+                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr td.item, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr td.item {
+                    text-align: left;
+                    padding-left: 20px; }
+                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr a, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr a {
+                    display: block;
+                    color: #fff;
+                    padding: 5px;
+                    text-decoration: none;
+                    background-color: transparent;
+                    text-align: center; }
+                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr a:hover, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr a:hover {
+                    background: rgba(0, 0, 0, 0.5); }
           #menu-side-bar #side-bar-nav > li > section .wrapper .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .box-Holder {
             display: none; }
             #menu-side-bar #side-bar-nav > li > section .wrapper .box-Holder input[type="checkbox"],
@@ -8815,6 +8853,25 @@ body {
               -webkit-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
               -moz-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
               filter: brightness(1.2) greyscale(0.5) opacity(0.9); }
+          #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles .standard-explanation, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles .standard-explanation {
+              flex: calc(100% / 3);
+              margin-right: 2.5em;
+              border-right: 1px groove rgba(51, 51, 51, 0.4); }
+              #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles .standard-explanation h4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles .standard-explanation h4 {
+                margin: 0; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles .standard-explanation #standard-obstacle-list, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles .standard-explanation #standard-obstacle-list {
+                padding-left: 10px;
+                padding-top: 10px; }
+                #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles .standard-explanation #standard-obstacle-list li, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles .standard-explanation #standard-obstacle-list li {
+                  margin-bottom: 3px; }
+            #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles .standard-choices, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles .standard-choices {
+              flex: calc(100% / 3); }
+            #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles .standard-advanced-instructions, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles .standard-advanced-instructions {
+              border-top: 1px groove rgba(51, 51, 51, 0.4); }
           #menu-side-bar #side-bar-nav > li > section .wrapper .roofPaper div, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .roofPaper div {
             width: 8.5rem;
             height: 3.5rem;
@@ -10029,7 +10086,8 @@ footer{
         width: 100%;
         border-collapse: collapse;
         background: #fff;
-        border: 4rem solid #fff; }
+        border: 4rem solid #fff;
+        margin-bottom: 10px; }
         .section-checkout .container .cart table tbody {
           display: table-row-group;
           vertical-align: middle;
@@ -10039,7 +10097,7 @@ footer{
             display: table-row;
             vertical-align: inherit; }
             .section-checkout .container .cart table tbody tr td, .section-checkout .container .cart table tbody tr th {
-              padding: 5px;
+              padding: 10px;
               margin: 1px; }
               .section-checkout .container .cart table tbody tr td a, .section-checkout .container .cart table tbody tr th a {
                 display: block;

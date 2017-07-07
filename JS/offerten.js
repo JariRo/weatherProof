@@ -7,6 +7,8 @@ var setOffertUp = (function(){
         var extrasButton = document.querySelector('.extra-roof-dropBtn');
         var firstNavItem = document.querySelector('.menu-1 > a');
         var backForthNavButton = document.querySelectorAll('.back-forth-menu > a');
+        var addObstacleButton = document.querySelectorAll('.quant > .quant-up');
+        var subtractObstacleButton = document.querySelectorAll('.quant > .quant-down');
 
         var setActivated = function(element){
             var oldTarget = document.querySelector('.activated');
@@ -25,6 +27,22 @@ var setOffertUp = (function(){
                 }
             }
         }
+
+        for (var i = 0; i < addObstacleButton.length; i++){
+            addObstacleButton[i].addEventListener('click', function(event){
+                event.preventDefault();
+                var addObs = this;
+                addObstacle(addObs);
+            })
+        };
+
+        for (var i = 0; i < subtractObstacleButton.length; i++){
+            subtractObstacleButton[i].addEventListener('click', function(event){
+                event.preventDefault();
+                var subObs = this;
+                subtractObstacle(subObs);
+            })
+        };
 
         for (var i = 0; i < menuNavItems.length; i++){
             menuNavItems[i].addEventListener('click', function(event) {
@@ -67,6 +85,20 @@ var setOffertUp = (function(){
 
     var validateForm = function(){
 
+    }
+
+    var subtractObstacle = function(subObs){
+        let countElement = $(subObs).parent().siblings('td.item-count');
+        if ($(countElement).text() > 0){
+            countElement.text(parseInt(countElement.text())-1);
+            return;
+        }
+    }
+
+    var addObstacle = function(addObs){
+        let countElement = $(addObs).parent().siblings('td.item-count');
+        countElement.text(parseInt(countElement.text())+1);
+        return;
     }
 
     var addClass = function(classToAdd, theElement){

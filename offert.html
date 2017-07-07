@@ -169,9 +169,148 @@
                                 </fieldset>
                             </div>
 
+                            <div class="obstacle-measures">
+                                <fieldset class="form-group">
+                                    <legend>Hinder</legend>
+                                    <div id="standardized-obstacles">
+                                        <div class="standard-explanation">
+                                            <h4>Standard för: <span id="roof-model-standard-obstacles">Sadeltak</span></h4>
+                                            <ul id="standard-obstacle-list" class="list-unstyled">
+                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                    3x skorstenar
+                                                </li>
+                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                     3x skorstenar
+                                                </li>
+                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                     3x skorstenar
+                                                </li>
+                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                     3x skorstenar
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="standard-choices">
+                                            <div class="box-Holder">
+                                                <input type="radio" name="standard-obstacles" id="standard-choice" checked>
+                                                <label for="standard-choice">Standard</label>
+                                            </div>
+
+                                            <div class="box-Holder">
+                                                <input type="radio" name="standard-obstacles" id="no-obstacles">
+                                                <label for="no-obstacles">Inga hinder</label>
+                                            </div>
+
+                                            <div class="box-Holder">
+                                                <input type="radio" name="standard-obstacles" id="own-obstacles">
+                                                <label for="own-obstacles">Egna hinder</label>
+                                            </div>
+                                        </div>
+                                        <div class="standard-advanced-instructions">
+                                            <h4>Stämmer inte listan?</h4>
+                                            <p>Du kan justera vilken typ och antal hinder i de avancerade inställningarna</p>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
                             <a href="#" class="extra-roof-dropBtn">Avancerat <span class="caret"></span></a>
                             <div class="extras">
                                 <div class="roofSecurity">
+                                    <fieldset class="form-group">
+                                        <legend>Hinder</legend>
+                                        <div class="security-obstacles">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Skorsten</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Stos</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Fönster</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Ventilationshuv</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <div class="roofWaterDrainage">
+                                    <fieldset class="form-group">
+                                        <legend>Vattenavrinning</legend>
+                                        <div class="col-md-12 control-group" id="waterCheckBoxes">
+
+                                            <div class="col-md-6 box-Holder">
+                                                <input id="roofDownpipes" type="checkbox" name="waterMeasures" value="roofDownpipes">
+                                                <label for="roofDownpipes">Stuprör</label>
+                                            </div>
+
+                                            <div class="col-md-6 box-Holder">
+                                                <input id="roofGutters" type="checkbox" name="securityMeasures" value="roofGutters">
+                                                <label for="roofGutters">Hängrännor</label>
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+                                <div class="roofOther">
                                     <fieldset class="form-group">
                                         <legend>Taksäkerhet</legend>
                                         <div class="col-md-12 control-group" id="securityCheckBoxes">
@@ -200,69 +339,6 @@
                                                 <input id="roofSnowFences" type="checkbox" name="securityMeasures" value="roofSnowFences">
                                                 <label for="roofSnowFences">Snörasskydd</label>
                                             </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="juha" type="checkbox" name="waterMeasures" value="juha">
-                                                <label for="juha">juhadd78</label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-
-                                <div class="roofWaterDrainage">
-                                    <fieldset class="form-group">
-                                        <legend>Vattenavrinning</legend>
-                                        <div class="col-md-12 control-group" id="waterCheckBoxes">
-
-                                            <div class="col-md-6 box-Holder">
-                                                <input id="roofDownpipes" type="checkbox" name="waterMeasures" value="roofDownpipes">
-                                                <label for="roofDownpipes">Stuprör</label>
-                                            </div>
-
-                                            <div class="col-md-6 box-Holder">
-                                                <input id="roofGutters" type="checkbox" name="securityMeasures" value="roofGutters">
-                                                <label for="roofGutters">Hängrännor</label>
-                                            </div>
-
-                                        </div>
-                                    </fieldset>
-                                </div>
-
-                                <div class="roofOther">
-                                    <fieldset class="form-group">
-                                        <legend>Övrigt</legend>
-                                        <div class="col-md-12 control-group" id="otherCheckBoxes">
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofFootPlate" type="checkbox" name="otherMeasures" value="roofFootPlate">
-                                                <label for="roofFootPlate">Fotplåt</label>
-                                            </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofCrestPlate" type="checkbox" name="otherMeasures" value="roofCrestPlate">
-                                                <label for="roofCrestPlate">Krönplåt</label>
-                                            </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofSmokeDamper" type="checkbox" name="otherMeasures" value="roofSmokeDamper">
-                                                <label for="roofSmokeDamper">Röklucka</label>
-                                            </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofSpigot" type="checkbox" name="otherMeasures" value="roofSpigot">
-                                                <label for="roofSpigot">Stos</label>
-                                            </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofDormerWindow" type="checkbox" name="otherMeasures" value="roofDormerWindow">
-                                                <label for="roofDormerWindow">Takkupa</label>
-                                            </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofChimney" type="checkbox" name="otherMeasures" value="roofChimney">
-                                                <label for="roofChimney">Skorssten</label>
-                                            </div>
-
                                         </div>
                                     </fieldset>
                                 </div>
