@@ -9181,7 +9181,12 @@ body {
         font-size: 2.7rem; }
       .section-b .index-page .content p {
         font-size: 1.6rem; }
-      .section-b .index-page .content #SixStepProcess {
+      .section-b .index-page .content figure {
+        width: 90%;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto; }
+      .section-b .index-page .content figure > #SixStepProcess {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 10px; }
@@ -9290,18 +9295,23 @@ body {
   .section-c .index-page {
     background-color: white; }
     .section-c .index-page .content {
-      text-align: center; }
+      text-align: center;
+      padding: 0 5%; }
       .section-c .index-page .content hr {
         width: 77%;
         border-color: #ccc; }
       .section-c .index-page .content div {
         padding-top: 7%; }
-        .section-c .index-page .content div .fa {
-          font-size: 50px; }
-        .section-c .index-page .content div p {
-          width: 85%;
-          margin-right: auto;
-          margin-left: auto; }
+        .section-c .index-page .content div figure {
+          width: 100%; }
+          .section-c .index-page .content div figure img {
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto; }
+          .section-c .index-page .content div figure p {
+            width: 85%;
+            margin-right: auto;
+            margin-left: auto; }
       .section-c .index-page .content h3 {
         font-size: 2.7rem; }
   .section-c .about-page {

@@ -73,12 +73,6 @@ var setItUp = (function(){
                 var checkedRadio = $('#systemsNavigation > .input-box > input:checked').attr('id');
                 $('.system-category[data-systems="' +checkedRadio+ '"]').show()
                 $('.'+checkedRadio).fadeTo('fast', 1);
-
-                /*
-                if ( $('#systemsNavigation-roof').length ){
-                    showRoofs();
-                }
-                */
             }
         };
 
@@ -121,7 +115,7 @@ var setItUp = (function(){
         $('.contact-button').on('click', function(){
             var contactSlide = $('.contact-slide');
             $(contactSlide).addClass('display-contact');
-            
+
 
             //$('.contact-slide').addClass('display-contact').fadeIn(700);
             //$('.contact-slide').fadeIn(700);
@@ -155,8 +149,8 @@ var setItUp = (function(){
     };
 
     var setAngleColor = function(){
-        var theTopAngle = $('.triangles-top');
         var theBottomAngle = $('.triangles-bottom');
+        var theTopAngle = $('.triangles-top');
 
         $(theTopAngle).each(function(index){
             var thePrevColor = $(this).closest('section').prev().children('.container').css('background-color');
@@ -164,11 +158,13 @@ var setItUp = (function(){
             $(this).find('.triangle-right-top').css('border-color', "transparent " + thePrevColor + " transparent transparent");
         });
 
+
         $(theBottomAngle).each(function(index){
             var theNextColor = $(this).closest('section').next().children('.container').css('background-color');
             $(this).find('.triangle-left-bottom').css('border-color', "transparent transparent " + theNextColor + " transparent");
             $(this).find('.triangle-right-bottom').css('border-color', "transparent transparent transparent " + theNextColor);
         });
+
     };
 
     var doOffert = function(){
