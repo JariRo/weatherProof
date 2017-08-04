@@ -8722,34 +8722,34 @@ body {
               z-index: 701; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset .input-Holder label > details > p, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset .input-Holder label > details > p {
                 margin-bottom: 0; }
-            #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table {
+            #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > div table, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > div table {
               width: 100%;
               border-collapse: collapse;
               background: #e96656;
               border-bottom: 2rem solid #e96656;
               text-align: center; }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody {
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > div table tbody, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > div table tbody {
                 display: table-row-group;
                 vertical-align: middle;
                 border-color: inherit;
                 border: 1px solid #ccc; }
-                #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr {
+                #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > div table tbody tr, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > div table tbody tr {
                   padding: 5px;
                   margin: 1px; }
-                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr td, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr td {
+                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > div table tbody tr td, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > div table tbody tr td {
                     border: 5px solid #e96656;
                     background: rgba(0, 0, 0, 0.2); }
-                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr td.item, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr td.item {
+                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > div table tbody tr td.item, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > div table tbody tr td.item {
                     text-align: left;
                     padding-left: 20px; }
-                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr a, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr a {
+                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > div table tbody tr a, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > div table tbody tr a {
                     display: block;
                     color: #fff;
                     padding: 5px;
                     text-decoration: none;
                     background-color: transparent;
                     text-align: center; }
-                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > .security-obstacles table tbody tr a:hover, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > .security-obstacles table tbody tr a:hover {
+                  #menu-side-bar #side-bar-nav > li > section .wrapper fieldset > div table tbody tr a:hover, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset > div table tbody tr a:hover {
                     background: rgba(0, 0, 0, 0.5); }
           #menu-side-bar #side-bar-nav > li > section .wrapper .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .box-Holder {
             display: none; }
@@ -8799,6 +8799,12 @@ body {
               -webkit-transition: 0.25s all ease;
               -moz-transition: 0.25s all ease;
               transition: 0.25s all ease; }
+          #menu-side-bar #side-bar-nav > li > section .wrapper #roofMaterial, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #roofMaterial {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; }
+            #menu-side-bar #side-bar-nav > li > section .wrapper #roofMaterial .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #roofMaterial .box-Holder {
+              width: 50%; }
           #menu-side-bar #side-bar-nav > li > section .wrapper #takModell, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #takModell {
             display: none; }
             #menu-side-bar #side-bar-nav > li > section .wrapper #takModell input, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #takModell input {

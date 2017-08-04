@@ -5,10 +5,12 @@ var setOffertUp = (function(){
         var menuNavItems = document.querySelectorAll("#side-bar-nav > li > a");
         var checkoutContent = document.querySelector('#checkout-wrapper');
         var extrasButton = document.querySelector('.extra-roof-dropBtn');
+        var standardObsticles = document.querySelectorAll('.standard-choices input');
         var firstNavItem = document.querySelector('.menu-1 > a');
         var backForthNavButton = document.querySelectorAll('.back-forth-menu > a');
         var addObstacleButton = document.querySelectorAll('.quant > .quant-up');
         var subtractObstacleButton = document.querySelectorAll('.quant > .quant-down');
+
 
         var setActivated = function(element){
             var oldTarget = document.querySelector('.activated');
@@ -61,23 +63,53 @@ var setOffertUp = (function(){
             })
         }
 
-        if ( extrasButton !== null){
-            extrasButton.addEventListener('click', function(event){
-                event.preventDefault();
-                var theCaret = document.querySelector('.extra-roof-dropBtn > span');
-                var theExtras = document.querySelector('.extras');
+        if ( extrasButton !== null ){
+            var theCaret = document.querySelector('.extra-roof-dropBtn > span');
+            var theExtras = document.querySelector('.extras');
+            var prevRad = null;
 
-                if ( hasClass(this, 'showing') ){
-                    $(this).removeClass('showing');
-                    $('.extras').removeClass('showing');
-                    theCaret.className = 'caret';
+            var showExtraSection = function(theSection, theArrow){
+                if ( hasClass(extrasButton, 'showing') ){
+                    removeShowing(theArrow);
                 }
                 else {
-                    addClass('showing', this);
-                    addClass('showing', theExtras);
-                    theCaret.className = "caret-up";
+                    addShowing(theSection, theArrow);
                 }
+            };
+
+            var removeShowing = function(theArrow){
+                $(extrasButton).removeClass('showing');
+                $('.extras').removeClass('showing');
+                theArrow.className = 'caret';
+            }
+
+            var addShowing = function(theSection, theArrow){
+                if (hasClass(extrasButton, 'showing')){
+                    return;
+                }
+                else{
+                    addClass('showing', extrasButton);
+                    addClass('showing', theSection);
+                    theArrow.className = "caret-up";
+                }
+            };
+
+            extrasButton.addEventListener('click', function(event){
+                event.preventDefault();
+                showExtraSection(theExtras, theCaret);
             });
+
+
+            for (var j = 0; j < standardObsticles.length; j++){
+                standardObsticles[j].addEventListener('click', function(){
+                    if (this.id == "standard-choice"){
+                        removeShowing(theCaret);
+                    }
+                    else if(this.id == "own-obstacles"){
+                        addShowing(theExtras, theCaret);
+                    }
+                });
+            };
         };
 
         firstNavItem.focus();

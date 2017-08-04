@@ -116,6 +116,16 @@
                                         </div>
 
                                         <div class="col-md-4 box-Holder">
+                                            <input type="radio" name="material" id="zink-shine">
+                                            <label for="zink-shine">Zink Valsblank</label>
+                                        </div>
+
+                                        <div class="col-md-4 box-Holder">
+                                            <input type="radio" name="material" id="zink-preweather">
+                                            <label for="zink-preweather">Zink Förpatinerad</label>
+                                        </div>
+
+                                        <div class="col-md-4 box-Holder">
                                             <input type="radio" name="material" id="aluminium">
                                             <label for="aluminium">Aluminium</label>
                                         </div>
@@ -134,12 +144,6 @@
                                             <input type="radio" name="material" id="stainless">
                                             <label for="stainless">Rostfritt</label>
                                         </div>
-
-                                        <div class="col-md-4 box-Holder">
-                                            <input type="radio" name="material" id="galvanized">
-                                            <label for="galvanized">Galvaniserat</label>
-                                        </div>
-
                                     </div>
                                 </fieldset>
                             </div>
@@ -171,22 +175,25 @@
 
                             <div class="obstacle-measures">
                                 <fieldset class="form-group">
-                                    <legend>Hinder</legend>
+                                    <legend>Takgenomförningar</legend>
                                     <div id="standardized-obstacles">
                                         <div class="standard-explanation">
                                             <h4>Standard för: <span id="roof-model-standard-obstacles">Sadeltak</span></h4>
                                             <ul id="standard-obstacle-list" class="list-unstyled">
                                                 <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    3x skorstenar
+                                                    Ventilationshuv
                                                 </li>
                                                 <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                     3x skorstenar
+                                                     Avluftstos
                                                 </li>
                                                 <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                     3x skorstenar
+                                                     Vindskivor
                                                 </li>
                                                 <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                     3x skorstenar
+                                                     Hängrännor
+                                                </li>
+                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                     Stuprännor
                                                 </li>
 
                                             </ul>
@@ -198,18 +205,13 @@
                                             </div>
 
                                             <div class="box-Holder">
-                                                <input type="radio" name="standard-obstacles" id="no-obstacles">
-                                                <label for="no-obstacles">Inga hinder</label>
-                                            </div>
-
-                                            <div class="box-Holder">
                                                 <input type="radio" name="standard-obstacles" id="own-obstacles">
-                                                <label for="own-obstacles">Egna hinder</label>
+                                                <label for="own-obstacles">Egna genomförningar</label>
                                             </div>
                                         </div>
                                         <div class="standard-advanced-instructions">
                                             <h4>Stämmer inte listan?</h4>
-                                            <p>Du kan justera vilken typ och antal hinder i de avancerade inställningarna</p>
+                                            <p>Du kan justera vilken typ och antal genomförningar i de avancerade inställningarna</p>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -217,15 +219,15 @@
 
                             <a href="#" class="extra-roof-dropBtn">Avancerat <span class="caret"></span></a>
                             <div class="extras">
-                                <div class="roofSecurity">
+                                <div class="roofBushing">
                                     <fieldset class="form-group">
-                                        <legend>Hinder</legend>
-                                        <div class="security-obstacles">
+                                        <legend>Takgenomförningar</legend>
+                                        <div class="roof-obstacles">
                                             <table>
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Skorsten</strong>
+                                                            <strong>Stor skorsten</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -241,7 +243,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Stos</strong>
+                                                            <strong>Liten skorsten</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -257,7 +259,23 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Fönster</strong>
+                                                            <strong>Avluftstos</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Takfönster</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -286,6 +304,70 @@
                                                         </td>
                                                     </tr>
                                                 </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Taklucka</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Köksfläktshuv / Vent stor</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Takkupa < 10 kvm</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Takkupa > 10 kvm</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
                                             </table>
                                         </div>
                                     </fieldset>
@@ -295,14 +377,13 @@
                                     <fieldset class="form-group">
                                         <legend>Vattenavrinning</legend>
                                         <div class="col-md-12 control-group" id="waterCheckBoxes">
-
                                             <div class="col-md-6 box-Holder">
                                                 <input id="roofDownpipes" type="checkbox" name="waterMeasures" value="roofDownpipes">
                                                 <label for="roofDownpipes">Stuprör</label>
                                             </div>
 
                                             <div class="col-md-6 box-Holder">
-                                                <input id="roofGutters" type="checkbox" name="securityMeasures" value="roofGutters">
+                                                <input id="roofGutters" type="checkbox" name="waterMeasures" value="roofGutters">
                                                 <label for="roofGutters">Hängrännor</label>
                                             </div>
 
@@ -310,35 +391,176 @@
                                     </fieldset>
                                 </div>
 
-                                <div class="roofOther">
+                                <div class="roofSecurityMeasures">
                                     <fieldset class="form-group">
                                         <legend>Taksäkerhet</legend>
-                                        <div class="col-md-12 control-group" id="securityCheckBoxes">
+                                        <div class="roof-security">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Takstege</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Skorstensstege</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Takbrygga</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Snörasskydd</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </div>
 
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofLadder" type="checkbox" name="securityMeasures" value="roofLadder">
-                                                <label for="roofLadder">Takstege</label>
-                                            </div>
+                                <div class="roofGarnish">
+                                    <fieldset class="form-group">
+                                        <legend>Garnering</legend>
+                                        <div class="roof-garnish">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Luftad nock</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Vindskivor</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Skorstensvalv</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </fieldset>
+                                </div>
 
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofChimneyLadder" type="checkbox" name="securityMeasures" value="roofChimneyLadder">
-                                                <label for="roofChimneyLadder">Skorstensstege</label>
-                                            </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofWalkway" type="checkbox" name="securityMeasures" value="roofWalkway">
-                                                <label for="roofWalkway">Takbrygga</label>
-                                            </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofSnowStopper" type="checkbox" name="securityMeasures" value="roofSnowStopper">
-                                                <label for="roofSnowStopper">Snöglidhinder</label>
-                                            </div>
-
-                                            <div class="col-md-4 box-Holder">
-                                                <input id="roofSnowFences" type="checkbox" name="securityMeasures" value="roofSnowFences">
-                                                <label for="roofSnowFences">Snörasskydd</label>
-                                            </div>
+                                <div class="roofExtras">
+                                    <fieldset class="form-group">
+                                        <legend>Extra</legend>
+                                        <div class="roof-extras">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Fotränna</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">
+                                                            <strong>Fotränna ytterhörn</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </fieldset>
                                 </div>
