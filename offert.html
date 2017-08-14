@@ -208,6 +208,11 @@
                                                 <input type="radio" name="standard-obstacles" id="own-obstacles">
                                                 <label for="own-obstacles">Egna genomförningar</label>
                                             </div>
+
+                                            <div class="box-Holder">
+                                                <input type="radio" name="standard-obstacles" id="no-obstacles">
+                                                <label for="no-obstacles">Inga genomförningar</label>
+                                            </div>
                                         </div>
                                         <div class="standard-advanced-instructions">
                                             <h4>Stämmer inte listan?</h4>
@@ -227,7 +232,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Stor skorsten</strong>
+                                                            <strong id="bigChimney">Stor skorsten</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -243,7 +248,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Liten skorsten</strong>
+                                                            <strong id="smallChimney">Liten skorsten</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -259,7 +264,23 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Avluftstos</strong>
+                                                            <strong id="spigot">Avluftstos</strong>
+                                                        </td>
+                                                        <td class="item-count">
+                                                            0
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-up">+</a>
+                                                        </td>
+                                                        <td class="quant">
+                                                            <a href="#" class="quant-down">-</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item" >
+                                                            <strong id="roofWindow">Takfönster</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -275,7 +296,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Takfönster</strong>
+                                                            <strong id="ventilation">Ventilationshuv</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -291,7 +312,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Ventilationshuv</strong>
+                                                            <strong id="roofHatch">Taklucka</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -307,7 +328,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Taklucka</strong>
+                                                            <strong id="kitchenVentilation">Köksfläktshuv / Vent stor</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -323,7 +344,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Köksfläktshuv / Vent stor</strong>
+                                                            <strong id="smallDormerWindow">Takkupa < 10 kvm</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -339,23 +360,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Takkupa < 10 kvm</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Takkupa > 10 kvm</strong>
+                                                            <strong id="bigDormerWindow">Takkupa > 10 kvm</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -489,7 +494,7 @@
                                                 <tbody>
                                                     <tr>
                                                         <td class="item">
-                                                            <strong>Vindskivor</strong>
+                                                            <strong id="weatherproofing">Vindskivor</strong>
                                                         </td>
                                                         <td class="item-count">
                                                             0
@@ -565,12 +570,26 @@
                                     </fieldset>
                                 </div>
 
-                                <div class="roofPaper">
-                                    <h5>Räkna med underlagsskikt(takpapp) i offerten</h5>
-                                    <div class="form-group">
-                                        <input type="checkbox" id="roofPaper-bool">
-                                        <label for="roofPaper-bool"></label>
-                                    </div>
+                                <div class="roofExtrasOnSquareMeter">
+                                    <fieldset class="form-group">
+                                        <legend>Övriga kostnader</legend>
+                                        <div class="col-md-12 control-group" id="roofPaperAndScaffold">
+                                            <div class="col-md-6 box-Holder">
+                                                <input id="roofPaper" type="checkbox" name="squaredCosts" value="roofPaper" checked>
+                                                <label for="roofPaper">Takpapp</label>
+                                            </div>
+
+                                            <div class="col-md-6 box-Holder">
+                                                <input id="roofScaffolds" type="checkbox" name="squaredCosts" value="roofScaffolds" checked>
+                                                <label for="roofScaffolds">Byggnadsställning</label>
+                                            </div>
+
+                                            <div class="col-md-6 box-Holder">
+                                                <input id="roofContainer" type="checkbox" name="squaredCosts" value="roofContainer" checked>
+                                                <label for="roofContainer">Container</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
                                 </div>
                             </div>
                         </div>
