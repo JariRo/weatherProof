@@ -9189,7 +9189,7 @@ body {
       .section-b .index-page .content p {
         font-size: 1.6rem; }
       .section-b .index-page .content figure {
-        width: 90%;
+        width: 85%;
         padding: 20px;
         margin-left: auto;
         margin-right: auto; }
@@ -9310,7 +9310,9 @@ body {
       .section-c .index-page .content div {
         padding-top: 7%; }
         .section-c .index-page .content div figure {
-          width: 100%; }
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto; }
           .section-c .index-page .content div figure img {
             width: 40%;
             margin-left: auto;
@@ -9374,7 +9376,7 @@ body {
         padding: 0;
         margin: 0;
         border: 0;
-        opacity: 0.5; }
+        opacity: 0.6; }
       .section-d .index-page .content .thumbnail-holder .thumbnail:hover, .section-d .project-page .content .thumbnail-holder .thumbnail:hover {
         opacity: 1.0; }
       .section-d .index-page .content .thumbnail-holder img, .section-d .project-page .content .thumbnail-holder img {
