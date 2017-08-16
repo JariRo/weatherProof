@@ -467,7 +467,7 @@
     }
 
     .index-page, .project-page{
-        padding:7% 0 0 0;
+        padding:0 0 0 0;
         background-color:rgb(238, 238, 238);
 
         .content{
@@ -507,6 +507,7 @@
 
                 .thumbnail:hover{
                     opacity:1.0;
+                    cursor: auto;
                 }
                 img{
                     width:100%;

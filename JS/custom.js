@@ -81,7 +81,6 @@ var setItUp = (function(){
             $('.roof-system').hide();
             var checkedRoofSystem = $('#systemsNavigation-roof > .input-box > input:checked').attr('id');
             $('.roof-system[data-roof-system="' +checkedRoofSystem+ '"]').show().fadeTo('fast', 1);
-            console.log(checkedRoofSystem);
         }
 
         var showFacade = function(){
@@ -89,7 +88,6 @@ var setItUp = (function(){
             $('.facade-system').hide();
             var checkedFacadeSystem = $('#systemsNavigation-facade > .input-box > input:checked').attr('id');
             $('.facade-system[data-facade-system="' +checkedFacadeSystem+ '"]').show().fadeTo('fast', 1);
-            console.log(checkedFacadeSystem);
         }
 
         $('.productList').hover(function(){
@@ -148,6 +146,7 @@ var setItUp = (function(){
         showFacade();
     };
 
+    /*
     var setAngleColor = function(){
         var theBottomAngle = $('.triangles-bottom');
         var theTopAngle = $('.triangles-top');
@@ -166,6 +165,7 @@ var setItUp = (function(){
         });
 
     };
+    */
 
     var doOffert = function(){
 
@@ -198,7 +198,7 @@ var setItUp = (function(){
 
     return{
         doEvents:doEvents,
-        setAngleColor:setAngleColor,
+        //setAngleColor:setAngleColor,
         doOffert:doOffert,
     }
 
@@ -206,7 +206,7 @@ var setItUp = (function(){
 
 var init = function(){
     setItUp.doEvents();
-    setItUp.setAngleColor();
+    //setItUp.setAngleColor();
     setItUp.doOffert();
 }
 

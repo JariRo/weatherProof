@@ -9354,7 +9354,7 @@ body {
     padding: 0;
     width: 100%; }
   .section-d .index-page, .section-d .project-page {
-    padding: 7% 0 0 0;
+    padding: 0 0 0 0;
     background-color: #eeeeee; }
     .section-d .index-page .content, .section-d .project-page .content {
       text-align: center;
@@ -9378,7 +9378,8 @@ body {
         border: 0;
         opacity: 0.6; }
       .section-d .index-page .content .thumbnail-holder .thumbnail:hover, .section-d .project-page .content .thumbnail-holder .thumbnail:hover {
-        opacity: 1.0; }
+        opacity: 1.0;
+        cursor: auto; }
       .section-d .index-page .content .thumbnail-holder img, .section-d .project-page .content .thumbnail-holder img {
         width: 100%;
         margin: 0; }
@@ -9549,6 +9550,26 @@ body {
     border-width: 0 50vw 5.1vw 0;
     overflow: hidden; }
 
+.section-b > .triangles-top .triangle-left-top {
+  border-color: #000 transparent transparent transparent; }
+.section-b > .triangles-top .triangle-right-top {
+  border-color: transparent #000 transparent transparent; }
+
+.section-c > .triangles-top .triangle-left-top {
+  border-color: #eeeeee transparent transparent transparent; }
+.section-c > .triangles-top .triangle-right-top {
+  border-color: transparent #eeeeee transparent transparent; }
+
+.section-d > .triangles-top .triangle-left-top {
+  border-color: #fff transparent transparent transparent; }
+.section-d > .triangles-top .triangle-right-top {
+  border-color: transparent #fff transparent transparent; }
+
+.section-g > .triangles-top .triangle-left-top {
+  border-color: #eee transparent transparent transparent; }
+.section-g > .triangles-top .triangle-right-top {
+  border-color: transparent #eee transparent transparent; }
+
 .triangles-bottom {
   position: relative;
   z-index: 99; }
@@ -9561,6 +9582,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 0 0 5.1vw 50vw;
+    border-color: transparent transparent #000 transparent;
     overflow: hidden; }
   .triangles-bottom .triangle-right-bottom {
     position: absolute;
@@ -9570,7 +9592,18 @@ body {
     height: 0;
     border-style: solid;
     border-width: 5.1vw 0 0 50vw;
+    border-color: transparent transparent transparent #000;
     overflow: hidden; }
+
+.showcase > .index-page > .triangles-bottom .triangle-left-bottom {
+  border-color: transparent transparent #000 transparent; }
+.showcase > .index-page > .triangles-bottom .triangle-right-bottom {
+  border-color: transparent transparent transparent #000; }
+
+.section-d > .triangles-bottom .triangle-left-bottom {
+  border-color: transparent transparent #eee transparent; }
+.section-d > .triangles-bottom .triangle-right-bottom {
+  border-color: transparent transparent transparent #eee; }
 
 /*
 .triangle-left-bottom-black{

@@ -37,7 +37,7 @@ body{
         width:0;
         height:0;
         border-style:solid;
-        border-width:5.1vw 50vw 0 0;
+        border-width: 5.1vw 50vw 0 0;
         overflow: hidden;
     }
 
@@ -48,8 +48,52 @@ body{
         width:0;
         height:0;
         border-style:solid;
-        border-width:0 50vw 5.1vw 0;
+        border-width: 0 50vw 5.1vw 0;
         overflow: hidden;
+    }
+}
+
+.section-b > .triangles-top{
+
+    .triangle-left-top{
+        border-color: #000 transparent transparent transparent;
+    }
+
+    .triangle-right-top{
+        border-color: transparent #000 transparent transparent;
+    }
+}
+
+.section-c > .triangles-top{
+
+    .triangle-left-top{
+        border-color: #eeeeee transparent transparent transparent;
+    }
+
+    .triangle-right-top{
+        border-color: transparent #eeeeee transparent transparent;
+    }
+}
+
+.section-d > .triangles-top{
+
+    .triangle-left-top{
+        border-color: #fff transparent transparent transparent;
+    }
+
+    .triangle-right-top{
+        border-color: transparent #fff transparent transparent;
+    }
+}
+
+.section-g > .triangles-top{
+
+    .triangle-left-top{
+        border-color: #eee transparent transparent transparent;
+    }
+
+    .triangle-right-top{
+        border-color: transparent #eee transparent transparent;
     }
 }
 
@@ -67,6 +111,7 @@ body{
         height:0;
         border-style: solid;
         border-width:0 0 5.1vw 50vw;
+        border-color:transparent transparent #000 transparent;
         overflow: hidden;
     }
 
@@ -78,7 +123,30 @@ body{
         height:0;
         border-style: solid;
         border-width:5.1vw 0 0 50vw;
+        border-color:transparent transparent transparent #000;
         overflow: hidden;
+    }
+}
+
+.showcase > .index-page > .triangles-bottom{
+
+    .triangle-left-bottom{
+        border-color:transparent transparent #000 transparent;
+    }
+
+    .triangle-right-bottom{
+        border-color:transparent transparent transparent #000;
+    }
+}
+
+.section-d > .triangles-bottom{
+
+    .triangle-left-bottom{
+        border-color:transparent transparent #eee transparent;
+    }
+
+    .triangle-right-bottom{
+        border-color:transparent transparent transparent #eee;
     }
 }
 
