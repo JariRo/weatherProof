@@ -8357,16 +8357,6 @@ select.selectpicker {
   width: 100%;
   float: none; }
 
-@keyframes bump {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  40% {
-    -webkit-transform: transalteY(-5px);
-    transform: translateY(-5px); }
-  80% {
-    -webkit-transform: transalteY(-10px);
-    transform: translateY(-10px); } }
 @-webkit-keyframes change {
   0%, 12.66%, 100% {
     transform: translate3d(0, 0, 0); }
@@ -8442,7 +8432,25 @@ select.selectpicker {
   border-bottom: none;
   overflow: hidden;
   background-color: transparent;
-  z-index: 997; }
+  z-index: 997;
+    /*
+    #brandLogo p{
+        margin:0;
+        width:70%;
+        text-align: right;
+        color:#000;
+    }
+
+    #brandLogo > p:nth-child(1){
+        font-weight: 500;
+        font-size: 1.7em;
+    }
+
+    #brandLogo > p:nth-child(2){
+        font-weight: 200;
+        font-size: 0.9em;
+    }
+    */ }
   .navbar a {
     color: #fff !important;
     font-weight: 400; }
@@ -8482,18 +8490,13 @@ select.selectpicker {
                 text-decoration: none; }
   .navbar #brandLogo {
     position: relative;
-    bottom: 8px; }
-  .navbar #brandLogo p {
-    margin: 0;
-    width: 70%;
-    text-align: right;
-    color: #000; }
-  .navbar #brandLogo > p:nth-child(1) {
-    font-weight: 500;
-    font-size: 1.7em; }
-  .navbar #brandLogo > p:nth-child(2) {
-    font-weight: 200;
-    font-size: 0.9em; }
+    bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center; }
+    .navbar #brandLogo img {
+      flex-grow: 1; }
   .navbar #navbar > ul > li {
     width: 50%;
     margin-left: auto;
@@ -9078,7 +9081,7 @@ body {
     .showcase .index-page h1 {
       font-size: 60px; }
   .showcase .about-page, .showcase .products-page, .showcase .systems-page, .showcase .offert-page {
-    background: url(../img/showcase.jpeg) no-repeat 0 -100px;
+    background: url(../img/showcase.) no-repeat 0 -100px;
     margin: 0;
     width: 100%;
     height: 70vh;
@@ -9091,6 +9094,9 @@ body {
       top: 35%; }
       .showcase .about-page .about-page-header h2, .showcase .about-page .products-page-header h2, .showcase .about-page .offert-page-header h2, .showcase .products-page .about-page-header h2, .showcase .products-page .products-page-header h2, .showcase .products-page .offert-page-header h2, .showcase .systems-page .about-page-header h2, .showcase .systems-page .products-page-header h2, .showcase .systems-page .offert-page-header h2, .showcase .offert-page .about-page-header h2, .showcase .offert-page .products-page-header h2, .showcase .offert-page .offert-page-header h2 {
         margin: 0; }
+  .showcase .about-page {
+    background: url(../img/wpf-89.jpg) no-repeat 0 -75px;
+    background-size: cover; }
   .showcase .services-page {
     background: url(../img/showcase.jpeg) no-repeat 0 -100px;
     margin: 0;
@@ -9148,7 +9154,7 @@ body {
       position: absolute;
       top: -10rem;
       left: 15%;
-      z-index: 1200;
+      z-index: 100;
       min-height: 100%; }
       .section-a .about-page .about-wpf-1 h2 {
         font-size: 5rem;
@@ -9222,7 +9228,7 @@ body {
         bottom: -37%;
         z-index: 100; }
         .section-b .about-page .about-content div ul li:hover {
-          animation: bump 0.3s; }
+          cursor: default; }
   .section-b .services-page {
     background: #eee; }
     .section-b .services-page .services-content {
@@ -9327,10 +9333,24 @@ body {
     background: #ccc; }
     .section-c .about-page h2 {
       text-align: center; }
-    .section-c .about-page figure figcaption {
-      color: #333; }
-      .section-c .about-page figure figcaption .linkedIn-btn {
-        text-align: center; }
+    .section-c .about-page .content > div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around; }
+    .section-c .about-page figure {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .section-c .about-page figure img {
+        align-self: center;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px; }
+      .section-c .about-page figure figcaption {
+        color: #333; }
+        .section-c .about-page figure figcaption .linkedIn-btn {
+          text-align: center; }
   .section-c .services-page, .section-c .special-page {
     background: #E4F1FE; }
     .section-c .services-page .content, .section-c .special-page .content {
@@ -9382,6 +9402,7 @@ body {
         cursor: auto; }
       .section-d .index-page .content .thumbnail-holder img, .section-d .project-page .content .thumbnail-holder img {
         width: 100%;
+        height: 360px;
         margin: 0; }
   .section-d .project-page {
     padding-top: 14%;
@@ -9512,7 +9533,8 @@ footer {
   src: url(../fonts/proxima-nova-591205acc864f.otf); }
 body {
   font-family: proximaNova, sans-serif;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  cursor: default; }
 
 .row {
   margin: 0; }
@@ -9527,175 +9549,106 @@ body {
   position: fixed;
   z-index: 998; }
 
-.triangles-top {
+.triangle-left-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5.1vw 50vw 0 0;
+  overflow: hidden; }
+
+.triangle-right-top {
+  position: absolute;
+  left: 50vw;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50vw 5.1vw 0;
+  overflow: hidden; }
+
+.triangles-top-grey {
   position: relative;
   z-index: 99; }
-  .triangles-top .triangle-left-top {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5.1vw 50vw 0 0;
-    overflow: hidden; }
-  .triangles-top .triangle-right-top {
-    position: absolute;
-    left: 50vw;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 50vw 5.1vw 0;
-    overflow: hidden; }
+  .triangles-top-grey .triangle-left-top {
+    border-color: #eee transparent transparent transparent; }
+  .triangles-top-grey .triangle-right-top {
+    border-color: transparent #eee transparent transparent; }
 
-.section-b > .triangles-top .triangle-left-top {
-  border-color: #000 transparent transparent transparent; }
-.section-b > .triangles-top .triangle-right-top {
-  border-color: transparent #000 transparent transparent; }
-
-.section-c > .triangles-top .triangle-left-top {
-  border-color: #eeeeee transparent transparent transparent; }
-.section-c > .triangles-top .triangle-right-top {
-  border-color: transparent #eeeeee transparent transparent; }
-
-.section-d > .triangles-top .triangle-left-top {
-  border-color: #fff transparent transparent transparent; }
-.section-d > .triangles-top .triangle-right-top {
-  border-color: transparent #fff transparent transparent; }
-
-.section-g > .triangles-top .triangle-left-top {
-  border-color: #eee transparent transparent transparent; }
-.section-g > .triangles-top .triangle-right-top {
-  border-color: transparent #eee transparent transparent; }
-
-.triangles-bottom {
+.triangles-top-darkGrey {
   position: relative;
   z-index: 99; }
-  .triangles-bottom .triangle-left-bottom {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 5.1vw 50vw;
-    border-color: transparent transparent #000 transparent;
-    overflow: hidden; }
-  .triangles-bottom .triangle-right-bottom {
-    position: absolute;
-    left: 50vw;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 5.1vw 0 0 50vw;
-    border-color: transparent transparent transparent #000;
-    overflow: hidden; }
+  .triangles-top-darkGrey .triangle-left-top {
+    border-color: #ccc transparent transparent transparent; }
+  .triangles-top-darkGrey .triangle-right-top {
+    border-color: transparent #ccc transparent transparent; }
 
-.showcase > .index-page > .triangles-bottom .triangle-left-bottom {
-  border-color: transparent transparent #000 transparent; }
-.showcase > .index-page > .triangles-bottom .triangle-right-bottom {
-  border-color: transparent transparent transparent #000; }
+.triangles-top-black {
+  position: relative;
+  z-index: 99; }
+  .triangles-top-black .triangle-left-top {
+    border-color: #000 transparent transparent transparent; }
+  .triangles-top-black .triangle-right-top {
+    border-color: transparent #000 transparent transparent; }
 
-.section-d > .triangles-bottom .triangle-left-bottom {
-  border-color: transparent transparent #eee transparent; }
-.section-d > .triangles-bottom .triangle-right-bottom {
-  border-color: transparent transparent transparent #eee; }
+.triangles-top-white {
+  position: relative;
+  z-index: 99; }
+  .triangles-top-white .triangle-left-top {
+    border-color: #fff transparent transparent transparent; }
+  .triangles-top-white .triangle-right-top {
+    border-color: transparent #fff transparent transparent; }
 
-/*
-.triangle-left-bottom-black{
-    border-color:transparent transparent #000 transparent;
-}
+.triangle-left-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 5.1vw 50vw;
+  border-color: transparent transparent #000 transparent;
+  overflow: hidden; }
 
-.triangle-right-bottom-black{
-    border-color:transparent transparent transparent #000;
-}
+.triangle-right-bottom {
+  position: absolute;
+  left: 50vw;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5.1vw 0 0 50vw;
+  border-color: transparent transparent transparent #000;
+  overflow: hidden; }
 
-.triangle-left-top-grey{
-    border-color: #eee transparent transparent transparent;
-}
+.triangles-bottom-grey {
+  position: relative;
+  z-index: 99; }
+  .triangles-bottom-grey .triangle-left-bottom {
+    border-color: transparent transparent #eee transparent; }
+  .triangles-bottom-grey .triangle-right-bottom {
+    border-color: transparent transparent transparent #eee; }
 
-.triangle-right-top-grey{
-    border-color:transparent #eee transparent transparent;
-}
+.triangles-bottom-darkGrey {
+  position: relative;
+  z-index: 99; }
+  .triangles-bottom-darkGrey .triangle-left-bottom {
+    border-color: transparent transparent #ccc transparent; }
+  .triangles-bottom-darkGrey .triangle-right-bottom {
+    border-color: transparent transparent transparent #ccc; }
 
-.triangle-left-top-black{
-    border-color: #000 transparent transparent transparent;
-}
+.triangles-bottom-black {
+  position: relative;
+  z-index: 99; }
+  .triangles-bottom-black .triangle-left-bottom {
+    border-color: transparent transparent #000 transparent; }
+  .triangles-bottom-black .triangle-right-bottom {
+    border-color: transparent transparent transparent #000; }
 
-.triangle-right-top-black{
-    border-color:transparent #000 transparent transparent;
-}
-
-.triangle-left-top-white{
-    border-color: #fff transparent transparent transparent;
-}
-
-.triangle-right-top-white{
-    border-color:transparent #fff transparent transparent;
-}
-
-.triangle-left-bottom-white{
-    border-color:transparent transparent #fff transparent;
-}
-
-.triangle-right-bottom-white{
-    border-color:transparent transparent transparent #fff;
-}
-
-.triangle-left-bottom-grey{
-    border-color:transparent transparent #eee transparent;
-}
-
-.triangle-right-bottom-grey{
-    border-color:transparent transparent transparent #eee;
-}
-*/
-/*
-
-.section-b{
-    background:#e6ebf1;
-    padding:30px 0;
-
-    img{
-        width:100%;
-    }
-}
-
-.panel-heading h4{
-    color: set-text-color($main-color);
-}
-
-.section-c{
-    padding:60px 0;
-    text-align: center;
-    background:$main-color;
-    color: set-text-color($main-color);
-
-    .btn-primary{
-        background:darken($main-color, 10%);
-    }
-}
-
-.title-bar{
-    background:url(../img/showcase.jpeg) no-repeat 0 -300px;
-    padding-bottom:10px;
-    border-bottom:4px solid $main-color;
-}
-
-.main{
-    margin-top:30px;
-}
-
-footer{
-    padding:30px 0;
-    background:darken($main-color, 10%);
-    color: set-text-color($main-color);
-}
-*/
 .when-on-materialz-nav {
   padding-top: 10px;
   background-color: rgba(0, 0, 0, 0.2); }

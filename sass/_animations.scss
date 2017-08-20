@@ -1,22 +1,5 @@
 
 
-@keyframes bump{
-    0%, 100%{
-        -webkit-transform: translateY(0);
-        transform:translateY(0);
-    }
-
-    40% {
-        -webkit-transform: transalteY(-5px);
-        transform: translateY(-5px);
-    }
-
-    80% {
-        -webkit-transform: transalteY(-10px);
-        transform: translateY(-10px);
-    }
-}
-
 @-webkit-keyframes change{
     0%, 12.66%, 100%{
         transform:translate3d(0,0,0);

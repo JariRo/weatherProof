@@ -6,15 +6,19 @@
 body{
     font-family: proximaNova, sans-serif;
     background-color:rgb(238, 238, 238);
+    cursor:default;
 }
+
 
 .row{
     margin:0;
 }
 
+
 .container{
     padding:0;
 }
+
 
 .opacity-overlay{
     display:none;
@@ -24,122 +28,111 @@ body{
     z-index:998;
 }
 
+.triangle-left-top{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width: 5.1vw 50vw 0 0;
+    overflow: hidden;
+}
 
-.triangles-top{
+.triangle-right-top{
+    position:absolute;
+    left:50vw;
+    top:0;
+    width:0;
+    height:0;
+    border-style:solid;
+    border-width: 0 50vw 5.1vw 0;
+    overflow: hidden;
+}
+
+
+
+.triangles-top-grey {
     position:relative;
     z-index: 99;
 
     .triangle-left-top{
-        position:absolute;
-        left:0;
-        top:0;
-        right:0;
-        width:0;
-        height:0;
-        border-style:solid;
-        border-width: 5.1vw 50vw 0 0;
-        overflow: hidden;
-    }
-
-    .triangle-right-top{
-        position:absolute;
-        left:50vw;
-        top:0;
-        width:0;
-        height:0;
-        border-style:solid;
-        border-width: 0 50vw 5.1vw 0;
-        overflow: hidden;
-    }
-}
-
-.section-b > .triangles-top{
-
-    .triangle-left-top{
-        border-color: #000 transparent transparent transparent;
-    }
-
-    .triangle-right-top{
-        border-color: transparent #000 transparent transparent;
-    }
-}
-
-.section-c > .triangles-top{
-
-    .triangle-left-top{
-        border-color: #eeeeee transparent transparent transparent;
-    }
-
-    .triangle-right-top{
-        border-color: transparent #eeeeee transparent transparent;
-    }
-}
-
-.section-d > .triangles-top{
-
-    .triangle-left-top{
-        border-color: #fff transparent transparent transparent;
-    }
-
-    .triangle-right-top{
-        border-color: transparent #fff transparent transparent;
-    }
-}
-
-.section-g > .triangles-top{
-
-    .triangle-left-top{
         border-color: #eee transparent transparent transparent;
     }
-
     .triangle-right-top{
         border-color: transparent #eee transparent transparent;
     }
 }
 
-
-.triangles-bottom{
+.triangles-top-darkGrey {
     position:relative;
     z-index: 99;
 
-    .triangle-left-bottom{
-        position: absolute;
-        left:0;
-        right:0;
-        bottom:0;
-        width:0;
-        height:0;
-        border-style: solid;
-        border-width:0 0 5.1vw 50vw;
-        border-color:transparent transparent #000 transparent;
-        overflow: hidden;
+    .triangle-left-top{
+        border-color: #ccc transparent transparent transparent;
     }
-
-    .triangle-right-bottom{
-        position: absolute;
-        left:50vw;
-        bottom:0;
-        width:0;
-        height:0;
-        border-style: solid;
-        border-width:5.1vw 0 0 50vw;
-        border-color:transparent transparent transparent #000;
-        overflow: hidden;
+    .triangle-right-top{
+        border-color: transparent #ccc transparent transparent;
     }
 }
 
-.showcase > .index-page > .triangles-bottom{
+.triangles-top-black {
+    position:relative;
+    z-index: 99;
 
-    .triangle-left-bottom{
-        border-color:transparent transparent #000 transparent;
+    .triangle-left-top{
+        border-color: #000 transparent transparent transparent;
     }
-
-    .triangle-right-bottom{
-        border-color:transparent transparent transparent #000;
+    .triangle-right-top{
+        border-color: transparent #000 transparent transparent;
     }
 }
 
-.section-d > .triangles-bottom{
+.triangles-top-white {
+    position:relative;
+    z-index: 99;
+
+    .triangle-left-top{
+        border-color: #fff transparent transparent transparent;
+    }
+    .triangle-right-top{
+        border-color: transparent #fff transparent transparent;
+    }
+}
+
+
+
+.triangle-left-bottom{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    width:0;
+    height:0;
+    border-style: solid;
+    border-width:0 0 5.1vw 50vw;
+    border-color:transparent transparent #000 transparent;
+    overflow: hidden;
+}
+
+.triangle-right-bottom{
+    position: absolute;
+    left:50vw;
+    bottom:0;
+    width:0;
+    height:0;
+    border-style: solid;
+    border-width:5.1vw 0 0 50vw;
+    border-color:transparent transparent transparent #000;
+    overflow: hidden;
+}
+
+
+
+.triangles-bottom-grey{
+    position:relative;
+    z-index: 99;
 
     .triangle-left-bottom{
         border-color:transparent transparent #eee transparent;
@@ -150,96 +143,28 @@ body{
     }
 }
 
+.triangles-bottom-darkGrey{
+    position:relative;
+    z-index: 99;
 
-/*
-.triangle-left-bottom-black{
-    border-color:transparent transparent #000 transparent;
-}
+    .triangle-left-bottom{
+        border-color:transparent transparent #ccc transparent;
+    }
 
-.triangle-right-bottom-black{
-    border-color:transparent transparent transparent #000;
-}
-
-.triangle-left-top-grey{
-    border-color: #eee transparent transparent transparent;
-}
-
-.triangle-right-top-grey{
-    border-color:transparent #eee transparent transparent;
-}
-
-.triangle-left-top-black{
-    border-color: #000 transparent transparent transparent;
-}
-
-.triangle-right-top-black{
-    border-color:transparent #000 transparent transparent;
-}
-
-.triangle-left-top-white{
-    border-color: #fff transparent transparent transparent;
-}
-
-.triangle-right-top-white{
-    border-color:transparent #fff transparent transparent;
-}
-
-.triangle-left-bottom-white{
-    border-color:transparent transparent #fff transparent;
-}
-
-.triangle-right-bottom-white{
-    border-color:transparent transparent transparent #fff;
-}
-
-.triangle-left-bottom-grey{
-    border-color:transparent transparent #eee transparent;
-}
-
-.triangle-right-bottom-grey{
-    border-color:transparent transparent transparent #eee;
-}
-*/
-
-/*
-
-.section-b{
-    background:#e6ebf1;
-    padding:30px 0;
-
-    img{
-        width:100%;
+    .triangle-right-bottom{
+        border-color:transparent transparent transparent #ccc;
     }
 }
 
-.panel-heading h4{
-    color: set-text-color($main-color);
-}
+.triangles-bottom-black{
+    position:relative;
+    z-index: 99;
 
-.section-c{
-    padding:60px 0;
-    text-align: center;
-    background:$main-color;
-    color: set-text-color($main-color);
+    .triangle-left-bottom{
+        border-color:transparent transparent #000 transparent;
+    }
 
-    .btn-primary{
-        background:darken($main-color, 10%);
+    .triangle-right-bottom{
+        border-color:transparent transparent transparent #000;
     }
 }
-
-.title-bar{
-    background:url(../img/showcase.jpeg) no-repeat 0 -300px;
-    padding-bottom:10px;
-    border-bottom:4px solid $main-color;
-}
-
-.main{
-    margin-top:30px;
-}
-
-footer{
-    padding:30px 0;
-    background:darken($main-color, 10%);
-    color: set-text-color($main-color);
-}
-*/
