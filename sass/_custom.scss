@@ -5,7 +5,7 @@
 
 body{
     font-family: proximaNova, sans-serif;
-    background-color:rgb(238, 238, 238);
+    background-color:rgb(255, 255, 255);
     cursor:default;
 }
 
@@ -58,10 +58,10 @@ body{
     z-index: 99;
 
     .triangle-left-top{
-        border-color: #eee transparent transparent transparent;
+        border-color: #f5f7f9 transparent transparent transparent;
     }
     .triangle-right-top{
-        border-color: transparent #eee transparent transparent;
+        border-color: transparent #f5f7f9 transparent transparent;
     }
 }
 
@@ -135,11 +135,11 @@ body{
     z-index: 99;
 
     .triangle-left-bottom{
-        border-color:transparent transparent #eee transparent;
+        border-color:transparent transparent #f5f7f9 transparent;
     }
 
     .triangle-right-bottom{
-        border-color:transparent transparent transparent #eee;
+        border-color:transparent transparent transparent #f5f7f9;
     }
 }
 
@@ -166,5 +166,19 @@ body{
 
     .triangle-right-bottom{
         border-color:transparent transparent transparent #000;
+    }
+
+}
+
+.triangles-bottom-white{
+    position:relative;
+    z-index: 99;
+
+    .triangle-left-bottom{
+        border-color:transparent transparent #fff transparent;
+    }
+
+    .triangle-right-bottom{
+        border-color:transparent transparent transparent #fff;
     }
 }

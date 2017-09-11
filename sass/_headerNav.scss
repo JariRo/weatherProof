@@ -6,7 +6,7 @@
 
 .navbar{
     //padding-bottom:8px;
-    padding-top:50px;
+    padding-top:90px;
     border-bottom:none;
     overflow:hidden;
 
@@ -31,6 +31,7 @@
         min-width:100%;
         left:0;
         padding:0;
+        margin-top:3px;
         //opacity:0;
         //-webkit-transition: all 250ms cubic-bezier(0.68, 0.02, 0.46, 0.99);
         //-moz-transition: all 250ms cubic-bezier(0.68, 0.02, 0.46, 0.99);
@@ -74,16 +75,9 @@
     }
 
     #brandLogo{
-        position:relative;
-        bottom:8px;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        //height:5%;
-
+        float:left;
         img{
-            flex-grow: 1;
+            //width:100%;
         }
     }
     /*
@@ -105,8 +99,64 @@
     }
     */
 
+    #navbar{
+        display:flex;
+    }
+
+    #navbar > .navbar-left{
+        flex-grow:1;
+    }
+
+    #navbar > .logo-holder{
+        flex-grow: 2;
+    }
+
+    #navbar > .navbar-right{
+        flex-grow:1;
+    }
+
     #navbar > ul > li{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #navbar > ul > li > a{
+        font-size: 1.65rem;
+        font-weight: 800;
+        padding:4px 6px;
+    }
+
+    #navbar > .navbar-left > li{
         width:50%;
+        //text-align: center;
+    }
+
+    #navbar > .navbar-right > li{
+        width:33%;
+        //text-align: left;
+    }
+
+    #navbar > .navbar-right > li > #getOffert{
+        border: 1px solid #fff;
+        border-radius:2px;
+        text-align: center;
+    }
+
+    #navbar > .logo-holder{
+        margin-right: auto;
+        margin-left: auto;
+        display:flex;
+    }
+
+    #navbar > .logo-holder > li{
+        width:80%;
+        position:relative;
+        top:-20px;
+
+    }
+
+    #navbar > .logo-holder > li > a{
+        width:70%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -120,6 +170,11 @@
 .shrinkNav{
     padding-top:10px;
     background-color: rgba(0,0,0,0.2);
+
+
+    #navbar > .logo-holder > li{
+        top:-5px;
+    }
 }
 
 .shrinkLogo{

@@ -31,7 +31,6 @@
                                     <div class="inner-subNav">
                                         <ul class="subnav-menu">
                                             <li><a href="services.html">Våra tjänster</a></li>
-                                            <li><a href="offert.html">Räkna offert</a></li>
                                             <li><a href="materialvaljare.html">Material & Färg</a></li>
                                         </ul>
                                     </div>
@@ -59,16 +58,18 @@
                         </div>
                     </li>
                 </ul>
-                <a id="brandLogo" class="col-md-4 navbar-brand" href="index.html">
-                    <img src="img/logo_black.svg" alt="Home">
-                    <!--
-                    <p>WeatherProof</p>
-                    <p>Family</p>
-                -->
-                </a>
+                <ul class="col-md-4 nav navbar-nav logo-holder">
+                    <li>
+                        <a id="brandLogo" class="col-md-4 navbar-brand" href="index.html">
+                            <img src="img/Logos/Weatherproof_black.svg" alt="Home">
+                        </a>
+                    </li>
+                </ul>
+
                 <ul class="col-md-4 nav navbar-nav navbar-right">
                     <li><a href="projects.html">Projekt</a></li>
                     <li><a href="about.html">Om oss</a></li>
+                    <li><a href="offert.html" id="getOffert">Räkna Offert</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -76,123 +77,204 @@
 
     <section class="col-md-12 showcase">
         <div class="container index-page">
+            <ul id="getInTouch">
+                <li>
+                    <figure>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <figcaption>
+                            <p>
+                                0707 46 23 20
+                            </p>
+                            <p>
+                                Vill du bli uppringd?
+                                <a>Klicka här</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <figcaption>
+                            <p>
+                                Info@weatherproof.se
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#facebook">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#instagram">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </figure>
+                </li>
+            </ul>
+
+            <article>
+                <h1>Hej <span>husägare!</span></h1>
+                <p>
+                    Om du är ute efter prisvärda plåt - och takprodukter, har du kommit alldeles, alldeles rätt.
+                </p>
+                <p>
+                    Här kan du läsa mer om vad vi håller på med.
+                </p>
+            </article>
         </div>
-        <div class="triangles-bottom-black">
+        <div class="triangles-bottom-white">
+            <div class="triangle-left-bottom"></div>
+            <div class="triangle-right-bottom"></div>
+        </div>
+    </section>
+
+    <section class="section-icons col-md-12">
+        <ul>
+            <li>
+                <figure>
+                    <img src="img/icons/startpage/services.svg">
+                    <figcaption>
+                        <p>Tak & fasad></p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/icons/startpage/production.svg">
+                    <figcaption>
+                        <p>Tillverkning></p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/icons/startpage/Helentreprenad.svg">
+                    <figcaption>
+                        <p>Totallösning></p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/icons/startpage/roofsaftey.svg">
+                    <figcaption>
+                        <p>Taksäkerhet></p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/icons/startpage/Byggkonsult_icon.svg">
+                    <figcaption>
+                        <p>Byggkonsult></p>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+
+<!-- Why WPF-->
+    <section class="section-a col-md-12">
+        <div class="triangles-top-white">
+            <div class="triangle-left-top"></div>
+            <div class="triangle-right-top"></div>
+        </div>
+        <div class="container index-page">
+            <div class="row">
+                <figure class="col-md-6">
+                    <img src="img/startpage/wpf_bolle.jpg">
+                </figure>
+                    <article class="col-md-6">
+                        <h1>DIN PERSONLIGA</h1>
+                        <h1><strong>TAK - & FASADLEVERANTÖR</strong></h1>
+                        <p>
+                            Efter tusentals arbetstimmar med unika uppdrag inom byggbranschen vet vi precis <em>vad, hur och varför</em> dagens optimala vädersäkra fastigheter ska planeras, tillverkas och monteras för bästa resultat. Tillsammans med dig och dina önskemål tar vi ditt husprojekt till nästa nivå.
+                        </p>
+                        <p class="whys">
+                            Läs <em>6 anledningar</em> varför Weatherproof Family är ett smart val.
+                        </p>
+                        <p>
+                            <a href="#why" class="whyBtn">Varför välja Weatherproof Family? Klicka här!</a>
+                        </p>
+                    </article>
+            </div>
+            <div class="row">
+                    <article class="col-md-6">
+                        <h1>PLÅT ÄR ETT <strong>SMART VAL</strong></h1>
+                        <h1>TAK - & FASADLEVERANTÖR</h1>
+                        <p>
+                            Efter tusentals arbetstimmar med unika uppdrag inom byggbranschen vet vi precis <em>vad, hur och varför</em> dagens optimala vädersäkra fastigheter ska planeras, tillverkas och monteras för bästa resultat. Tillsammans med dig och dina önskemål tar vi ditt husprojekt till nästa nivå.
+                        </p>
+                        <p class="whys">
+                            Läs mer om <em>varför byggplåt</em> är bra för dig.
+                        </p>
+                        <p>
+                            <a href="#why" class="whyBtn">Varför välja plåt? Tryck här!</a>
+                        </p>
+                    </article>
+                <figure class="col-md-6">
+                    <img src="img/startpage/plat_och_tak_20.jpg">
+                </figure>
+            </div>
+        </div>
+        <div class="triangles-bottom-white">
             <div class="triangle-left-bottom"></div>
             <div class="triangle-right-bottom"></div>
         </div>
     </section>
 
 
-<!-- Why WPF-->
-    <section class="section-a col-md-12">
-        <div class="container index-page">
-            <div class="row">
-                <div class="col-md-6 why" id="whySteel">
-                    <div class="content">
-                        <h3>VAFÖR VÄLJA PLÅT?</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                            <li>
-                                <h4>Vädersäkert material</h4>
-                                <p>Utmärkt material för det skandinaviska klimatet. I storm, regn och rusk är risk för läckage minimal</p>
-                            </li>
-                            <li>
-                                <h4>Hållbart material</h4>
-                                <p>Med ett korrekt utfört arbete och underhåll så varar byggplåt i 80 - 100 år</p>
-                            </li>
-                            <li>
-                                <h4>Kreativ utformning</h4>
-                                <p>Urvalet av färger, material och former gör att varje klimatskal blir unikt</p>
-                            </li>
-                            <li>
-                                <h4>Miljövänligt material</h4>
-                                <p>Byggplåt är ett energismart material då den har en lång livscykel och en återvinningsgrad närmare 100%</p>
-                            </li>
-                            <li>
-                                <h4>Lätt vikt</h4>
-                                <p>Med tak och fasad i plåt blir påfrestningarna på den övriga konstruktionen mindre. Detta gör konstruktionen mer kostandseffektiv</p>
-                            </li>
-                            <li>
-                                <h4>Brandsäkert</h4>
-                                <p>Plåt har en minimal brandrisk tack vare dess metaliska egenskaper</p>
-                            </li>
-                            <li>
-                                <h4>Solcellstaksvänlig</h4>
-                                <p>Plåtkonstruktioner är att komplementera med solcellspanel</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 why" id="whyWPF">
-                    <div class="content">
-                        <h3>VAFÖR VÄLJA OSS?</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                            <li>
-                                <h4>Vädersäkra fasad- och takkonstruktioner</h4>
-                                <p>Hög expertis på vädersäkra tak och fasad</p>
-                            </li>
-                            <li>
-                                <h4>Enkelt med hög servicenivå och kvalitétsgaranti</h4>
-                                <p>Du kan känna dig trygg med hög tillgänglighet och fortlöpande dokumentation av ditt projektet. Med våra standardiserade och kvalitetssäkrade lösningar kan vi erbjuda kvalitétsgaranti för varje specifikt projekt.
-                                </p>
-                            </li>
-                            <li>
-                                <h4>Välj finansieringsalternativ</h4>
-                                <p>Vi vet att tak och fasadkostnader ibland kan komma plötsligt. Därför har vi ett smart och långsiktigt avbetalningsalternativ för dig som önskar.
-                                </p>
-                            </li>
-                            <li>
-                                <h4>Skräddarsydda tak - och plåtprodukter har blivit enkelt</h4>
-                                <p>Vi tillverkar dina plåtprodukter enligt de måttangivelser och önskemål ni har. Med ett fåtal klick bort har du din unika tak - och plåtprodukt redo för produktion i vår fabrik.
-                                </p>
-                            </li>
-                            <li>
-                                <a class="btn btn-primary btn-md" href="#" role="button">Läs mer om oss</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 <!-- Process-walkthrough -->
     <section class="section-b col-md-12">
-        <div class="triangles-top-black">
-            <div class="triangle-left-top"></div>
-            <div class="triangle-right-top"></div>
-        </div>
         <div class="container index-page">
             <div class="row">
                 <div class="col-md-12 how" id="workProcess">
                     <div class="content">
-                        <h3>6 ENKLA STEG TILL ETT NYTT TAK</h3>
-                        <hr>
+                        <h3>SÅHÄR <strong>JOBBAR</strong> VI</h3>
                         <p>
-                            Vi gör det enkelt att byta till byta tak. Vårt dedikerade team hanterar
-                            allt från början till slut. Vi tilldelar
-                            till och med en sol concierge till ditt projekt som kommer att styra dig
-                            genom processen och hålla dig
-                            informerad om vad som händer varje steg på vägen.
-                            Allt börjar med ett snabbt samråd.
+                            Vi gör det enkelt att byta till tak- och fasadplåt.
                         </p>
-
-                        <figure>
-                            <img id="sixStepProcess" class="img-responsive" src="img/resurs_1.svg">
-                        </figure>
-                        <div class="btn-group btn-lg" role="group" aria-label="Offertberäkning">
-                            <button type="button" class="btn btn-default countOffert">
-                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Räkna på mitt hus
-                            </button>
+                        <p>
+                            Vårt dedikaerade team hanterar allt fron början till slut. Vi kommer styra dig genom byggprocessen
+                            och hålla dig informerad om vad som händer varje steg på vägen.
+                        </p>
+                        <p>
+                            Allt börjar med ett snabbt samtal.
+                        </p>
+                        <div id="process-overlay">
+                            <div id="overlay-content">
+                                <p>
+                                    Läs mer om hur vi jobbar för att du som kund ska känna dig trygg att anlita oss.
+                                </p>
+                                <a href="#" class="content-btn not_showing">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
-                        <p>
-                            Få kontroll över byggkostnaderna och få en
-                            skräddarsydd månadsräkning, medan du gör ditt hus
-                            till en underhållsfri och vädersäker plats att bo i.
-                        </p>
+                        <figure>
+                            <img id="sixStepProcess" class="img-responsive" src="img/infographs/resurs_1.svg">
+                        </figure>
+                        <div id="consultation_card">
+                            <figure>
+                                <img src="img/icons/startpage/respect.svg">
+                            </figure>
+                            <article>
+                                <h3>Punktlighet & respekt</h3>
+                                <p>
+                                    När man befinner sig i ett byggprojekt är man som kund beroende av att de produkter och arbeten som beställts <em>levereras i tid</em>. På Weatherproof Family lämnar vi därför en sammanställning för när och hur de olika delarna i arbetetet kommer att utföras. Om förseningar ändå uppstår, håller vi dig informerad om den nya tidsramen.
+                                </p>
+                                <p>
+                                    När en utomstående person kommer in i ditt hus är det av yttersta vikt att du som kund känner dig trygg. <em>Vi behandlar ditt hem med respekt och försiktighet</em>. När vi lämnar fastigheten skall den vara i ett skick som gör att du känner dig välkommen. De diskussioner som vi har under projektets gång stannar givetvis mellan oss.
+                                </p>
+
+                                <p class="Btn-holder">
+                                    <a href="#why" class="consultationBtn">Kontakta oss för en fri konsultation</a>
+                                </p>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -533,10 +615,12 @@
         </div>
     </footer>
 
+    <!--
     <div class="btn btn-default contact-button">
         <i class="fa fa-user" aria-hidden="true"></i>
         <p>Kontakt</p>
     </div>
+-->
     <div class="col-md-10 col-md-offset-1  contact-slide">
         <div class="info-form-holder">
             <div class="form-holder center-block col-md-4">
