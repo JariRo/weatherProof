@@ -18,6 +18,13 @@ var setItUp = (function(){
             }
         });
 
+        //The process-overlay
+        $('.content-btn').on('click', function(event){
+            event.preventDefault();
+            showProcess();
+        });
+
+
 
         $('#matNav > .input-box > input').on('click', function(){
             showCategories();
@@ -38,6 +45,18 @@ var setItUp = (function(){
         $('#systemsNavigation-facade > .input-box > input').on('click', function(){
             showFacade();
         });
+
+        var showProcess = function(){
+            if ($('.process-overlay').hasClass('showing')){
+                $('.process-overlay').removeClass('showing');
+                $('html, body').animate({
+                    scrollTop: $('#workProcess').offset().top
+                }, 400);
+            }
+            else{
+                $('.process-overlay').addClass('showing');
+            }
+        };
 
         var showCategories = function(){
 

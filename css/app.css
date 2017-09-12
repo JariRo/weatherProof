@@ -9347,55 +9347,105 @@ body {
       width: 70%;
       margin: 0 auto;
       color: #6F7C82; }
-      .section-b .index-page .content h3 {
+      .section-b .index-page .content > h3 {
         font-weight: 800;
         margin-bottom: 15px; }
-        .section-b .index-page .content h3 strong {
+        .section-b .index-page .content > h3 strong {
           color: #2ABFBF; }
       .section-b .index-page .content > p {
         width: 72%;
         margin: 0 auto;
         font-size: 1.6rem;
         font-weight: 400; }
-      .section-b .index-page .content figure {
+      .section-b .index-page .content .process-overlay {
+        padding-bottom: 2em;
+        transition: all 0.8s ease-in-out; }
+      .section-b .index-page .content .process-overlay > .overlay-intro {
+        position: absolute;
+        bottom: -13px;
+        left: 37.5%;
+        color: #000;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.6rem;
+        z-index: 98; }
+        .section-b .index-page .content .process-overlay > .overlay-intro > p {
+          opacity: 1;
+          transition: all 0.8s ease-in-out; }
+        .section-b .index-page .content .process-overlay > .overlay-intro p > em {
+          color: #2ABFBF;
+          font-style: normal; }
+        .section-b .index-page .content .process-overlay > .overlay-intro a {
+          display: inline;
+          background: #2ABFBF;
+          padding: 3px 12px;
+          border-radius: 50px;
+          font-size: 50px;
+          margin: 20px;
+          color: #fff;
+          box-shadow: 0px 3px 10px #888888; }
+        .section-b .index-page .content .process-overlay > .overlay-intro a:hover {
+          background: #29bcbc; }
+        .section-b .index-page .content .process-overlay > .overlay-intro a > i {
+          transition: transform 0.3s ease-in-out;
+          transform: rotate(0deg); }
+      .section-b .index-page .content .process-overlay.showing {
+        padding-bottom: 5em;
+        transition: all 0.8s ease-in-out; }
+        .section-b .index-page .content .process-overlay.showing .overlay-intro > p {
+          opacity: 0;
+          transition: all 0.8s ease-in-out; }
+        .section-b .index-page .content .process-overlay.showing .overlay-intro a > i {
+          transition: transform 0.3s ease-in-out;
+          transform: rotate(180deg); }
+      .section-b .index-page .content .process-overlay > .overlay-content {
+        height: 7vw;
+        opacity: 0.05;
+        transition: all 0.8s ease-in-out; }
+      .section-b .index-page .content .process-overlay.showing > .overlay-content {
+        height: 110vw;
+        opacity: 1;
+        transition: all 0.8s ease-in-out; }
+      .section-b .index-page .content .process-overlay figure {
         width: 90%;
         padding: 20px;
         margin-left: auto;
         margin-right: auto; }
-      .section-b .index-page .content figure > #SixStepProcess {
+      .section-b .index-page .content .process-overlay figure > #SixStepProcess {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 10px; }
-      .section-b .index-page .content #consultation_card {
+      .section-b .index-page .content .process-overlay #consultation_card {
         display: flex;
         flex-direction: row;
         width: 90%;
         margin: 20px auto;
         padding: 3em 3.5em;
         box-shadow: 0px 3px 10px #888888; }
-        .section-b .index-page .content #consultation_card figure {
+        .section-b .index-page .content .process-overlay #consultation_card figure {
           padding: 0;
           padding-right: 1.5em; }
-          .section-b .index-page .content #consultation_card figure img {
+          .section-b .index-page .content .process-overlay #consultation_card figure img {
             width: 70%; }
-        .section-b .index-page .content #consultation_card article {
+        .section-b .index-page .content .process-overlay #consultation_card article {
           text-align: left; }
-          .section-b .index-page .content #consultation_card article h3 {
+          .section-b .index-page .content .process-overlay #consultation_card article h3 {
             margin: 0 0 10px 0;
             text-align: left;
             color: #000;
             font-size: 1.8rem; }
-          .section-b .index-page .content #consultation_card article p {
+          .section-b .index-page .content .process-overlay #consultation_card article p {
             font-size: 1.4rem;
             line-height: 1.5em;
             margin-bottom: 20px; }
-            .section-b .index-page .content #consultation_card article p em {
+            .section-b .index-page .content .process-overlay #consultation_card article p em {
               font-style: normal;
               color: #2ABFBF; }
-          .section-b .index-page .content #consultation_card article .Btn-holder {
+          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder {
             margin-top: 35px;
             margin-bottom: 0px; }
-          .section-b .index-page .content #consultation_card article .Btn-holder > .consultationBtn {
+          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder > .consultationBtn {
             padding: 8px 25px;
             background-color: #2ABFBF;
             color: #fff;
@@ -9406,7 +9456,7 @@ body {
             font-weight: 600;
             box-shadow: 0px 3px 10px #888888;
             transition: all 0.3s ease-in-out; }
-          .section-b .index-page .content #consultation_card article .Btn-holder > .consultationBtn:hover {
+          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder > .consultationBtn:hover {
             background-color: #2abebe;
             box-shadow: 0px 3px 6px #888888;
             text-decoration: none;
@@ -9505,6 +9555,96 @@ body {
       margin-top: 1rem;
       text-align: left; }
 
+.price-section {
+  padding: 0;
+  margin: 0; }
+  .price-section .container {
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+    .price-section .container .row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .price-section .container .row > figure {
+        width: 50%; }
+        .price-section .container .row > figure > img {
+          width: 100%; }
+      .price-section .container .row > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 50%;
+        background-image: url(../img/startpage/Rectangle_5_Copy.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff; }
+      .price-section .container .row h2, .price-section .container .row h5 {
+        font-weight: 800; }
+      .price-section .container .row h2 > strong {
+        color: #2ABFBF; }
+      .price-section .container .row > article:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      .price-section .container .row * {
+        position: relative;
+        z-index: 2; }
+      .price-section .container .row .content-holder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 4em; }
+        .price-section .container .row .content-holder > figure {
+          display: flex;
+          flex-direction: row;
+          width: 50%;
+          padding: 10px;
+          align-items: flex-start; }
+          .price-section .container .row .content-holder > figure > img {
+            padding: 7px;
+            width: 43%; }
+          .price-section .container .row .content-holder > figure > figcaption {
+            padding: 5px; }
+            .price-section .container .row .content-holder > figure > figcaption h4 {
+              margin: 10px 0 10px 0;
+              font-weight: 800; }
+            .price-section .container .row .content-holder > figure > figcaption p {
+              font-weight: 600;
+              font-size: 1.1em; }
+        .price-section .container .row .content-holder > p {
+          width: 58%;
+          text-align: center;
+          font-weight: 600;
+          padding-bottom: 15px; }
+          .price-section .container .row .content-holder > p > a {
+            padding: 10px 27px;
+            background-color: #2ABFBF;
+            color: #000;
+            width: auto;
+            border: 2px solid #2ABFBF;
+            border-radius: 13px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            box-shadow: 0px 3px 15px #000;
+            transition: all 0.3s ease-in-out; }
+          .price-section .container .row .content-holder > p > a:hover {
+            background-color: #2abebe;
+            box-shadow: 0px 3px 6px #000;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out; }
+
 .section-c {
   padding: 0;
   color: #777; }
@@ -9516,27 +9656,39 @@ body {
   .section-c .index-page {
     background-color: white; }
     .section-c .index-page .content {
+      width: 100%;
       text-align: center;
-      padding: 0 5%; }
-      .section-c .index-page .content hr {
-        width: 77%;
-        border-color: #ccc; }
-      .section-c .index-page .content div {
-        padding-top: 7%; }
-        .section-c .index-page .content div figure {
-          width: 85%;
-          margin-left: auto;
-          margin-right: auto; }
-          .section-c .index-page .content div figure img {
-            width: 40%;
-            margin-left: auto;
-            margin-right: auto; }
-          .section-c .index-page .content div figure p {
-            width: 85%;
-            margin-right: auto;
-            margin-left: auto; }
-      .section-c .index-page .content h3 {
-        font-size: 2.7rem; }
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .section-c .index-page .content h1 {
+        font-weight: 800;
+        font-size: 2rem; }
+      .section-c .index-page .content h2 {
+        font-weight: 400; }
+        .section-c .index-page .content h2 strong {
+          color: #2ABFBF; }
+      .section-c .index-page .content .card-holder {
+        margin-top: 4em;
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .section-c .index-page .content .card-holder figure {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 31%;
+          padding: 3em;
+          box-shadow: 0px 3px 10px #888888; }
+          .section-c .index-page .content .card-holder figure img {
+            width: 70%; }
+          .section-c .index-page .content .card-holder figure figcaption > a {
+            background-color: #2ABFBF;
+            color: #fff;
+            padding: 10px;
+            border-radius: 15px; }
   .section-c .about-page {
     background: #ccc; }
     .section-c .about-page h2 {
@@ -9581,6 +9733,26 @@ body {
     margin: 0;
     padding: 0;
     width: 100%; }
+  .section-d .project-header {
+    position: absolute;
+    top: -30px;
+    left: 10%;
+    z-index: 1002;
+    background: transparent;
+    width: 40%;
+    color: #6F7C82;
+    transform: rotate(-5.5deg);
+    text-align: center; }
+    .section-d .project-header h1, .section-d .project-header h3 {
+      margin: 0 0 5px 0; }
+    .section-d .project-header h1 {
+      font-weight: 800;
+      font-size: 2.6rem; }
+      .section-d .project-header h1 strong {
+        color: #2ABFBF; }
+    .section-d .project-header h3 {
+      font-weight: 800;
+      font-size: 1.8rem; }
   .section-d .index-page, .section-d .project-page {
     padding: 0 0 0 0;
     background-color: #eeeeee; }
