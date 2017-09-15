@@ -9098,6 +9098,66 @@ body {
 
 .showcase {
   padding: 0; }
+  .showcase .container #getInTouch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 37%;
+    z-index: 1001; }
+    .showcase .container #getInTouch > li {
+      width: 33%; }
+    .showcase .container #getInTouch > li > figure {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center; }
+      .showcase .container #getInTouch > li > figure i {
+        font-size: 2.2rem;
+        padding: 5px;
+        color: #ddd; }
+      .showcase .container #getInTouch > li > figure figcaption {
+        width: 80%; }
+        .showcase .container #getInTouch > li > figure figcaption p {
+          margin: 0; }
+        .showcase .container #getInTouch > li > figure figcaption p:nth-child(1) {
+          font-size: 1.2rem;
+          font-weight: 800;
+          padding-top: 5px; }
+        .showcase .container #getInTouch > li > figure figcaption p:nth-child(2) {
+          font-size: 1rem;
+          font-weight: 400; }
+          .showcase .container #getInTouch > li > figure figcaption p:nth-child(2) a {
+            color: #fff;
+            font-weight: 600; }
+          .showcase .container #getInTouch > li > figure figcaption p:nth-child(2) a:hover {
+            color: #2ABFBF;
+            cursor: pointer; }
+    .showcase .container #getInTouch > li:nth-child(2) figure {
+      width: 90%;
+      padding-left: 5%; }
+    .showcase .container #getInTouch > li:nth-child(3) {
+      margin-top: 10px; }
+      .showcase .container #getInTouch > li:nth-child(3) figure {
+        width: 90%;
+        padding: 0 0 0 10%;
+        border-left: 1px solid #ddd; }
+        .showcase .container #getInTouch > li:nth-child(3) figure > a {
+          margin: 0; }
+        .showcase .container #getInTouch > li:nth-child(3) figure > a > i {
+          padding: 0 0 0 20px; }
+        .showcase .container #getInTouch > li:nth-child(3) figure > a:hover > i {
+          color: #2ABFBF; }
+  .showcase .container.index-page > #getInTouch {
+    color: #ddd; }
+  .showcase .container.about-page > #getInTouch {
+    color: #fff; }
+    .showcase .container.about-page > #getInTouch i {
+      color: #fff; }
   .showcase .index-page {
     margin: 0;
     width: 100%;
@@ -9117,78 +9177,52 @@ body {
       .showcase .index-page > article p {
         font-size: 2.4rem;
         margin: 0; }
-    .showcase .index-page #getInTouch {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      color: #ddd;
-      justify-content: flex-end;
-      padding: 10px;
-      width: 37%;
-      z-index: 1001; }
-      .showcase .index-page #getInTouch > li {
-        width: 33%; }
-      .showcase .index-page #getInTouch > li > figure {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center; }
-        .showcase .index-page #getInTouch > li > figure i {
-          font-size: 2.2rem;
-          padding: 5px;
-          color: #ddd; }
-        .showcase .index-page #getInTouch > li > figure figcaption {
-          width: 80%; }
-          .showcase .index-page #getInTouch > li > figure figcaption p {
-            margin: 0; }
-          .showcase .index-page #getInTouch > li > figure figcaption p:nth-child(1) {
-            font-size: 1.2rem;
-            font-weight: 800;
-            padding-top: 5px; }
-          .showcase .index-page #getInTouch > li > figure figcaption p:nth-child(2) {
-            font-size: 1rem;
-            font-weight: 400; }
-            .showcase .index-page #getInTouch > li > figure figcaption p:nth-child(2) a {
-              color: #fff;
-              font-weight: 600; }
-            .showcase .index-page #getInTouch > li > figure figcaption p:nth-child(2) a:hover {
-              color: #2ABFBF;
-              cursor: pointer; }
-      .showcase .index-page #getInTouch > li:nth-child(2) figure {
-        width: 90%;
-        padding-left: 5%; }
-      .showcase .index-page #getInTouch > li:nth-child(3) {
-        margin-top: 10px; }
-        .showcase .index-page #getInTouch > li:nth-child(3) figure {
-          width: 90%;
-          padding: 0 0 0 10%;
-          border-left: 1px solid #ddd; }
-          .showcase .index-page #getInTouch > li:nth-child(3) figure > a {
-            margin: 0; }
-          .showcase .index-page #getInTouch > li:nth-child(3) figure > a > i {
-            padding: 0 0 0 20px; }
-          .showcase .index-page #getInTouch > li:nth-child(3) figure > a:hover > i {
-            color: #2ABFBF; }
-  .showcase .about-page, .showcase .products-page, .showcase .systems-page, .showcase .offert-page {
+  .showcase .products-page, .showcase .systems-page, .showcase .offert-page {
     background: url(../img/showcase.) no-repeat 0 -100px;
     margin: 0;
     width: 100%;
     height: 70vh;
     padding: 30px 0; }
-    .showcase .about-page .about-page-header, .showcase .about-page .products-page-header, .showcase .about-page .offert-page-header, .showcase .products-page .about-page-header, .showcase .products-page .products-page-header, .showcase .products-page .offert-page-header, .showcase .systems-page .about-page-header, .showcase .systems-page .products-page-header, .showcase .systems-page .offert-page-header, .showcase .offert-page .about-page-header, .showcase .offert-page .products-page-header, .showcase .offert-page .offert-page-header {
+    .showcase .products-page .about-page-header, .showcase .products-page .products-page-header, .showcase .products-page .offert-page-header, .showcase .systems-page .about-page-header, .showcase .systems-page .products-page-header, .showcase .systems-page .offert-page-header, .showcase .offert-page .about-page-header, .showcase .offert-page .products-page-header, .showcase .offert-page .offert-page-header {
       width: 100%;
       color: #fff;
       text-align: center;
       position: relative;
       top: 35%; }
-      .showcase .about-page .about-page-header h2, .showcase .about-page .products-page-header h2, .showcase .about-page .offert-page-header h2, .showcase .products-page .about-page-header h2, .showcase .products-page .products-page-header h2, .showcase .products-page .offert-page-header h2, .showcase .systems-page .about-page-header h2, .showcase .systems-page .products-page-header h2, .showcase .systems-page .offert-page-header h2, .showcase .offert-page .about-page-header h2, .showcase .offert-page .products-page-header h2, .showcase .offert-page .offert-page-header h2 {
+      .showcase .products-page .about-page-header h2, .showcase .products-page .products-page-header h2, .showcase .products-page .offert-page-header h2, .showcase .systems-page .about-page-header h2, .showcase .systems-page .products-page-header h2, .showcase .systems-page .offert-page-header h2, .showcase .offert-page .about-page-header h2, .showcase .offert-page .products-page-header h2, .showcase .offert-page .offert-page-header h2 {
         margin: 0; }
   .showcase .about-page {
-    background: url(../img/wpf-89.jpg) no-repeat 0 -75px;
-    background-size: cover; }
+    background: url(../img/about/om1.jpg) no-repeat 0 -75px;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 105vh;
+    padding: 30px 0; }
+    .showcase .about-page > article {
+      width: 50%;
+      padding: 17em 5em 5em 7em;
+      color: #fff;
+      font-weight: 800;
+      position: absolute;
+      right: 0; }
+      .showcase .about-page > article h1 {
+        font-weight: 600;
+        font-size: 2.7rem;
+        margin: 0; }
+      .showcase .about-page > article h2 {
+        font-weight: 600;
+        font-size: 4.2rem;
+        margin-bottom: 5px;
+        margin: 0; }
+      .showcase .about-page > article p {
+        font-size: 1.9rem;
+        margin: 0 0 20px 0; }
+      .showcase .about-page > article a {
+        background: #2ABFBF;
+        padding: 15px 38px 15px 38px;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 0.8em; }
   .showcase .services-page {
     background: url(../img/showcase.jpeg) no-repeat 0 -100px;
     margin: 0;
@@ -9302,41 +9336,50 @@ body {
       .section-a .index-page .row figure > img {
         width: 100%; }
   .section-a .about-page {
-    background-color: #ccc;
+    background-color: #F5F7F9;
     text-align: left; }
     .section-a .about-page .about-wpf-1 {
       background-color: #fff;
-      background-image: url(../img/concrete-texture.png);
+      background-image: url(../img/about/om2.jpg);
+      background-size: cover;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      padding: 7rem 5rem;
-      width: 75%;
+      color: #fff;
+      padding: 4.5rem 4.2rem;
+      width: 70%;
       position: absolute;
-      top: -10rem;
+      top: -15rem;
       left: 15%;
       z-index: 100;
       min-height: 100%; }
+      .section-a .about-page .about-wpf-1 h3 {
+        font-size: 3.5rem;
+        font-weight: 600; }
       .section-a .about-page .about-wpf-1 h2 {
-        font-size: 5rem;
-        font-weight: 1200;
+        font-size: 5.2rem;
+        font-weight: 600;
         margin: 0.2rem 0 3rem 0; }
       .section-a .about-page .about-wpf-1 p {
-        width: 70%; }
+        width: 100%; }
     .section-a .about-page .about-wpf-2 {
-      width: 45%;
-      padding: 3.5rem 2rem;
+      width: 55%;
+      padding: 4.5rem 3rem;
       margin: 5% 15%;
-      border: 10px solid #fff; }
-      .section-a .about-page .about-wpf-2 ul {
-        font-size: 1.4em;
-        color: #fff; }
-      .section-a .about-page .about-wpf-2 h2 {
-        font-weight: 800; }
+      border: 12px solid #2ABFBF; }
+      .section-a .about-page .about-wpf-2 img {
+        width: 120%;
+        position: relative;
+        left: -32%; }
+      .section-a .about-page .about-wpf-2 figcaption h2, .section-a .about-page .about-wpf-2 figcaption p {
+        font-weight: 600;
+        font-size: 2.5rem; }
+      .section-a .about-page .about-wpf-2 figcaption p {
+        line-height: 1em; }
   .section-a .services-page {
     background-color: #fff;
     padding: 7% 0; }
 
 .section-b {
-  padding: 0 0 7% 0;
+  padding: 0;
   text-align: center; }
   .section-b .container {
     margin: 0;
@@ -9462,31 +9505,49 @@ body {
             text-decoration: none;
             transition: all 0.3s ease-in-out; }
   .section-b .about-page {
-    background: #f5f7f9; }
+    background: #f5f7f9;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/about/om3.jpg) no-repeat 0 -200px;
+    background-size: cover; }
     .section-b .about-page .about-content {
-      padding-top: 7%; }
-      .section-b .about-page .about-content p {
-        text-align: left;
+      padding: 7% 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: justify;
+      color: #fff; }
+      .section-b .about-page .about-content > h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 40px; }
+      .section-b .about-page .about-content > p {
+        font-size: 2rem;
+        margin-bottom: 30px; }
+      .section-b .about-page .about-content article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        margin-bottom: 30px; }
+        .section-b .about-page .about-content article > div {
+          width: 47.5%; }
+          .section-b .about-page .about-content article > div em {
+            font-weight: 600;
+            font-style: normal; }
+      .section-b .about-page .about-content h3 {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-bottom: 20px; }
+      .section-b .about-page .about-content a {
+        background: #2ABFBF;
+        padding: 10px 20px;
+        border-radius: 28px;
+        width: 20%;
+        text-align: center;
         margin-right: auto;
-        margin-left: auto; }
-      .section-b .about-page .about-content p:nth-of-type(2) {
-        width: 70%;
-        margin: 2rem 0 0 0;
-        float: left; }
-      .section-b .about-page .about-content div {
-        background: #fff;
-        background: url(../img/concrete-texture.png);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        text-align: left;
-        width: 31%;
-        padding: 0 3% 3% 3%;
-        line-height: 2em;
-        position: absolute;
-        right: -5%;
-        bottom: -37%;
-        z-index: 100; }
-        .section-b .about-page .about-content div ul li:hover {
-          cursor: default; }
+        margin-left: auto;
+        color: #fff;
+        font-size: 1.6rem; }
   .section-b .services-page {
     background: #f5f7f9; }
     .section-b .services-page .services-content {
@@ -10062,6 +10123,10 @@ footer {
 @font-face {
   font-family: proximaNova;
   src: url(../fonts/proxima-nova-591205acc864f.otf); }
+@font-face {
+  font-family: majestiBannerBold;
+  src: url(../fonts/Majesti-Banner-Bold.otf);
+  font-weight: bold; }
 body {
   font-family: proximaNova, sans-serif;
   background-color: white;

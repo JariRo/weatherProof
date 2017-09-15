@@ -3,33 +3,7 @@
 .showcase{
     padding:0;
 
-    .index-page{
-        margin:0;
-        width:100%;
-        height:110vh;
-        padding:30px 0;
-        background:url(../img/startpage/landingpage/Group_7_Copy_10.jpg) no-repeat;
-        background-size: cover;
-
-        > article{
-            width:50%;
-            padding:27em 5em 5em 7em;
-            color:#fff;
-            font-weight: 800;
-
-            h1{
-                font-size: 4rem;
-
-                span{
-                    color:#2ABFBF;
-                }
-            }
-
-            p{
-                font-size: 2.4rem;
-                margin:0;
-            }
-        }
+    .container{
 
         #getInTouch{
             position:absolute;
@@ -38,7 +12,6 @@
             display:flex;
             flex-direction: row;
             list-style: none;
-            color:#ddd;
             justify-content: flex-end;
             padding:10px;
             width:37%;
@@ -120,7 +93,48 @@
         }
     }
 
-    .about-page, .products-page, .systems-page, .offert-page{
+    .container.index-page > #getInTouch{
+        color:#ddd;
+    }
+
+    .container.about-page > #getInTouch{
+        color:#fff;
+
+        i {
+            color:#fff;
+        }
+    }
+
+    .index-page{
+        margin:0;
+        width:100%;
+        height:110vh;
+        padding:30px 0;
+        background:url(../img/startpage/landingpage/Group_7_Copy_10.jpg) no-repeat;
+        background-size: cover;
+
+        > article{
+            width:50%;
+            padding:27em 5em 5em 7em;
+            color:#fff;
+            font-weight: 800;
+
+            h1{
+                font-size: 4rem;
+
+                span{
+                    color:#2ABFBF;
+                }
+            }
+
+            p{
+                font-size: 2.4rem;
+                margin:0;
+            }
+        }
+    }
+
+    .products-page, .systems-page, .offert-page{
         background:url(../img/showcase.) no-repeat 0 -100px;
         margin:0;
         width:100%;
@@ -141,8 +155,46 @@
     }
 
     .about-page{
-        background:url(../img/wpf-89.jpg) no-repeat 0 -75px;
+        background:url(../img/about/om1.jpg) no-repeat 0 -75px;
         background-size: cover;
+        margin:0;
+        width:100%;
+        height:105vh;
+        padding:30px 0;
+
+        > article{
+            width:50%;
+            padding:17em 5em 5em 7em;
+            color:#fff;
+            font-weight: 800;
+            position: absolute;
+            right:0;
+
+            h1{
+                font-weight: 600;
+                font-size: 2.7rem;
+                margin:0;
+            }
+            h2{
+                font-weight: 600;
+                font-size: 4.2rem;
+                margin-bottom:5px;
+                margin:0;
+            }
+
+            p{
+                font-size: 1.9rem;
+                margin:0 0 20px 0;
+            }
+
+            a{
+                background:#2ABFBF;
+                padding:15px 38px 15px 38px;
+                border-radius: 20px;
+                color:#fff;
+                font-size: 0.8em;
+            }
+        }
     }
 
     .services-page{
@@ -316,47 +368,63 @@
     }
 
     .about-page{
-        background-color:#ccc;
+        background-color:#F5F7F9;
         //background-image: url(../img/geometry2.png);
         text-align: left;
 
         .about-wpf-1{
             background-color:#fff;
-            background-image: url(../img/concrete-texture.png);
+            background-image: url(../img/about/om2.jpg);
+            background-size: cover;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 7rem 5rem;
-            width:75%;
+            color:#fff;
+            padding: 4.5rem 4.2rem;
+            width:70%;
             position:absolute;
-            top:-10rem;
+            top:-15rem;
             left:15%;
             z-index: 100;
             min-height:100%;
 
+
+            h3{
+                font-size: 3.5rem;
+                font-weight: 600;
+            }
+
             h2{
-                font-size: 5rem;
-                font-weight: 1200;
+                font-size: 5.2rem;
+                font-weight: 600;
                 margin:0.2rem 0 3rem 0;
             }
 
             p{
-                width:70%;
+                width:100%;
             }
         }
 
         .about-wpf-2{
-            width:45%;
-            padding:3.5rem 2rem;
+            width:55%;
+            padding:4.5rem 3rem;
             margin:5% 15%;
-            border:10px solid #fff;
+            border:12px solid #2ABFBF;
 
-            ul{
-                font-size: 1.4em;
-                color:#fff;
+            img{
+                width:120%;
+                position:relative;
+                left:-32%;
             }
 
-            h2{
-                font-weight: 800;
+            figcaption{
 
+                h2, p {
+                    font-weight: 600;
+                    font-size: 2.5rem;
+                }
+
+                p{
+                    line-height: 1em;
+                }
             }
         }
     }
@@ -370,7 +438,7 @@
 
 .section-b{
     //padding-top:7%;
-    padding:0 0 7% 0;
+    padding:0;
     text-align: center;
 
     .container{
@@ -563,42 +631,62 @@
 
     .about-page{
         background:#f5f7f9;
+        background:linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url(../img/about/om3.jpg) no-repeat 0 -200px;
+        background-size: cover;
 
         .about-content{
-            padding-top:7%;
+            padding:7% 0;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: justify;
+            color:#fff;
 
-            p{
-                text-align: left;
-                margin-right: auto;
-                margin-left: auto;
+            > h2{
+                font-size: 3rem;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom:40px;
             }
 
-            p:nth-of-type(2){
-                width:70%;
-                margin:2rem 0 0 0;
-                float:left;
-
+            > p{
+                font-size: 2rem;
+                margin-bottom:30px;
             }
 
-            div{
-                background:#fff;
-                background: url(../img/concrete-texture.png);
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                text-align: left;
-                width:31%;
-                padding:0 3% 3% 3%;
-                line-height: 2em;
-                position:absolute;
-                right:-5%;
-                bottom:-37%;
-                z-index:100;
+            article{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: 1.6rem;
+                margin-bottom:30px;
 
-                ul{
+                > div{
+                    width:47.5%;
 
-                    li:hover{
-                        cursor:default;
+                    em{
+                        font-weight: 600;
+                        font-style: normal;
                     }
                 }
+            }
+
+            h3{
+                font-size: 2.8rem;
+                text-align: center;
+                margin-bottom:20px;
+            }
+
+            a{
+                background:#2ABFBF;
+                padding:10px 20px;
+                border-radius: 28px;
+                width:20%;
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+                color:#fff;
+                font-size: 1.6rem;
             }
         }
     }

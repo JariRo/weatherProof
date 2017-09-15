@@ -31,7 +31,6 @@
                                     <div class="inner-subNav">
                                         <ul class="subnav-menu">
                                             <li><a href="services.html">Våra tjänster</a></li>
-                                            <li><a href="offert.html">Räkna offert</a></li>
                                             <li><a href="materialvaljare.html">Material & Färg</a></li>
                                         </ul>
                                     </div>
@@ -39,8 +38,9 @@
                             </div>
                         </div>
                     </li>
+
                     <li class="productList">
-                        <a class="dropBtn" href="products.html">
+                        <a class="dropBtn" href="#">
                             Produkter <span class="caret"></span>
                         </a>
                         <div class="subNav">
@@ -50,7 +50,7 @@
                                         <ul class="subnav-menu">
                                             <li><a href="system.html">System</a></li>
                                             <li><a href="products.html">Egna produkter</a></li>
-                                            <li><a href="specialbeslag.html">Specialbeslag</a></li>
+                                            <li><a href="specialbeslag.html">Beställ specialbeslag</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -58,13 +58,18 @@
                         </div>
                     </li>
                 </ul>
-                <a id="brandLogo" class="col-md-4 navbar-brand" href="index.html">
-                    <p>WeatherProof</p>
-                    <p>Family</p>
-                </a>
+                <ul class="col-md-4 nav navbar-nav logo-holder">
+                    <li>
+                        <a id="brandLogo" class="col-md-4 navbar-brand" href="index.html">
+                            <img src="img/Logos/Weatherproof_black.svg" alt="Home">
+                        </a>
+                    </li>
+                </ul>
+
                 <ul class="col-md-4 nav navbar-nav navbar-right">
                     <li><a href="projects.html">Projekt</a></li>
                     <li><a href="about.html">Om oss</a></li>
+                    <li><a href="offert.html" id="getOffert">Räkna Offert</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -72,12 +77,52 @@
 
     <section class="col-md-12 showcase">
         <div class="container about-page">
-            <div class="about-page-header">
-                <h2>We enable weatherproof living.</h2>
-                <h2>Year around.</h2>
-            </div>
+            <ul id="getInTouch">
+                <li>
+                    <figure>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <figcaption>
+                            <p>
+                                0707 46 23 20
+                            </p>
+                            <p>
+                                Vill du bli uppringd?
+                                <a>Klicka här</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <figcaption>
+                            <p>
+                                Info@weatherproof.se
+                            </p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="#facebook">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="#instagram">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </figure>
+                </li>
+            </ul>
+            <article>
+                <h1>Vi är</h1>
+                <h2>WEATHERPROOFERS</h2>
+                <p>
+                    Vi vill skapa vädersäkra hus åt företag, organisationer och personer som vill lite mer.
+                </p>
+                <a href="#">LÄS MER</a>
+            </article>
         </div>
-        <div class="triangles-bottom-darkGrey">
+        <div class="triangles-bottom-grey">
             <div class="triangle-left-bottom"></div>
             <div class="triangle-right-bottom"></div>
         </div>
@@ -89,91 +134,73 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="about-wpf-1">
-                        <h3>The goal for out company:</h3>
-                        <h2>We want to make the world a weatherproof place to live in</h2>
-                        <p><strong>Our goal</strong> show can be very effective method of promoting your company
-                            and its products. And one of the most effective ways to optimize your trade show display.
+                        <h3>Vårt mål:</h3>
+                        <h2>Utveckla
+                            vädersäkra och
+                            kvalitativa hus
+                            för människor
+                            att trivas i.</h2>
+                        <p><strong>Weatherproof Family</strong> erbjuder effektiva tätskikts - tjänster för tak och fasad, med tillhörande tjänster för att skydda och bevara byggnader och infrastruktur. Vårt mål är att med bästa energi - och miljöresultat kunna erbjuda tätskitslösningar som klarar marknadens alla behov, så att våra kunder kan njuta av trygghet i sin fastigheter.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="about-wpf-2 col-md-8">
-                        <ul class="list-unstyled">
-                            <li>Vädersäkert +</li>
-                            <li>Hållbara material +</li>
-                            <li>Service i världsklass =</li>
-                        </ul>
-                        <h2>Weatherproof Family</h2>
-                    </div>
+                    <figure class="about-wpf-2 col-md-8">
+                        <img src="img/Logos/Weatherproof_black.svg">
+
+                        <figcaption>
+                            <h2>Vädersäkert = </h2>
+                            <p>Säkrat för Vatten, Vind, Snö, Is & Rusk</p>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="section-b col-md-12">
-        <div class="triangles-top-darkGrey">
+        <div class="triangles-top-grey">
             <div class="triangle-left-top"></div>
             <div class="triangle-right-top"></div>
         </div>
         <div class="container about-page">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 about-content">
-                    <h2>Ok, vad är Weatherproof Family?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum. In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                           officia deserunt mollit anim id est laborum.
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                 ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                 deserunt mollit anim id est laborum. In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                  officia deserunt mollit anim id est laborum.
+                    <h2>Ok, vad är Weatherproof Family...</h2>
+                    <p><strong>Privatperson, företagare, mamma, pappa eller mormor</strong> – vi vill ge alla ett vädersäkert och underhållsfritt hem. Det är också därför vi erbjuder dig ett tryggt och säkert tak - och fasadbyte. Du kommer märka att vi anstränger oss lite extra och lägger ner mycket omsorg i de små detaljerna. Det gör att våra produkter håller en hög nivå kvalitetsmässigt, har genomtänkta lösningar och är dessutom mycket prisvärda.
                     </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                              ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                              deserunt mollit anim id est laborum. In voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                               officia deserunt mollit anim id est laborum.
-                    </p>
-                    <div>
-                        <h3>Vi utför:</h3>
-                        <ul class="list-unstyled">
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Tak & Fasad tillverkning</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Montering av tak & fasad</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Legotillverkning</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Tak & Fasad konsultation</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Prototyp framtagning</li>
-                            <li><i class="fa fa-angle-right" aria-hidden="true"></i> Produktion av designprodukter</li>
-                        </ul>
-                    </div>
+                    <article>
+                        <div>
+                            <p>
+                                <em>Vår övertygelse</em> är att standardlösningar inte passar för alla situationer och kunder. Därför erbjuder vi dig skräddarsydda byggbeslag och tak - och fasadplåtslösningar i alla förekommande metaller.
+                            </p>
+                            <p>
+                                <em>Såväl offentliga miljöer</em>, bostadsrättsföreningar, företag och privatpersoner ingår i vår kundgrupp. Det som är gemensamt för våra produkter och tjänster är att det är dina önskemål som styr arbetsprocessen.
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <em>Att köpa ett tak - och fasadbyte</em> är i de flesta fall en stor investering och någonting man inte köpt innan. Just därför är vi med dig hela vägen och ger professionella och fackmannamässiga råd och tips före, under och efter ditt köp.
+                            </p>
+                            <p>
+                                <em>Oavsett om du behöver en nyckelfärdig</em> jobb eller bara en av de många tjänster som vi erbjuder, kommer vår professionella medarbetare gör dina prioriteringar, till våra prioriteringar.
+                            </p>
+                        </div>
+                    </article>
+                    <h3>Välkommen att kontakta oss för en gratis konsultation.</h3>
+                    <a href="#">Kontakta oss</a>
                 </div>
             </div>
+        </div>
+        <div class="triangles-bottom-grey">
+            <div class="triangle-left-bottom"></div>
+            <div class="triangle-right-bottom"></div>
         </div>
     </section>
 
 
     <section class="section-c col-md-12">
-        <div class="triangles-top-grey">
-            <div class="triangle-left-top"></div>
-            <div class="triangle-right-top"></div>
-        </div>
         <div class="container about-page">
             <div class="row content">
                 <h2>Vi är Weatherproof family</h2>
@@ -358,7 +385,6 @@
         </div>
     </footer>
 
-    <div class="btn btn-default contact-button">Kontakt</div>
     <div class="col-md-10 col-md-offset-1  contact-slide">
         <div class="info-form-holder">
             <div class="form-holder center-block col-md-4">
