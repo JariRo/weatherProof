@@ -9160,6 +9160,10 @@ body {
     color: #fff; }
     .showcase .container.about-page > #getInTouch i {
       color: #fff; }
+  .showcase .container.services-page > #getInTouch {
+    color: #fff; }
+    .showcase .container.services-page > #getInTouch i {
+      color: #fff; }
   .showcase .index-page {
     margin: 0;
     width: 100%;
@@ -9226,19 +9230,26 @@ body {
         color: #fff;
         font-size: 0.8em; }
   .showcase .services-page {
-    background: url(../img/showcase.jpeg) no-repeat 0 -100px;
+    background: linear-gradient(180deg, rgba(245, 247, 249, 0) 0%, #f5f7f9 100%), url(../img/services/takochfasad1.jpg) no-repeat 0 -75px;
+    background-size: cover;
     margin: 0;
     width: 100%;
-    height: 70vh;
-    padding: 30px 0; }
-    .showcase .services-page .services-page-header {
-      width: 100%;
-      color: #fff;
+    height: 95vh;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; }
+    .showcase .services-page > article {
+      width: 45%;
       text-align: center;
-      position: relative;
-      top: 35%; }
-      .showcase .services-page .services-page-header h2 {
-        margin: 0; }
+      color: #fff;
+      font-weight: 600; }
+      .showcase .services-page > article h1 {
+        font-size: 4rem;
+        font-family: majestiBannerBold; }
+      .showcase .services-page > article p {
+        font-size: 2rem; }
 
 .section-icons {
   padding: 0; }
@@ -9377,8 +9388,51 @@ body {
       .section-a .about-page .about-wpf-2 figcaption p {
         line-height: 1em; }
   .section-a .services-page {
-    background-color: #fff;
-    padding: 7% 0; }
+    padding: 0;
+    width: 100%; }
+    .section-a .services-page .row {
+      display: flex;
+      flex-direction: row-reverse; }
+      .section-a .services-page .row article {
+        width: 50%;
+        padding: 7em;
+        margin-top: 1em;
+        text-align: left; }
+        .section-a .services-page .row article h1 {
+          margin: 0;
+          color: #6f7c82; }
+        .section-a .services-page .row article h1:first-child {
+          margin-bottom: 0.3em; }
+        .section-a .services-page .row article h1:nth-child(2) {
+          margin-bottom: 1em; }
+        .section-a .services-page .row article em {
+          color: #2ABFBF;
+          font-weight: 600;
+          font-style: normal; }
+        .section-a .services-page .row article strong {
+          font-weight: 600; }
+        .section-a .services-page .row article > p {
+          color: #6f7c82;
+          margin-bottom: 1.6em;
+          font-size: 1.6rem;
+          width: 100%; }
+          .section-a .services-page .row article > p a {
+            background: #2ABFBF;
+            padding: 1.3em;
+            border-radius: 1.8em;
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 600;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto; }
+        .section-a .services-page .row article p:nth-child(7) {
+          text-align: center; }
+      .section-a .services-page .row figure {
+        width: 50%;
+        padding: 0; }
+      .section-a .services-page .row figure > img {
+        width: 100%; }
 
 .section-b {
   padding: 0;
@@ -9551,73 +9605,6 @@ body {
         margin-left: auto;
         color: #fff;
         font-size: 1.6rem; }
-  .section-b .services-page {
-    background: #f5f7f9; }
-    .section-b .services-page .services-content {
-      text-align: left; }
-      .section-b .services-page .services-content .service-heading-animation {
-        /*position: absolute;
-        top:50%;
-        left:50%;
-        */
-        width: 100%;
-        padding: 2rem 0;
-        overflow: hidden;
-        font-size: 2.7rem;
-        line-height: 40px;
-        color: red; }
-        .section-b .services-page .services-content .service-heading-animation .service-heading-animation-content {
-          font-weight: 600;
-          overflow: hidden;
-          height: 40px;
-          padding: 0; }
-          .section-b .services-page .services-content .service-heading-animation .service-heading-animation-content .service-heading-animation-content-text {
-            display: inline;
-            float: left;
-            margin: 0;
-            width: 180px; }
-          .section-b .services-page .services-content .service-heading-animation .service-heading-animation-content .services-content-title-list {
-            width: 280px;
-            margin-top: 0;
-            list-style: none;
-            padding: 0 5px;
-            float: left;
-                        /*
-                        -webkit-animation-name: change;
-                        -webkit-animation-duration: 15s;
-                        -webkit-animation-iteration-count: infinite;
-
-                        animation-name: change;
-                        animation-duration: 20s;
-                        animation-iteration-count: infinite;
-                        */ }
-            .section-b .services-page .services-content .service-heading-animation .service-heading-animation-content .services-content-title-list .services-content-title-list-item {
-              line-height: 40px;
-              margin: 0; }
-      .section-b .services-page .services-content .contact-btn {
-        text-align: center; }
-    .section-b .services-page .services-garantee div:first-of-type p {
-      margin: 0;
-      line-height: 0.95; }
-    .section-b .services-page .services-garantee div:first-of-type p:first-of-type {
-      font-size: 2rem;
-      font-weight: 400; }
-    .section-b .services-page .services-garantee div:first-of-type p:nth-of-type(2) {
-      font-size: 7rem;
-      font-weight: 800; }
-      .section-b .services-page .services-garantee div:first-of-type p:nth-of-type(2) span {
-        font-size: 2rem;
-        font-weight: 400; }
-    .section-b .services-page .services-garantee div:first-of-type p:nth-of-type(3) {
-      font-size: 3.3rem; }
-    .section-b .services-page .services-garantee div:first-of-type .years-of-garantee {
-      text-align: left;
-      width: 10%;
-      margin-left: auto;
-      margin-right: auto; }
-    .section-b .services-page .services-garantee div:nth-of-type(2) {
-      margin-top: 1rem;
-      text-align: left; }
 
 .section-b.about-section {
   background: #F5F7F9; }
@@ -9915,19 +9902,19 @@ body {
           text-decoration: none;
           box-shadow: 0px 3px 6px #555;
           background: #fafafa; }
-  .section-c .services-page, .section-c .special-page {
+  .section-c .special-page {
     background: #E4F1FE; }
-    .section-c .services-page .content, .section-c .special-page .content {
+    .section-c .special-page .content {
       text-align: center; }
-      .section-c .services-page .content > div, .section-c .special-page .content > div {
+      .section-c .special-page .content > div {
         padding-bottom: 30px; }
-    .section-c .services-page hr, .section-c .special-page hr {
+    .section-c .special-page hr {
       width: 75%;
       border-color: #555; }
-    .section-c .services-page ul > li, .section-c .special-page ul > li {
+    .section-c .special-page ul > li {
       font-size: 2.5rem;
       padding: 8px; }
-    .section-c .services-page h3, .section-c .special-page h3 {
+    .section-c .special-page h3 {
       font-size: 2.7rem; }
 
 .section-d {
