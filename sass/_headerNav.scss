@@ -19,8 +19,12 @@
         font-weight: 400;
     }
 
+    a.active{
+        color:$wpfgreen !important;
+    }
+
     ul > li > a:hover{
-        color:darken(set-text-color($main-color), 6.5%) !important;
+        color:darken($wpfgreen, 6.5%) !important;
     }
 
     .subNav{
