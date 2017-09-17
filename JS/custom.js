@@ -35,6 +35,9 @@ var setItUp = (function(){
             if(oldcheckedSlide == 0){
                 newcheckedSlide = inputArray.length;
             }
+            else{
+                newcheckedSlide = oldcheckedSlide;
+            }
             $('.slider-section > article > .slide-menu > input[type="radio"]:nth-of-type(' + newcheckedSlide + ')').prop('checked', true);
             showSlide(oldcheckedSlide, newcheckedSlide);
         });

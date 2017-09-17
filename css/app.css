@@ -10244,6 +10244,99 @@ body {
         width: 15%;
         align-self: flex-end; }
 
+.cross-section {
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .cross-section .container {
+    padding: 0;
+    width: 100%;
+    background: #F5F7F9; }
+    .cross-section .container .row {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      width: 100%; }
+      .cross-section .container .row article {
+        width: 50%; }
+    .cross-section .container .row:nth-child(1) {
+      flex-direction: row; }
+      .cross-section .container .row:nth-child(1) article {
+        padding: 6em 10em;
+        display: flex;
+        flex-direction: column; }
+      .cross-section .container .row:nth-child(1) article:nth-child(1) {
+        color: #6f7c82;
+        text-align: justify; }
+        .cross-section .container .row:nth-child(1) article:nth-child(1) h1 {
+          font-size: 2rem;
+          font-weight: 800; }
+        .cross-section .container .row:nth-child(1) article:nth-child(1) h2 {
+          font-size: 4rem;
+          color: #2ABFBF;
+          font-weight: 800; }
+        .cross-section .container .row:nth-child(1) article:nth-child(1) p {
+          font-size: 1.5rem;
+          margin-bottom: 2em; }
+          .cross-section .container .row:nth-child(1) article:nth-child(1) p strong {
+            font-weight: 600; }
+        .cross-section .container .row:nth-child(1) article:nth-child(1) a {
+          background: #2ABFBF;
+          padding: 0.5em 1em;
+          font-size: 1.5rem;
+          border-radius: 2.5em;
+          width: 30%;
+          font-weight: 600;
+          color: #fff;
+          text-align: center;
+          box-shadow: 0px 3px 10px #888; }
+      .cross-section .container .row:nth-child(1) article:nth-child(2) {
+        background: url(../img/services/Group21.jpg) no-repeat;
+        background-size: cover;
+        color: #fff; }
+        .cross-section .container .row:nth-child(1) article:nth-child(2) h1 {
+          font-size: 1rem;
+          text-align: center; }
+          .cross-section .container .row:nth-child(1) article:nth-child(2) h1 strong {
+            font-weight: 800; }
+        .cross-section .container .row:nth-child(1) article:nth-child(2) h2 {
+          font-size: 3rem;
+          font-weight: 800;
+          text-align: center;
+          margin: 0; }
+          .cross-section .container .row:nth-child(1) article:nth-child(2) h2 em {
+            color: #2ABFBF;
+            font-style: normal; }
+        .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap; }
+          .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross div {
+            width: 50%;
+            padding: 1.2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+            .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross div h1, .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross div h2, .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross div h3 {
+              width: 90%;
+              margin: 0; }
+            .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross div h1 {
+              font-size: 1rem; }
+            .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross div h2 {
+              font-size: 3rem; }
+            .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross div h3 {
+              font-size: 1.6rem; }
+          .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross .top-left {
+            border-right: 1px solid #fff; }
+          .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross .top-right {
+            border-bottom: 1px solid #fff; }
+          .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross .down-left {
+            border-top: 1px solid #fff; }
+          .cross-section .container .row:nth-child(1) article:nth-child(2) .theCross .down-right {
+            border-left: 1px solid #fff; }
+    .cross-section .container .row:nth-child(2) {
+      flex-direction: row-reverse; }
+
 footer {
   border-top: 1px solid #ccc;
   padding: 0;
