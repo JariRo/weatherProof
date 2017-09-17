@@ -9306,7 +9306,7 @@ body {
       align-items: center; }
       .section-a .index-page .row figure, .section-a .index-page .row article {
         padding: 0;
-        text-align: left; }
+        text-align: justify; }
       .section-a .index-page .row article {
         display: flex;
         flex-direction: column; }
@@ -9425,7 +9425,8 @@ body {
             font-weight: 600;
             width: 50%;
             margin-left: auto;
-            margin-right: auto; }
+            margin-right: auto;
+            box-shadow: 0px 3px 10px #888888; }
         .section-a .services-page .row article p:nth-child(7) {
           text-align: center; }
       .section-a .services-page .row figure {
@@ -9441,26 +9442,31 @@ body {
   .section-b .container {
     margin: 0;
     width: 100%; }
-  .section-b .index-page {
+  .section-b .index-page, .section-b .services-page {
     background-color: #fff; }
-    .section-b .index-page .content {
+    .section-b .index-page .content, .section-b .services-page .content {
       width: 70%;
       margin: 0 auto;
       color: #6F7C82; }
-      .section-b .index-page .content > h3 {
+      .section-b .index-page .content > h3, .section-b .services-page .content > h3 {
         font-weight: 800;
         margin-bottom: 15px; }
-        .section-b .index-page .content > h3 strong {
+        .section-b .index-page .content > h3 strong, .section-b .services-page .content > h3 strong {
           color: #2ABFBF; }
-      .section-b .index-page .content > p {
+      .section-b .index-page .content > p, .section-b .services-page .content > p {
         width: 72%;
         margin: 0 auto;
         font-size: 1.6rem;
         font-weight: 400; }
-      .section-b .index-page .content .process-overlay {
+        .section-b .index-page .content > p strong, .section-b .services-page .content > p strong {
+          font-weight: 600; }
+        .section-b .index-page .content > p em, .section-b .services-page .content > p em {
+          color: #2ABFBF;
+          font-style: normal; }
+      .section-b .index-page .content .process-overlay, .section-b .services-page .content .process-overlay {
         padding-bottom: 2em;
         transition: all 0.8s ease-in-out; }
-      .section-b .index-page .content .process-overlay > .overlay-intro {
+      .section-b .index-page .content .process-overlay > .overlay-intro, .section-b .services-page .content .process-overlay > .overlay-intro {
         position: absolute;
         bottom: -13px;
         left: 37.5%;
@@ -9470,13 +9476,13 @@ body {
         margin-right: auto;
         font-size: 1.6rem;
         z-index: 98; }
-        .section-b .index-page .content .process-overlay > .overlay-intro > p {
+        .section-b .index-page .content .process-overlay > .overlay-intro > p, .section-b .services-page .content .process-overlay > .overlay-intro > p {
           opacity: 1;
           transition: all 0.8s ease-in-out; }
-        .section-b .index-page .content .process-overlay > .overlay-intro p > em {
+        .section-b .index-page .content .process-overlay > .overlay-intro p > em, .section-b .services-page .content .process-overlay > .overlay-intro p > em {
           color: #2ABFBF;
           font-style: normal; }
-        .section-b .index-page .content .process-overlay > .overlay-intro a {
+        .section-b .index-page .content .process-overlay > .overlay-intro a, .section-b .services-page .content .process-overlay > .overlay-intro a {
           display: inline;
           background: #2ABFBF;
           padding: 3px 12px;
@@ -9485,67 +9491,67 @@ body {
           margin: 20px;
           color: #fff;
           box-shadow: 0px 3px 10px #888888; }
-        .section-b .index-page .content .process-overlay > .overlay-intro a:hover {
+        .section-b .index-page .content .process-overlay > .overlay-intro a:hover, .section-b .services-page .content .process-overlay > .overlay-intro a:hover {
           background: #29bcbc; }
-        .section-b .index-page .content .process-overlay > .overlay-intro a > i {
+        .section-b .index-page .content .process-overlay > .overlay-intro a > i, .section-b .services-page .content .process-overlay > .overlay-intro a > i {
           transition: transform 0.3s ease-in-out;
           transform: rotate(0deg); }
-      .section-b .index-page .content .process-overlay.showing {
+      .section-b .index-page .content .process-overlay.showing, .section-b .services-page .content .process-overlay.showing {
         padding-bottom: 5em;
         transition: all 0.8s ease-in-out; }
-        .section-b .index-page .content .process-overlay.showing .overlay-intro > p {
+        .section-b .index-page .content .process-overlay.showing .overlay-intro > p, .section-b .services-page .content .process-overlay.showing .overlay-intro > p {
           opacity: 0;
           transition: all 0.8s ease-in-out; }
-        .section-b .index-page .content .process-overlay.showing .overlay-intro a > i {
+        .section-b .index-page .content .process-overlay.showing .overlay-intro a > i, .section-b .services-page .content .process-overlay.showing .overlay-intro a > i {
           transition: transform 0.3s ease-in-out;
           transform: rotate(180deg); }
-      .section-b .index-page .content .process-overlay > .overlay-content {
+      .section-b .index-page .content .process-overlay > .overlay-content, .section-b .services-page .content .process-overlay > .overlay-content {
         height: 7vw;
         opacity: 0.05;
         transition: all 0.8s ease-in-out; }
-      .section-b .index-page .content .process-overlay.showing > .overlay-content {
+      .section-b .index-page .content .process-overlay.showing > .overlay-content, .section-b .services-page .content .process-overlay.showing > .overlay-content {
         height: 110vw;
         opacity: 1;
         transition: all 0.8s ease-in-out; }
-      .section-b .index-page .content .process-overlay figure {
+      .section-b .index-page .content .process-overlay figure, .section-b .services-page .content .process-overlay figure {
         width: 90%;
         padding: 20px;
         margin-left: auto;
         margin-right: auto; }
-      .section-b .index-page .content .process-overlay figure > #SixStepProcess {
+      .section-b .index-page .content .process-overlay figure > #SixStepProcess, .section-b .services-page .content .process-overlay figure > #SixStepProcess {
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 10px; }
-      .section-b .index-page .content .process-overlay #consultation_card {
+      .section-b .index-page .content .process-overlay #consultation_card, .section-b .services-page .content .process-overlay #consultation_card {
         display: flex;
         flex-direction: row;
         width: 90%;
         margin: 20px auto;
         padding: 3em 3.5em;
         box-shadow: 0px 3px 10px #888888; }
-        .section-b .index-page .content .process-overlay #consultation_card figure {
+        .section-b .index-page .content .process-overlay #consultation_card figure, .section-b .services-page .content .process-overlay #consultation_card figure {
           padding: 0;
           padding-right: 1.5em; }
-          .section-b .index-page .content .process-overlay #consultation_card figure img {
+          .section-b .index-page .content .process-overlay #consultation_card figure img, .section-b .services-page .content .process-overlay #consultation_card figure img {
             width: 70%; }
-        .section-b .index-page .content .process-overlay #consultation_card article {
+        .section-b .index-page .content .process-overlay #consultation_card article, .section-b .services-page .content .process-overlay #consultation_card article {
           text-align: left; }
-          .section-b .index-page .content .process-overlay #consultation_card article h3 {
+          .section-b .index-page .content .process-overlay #consultation_card article h3, .section-b .services-page .content .process-overlay #consultation_card article h3 {
             margin: 0 0 10px 0;
             text-align: left;
             color: #000;
             font-size: 1.8rem; }
-          .section-b .index-page .content .process-overlay #consultation_card article p {
+          .section-b .index-page .content .process-overlay #consultation_card article p, .section-b .services-page .content .process-overlay #consultation_card article p {
             font-size: 1.4rem;
             line-height: 1.5em;
             margin-bottom: 20px; }
-            .section-b .index-page .content .process-overlay #consultation_card article p em {
+            .section-b .index-page .content .process-overlay #consultation_card article p em, .section-b .services-page .content .process-overlay #consultation_card article p em {
               font-style: normal;
               color: #2ABFBF; }
-          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder {
+          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder, .section-b .services-page .content .process-overlay #consultation_card article .Btn-holder {
             margin-top: 35px;
             margin-bottom: 0px; }
-          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder > .consultationBtn {
+          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder > .consultationBtn, .section-b .services-page .content .process-overlay #consultation_card article .Btn-holder > .consultationBtn {
             padding: 8px 25px;
             background-color: #2ABFBF;
             color: #fff;
@@ -9556,7 +9562,7 @@ body {
             font-weight: 600;
             box-shadow: 0px 3px 10px #888888;
             transition: all 0.3s ease-in-out; }
-          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder > .consultationBtn:hover {
+          .section-b .index-page .content .process-overlay #consultation_card article .Btn-holder > .consultationBtn:hover, .section-b .services-page .content .process-overlay #consultation_card article .Btn-holder > .consultationBtn:hover {
             background-color: #2abebe;
             box-shadow: 0px 3px 6px #888888;
             text-decoration: none;
@@ -10143,6 +10149,100 @@ body {
           font-weight: 600; }
     .section-g #cooperations figure:first-child {
       border-right: 1px solid #ccc; }
+
+.slider-section {
+  padding: 3% 0 0 0;
+  margin: 0;
+  background: #F5F7F9; }
+  .slider-section h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #6f7c82; }
+  .slider-section h2 {
+    font-size: 2.5rem;
+    color: #6f7c82; }
+    .slider-section h2 strong {
+      color: #2ABFBF; }
+  .slider-section > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10%; }
+  .slider-section > article > .slide-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .slider-section > article > .slide-menu > input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      z-index: -1; }
+    .slider-section > article > .slide-menu > label {
+      width: 13%;
+      position: relative;
+      text-align: center;
+      border: 1px solid #6f7c82;
+      border-radius: 2em;
+      margin: 0.5em;
+      letter-spacing: 1px;
+      padding: 0.6em;
+      cursor: pointer;
+      font-size: 1.3rem;
+      color: #6f7c82; }
+    .slider-section > article > .slide-menu > input[type="radio"]:checked + label {
+      color: #fff;
+      background: #2ABFBF;
+      border-color: #2ABFBF;
+      box-shadow: 0px 3px 10px #888; }
+    .slider-section > article > .slide-menu > label {
+      transition: all 0.4s ease; }
+  .slider-section > article > .slides-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin-top: 2em; }
+    .slider-section > article > .slides-holder i {
+      padding: 1em;
+      font-size: 5rem;
+      color: #6f7c82;
+      cursor: pointer; }
+    .slider-section > article > .slides-holder > .slide-content-holder {
+      width: 100%;
+      box-shadow: 0px 3px 10px #888;
+      padding: 5em 6em; }
+    .slider-section > article > .slides-holder > .slide-content-holder > article {
+      display: flex;
+      flex-direction: column; }
+      .slider-section > article > .slides-holder > .slide-content-holder > article h1 {
+        font-size: 5rem;
+        font-family: majestiBannerBold;
+        font-weight: 600;
+        color: #000;
+        margin: 0; }
+      .slider-section > article > .slides-holder > .slide-content-holder > article h2 {
+        font-size: 2.2rem;
+        color: #000;
+        margin: 0 0 1em 0;
+        font-family: majestiBannerBold; }
+      .slider-section > article > .slides-holder > .slide-content-holder > article p {
+        text-align: justify;
+        font-size: 1.6rem;
+        line-height: 1.5em;
+        margin-bottom: 1em; }
+        .slider-section > article > .slides-holder > .slide-content-holder > article p strong {
+          font-weight: 600; }
+        .slider-section > article > .slides-holder > .slide-content-holder > article p em {
+          color: #2ABFBF;
+          font-style: normal;
+          font-weight: 600; }
+      .slider-section > article > .slides-holder > .slide-content-holder > article > img {
+        width: 15%;
+        align-self: flex-end; }
 
 footer {
   border-top: 1px solid #ccc;
@@ -11329,5 +11429,10 @@ section.section-d > .special-page {
     flex: 22.5%; }
   section.section-d > .special-page .special-product-holder.second-holder figure:nth-child(3) {
     flex: 55%; }
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
 
 /*# sourceMappingURL=app.css.map */

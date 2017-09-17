@@ -25,6 +25,31 @@ var setItUp = (function(){
         });
 
 
+        $('.slider-section .slide-menu > input').on('click', function(){
+            showSlide("no", "no");
+        });
+
+        $('.slider-section > article > .slides-holder > .slide-left').on('click', function(){
+            var inputArray = $('.slider-section > article > .slide-menu > input:radio');
+            var oldcheckedSlide = inputArray.index(inputArray.filter(':checked'));
+            if(oldcheckedSlide == 0){
+                newcheckedSlide = inputArray.length;
+            }
+            $('.slider-section > article > .slide-menu > input[type="radio"]:nth-of-type(' + newcheckedSlide + ')').prop('checked', true);
+            showSlide(oldcheckedSlide, newcheckedSlide);
+        });
+
+        $('.slider-section > article > .slides-holder > .slide-right').on('click', function(){
+            var inputArray = $('.slider-section > article > .slide-menu > input:radio');
+            var oldcheckedSlide = inputArray.index(inputArray.filter(':checked'));
+            if ( oldcheckedSlide == (inputArray.length - 1)){
+                newcheckedSlide = 1;
+            } else{
+                newcheckedSlide = oldcheckedSlide + 2;
+            }
+            $('.slider-section > article > .slide-menu > input[type="radio"]:nth-of-type(' + newcheckedSlide + ')').prop('checked', true);
+            showSlide(oldcheckedSlide, newcheckedSlide);
+        });
 
         $('#matNav > .input-box > input').on('click', function(){
             showCategories();
@@ -45,6 +70,13 @@ var setItUp = (function(){
         $('#systemsNavigation-facade > .input-box > input').on('click', function(){
             showFacade();
         });
+
+        var showSlide = function(prevCheck, newCheck){
+            $('.slides-holder > .slide-content-holder > article').fadeTo('fast', 0);
+            $('.slides-holder > .slide-content-holder > article').hide();
+            var checkedSlide = $('.slider-section > article > .slide-menu > input:checked').attr('id');
+            $('.slides-holder > .slide-content-holder > article[data-slide-nr="' + checkedSlide + '"]').show().fadeTo('fast', 1);
+        }
 
         var showProcess = function(){
             if ($('.process-overlay').hasClass('showing')){
@@ -163,6 +195,7 @@ var setItUp = (function(){
         showCategories();
         showRoofs();
         showFacade();
+        showSlide();
     };
 
     /*

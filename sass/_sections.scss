@@ -316,7 +316,7 @@
 
             figure, article{
                 padding:0;
-                text-align: left;
+                text-align: justify;
             }
 
             article{
@@ -499,6 +499,7 @@
                         width:50%;
                         margin-left: auto;
                         margin-right: auto;
+                        box-shadow: 0px 3px 10px #888888;
                     }
                 }
 
@@ -517,8 +518,6 @@
             }
         }
     }
-
-
 }
 
 
@@ -533,7 +532,7 @@
         width:100%;
     }
 
-    .index-page{
+    .index-page, .services-page{
         background-color:#fff;
 
         .content{
@@ -555,6 +554,15 @@
                 margin:0 auto;
                 font-size: 1.6rem;
                 font-weight: 400;
+
+                strong{
+                    font-weight: 600;
+                }
+
+                em{
+                    color:$wpfgreen;
+                    font-style: normal;
+                }
             }
 
             .process-overlay{
@@ -1576,6 +1584,141 @@
             border-right:1px solid #ccc;
         }
     }
+}
 
 
+.slider-section{
+    padding:3% 0 0 0;
+    margin:0;
+    background:$wpfGrey;
+
+    h1{
+        font-weight: 600;
+        font-size: 1.8rem;
+        color:$wpfGrey-dark;
+    }
+
+    h2{
+        font-size: 2.5rem;
+        color:$wpfGrey-dark;
+
+        strong{
+            color:$wpfgreen;
+        }
+    }
+
+    > article{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom:10%;
+    }
+
+    > article > .slide-menu{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > input[type="radio"]{
+            position:absolute;
+            opacity:0;
+            z-index: -1;
+        }
+
+        > label{
+            width:13%;
+            position:relative;
+            text-align: center;
+            border:1px solid $wpfGrey-dark;
+            border-radius: 2em;
+            margin:0.5em;
+            letter-spacing: 1px;
+            padding:0.6em;
+            cursor:pointer;
+
+            font-size: 1.3rem;
+            color:$wpfGrey-dark;
+
+        }
+
+        > input[type="radio"]:checked + label{
+            color:#fff;
+            background:$wpfgreen;
+            border-color:$wpfgreen;
+            box-shadow: 0px 3px 10px #888;
+        }
+
+        > label{
+            transition:all 0.4s ease;
+        }
+    }
+
+    > article > .slides-holder{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width:90%;
+        margin-top:2em;
+
+        i{
+            padding:1em;
+            font-size: 5rem;
+            color:$wpfGrey-dark;
+            cursor:pointer;
+        }
+
+        > .slide-content-holder{
+            width:100%;
+            box-shadow: 0px 3px 10px #888;
+            padding:5em 6em;
+        }
+
+        > .slide-content-holder > article{
+            display:flex;
+            flex-direction: column;
+            //position:absolute;
+
+            h1{
+                font-size: 5rem;
+                font-family: majestiBannerBold;
+                font-weight: 600;
+                color:#000;
+                margin:0;
+            }
+
+            h2{
+                font-size: 2.2rem;
+                color:#000;
+                margin:0 0 1em 0;
+                font-family: majestiBannerBold;
+            }
+
+            p{
+                text-align: justify;
+                font-size: 1.6rem;
+                line-height: 1.5em;
+                margin-bottom:1em;
+
+                strong{
+                    font-weight: 600;
+                }
+
+                em{
+                    color:$wpfgreen;
+                    font-style: normal;
+                    font-weight: 600;
+                }
+            }
+
+            > img{
+                width:15%;
+                align-self: flex-end;
+            }
+        }
+    }
 }
