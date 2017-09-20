@@ -1723,6 +1723,7 @@
     }
 }
 
+
 .cross-section{
     padding:0;
     margin:0;
@@ -1741,7 +1742,6 @@
 
             article{
                 width:50%;
-
             }
         }
 
@@ -1810,7 +1810,7 @@
                     font-size: 3rem;
                     font-weight: 800;
                     text-align: center;
-                    margin:0;
+                    margin:0 0 1em 0;
 
                     em{
                         color:$wpfgreen;
@@ -1862,9 +1862,323 @@
                 }
             }
         }
+
         .row:nth-child(2){
             flex-direction: row-reverse;
+
+
+            article{
+                padding:7em 7em 8em 7em;
+                display:flex;
+                flex-direction: column;
+            }
+
+            article:nth-child(1){
+                color:$wpfGrey-dark;
+
+                h1{
+                    font-size: 2.8rem;
+                    width:80%;
+
+                    em{
+                        color:$wpfgreen;
+                        font-style: normal;
+                        font-weight: 600;
+                    }
+                }
+
+                .listbox{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width:80%;
+
+                    ul{
+                        padding:0.8em 0;
+                        margin:0;
+                        width:48%;
+                        list-style:none;
+
+                        li{
+                            width:100%;
+                            text-align: justify;
+                            font-size: 2.3rem;
+                            background:url(../img/icons/startpage/material.svg) no-repeat 0 0;
+                            background-position:left;
+                            padding-left:1.6em;
+                            margin:0.9em 0;
+                        }
+                    }
+                }
+
+                > p {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    line-height: 1.2em;
+                }
+            }
+
+            article:nth-child(2){
+                background: url(../img/services/Group23.jpg) no-repeat 0 -105px;
+                background-size: cover;
+                color:#fff;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .frame-box{
+                    border:12px solid #fff;
+                    text-align: center;
+                    width:100%;
+                    height:90%;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    > h1{
+                        padding:0.5em 0.5em 0.5em 0.5em;
+                        font-weight: 600;
+                        font-family: majestiBannerBold;
+                        font-size: 4.45rem;
+                    }
+
+                    > a{
+                        padding:0.6em 1.3em;
+                        border:1px solid #fff;
+                        border-radius: 2em;
+                        text-align: center;
+                        color:#fff;
+                        transition: all 0.4s ease;
+                    }
+
+                    > a:hover{
+                        text-decoration: none;
+                    }
+
+                }
+
+            }
         }
 
+    }
+}
+
+.wpf-services-section{
+    padding:0;
+    margin:0;
+    background:#fff;
+
+    .row{
+        width:100%;
+        padding:4% 0;
+
+        > article.love-to-help{
+            width:60%;
+            display:flex;
+            flex-direction: column;
+            padding:3em;
+            background:$wpfGrey;
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 0px 3px 10px #888;
+            color:$wpfGrey-dark;
+
+            > h1{
+                font-size: 1.3rem;
+                text-align: center;
+                color:#000;
+
+                strong{
+                    font-weight: 600;
+                }
+            }
+
+            > h2{
+                font-size: 2.6rem;
+                font-weight: 600;
+                text-align: center;
+
+                em{
+                    color:$wpfgreen;
+                    font-style: normal;
+                }
+            }
+
+            > h3{
+                text-align: center;
+                width:50%;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 1.6rem;
+            }
+
+            > .listbox{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width:80%;
+                padding:2em;
+                margin-right: auto;
+                margin-left: auto;
+
+                ul{
+                    width:33%;
+                    color:$wpfgreen;
+                    list-style: none;
+                    text-align: center;
+                    font-weight: 600;
+                    padding:0;
+
+                    li{
+                        font-size: 1.8rem;
+                        margin:1em 0;
+                    }
+                }
+            }
+
+            > img{
+                width:15%;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+.wpf-tools-section{
+    padding:0;
+    margin:0;
+    background:#fff;
+
+    .row{
+        width:100%;
+        padding:4% 0;
+        color:$wpfGrey-dark;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > h1 {
+            font-weight: 600;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        > h2{
+            font-size: 3rem;
+            font-weight: 600;
+
+            em{
+                color:$wpfgreen;
+                font-style: normal;
+            }
+        }
+
+        > .card-holder{
+            margin-top:4em;
+            width:70%;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            figure{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width:31%;
+                padding:3em;
+                box-shadow: 0px 3px 10px #888888;
+
+                img{
+                    width:70%;
+                }
+
+                figcaption{
+                    display:flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    > a{
+                        background-color:#2ABFBF;
+                        color:#fff;
+                        padding:0.5em 0.3em;
+                        border-radius:2em;
+                        width:80%;
+                        margin-right: auto;
+                        margin-left: auto;
+                        font-weight: 600;
+                        box-shadow: 0px 3px 10px #888;
+                    }
+
+                    > a:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.visit-kort{
+    padding:0;
+    margin:0;
+    background:#fff;
+
+    .row{
+        width:100%;
+        padding-bottom:4%;
+
+        > h1{
+            font-weight: 600;
+            color:$wpfGrey-dark;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        > .business-cards{
+            width:100%;
+            display:flex;
+            flex-direction: row;
+            align-items: center;justify-content: space-around;
+
+            > figure{
+                display:flex;
+                flex-direction: row;
+
+                box-shadow: 0px 3px 10px #888;
+                width:25%;
+                //margin-right: auto;
+                //margin-left: auto;
+                //padding:1.4em;
+
+                > img{
+                    width:30%;
+                    height:10%;
+                    padding:1.2em;
+                }
+
+                > figcaption{
+                    width:55%;
+                    padding:1.2em;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    h1{
+                        margin:0;
+                        font-size: 1.6rem;
+                        color:$wpfgreen;
+                        font-weight: 600;
+                    }
+
+                    p{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
     }
 }

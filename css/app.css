@@ -10303,7 +10303,7 @@ body {
           font-size: 3rem;
           font-weight: 800;
           text-align: center;
-          margin: 0; }
+          margin: 0 0 1em 0; }
           .cross-section .container .row:nth-child(1) article:nth-child(2) h2 em {
             color: #2ABFBF;
             font-style: normal; }
@@ -10336,6 +10336,225 @@ body {
             border-left: 1px solid #fff; }
     .cross-section .container .row:nth-child(2) {
       flex-direction: row-reverse; }
+      .cross-section .container .row:nth-child(2) article {
+        padding: 7em 7em 8em 7em;
+        display: flex;
+        flex-direction: column; }
+      .cross-section .container .row:nth-child(2) article:nth-child(1) {
+        color: #6f7c82; }
+        .cross-section .container .row:nth-child(2) article:nth-child(1) h1 {
+          font-size: 2.8rem;
+          width: 80%; }
+          .cross-section .container .row:nth-child(2) article:nth-child(1) h1 em {
+            color: #2ABFBF;
+            font-style: normal;
+            font-weight: 600; }
+        .cross-section .container .row:nth-child(2) article:nth-child(1) .listbox {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 80%; }
+          .cross-section .container .row:nth-child(2) article:nth-child(1) .listbox ul {
+            padding: 0.8em 0;
+            margin: 0;
+            width: 48%;
+            list-style: none; }
+            .cross-section .container .row:nth-child(2) article:nth-child(1) .listbox ul li {
+              width: 100%;
+              text-align: justify;
+              font-size: 2.3rem;
+              background: url(../img/icons/startpage/material.svg) no-repeat 0 0;
+              background-position: left;
+              padding-left: 1.6em;
+              margin: 0.9em 0; }
+        .cross-section .container .row:nth-child(2) article:nth-child(1) > p {
+          font-size: 1.6rem;
+          text-align: justify;
+          line-height: 1.2em; }
+      .cross-section .container .row:nth-child(2) article:nth-child(2) {
+        background: url(../img/services/Group23.jpg) no-repeat 0 -105px;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .cross-section .container .row:nth-child(2) article:nth-child(2) .frame-box {
+          border: 12px solid #fff;
+          text-align: center;
+          width: 100%;
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .cross-section .container .row:nth-child(2) article:nth-child(2) .frame-box > h1 {
+            padding: 0.5em 0.5em 0.5em 0.5em;
+            font-weight: 600;
+            font-family: majestiBannerBold;
+            font-size: 4.45rem; }
+          .cross-section .container .row:nth-child(2) article:nth-child(2) .frame-box > a {
+            padding: 0.6em 1.3em;
+            border: 1px solid #fff;
+            border-radius: 2em;
+            text-align: center;
+            color: #fff;
+            transition: all 0.4s ease; }
+          .cross-section .container .row:nth-child(2) article:nth-child(2) .frame-box > a:hover {
+            text-decoration: none; }
+
+.wpf-services-section {
+  padding: 0;
+  margin: 0;
+  background: #fff; }
+  .wpf-services-section .row {
+    width: 100%;
+    padding: 4% 0; }
+    .wpf-services-section .row > article.love-to-help {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      padding: 3em;
+      background: #F5F7F9;
+      margin-right: auto;
+      margin-left: auto;
+      box-shadow: 0px 3px 10px #888;
+      color: #6f7c82; }
+      .wpf-services-section .row > article.love-to-help > h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        color: #000; }
+        .wpf-services-section .row > article.love-to-help > h1 strong {
+          font-weight: 600; }
+      .wpf-services-section .row > article.love-to-help > h2 {
+        font-size: 2.6rem;
+        font-weight: 600;
+        text-align: center; }
+        .wpf-services-section .row > article.love-to-help > h2 em {
+          color: #2ABFBF;
+          font-style: normal; }
+      .wpf-services-section .row > article.love-to-help > h3 {
+        text-align: center;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.6rem; }
+      .wpf-services-section .row > article.love-to-help > .listbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        padding: 2em;
+        margin-right: auto;
+        margin-left: auto; }
+        .wpf-services-section .row > article.love-to-help > .listbox ul {
+          width: 33%;
+          color: #2ABFBF;
+          list-style: none;
+          text-align: center;
+          font-weight: 600;
+          padding: 0; }
+          .wpf-services-section .row > article.love-to-help > .listbox ul li {
+            font-size: 1.8rem;
+            margin: 1em 0; }
+      .wpf-services-section .row > article.love-to-help > img {
+        width: 15%;
+        align-self: flex-end; }
+
+.wpf-tools-section {
+  padding: 0;
+  margin: 0;
+  background: #fff; }
+  .wpf-tools-section .row {
+    width: 100%;
+    padding: 4% 0;
+    color: #6f7c82;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .wpf-tools-section .row > h1 {
+      font-weight: 600;
+      font-size: 1.6rem;
+      text-align: center; }
+    .wpf-tools-section .row > h2 {
+      font-size: 3rem;
+      font-weight: 600; }
+      .wpf-tools-section .row > h2 em {
+        color: #2ABFBF;
+        font-style: normal; }
+    .wpf-tools-section .row > .card-holder {
+      margin-top: 4em;
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .wpf-tools-section .row > .card-holder figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 31%;
+        padding: 3em;
+        box-shadow: 0px 3px 10px #888888; }
+        .wpf-tools-section .row > .card-holder figure img {
+          width: 70%; }
+        .wpf-tools-section .row > .card-holder figure figcaption {
+          display: flex;
+          flex-direction: column;
+          text-align: center; }
+          .wpf-tools-section .row > .card-holder figure figcaption > a {
+            background-color: #2ABFBF;
+            color: #fff;
+            padding: 0.5em 0.3em;
+            border-radius: 2em;
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            font-weight: 600;
+            box-shadow: 0px 3px 10px #888; }
+          .wpf-tools-section .row > .card-holder figure figcaption > a:hover {
+            text-decoration: none; }
+
+.visit-kort {
+  padding: 0;
+  margin: 0;
+  background: #fff; }
+  .visit-kort .row {
+    width: 100%;
+    padding-bottom: 4%; }
+    .visit-kort .row > h1 {
+      font-weight: 600;
+      color: #6f7c82;
+      text-align: center;
+      font-size: 2rem; }
+    .visit-kort .row > .business-cards {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around; }
+      .visit-kort .row > .business-cards > figure {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 3px 10px #888;
+        width: 25%; }
+        .visit-kort .row > .business-cards > figure > img {
+          width: 30%;
+          height: 10%;
+          padding: 1.2em; }
+        .visit-kort .row > .business-cards > figure > figcaption {
+          width: 55%;
+          padding: 1.2em;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          .visit-kort .row > .business-cards > figure > figcaption h1 {
+            margin: 0;
+            font-size: 1.6rem;
+            color: #2ABFBF;
+            font-weight: 600; }
+          .visit-kort .row > .business-cards > figure > figcaption p {
+            font-size: 1.6rem; }
 
 footer {
   border-top: 1px solid #ccc;
