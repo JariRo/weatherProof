@@ -29,6 +29,7 @@ var setItUp = (function(){
             showSlide("no", "no");
         });
 
+
         $('.slider-section > article > .slides-holder > .slide-left').on('click', function(){
             var inputArray = $('.slider-section > article > .slide-menu > input:radio');
             var oldcheckedSlide = inputArray.index(inputArray.filter(':checked'));
@@ -42,6 +43,7 @@ var setItUp = (function(){
             showSlide(oldcheckedSlide, newcheckedSlide);
         });
 
+
         $('.slider-section > article > .slides-holder > .slide-right').on('click', function(){
             var inputArray = $('.slider-section > article > .slide-menu > input:radio');
             var oldcheckedSlide = inputArray.index(inputArray.filter(':checked'));
@@ -54,17 +56,24 @@ var setItUp = (function(){
             showSlide(oldcheckedSlide, newcheckedSlide);
         });
 
+
+        /* MATERIALVÄLJAREN
         $('#matNav > .input-box > input').on('click', function(){
             showCategories();
         });
+        */
 
+        /* PRODUKTER
         $('#productNavigation > .input-box > input').on('click', function(){
             showCategories();
         });
+        */
 
+        /* TAK och FASAD SYSTEM
         $('#systemsNavigation > .input-box > input').on('click', function(){
             showCategories();
         });
+
 
         $('#systemsNavigation-roof > .input-box > input').on('click', function(){
             showRoofs();
@@ -73,6 +82,7 @@ var setItUp = (function(){
         $('#systemsNavigation-facade > .input-box > input').on('click', function(){
             showFacade();
         });
+        */
 
         var showSlide = function(prevCheck, newCheck){
             $('.slides-holder > .slide-content-holder > article').fadeTo('fast', 0);
@@ -94,7 +104,6 @@ var setItUp = (function(){
         };
 
         var showCategories = function(){
-
             if ( $('#matNav').length ){
                 $('.material-text-content').hide();
                 $('.type-holder').hide();
@@ -115,7 +124,6 @@ var setItUp = (function(){
 
                 if ( checkedRadio == "category-0" ){
                     $('.product-category').show();
-                    console.log('holla')
                 }
                 else{
                     $('.product-category[data-category-type="' +checkedRadio+ '"]').show();
@@ -144,6 +152,8 @@ var setItUp = (function(){
             $('.facade-system[data-facade-system="' +checkedFacadeSystem+ '"]').show().fadeTo('fast', 1);
         }
 
+
+        /* SUBMENY on HOVER
         $('.productList').hover(function(){
             $('> .subNav', this).stop().fadeIn(270);
         }, function(){
@@ -155,6 +165,8 @@ var setItUp = (function(){
         }, function(){
             $('> .subNav', this).stop().fadeOut(270);
         });
+        */
+
 
         $('.theMaps').on('click', function(){
             $('.theMaps > iframe').css("pointer-events", "auto");
@@ -164,7 +176,8 @@ var setItUp = (function(){
             $('.theMaps > iframe').css('pointer-events', 'none');
         });
 
-        $('.contact-button').on('click', function(){
+        $('.contact-button').on('click', function(event){
+            event.preventDefault();
             var contactSlide = $('.contact-slide');
             $(contactSlide).addClass('display-contact');
 
@@ -181,6 +194,8 @@ var setItUp = (function(){
             $('.opacity-overlay').fadeOut(300);
         });
 
+
+        /* OFFERT */
         $('.advancedOptions').on('click', function(event){
             event.preventDefault();
             $('.offert-advanced-content').show(300);
@@ -195,9 +210,9 @@ var setItUp = (function(){
             $('.offert-section').hide(400);
         })
 
-        showCategories();
-        showRoofs();
-        showFacade();
+        //showCategories();
+        //showRoofs();
+        //showFacade();
         showSlide();
     };
 

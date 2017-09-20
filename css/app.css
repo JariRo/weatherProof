@@ -8544,31 +8544,6 @@ select.selectpicker {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease; }
 
-.contact-button {
-  position: fixed;
-  /*
-  -ms-writing-mode:tb-rl;
-  -webkit-writing-mode: vertical-rl;
-  -moz-writing-mode: vertical-rl;
-  -ms-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  -webkit-text-orientation:upright;
-  -moz-text-orientation:upright;
-  -ms-text-orientation:upright;
-  text-orientation:upright;
-  */
-  border: 1px solid #ccc;
-  background-color: #03c9a9;
-  padding: 15px 7px 5px 7px;
-  right: -2px;
-  font-size: 12px;
-  font-weight: 600;
-  top: 50%;
-  text-transform: uppercase;
-  z-index: 500; }
-  .contact-button i {
-    font-size: 40px; }
-
 .contact-slide {
   transition: all 0.5s ease;
   position: fixed;
@@ -8634,6 +8609,69 @@ select.selectpicker {
 body {
   min-height: 100%;
   margin: 0; }
+
+#underDevelopment {
+  background: #2ABFBF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  #underDevelopment #getBackHome {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    font-size: 5rem; }
+    #underDevelopment #getBackHome:hover {
+      cursor: pointer; }
+  #underDevelopment article {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; }
+    #underDevelopment article h1 {
+      font-family: majestiBannerBold;
+      font-size: 5rem;
+      font-weight: 600; }
+    #underDevelopment article h2 {
+      width: 60%;
+      font-size: 3rem;
+      margin-right: auto;
+      margin-left: auto; }
+    #underDevelopment article figure {
+      width: 25%;
+      margin: 0 auto;
+      font-size: 8rem;
+      display: flex;
+      justify-content: space-around; }
+      #underDevelopment article figure #instagram, #underDevelopment article figure #facebook {
+        font-size: 8rem;
+        background: #1a8c97;
+        /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#1a8c97, #1a8c97);
+        background: -o-linear-gradient(#1a8c97, #1a8c97);
+        background: -moz-linear-gradient(#1a8c97, #1a8c97);
+        background: linear-gradient(#1a8c97, #1a8c97);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex; }
+      #underDevelopment article figure #instagram:hover {
+        background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+        background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      #underDevelopment article figure #facebook:hover {
+        background: -webkit-radial-gradient(#3B5998, #3B5998);
+        background: radial-gradient(#3B5998, #3B5998);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
 
 #brandLogo.offert-page, #brandLogo.special-fitting-page {
   position: fixed;
