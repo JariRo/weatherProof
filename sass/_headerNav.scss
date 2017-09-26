@@ -154,11 +154,12 @@
         margin-right: auto;
         margin-left: auto;
         display:flex;
+        position: relative;
+        left: 40px;
     }
 
     #navbar > .logo-holder > li{
-        width:80%;
-        position:relative;
+        width:90%;
         top:-20px;
 
     }
@@ -167,6 +168,7 @@
         width:70%;
         margin-left: auto;
         margin-right: auto;
+
     }
 
     .fa{
@@ -193,6 +195,7 @@
 .navbar, #brandLogo, .shrinkContactInfo{
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+
 }
 
 

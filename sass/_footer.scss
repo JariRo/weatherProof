@@ -1,5 +1,5 @@
 footer{
-    border-top:1px solid #ccc;
+    border-top:1px solid #E4E9EC;
     padding:0;
     width:100%;
     background:#f5f7f9;
@@ -34,20 +34,22 @@ footer{
                 width:100%;
                 display: flex;
                 flex-direction: column;
+                padding-left: 40px;
 
                 img{
-                    width:55%;
+                    width:45%;
                     align-self: center;
                 }
 
                 figcaption{
 
                     p{
-                        padding-top:10px;
-                        line-height: 2.5rem;
-                        font-size: 1.2rem;
-                        font-weight: 600;
+                        padding-top:15px;
+
                         color:#6F7C82;
+                        text-align: justify;
+                        line-height: 1.7em;
+                        font-size: 1.4rem;
                     }
 
                     em{
@@ -63,6 +65,7 @@ footer{
                 flex-direction: row;
                 justify-content: space-between;
                 text-align: center;
+                padding-left: 40px;
 
 
                 figcaption > h3{
@@ -73,7 +76,7 @@ footer{
                 }
 
                 figcaption > p{
-                    font-size: 2.4rem;
+                    font-size: 3.5rem;
 
                     a{
                         padding:2px;
@@ -107,14 +110,16 @@ footer{
             > section{
                 display: flex;
                 flex-direction: column;
-                //border-left:1px solid #ccc;
+               //border-left:1px solid #ccc;
                 padding:0px 0px 20px 20px;
-                border-left:1px solid #ccc;
+                border-left:1px solid #E4E9EC;
 
                 h4{
                     color:#2ABFBF;
                     font-size: 1em;
                     font-weight: 600;
+                    padding-bottom: 10px;
+                    letter-spacing: .08rem;
                 }
 
                 ul{
@@ -135,8 +140,9 @@ footer{
                     }
 
                     li > i{
-                        padding-right:2px;
+                        padding-right:12px;
                         color:#2ABFBF;
+                        font-size: 22px;
                     }
                 }
 
@@ -150,16 +156,18 @@ footer{
                         font-weight: 600;
                         font-size: 1em;
                         color:#2ABFBF;
-                        margin-top:0;
+                        margin-top: 8px;
+                        padding-bottom: 10px;
+                        letter-spacing: .08rem;
                     }
 
                     a{
-                        background:#2ABFBF;
-                        padding:8px;
-                        border-radius: 14px;
-                        width:50%;
-                        font-size: 0.7em;
-                        color:#fff;
+                        background: #2ABFBF;
+                        padding: 12px;
+                        border-radius: 50px;
+                        width: 40%;
+                        font-size: 1em;
+                        color: #fff;
                         text-align: center;
 
                         em{
@@ -221,7 +229,7 @@ footer{
         width:100%;
         padding:0;
         text-align: right;
-        border-top:1px solid #ccc;
+        border-top:1px solid #E4E9EC;
         margin-top:5px;
         font-size: 10px;
 
