@@ -27,6 +27,9 @@
         color:darken($wpfgreen, 6.5%) !important;
     }
 
+.textinfo {
+  font-weight: bold;
+}
     .subNav{
         display:none;
         position:fixed;
@@ -151,11 +154,12 @@
         margin-right: auto;
         margin-left: auto;
         display:flex;
+        position: relative;
+        left: 40px;
     }
 
     #navbar > .logo-holder > li{
-        width:80%;
-        position:relative;
+        width:90%;
         top:-20px;
 
     }
@@ -164,12 +168,14 @@
         width:70%;
         margin-left: auto;
         margin-right: auto;
+
     }
 
     .fa{
         font-size: 18px;
     }
 }
+
 
 // Navbar On-scroll animatio + design
 .shrinkNav{
@@ -189,6 +195,7 @@
 .navbar, #brandLogo, .shrinkContactInfo{
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+
 }
 
 

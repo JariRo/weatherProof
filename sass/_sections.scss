@@ -118,17 +118,22 @@
         width:100%;
         height:110vh;
         padding:30px 0;
-        background:url(../img/startpage/landingpage/Group_7_Copy_10.jpg) no-repeat;
+        background:url(../img/startpage/landingpage/wpf123.jpg) no-repeat;
         background-size: cover;
+        background-attachment: fixed;
+
 
         > article{
-            width:50%;
-            padding:27em 5em 5em 7em;
+            width: 60%;
+            padding:34em 7em 5em 18em;
             color:#fff;
-            font-weight: 800;
+            font-weight: bold;
+            position: fixed;
+            font-family: ProximaNova-Bold,sans-serif;
 
             h1{
-                font-size: 4rem;
+                font-size: 5rem;
+
 
                 span{
                     color:#2ABFBF;
@@ -136,8 +141,9 @@
             }
 
             p{
-                font-size: 2.4rem;
+                font-size: 2.6rem;
                 margin:0;
+
             }
         }
     }
@@ -327,6 +333,7 @@
             article strong, article em{
                 color:#2ABFBF;
                 font-style: normal;
+                font-family: ProximaNova-Bold,sans-serif;
             }
 
             article > h1, article > p, article > a{
@@ -337,6 +344,8 @@
             article > h1{
                 color:#6F7C82;
                 font-weight: 800;
+                font-family: ProximaNova-Bold,sans-serif;
+                font-size: 3.2rem;
             }
 
             article > h1:nth-child(2){
@@ -344,14 +353,15 @@
             }
 
             article > p {
-                line-height: 2.1rem;
+                line-height: 2.6rem;
                 font-weight: 400;
                 color:#6F7C82;
+                font-size: 1.6rem ;
             }
 
             article > .whys{
                 padding:17px 0;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             article > p strong, article > p em{
@@ -525,7 +535,8 @@
     //padding-top:7%;
     padding:0;
     text-align: center;
-    padding-bottom:4%;
+    padding-bottom:6%;
+    background: white;
 
     .container{
         margin:0;
@@ -536,13 +547,17 @@
         background-color:#fff;
 
         .content{
-            width:70%;
+            width:55%;
             margin:0 auto;
             color:#6F7C82;
+            padding-top: 3%;
+            line-height: 2.6rem;
 
             > h3{
                 font-weight: 800;
                 margin-bottom:15px;
+                font-size: 3.0rem;
+                font-family: ProximaNova-Bold, sans-serif;
 
                 strong{
                     color:#2ABFBF;
@@ -550,7 +565,7 @@
             }
 
             > p{
-                width:72%;
+                width:70%;
                 margin:0 auto;
                 font-size: 1.6rem;
                 font-weight: 400;
@@ -633,7 +648,7 @@
             //process hidden
             .process-overlay > .overlay-content{
                 height:7vw;
-                opacity:0.05;
+                opacity:0.03;
                 transition: all 0.8s ease-in-out;
             }
 
@@ -647,8 +662,10 @@
             .process-overlay figure {
                 width:90%;
                 padding:20px;
+                padding-top: 40px;
                 margin-left: auto;
                 margin-right: auto;
+
             }
 
             .process-overlay figure > #SixStepProcess{
@@ -926,7 +943,7 @@
                 align-items: center;
                 overflow: hidden;
                 width:50%;
-                background-image: url(../img/startpage/Rectangle_5_Copy.jpg);
+                background-image: url(../img/startpage/bakgrund_offert4.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 color:#fff;
@@ -996,7 +1013,7 @@
                     width:58%;
                     text-align:center;
                     font-weight: 600;
-                    padding-bottom:15px;
+                    padding-bottom:25px;
 
                     > a{
                         padding:10px 27px;
@@ -1007,7 +1024,6 @@
                         border-radius:13px;
                         font-size: 1.3rem;
                         font-weight: 600;
-                        box-shadow: 0px 3px 15px #000;
                         transition: all 0.3s ease-in-out;
                     }
 
@@ -1035,8 +1051,8 @@
 
     .index-page{
         background-color: rgb(255, 255, 255);
-        padding-top:7%;
-        padding-bottom:7%;
+        padding-top:4%;
+        padding-bottom:10%;
 
         .content{
             width:100%;
@@ -1047,21 +1063,29 @@
             align-items: center;
 
             h1{
-                font-weight: 800;
-                font-size: 2rem;
+                font-family: ProximaNova-Bold, sans-serif;
+                font-weight: 400;
+                font-size: 1.3rem;
+                color: #6F7C82;
+                letter-spacing: .1em;
             }
             h2{
-                font-weight: 400;
+
+                margin-top: 0px;
+                font-family: ProximaNova-Light, sans-serif;
+                color: #6F7C82;
 
                 strong{
                     color:#2ABFBF;
                 }
+
+
             }
 
 
             .card-holder{
-                margin-top:4em;
-                width:70%;
+                margin-top:3em;
+                width:58%;
                 display:flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -1069,16 +1093,38 @@
                 figure{
                     display:flex;
                     flex-direction: column;
+                    justify-content: space-between;
                     align-items: center;
-                    width:31%;
-                    padding:3em;
+                    width:32%;
+                    padding:2em;
                     box-shadow: 0px 3px 10px #888888;
 
                     img{
-                        width:70%;
+                        width: 58%;
                     }
 
                     figcaption{
+
+                        > h2 {
+                          font-size: 0.8em;
+                        }
+
+                        h3{
+                          font-family: ProximaNova-Semibold,sans-serif;
+                          font-weight: 400;
+                          font-size: 2.4rem;
+                          color: #6F7C82;
+                          line-height: 1.2;
+                        }
+
+                        > p {
+                          font-family: ProximaNova-Regular,sans-serif;
+                          font-weight: 400;
+                          font-size: 1.6rem;
+                          color: rgba(111,124,130,.8);
+                          line-height: 1.5;
+                          margin-bottom: 2rem;
+                        }
 
                         > a{
                             background-color:#2ABFBF;
@@ -1357,7 +1403,7 @@
     .container{
         margin:0;
         width:100%;
-        padding-top:3%;
+        padding-top:4%;
         padding-bottom:7%;
     }
 
@@ -1365,9 +1411,14 @@
         background-color:#F5F7F9;
 
         h4{
-            font-size: 2.7rem;
+            font-family: ProximaNova-Semibold,sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: #6F7C82;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            line-height: 1.2;
             text-align: center;
-            font-weight: 800;
         }
 
         hr{
@@ -1382,7 +1433,7 @@
 
         #quote-carousel{
             padding:0 10px 30px 10px;
-            margin-top:30px;
+            margin-top:0px;
             text-align: center;
 
             .carousel-indicators{
@@ -1416,6 +1467,7 @@
     padding:0;
     background:linear-gradient(to right, rgba(255,255,255,0.5) 0%, rgba(22,171,171,0.7) 33%, rgba(22,171,171,0.7) 66%, rgba(255,255,255,0.5) 100%), url(../img/startpage/wpf_bolle_2.jpg) no-repeat 0 -200px;
     background-size: cover;
+    background-attachment: fixed;
 
 
     > article{
@@ -1434,8 +1486,9 @@
 
         p{
             font-size: 1.9rem;
-            margin-bottom:30px;
+            //margin-bottom:30px;
             font-weight: 600;
+            margin-bottom: 0px;
         }
 
         a{
@@ -1447,6 +1500,8 @@
             font-weight: 800;
             box-shadow: 0px 3px 10px #555;
             transition:box-shadow 0.3s, background-color 0.3s ease-in-out;
+            position: relative;
+            top: 50px;
         }
 
         a:hover{
@@ -1542,6 +1597,7 @@
         display:flex;
         flex-direction: row;
         justify-content: center;
+        background: white;
 
         figure{
             display:flex;
@@ -1561,6 +1617,10 @@
 
                 h4{
                     font-weight: 600;
+                    font-size: 1.4rem;
+                    color: #6F7C82;
+                    line-height: 1.2;
+                    font-family: ProximaNova-Semibold,sans-serif;
                 }
 
                 p{
@@ -1570,19 +1630,24 @@
                 a{
                     position:absolute;
                     bottom:1.5em;
-                    color:#777;
-                    border:1px solid #777;
-                    padding:8px 14px;
-                    border-radius:17px;
-                    font-size: 0.8em;
-                    font-weight: 600;
+                  
+
+                    border: 1px solid rgba(111,124,130,.5);
+                    font-family: ProximaNova-Semibold,sans-serif;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    color: #6F7C82;
+                    padding: 0 1.5em;
+                    line-height: 3.5rem;
+                    border-radius: 99em;
                 }
             }
         }
-
+        /*
         figure:first-child{
             border-right:1px solid #ccc;
         }
+        */
     }
 }
 
