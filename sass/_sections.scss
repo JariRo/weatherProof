@@ -13,8 +13,8 @@
             flex-direction: row;
             list-style: none;
             justify-content: flex-end;
-            padding:10px;
-            width:37%;
+            padding:10px 0 10px 10px;
+            width:35%;
             z-index: 1001;
 
             > li{
@@ -124,9 +124,10 @@
 
 
         > article{
-            width: 60%;
-            padding:34em 7em 5em 18em;
+            width: 45%;
             color:#fff;
+            top:50%;
+            left:10%;
             font-weight: bold;
             position: fixed;
             font-family: ProximaNova-Bold,sans-serif;
@@ -142,7 +143,17 @@
 
             p{
                 font-size: 2.6rem;
-                margin:0;
+                margin: 0;
+
+            }
+
+            p > a{
+                padding:0.9em 1.3em;
+                background:$wpfgreen;
+                color:#fff;
+                border-radius: 1.4em;
+                margin-top:4em;
+                font-size: 1.4rem;
 
             }
         }
@@ -547,7 +558,7 @@
         background-color:#fff;
 
         .content{
-            width:55%;
+            width:66%;
             margin:0 auto;
             color:#6F7C82;
             padding-top: 3%;
@@ -678,7 +689,7 @@
                 display:flex;
                 flex-direction: row;
                 width:90%;
-                margin:20px auto ;
+                margin:5em auto ;
                 padding:3em 3.5em;
                 box-shadow: 0px 3px 10px #888888;
 
@@ -936,6 +947,7 @@
                 }
 
             }
+
             > article{
                 display:flex;
                 flex-direction: column;
@@ -957,30 +969,12 @@
                 color:#2ABFBF;
             }
 
-            > article:after{
-                content: "";
-                display:block;
-                width:100%;
-                height:100%;
-                background-color:rgba(0,0,0,0.7);
-                position:absolute;
-                opacity:0.1;
-                top:0;
-                left:0;
-                z-index:1;
-            }
-
-            *{
-                position:relative;
-                z-index: 2;
-            }
-
             .content-holder{
                 display:flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                padding:4em;
+                padding:0em 4em;
 
                 > figure{
                     display:flex;
@@ -1009,7 +1003,18 @@
                     }
                 }
 
-                > p{
+                > article{
+                    align-self: flex-end;
+                    flex-grow: 1;
+                    width:90%;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top:4em;
+                }
+
+                > article > p{
                     width:58%;
                     text-align:center;
                     font-weight: 600;
@@ -1085,7 +1090,7 @@
 
             .card-holder{
                 margin-top:3em;
-                width:58%;
+                width:74%;
                 display:flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -1095,7 +1100,7 @@
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
-                    width:32%;
+                    width:31%;
                     padding:2em;
                     box-shadow: 0px 3px 10px #888888;
 
@@ -1104,17 +1109,18 @@
                     }
 
                     figcaption{
-
-                        > h2 {
-                          font-size: 0.8em;
-                        }
+                        display:flex;
+                        flex-direction: column;
+                        //justify-content: space-between;
+                        flex-grow: 2;
 
                         h3{
                           font-family: ProximaNova-Semibold,sans-serif;
                           font-weight: 400;
-                          font-size: 2.4rem;
+                          font-size: 1.6em;
                           color: #6F7C82;
                           line-height: 1.2;
+                          //flex-grow: 2;
                         }
 
                         > p {
@@ -1124,6 +1130,8 @@
                           color: rgba(111,124,130,.8);
                           line-height: 1.5;
                           margin-bottom: 2rem;
+                          flex-grow: 2;
+                          text-align: justify;
                         }
 
                         > a{
@@ -1131,8 +1139,29 @@
                             color:#fff;
                             padding:10px;
                             border-radius:15px;
+                            margin-right: auto;
+                            margin-left: auto;
+                        }
+
+                        > a:hover{
+                            cursor:pointer;
+                            text-decoration: none;
                         }
                     }
+                    /*
+                    figcaption:nth-child(3){
+                        flex-grow: 1;
+
+
+                        > a{
+                            background-color:#2ABFBF;
+                            color:#fff;
+                            padding:10px;
+                            border-radius:15px;
+                            align-self: flex-end;
+                        }
+                    }
+                    */
                 }
             }
         }
@@ -1367,6 +1396,7 @@
                 .thumb{
                     padding:0;
                 }
+
                 .thumbnail{
                     padding:0;
                     margin:0;
@@ -1381,9 +1411,11 @@
                     cursor: auto;
                 }
                 img{
-                    width:100%;
-                    height:360px;
+                    width:auto;
+                    height:auto;
+                    max-width: 100%;
                     margin:0;
+                    display:block;
                 }
             }
         }
@@ -1630,7 +1662,7 @@
                 a{
                     position:absolute;
                     bottom:1.5em;
-                  
+
 
                     border: 1px solid rgba(111,124,130,.5);
                     font-family: ProximaNova-Semibold,sans-serif;
