@@ -11732,11 +11732,23 @@ html, body {
       background-size: cover !important;
       background-position: center;
       background-blend-mode: screen;
-      background-image: url(../img/geometry2.png); }
+      background-image: url(../img/project/project_1/uggleberget_1.jpg); }
     .parallax-showcase figure:nth-of-type(2) {
-      background-image: url(../img/showcase.jpeg); }
+      background-image: url(../img/project/project_1/uggleberget_2.jpg); }
     .parallax-showcase figure:nth-of-type(3) {
-      background-image: url(../img/concrete-texture.png); }
+      background-image: url(../img/project/project_1/uggleberget_3.jpg); }
+    .parallax-showcase figure:nth-of-type(4) {
+      background-image: url(../img/project/project_1/uggleberget_4.jpg); }
+    .parallax-showcase figure:nth-of-type(5) {
+      background-image: url(../img/project/project_1/uggleberget_5.jpg); }
+    .parallax-showcase figure:nth-of-type(6) {
+      background-image: url(../img/project/project_1/uggleberget_6.jpg); }
+    .parallax-showcase figure:nth-of-type(7) {
+      background-image: url(../img/project/project_1/uggleberget_7.jpg); }
+    .parallax-showcase figure:nth-of-type(8) {
+      background-image: url(../img/project/project_1/uggleberget_8.jpg); }
+    .parallax-showcase figure:nth-of-type(9) {
+      background-image: url(../img/project/project_1/uggleberget_9.jpg); }
 
 .lego-page-btn {
   background: #03C9A9;
