@@ -11716,14 +11716,14 @@ html, body {
     top: 15%;
     left: 5%;
     z-index: 800; }
-  .parallax-showcase figure {
+  .parallax-showcase .paralax-1 {
     position: relative;
     height: 100%;
     background-attachment: fixed;
     background-size: cover !important;
     background-position: center;
     background-blend-mode: screen; }
-    .parallax-showcase figure:nth-of-type(1) {
+    .parallax-showcase .paralax-1:nth-of-type(1) {
       height: 100%;
       width: 100%;
       position: relative;
@@ -11733,21 +11733,153 @@ html, body {
       background-position: center;
       background-blend-mode: screen;
       background-image: url(../img/project/project_1/uggleberget_1.jpg); }
-    .parallax-showcase figure:nth-of-type(2) {
+    .parallax-showcase .paralax-1:nth-of-type(2) {
       background-image: url(../img/project/project_1/uggleberget_2.jpg); }
-    .parallax-showcase figure:nth-of-type(3) {
+    .parallax-showcase .paralax-1:nth-of-type(3) {
       background-image: url(../img/project/project_1/uggleberget_3.jpg); }
-    .parallax-showcase figure:nth-of-type(4) {
+    .parallax-showcase .paralax-1:nth-of-type(4) {
       background-image: url(../img/project/project_1/uggleberget_4.jpg); }
-    .parallax-showcase figure:nth-of-type(5) {
+    .parallax-showcase .paralax-1:nth-of-type(5) {
       background-image: url(../img/project/project_1/uggleberget_5.jpg); }
-    .parallax-showcase figure:nth-of-type(6) {
+    .parallax-showcase .paralax-1:nth-of-type(6) {
       background-image: url(../img/project/project_1/uggleberget_6.jpg); }
-    .parallax-showcase figure:nth-of-type(7) {
+    .parallax-showcase .paralax-1:nth-of-type(7) {
       background-image: url(../img/project/project_1/uggleberget_7.jpg); }
-    .parallax-showcase figure:nth-of-type(8) {
+    .parallax-showcase .paralax-1:nth-of-type(8) {
       background-image: url(../img/project/project_1/uggleberget_8.jpg); }
-    .parallax-showcase figure:nth-of-type(9) {
+    .parallax-showcase .paralax-1:nth-of-type(9) {
+      background-image: url(../img/project/project_1/uggleberget_9.jpg); }
+  .parallax-showcase .paralax-2 {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-position: center;
+    background-blend-mode: screen; }
+    .parallax-showcase .paralax-2:nth-of-type(1) {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-attachment: fixed;
+      background-size: cover !important;
+      background-position: center;
+      background-blend-mode: screen;
+      background-image: url(../img/project/project_1/uggleberget_1.jpg); }
+    .parallax-showcase .paralax-2:nth-of-type(2) {
+      background-image: url(../img/project/project_1/uggleberget_2.jpg); }
+    .parallax-showcase .paralax-2:nth-of-type(3) {
+      background-image: url(../img/project/project_1/uggleberget_3.jpg); }
+    .parallax-showcase .paralax-2:nth-of-type(4) {
+      background-image: url(../img/project/project_1/uggleberget_4.jpg); }
+    .parallax-showcase .paralax-2:nth-of-type(5) {
+      background-image: url(../img/project/project_1/uggleberget_5.jpg); }
+    .parallax-showcase .paralax-2:nth-of-type(6) {
+      background-image: url(../img/project/project_1/uggleberget_6.jpg); }
+    .parallax-showcase .paralax-2:nth-of-type(7) {
+      background-image: url(../img/project/project_1/uggleberget_7.jpg); }
+    .parallax-showcase .paralax-2:nth-of-type(8) {
+      background-image: url(../img/project/project_1/uggleberget_8.jpg); }
+    .parallax-showcase .paralax-2:nth-of-type(9) {
+      background-image: url(../img/project/project_1/uggleberget_9.jpg); }
+  .parallax-showcase .paralax-3 {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-position: center;
+    background-blend-mode: screen; }
+    .parallax-showcase .paralax-3:nth-of-type(1) {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-attachment: fixed;
+      background-size: cover !important;
+      background-position: center;
+      background-blend-mode: screen;
+      background-image: url(../img/project/project_1/uggleberget_1.jpg); }
+    .parallax-showcase .paralax-3:nth-of-type(2) {
+      background-image: url(../img/project/project_1/uggleberget_2.jpg); }
+    .parallax-showcase .paralax-3:nth-of-type(3) {
+      background-image: url(../img/project/project_1/uggleberget_3.jpg); }
+    .parallax-showcase .paralax-3:nth-of-type(4) {
+      background-image: url(../img/project/project_1/uggleberget_4.jpg); }
+    .parallax-showcase .paralax-3:nth-of-type(5) {
+      background-image: url(../img/project/project_1/uggleberget_5.jpg); }
+    .parallax-showcase .paralax-3:nth-of-type(6) {
+      background-image: url(../img/project/project_1/uggleberget_6.jpg); }
+    .parallax-showcase .paralax-3:nth-of-type(7) {
+      background-image: url(../img/project/project_1/uggleberget_7.jpg); }
+    .parallax-showcase .paralax-3:nth-of-type(8) {
+      background-image: url(../img/project/project_1/uggleberget_8.jpg); }
+    .parallax-showcase .paralax-3:nth-of-type(9) {
+      background-image: url(../img/project/project_1/uggleberget_9.jpg); }
+  .parallax-showcase .paralax-4 {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-position: center;
+    background-blend-mode: screen; }
+    .parallax-showcase .paralax-4:nth-of-type(1) {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-attachment: fixed;
+      background-size: cover !important;
+      background-position: center;
+      background-blend-mode: screen;
+      background-image: url(../img/project/project_1/uggleberget_1.jpg); }
+    .parallax-showcase .paralax-4:nth-of-type(2) {
+      background-image: url(../img/project/project_1/uggleberget_2.jpg); }
+    .parallax-showcase .paralax-4:nth-of-type(3) {
+      background-image: url(../img/project/project_1/uggleberget_3.jpg); }
+    .parallax-showcase .paralax-4:nth-of-type(4) {
+      background-image: url(../img/project/project_1/uggleberget_4.jpg); }
+    .parallax-showcase .paralax-4:nth-of-type(5) {
+      background-image: url(../img/project/project_1/uggleberget_5.jpg); }
+    .parallax-showcase .paralax-4:nth-of-type(6) {
+      background-image: url(../img/project/project_1/uggleberget_6.jpg); }
+    .parallax-showcase .paralax-4:nth-of-type(7) {
+      background-image: url(../img/project/project_1/uggleberget_7.jpg); }
+    .parallax-showcase .paralax-4:nth-of-type(8) {
+      background-image: url(../img/project/project_1/uggleberget_8.jpg); }
+    .parallax-showcase .paralax-4:nth-of-type(9) {
+      background-image: url(../img/project/project_1/uggleberget_9.jpg); }
+  .parallax-showcase .paralax-5 {
+    position: relative;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-position: center;
+    background-blend-mode: screen; }
+    .parallax-showcase .paralax-5:nth-of-type(1) {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-attachment: fixed;
+      background-size: cover !important;
+      background-position: center;
+      background-blend-mode: screen;
+      background-image: url(../img/project/project_1/uggleberget_1.jpg); }
+    .parallax-showcase .paralax-5:nth-of-type(2) {
+      background-image: url(../img/project/project_1/uggleberget_2.jpg); }
+    .parallax-showcase .paralax-5:nth-of-type(3) {
+      background-image: url(../img/project/project_1/uggleberget_3.jpg); }
+    .parallax-showcase .paralax-5:nth-of-type(4) {
+      background-image: url(../img/project/project_1/uggleberget_4.jpg); }
+    .parallax-showcase .paralax-5:nth-of-type(5) {
+      background-image: url(../img/project/project_1/uggleberget_5.jpg); }
+    .parallax-showcase .paralax-5:nth-of-type(6) {
+      background-image: url(../img/project/project_1/uggleberget_6.jpg); }
+    .parallax-showcase .paralax-5:nth-of-type(7) {
+      background-image: url(../img/project/project_1/uggleberget_7.jpg); }
+    .parallax-showcase .paralax-5:nth-of-type(8) {
+      background-image: url(../img/project/project_1/uggleberget_8.jpg); }
+    .parallax-showcase .paralax-5:nth-of-type(9) {
       background-image: url(../img/project/project_1/uggleberget_9.jpg); }
 
 .lego-page-btn {

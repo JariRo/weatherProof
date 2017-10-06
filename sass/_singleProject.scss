@@ -26,7 +26,163 @@ html, body{
         z-index:800;
     }
 
-    figure{
+    .paralax-1{
+        position:relative;
+        height:100%;
+        @include backgrounds();
+
+        &:nth-of-type(1){
+            height:100%;
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            @include backgrounds();
+            background-image: url(../img/project/project_1/uggleberget_1.jpg);
+        }
+        &:nth-of-type(2){
+            background-image: url(../img/project/project_1/uggleberget_2.jpg);
+        }
+        &:nth-of-type(3){
+            background-image: url(../img/project/project_1/uggleberget_3.jpg);
+        }
+        &:nth-of-type(4){
+            background-image: url(../img/project/project_1/uggleberget_4.jpg);
+        }
+        &:nth-of-type(5){
+            background-image: url(../img/project/project_1/uggleberget_5.jpg);
+        }
+        &:nth-of-type(6){
+            background-image: url(../img/project/project_1/uggleberget_6.jpg);
+        }
+        &:nth-of-type(7){
+            background-image: url(../img/project/project_1/uggleberget_7.jpg);
+        }
+        &:nth-of-type(8){
+            background-image: url(../img/project/project_1/uggleberget_8.jpg);
+        }
+        &:nth-of-type(9){
+            background-image: url(../img/project/project_1/uggleberget_9.jpg);
+        }
+    }
+
+    .paralax-2{
+        position:relative;
+        height:100%;
+        @include backgrounds();
+
+        &:nth-of-type(1){
+            height:100%;
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            @include backgrounds();
+            background-image: url(../img/project/project_1/uggleberget_1.jpg);
+        }
+        &:nth-of-type(2){
+            background-image: url(../img/project/project_1/uggleberget_2.jpg);
+        }
+        &:nth-of-type(3){
+            background-image: url(../img/project/project_1/uggleberget_3.jpg);
+        }
+        &:nth-of-type(4){
+            background-image: url(../img/project/project_1/uggleberget_4.jpg);
+        }
+        &:nth-of-type(5){
+            background-image: url(../img/project/project_1/uggleberget_5.jpg);
+        }
+        &:nth-of-type(6){
+            background-image: url(../img/project/project_1/uggleberget_6.jpg);
+        }
+        &:nth-of-type(7){
+            background-image: url(../img/project/project_1/uggleberget_7.jpg);
+        }
+        &:nth-of-type(8){
+            background-image: url(../img/project/project_1/uggleberget_8.jpg);
+        }
+        &:nth-of-type(9){
+            background-image: url(../img/project/project_1/uggleberget_9.jpg);
+        }
+    }
+
+    .paralax-3{
+        position:relative;
+        height:100%;
+        @include backgrounds();
+
+        &:nth-of-type(1){
+            height:100%;
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            @include backgrounds();
+            background-image: url(../img/project/project_1/uggleberget_1.jpg);
+        }
+        &:nth-of-type(2){
+            background-image: url(../img/project/project_1/uggleberget_2.jpg);
+        }
+        &:nth-of-type(3){
+            background-image: url(../img/project/project_1/uggleberget_3.jpg);
+        }
+        &:nth-of-type(4){
+            background-image: url(../img/project/project_1/uggleberget_4.jpg);
+        }
+        &:nth-of-type(5){
+            background-image: url(../img/project/project_1/uggleberget_5.jpg);
+        }
+        &:nth-of-type(6){
+            background-image: url(../img/project/project_1/uggleberget_6.jpg);
+        }
+        &:nth-of-type(7){
+            background-image: url(../img/project/project_1/uggleberget_7.jpg);
+        }
+        &:nth-of-type(8){
+            background-image: url(../img/project/project_1/uggleberget_8.jpg);
+        }
+        &:nth-of-type(9){
+            background-image: url(../img/project/project_1/uggleberget_9.jpg);
+        }
+    }
+
+    .paralax-4{
+        position:relative;
+        height:100%;
+        @include backgrounds();
+
+        &:nth-of-type(1){
+            height:100%;
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            @include backgrounds();
+            background-image: url(../img/project/project_1/uggleberget_1.jpg);
+        }
+        &:nth-of-type(2){
+            background-image: url(../img/project/project_1/uggleberget_2.jpg);
+        }
+        &:nth-of-type(3){
+            background-image: url(../img/project/project_1/uggleberget_3.jpg);
+        }
+        &:nth-of-type(4){
+            background-image: url(../img/project/project_1/uggleberget_4.jpg);
+        }
+        &:nth-of-type(5){
+            background-image: url(../img/project/project_1/uggleberget_5.jpg);
+        }
+        &:nth-of-type(6){
+            background-image: url(../img/project/project_1/uggleberget_6.jpg);
+        }
+        &:nth-of-type(7){
+            background-image: url(../img/project/project_1/uggleberget_7.jpg);
+        }
+        &:nth-of-type(8){
+            background-image: url(../img/project/project_1/uggleberget_8.jpg);
+        }
+        &:nth-of-type(9){
+            background-image: url(../img/project/project_1/uggleberget_9.jpg);
+        }
+    }
+
+    .paralax-5{
         position:relative;
         height:100%;
         @include backgrounds();
