@@ -113,16 +113,71 @@
         }
     }
 
+    #section05 {
+        position:relative;
+        padding-top: 70px;
+        background: url(https://www.nxworld.net/example/css-scroll-down-button/bg05.jpg) center center / cover no-repeat;
+    }
+    #section05 span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb05 1.5s infinite;
+        animation: sdb05 1.5s infinite;
+        box-sizing: border-box;
+    }
+    @-webkit-keyframes sdb05 {
+        0% {
+            -webkit-transform: rotate(-45deg) translate(0, 0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            opacity: 0;
+        }
+    }
+    @keyframes sdb05 {
+        0% {
+            transform: rotate(-45deg) translate(0, 0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: rotate(-45deg) translate(-20px, 20px);
+            opacity: 0;
+        }
+    }
+
     .index-page{
         margin:0;
         width:100%;
         height:110vh;
-        padding:30px 0;
-        background:url(../img/startpage/landingpage/wpf123.jpg) no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        padding:0 0 30px 0;
+        overflow: hidden;
 
-
+        > video {
+            position:fixed;
+            min-width: 100%;
+            min-height: 100%;
+            width:auto;
+            height:auto;
+            z-index:-2;
+            background:url(../img/startpage/landingpage/wpf123.jpg) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
         > article{
             width: 45%;
             color:#fff;
@@ -147,14 +202,18 @@
 
             }
 
-            p > a{
-                padding:0.9em 1.3em;
+            p:nth-of-type(3) {
+                margin-left:10%;
+                padding-top:10px;
+            }
+
+            p:nth-of-type(3) > a{
+                padding:0.9em 4.3em;
                 background:$wpfgreen;
                 color:#fff;
                 border-radius: 1.4em;
                 margin-top:4em;
                 font-size: 1.4rem;
-
             }
         }
     }
@@ -255,6 +314,9 @@
 
 .section-icons{
     padding:0;
+    position:relative;
+    z-index: 200;
+    background: #fff;
 
     ul{
         display:flex;
@@ -1090,7 +1152,7 @@
 
             .card-holder{
                 margin-top:3em;
-                width:74%;
+                width:64%;
                 display:flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -1105,7 +1167,7 @@
                     box-shadow: 0px 3px 10px #888888;
 
                     img{
-                        width: 58%;
+                        width: 50%;
                     }
 
                     figcaption{
@@ -1117,18 +1179,18 @@
                         h3{
                           font-family: ProximaNova-Semibold,sans-serif;
                           font-weight: 400;
-                          font-size: 1.6em;
+                          font-size: 1.3em;
                           color: #6F7C82;
-                          line-height: 1.2;
+                          line-height: 1.1;
                           //flex-grow: 2;
                         }
 
                         > p {
                           font-family: ProximaNova-Regular,sans-serif;
                           font-weight: 400;
-                          font-size: 1.6rem;
+                          font-size: 1.3rem;
                           color: rgba(111,124,130,.8);
-                          line-height: 1.5;
+                          line-height: 1.4;
                           margin-bottom: 2rem;
                           flex-grow: 2;
                           text-align: justify;
