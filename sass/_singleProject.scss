@@ -26,6 +26,8 @@ html, body{
         z-index:800;
     }
 
+
+
     .paralax-1{
         position:relative;
         height:100%;
@@ -76,32 +78,30 @@ html, body{
             position:relative;
             overflow:hidden;
             @include backgrounds();
-            background-image: url(../img/project/project_1/uggleberget_1.jpg);
+            background-image: url(../img/project/project_2/skans_1.jpg);
         }
         &:nth-of-type(2){
-            background-image: url(../img/project/project_1/uggleberget_2.jpg);
+            background-image: url(../img/project/project_2/skans_2.jpg);
         }
         &:nth-of-type(3){
-            background-image: url(../img/project/project_1/uggleberget_3.jpg);
+            background-image: url(../img/project/project_2/skans_3.jpg);
         }
         &:nth-of-type(4){
-            background-image: url(../img/project/project_1/uggleberget_4.jpg);
+            background-image: url(../img/project/project_2/skans_4.jpg);
         }
         &:nth-of-type(5){
-            background-image: url(../img/project/project_1/uggleberget_5.jpg);
+            background-image: url(../img/project/project_2/skans_5.jpg);
         }
         &:nth-of-type(6){
-            background-image: url(../img/project/project_1/uggleberget_6.jpg);
+            background-image: url(../img/project/project_2/skans_6.jpg);
         }
         &:nth-of-type(7){
-            background-image: url(../img/project/project_1/uggleberget_7.jpg);
+            background-image: url(../img/project/project_2/skans_7.jpg);
         }
         &:nth-of-type(8){
-            background-image: url(../img/project/project_1/uggleberget_8.jpg);
+            background-image: url(../img/project/project_2/skans_8.jpg);
         }
-        &:nth-of-type(9){
-            background-image: url(../img/project/project_1/uggleberget_9.jpg);
-        }
+
     }
 
     .paralax-3{
@@ -115,31 +115,22 @@ html, body{
             position:relative;
             overflow:hidden;
             @include backgrounds();
-            background-image: url(../img/project/project_1/uggleberget_1.jpg);
+            background-image: url(../img/project/project_3/bolle_1.jpg);
         }
         &:nth-of-type(2){
-            background-image: url(../img/project/project_1/uggleberget_2.jpg);
+            background-image: url(../img/project/project_3/bolle_2.jpg);
         }
         &:nth-of-type(3){
-            background-image: url(../img/project/project_1/uggleberget_3.jpg);
+            background-image: url(../img/project/project_3/bolle_3.jpg);
         }
         &:nth-of-type(4){
-            background-image: url(../img/project/project_1/uggleberget_4.jpg);
+            background-image: url(../img/project/project_3/bolle_4.jpg);
         }
         &:nth-of-type(5){
-            background-image: url(../img/project/project_1/uggleberget_5.jpg);
+            background-image: url(../img/project/project_3/bolle_5.jpg);
         }
         &:nth-of-type(6){
-            background-image: url(../img/project/project_1/uggleberget_6.jpg);
-        }
-        &:nth-of-type(7){
-            background-image: url(../img/project/project_1/uggleberget_7.jpg);
-        }
-        &:nth-of-type(8){
-            background-image: url(../img/project/project_1/uggleberget_8.jpg);
-        }
-        &:nth-of-type(9){
-            background-image: url(../img/project/project_1/uggleberget_9.jpg);
+            background-image: url(../img/project/project_3/bolle_6.jpg);
         }
     }
 
@@ -154,31 +145,10 @@ html, body{
             position:relative;
             overflow:hidden;
             @include backgrounds();
-            background-image: url(../img/project/project_1/uggleberget_1.jpg);
+            background-image: url(../img/project/project_4/hindas_1.jpg);
         }
         &:nth-of-type(2){
-            background-image: url(../img/project/project_1/uggleberget_2.jpg);
-        }
-        &:nth-of-type(3){
-            background-image: url(../img/project/project_1/uggleberget_3.jpg);
-        }
-        &:nth-of-type(4){
-            background-image: url(../img/project/project_1/uggleberget_4.jpg);
-        }
-        &:nth-of-type(5){
-            background-image: url(../img/project/project_1/uggleberget_5.jpg);
-        }
-        &:nth-of-type(6){
-            background-image: url(../img/project/project_1/uggleberget_6.jpg);
-        }
-        &:nth-of-type(7){
-            background-image: url(../img/project/project_1/uggleberget_7.jpg);
-        }
-        &:nth-of-type(8){
-            background-image: url(../img/project/project_1/uggleberget_8.jpg);
-        }
-        &:nth-of-type(9){
-            background-image: url(../img/project/project_1/uggleberget_9.jpg);
+            background-image: url(../img/project/project_4/hindas_2.jpg);
         }
     }
 
