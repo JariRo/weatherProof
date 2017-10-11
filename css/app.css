@@ -8583,6 +8583,8 @@ select.selectpicker {
   .navbar #navbar > ul > li > #brandLogo {
     display: flex;
     justify-content: left; }
+    .navbar #navbar > ul > li > #brandLogo img:nth-of-type(1) {
+      width: 100%; }
     .navbar #navbar > ul > li > #brandLogo img:nth-of-type(2) {
       width: 100%; }
   .navbar .fa {
@@ -9322,8 +9324,8 @@ body {
       background: url(../img/startpage/landingpage/wpf123.jpg) no-repeat;
       background-size: cover;
       background-attachment: fixed;
-      -webkit-filter: brightness(0.5) contrast(0.5);
-      filter: brightness(0.5) contrast(0.5); }
+      -webkit-filter: brightness(0.9) contrast(0.5);
+      filter: brightness(0.9) contrast(0.5); }
     .showcase .index-page > article {
       width: 45%;
       color: #fff;
@@ -9331,7 +9333,8 @@ body {
       left: 10%;
       font-weight: bold;
       position: fixed;
-      font-family: ProximaNova-Bold,sans-serif; }
+      font-family: ProximaNova-Bold,sans-serif;
+      text-shadow: 0px 0px 60px rgba(51, 51, 51, 0.5); }
       .showcase .index-page > article h1 {
         font-size: 5rem; }
         .showcase .index-page > article h1 span {
@@ -9340,15 +9343,14 @@ body {
         font-size: 2.6rem;
         margin: 0; }
       .showcase .index-page > article p:nth-of-type(3) {
-        margin-left: 10%;
-        padding-top: 10px; }
+        padding-top: 25px; }
       .showcase .index-page > article p:nth-of-type(3) > a {
-        padding: 0.9em 4.3em;
+        padding: 1em 3em;
         background: #2ABFBF;
         color: #fff;
-        border-radius: 1.4em;
-        margin-top: 4em;
-        font-size: 1.4rem; }
+        border-radius: 2em;
+        /* margin-top: 4em; */
+        font-size: 1.6rem; }
   .showcase .products-page, .showcase .systems-page, .showcase .offert-page {
     background: url(../img/showcase.) no-repeat 0 -100px;
     margin: 0;
@@ -9505,6 +9507,7 @@ body {
         color: #2ABFBF; }
       .section-a .index-page .row article > p > .whyBtn {
         padding: 8px 25px;
+        padding-top: 15px;
         background-color: #2ABFBF;
         color: #fff;
         width: auto;
@@ -10023,8 +10026,7 @@ body {
               color: rgba(111, 124, 130, 0.8);
               line-height: 1.4;
               margin-bottom: 2rem;
-              flex-grow: 2;
-              text-align: justify; }
+              flex-grow: 2; }
             .section-c .index-page .content .card-holder figure figcaption > a {
               background-color: #2ABFBF;
               color: #fff;
