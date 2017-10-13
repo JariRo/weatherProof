@@ -44,18 +44,10 @@
 
   <body>
       <div class="col-md-12 opacity-overlay"></div>
-      <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-              </div>
-              <div id="navbar" class="collapse navbar-collapse">
-                  <ul class="col-md-2 nav navbar-nav logo-holder navbar-left">
+      <nav>
+          <div>
+              <div id="navbar">
+                  <ul class="logo-holder">
                       <li>
                           <a id="brandLogo" class="navbar-brand" href="index.html">
                               <img src="./img/Logos/Weatherproof_white.svg" alt="Home">
@@ -64,7 +56,7 @@
                       </li>
 
                   </ul>
-                  <ul class="col-md-6 nav navbar-nav navbar-right">
+                  <ul>
                       <li class="servicesList">
                           <a class="dropBtn" href="services.html">
                               Tjänster <!--<span class="caret"></span>--></a>
@@ -122,8 +114,8 @@
 
 
 <!-- Landing page -->
-    <section class="col-md-12 showcase">
-        <div class="container index-page">
+    <section class="showcase">
+        <div class="index-page">
             <video poster="" autoplay="true" loop>
                 <source src="./videos/wpf2017.mp4" type="video/mp4">
                 <source src="./videos/wpf2017.webm" type="video/webm">
@@ -240,17 +232,17 @@
 
 
 <!-- Why WPF-->
-    <section class="section-a col-md-12">
+    <section class="section-a">
         <div class="triangles-top-white">
             <div class="triangle-left-top"></div>
             <div class="triangle-right-top"></div>
         </div>
         <div class="container index-page">
             <div class="row">
-                <figure class="col-md-6">
+                <figure>
                     <img src="img/startpage/wpf2.jpg">
                 </figure>
-                    <article class="col-md-6">
+                    <article>
                         <h1>DIN PERSONLIGA</h1>
                         <h1><strong>TAK - & FASADLEVERANTÖR</strong></h1>
                         <p>
@@ -276,7 +268,7 @@
             </div>
         -->
             <div class="row">
-                    <article class="col-md-6">
+                    <article>
                         <h1>PLÅT ÄR ETT <strong>SMART VAL</strong></h1>
                         <h1>FÖR DITT PROJEKT</h1>
                         <p>
@@ -291,7 +283,7 @@
                         </p>
                     -->
                     </article>
-                <figure class="col-md-6">
+                <figure>
                     <img src="img/startpage/plat_och_tak_20.jpg">
                 </figure>
             </div>
@@ -304,10 +296,10 @@
 
 
 <!-- Process-walkthrough -->
-    <section class="section-b col-md-12">
+    <section class="section-b">
         <div class="container index-page">
             <div class="row">
-                <div class="col-md-12 how" id="workProcess">
+                <div class="how" id="workProcess">
                     <div class="content">
                         <h3>SÅ <strong>ANLITAR</strong> DU OSS</h3>
                         <p>
@@ -333,7 +325,7 @@
                             </div>
                             <div class="overlay-content">
                                 <figure>
-                                    <img id="sixStepProcess" class="img-responsive" src="./img/infographs/resurs_1.svg">
+                                    <img id="sixStepProcess" src="./img/infographs/resurs_1.svg">
                                 </figure>
                                 <div id="consultation_card">
                                     <figure>
@@ -364,7 +356,7 @@
 
 
 <!-- WPF offert hook -->
-    <section class="price-section col-md-12">
+    <section class="price-section">
         <div class="triangles-top-white">
             <div class="triangle-left-top"></div>
             <div class="triangle-right-top"></div>
@@ -445,14 +437,14 @@
 
 
 <!-- What WPF do -->
-    <section class="section-c col-md-12">
+    <section class="section-c">
         <div class="container index-page">
             <div class="row content">
                 <h1>KVALITE ÄR UTGÅNGSPUNKTEN I ALLT VI GÖR</h1>
                 <h2>Våra grenar av <strong>produkter & tjänster</strong> inom företaget</h2>
                 <div class="card-holder">
                     <figure>
-                        <img class="img-responsive" src="img/icons/taktjanster.svg">
+                        <img src="img/icons/taktjanster.svg">
                         <figcaption>
                             <h3>Tak - & Fasadtjänster</h3>
                             <p>
@@ -467,7 +459,7 @@
                     -->
                     </figure>
                     <figure>
-                        <img class="img-responsive" src="img/icons/webshop.svg">
+                        <img src="img/icons/webshop.svg">
                         <figcaption>
                             <h3>Våra produkter</h3>
                             <p>
@@ -482,7 +474,7 @@
                     -->
                     </figure>
                     <figure>
-                        <img class="img-responsive" src="img/icons/egendesign.svg">
+                        <img src="img/icons/egendesign.svg">
                         <figcaption>
                             <h3>Skräddarsydda Produkter</h3>
                             <p>
@@ -504,7 +496,7 @@
 
 <!-- Reference objects/Projects - 3x3 grid of images-->
 <!-- Each picture links to its project: in preferably /projects/projectname.html -->
-    <section class="section-d col-md-12">
+    <section class="section-d">
         <div class="project-header">
             <h1>UTFÖRDA <strong>PROJEKT</strong></h1>
             <h3>Inspiration för dig. Lägg märke till de små detaljerna.</h3>
@@ -518,82 +510,82 @@
                 <div class="thumbnail-holder">
                     <div class="col-md-3 thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_1.jpg">
+                            <img src="./img/projectGrid/pg_1.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_2.jpg">
+                            <img src="./img/projectGrid/pg_2.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_3.jpg">
+                            <img src="./img/projectGrid/pg_3.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_4.jpg">
+                            <img src="./img/projectGrid/pg_4.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_5.jpg">
+                            <img src="./img/projectGrid/pg_5.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_6.jpg">
+                            <img src="./img/projectGrid/pg_6.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_7.jpg">
+                            <img src="./img/projectGrid/pg_7.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_8.jpg">
+                            <img src="./img/projectGrid/pg_8.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_9.jpg">
+                            <img  src="./img/projectGrid/pg_9.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_10.jpg">
+                            <img src="./img/projectGrid/pg_10.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_11.jpg">
+                            <imgsrc="./img/projectGrid/pg_11.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_12.jpg">
+                            <img src="./img/projectGrid/pg_12.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_13.jpg">
+                            <img src="./img/projectGrid/pg_13.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_14.jpg">
+                            <img src="./img/projectGrid/pg_14.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_15.jpg">
+                            <img src="./img/projectGrid/pg_15.jpg">
                         </a>
                     </div>
-                    <div class="col-md-3 thumb">
+                    <div class="thumb">
                         <a class="thumbnail">
-                            <img class="img-responsive" src="./img/projectGrid/pg_16.jpg">
+                            <img src="./img/projectGrid/pg_16.jpg">
                         </a>
                     </div>
                 </div>
@@ -607,7 +599,7 @@
 
 
 <!-- Testimonial carousel -->
-    <section class="section-e col-md-12">
+    <section class="section-e">
         <div class="container index-page">
             <h4>Vad säger andra om oss</h4>
 
@@ -623,7 +615,7 @@
                         <div class="carousel-inner">
                             <div class="item active">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div>
                                         <p>
                                             &ldquo;Really nice guys! Professional and experienced I can tell!&rdquo;
                                         </p>
@@ -634,7 +626,7 @@
 
                             <div class="item">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div>
                                         <p>
                                             &ldquo;WeatherProof Family är som Gandalf - Gör magiska grejer. Snabbt
                                             och snyggt!&rdquo;
@@ -646,7 +638,7 @@
 
                             <div class="item">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div>
                                         <p>
                                             &ldquo;Helt amazing! Enkla och smarta lösningar!&rdquo;
                                         </p>
@@ -664,7 +656,7 @@
 
 
 <!-- Looking to hire -->
-    <section class="col-md-12 join-us-section">
+    <section class="join-us-section">
         <div class="triangles-top-grey">
             <div class="triangle-left-top"></div>
             <div class="triangle-right-top"></div>
@@ -689,7 +681,7 @@
 
 
     <!-- Colaborations -->
-    <section class="section-g col-md-12">
+    <section class="section-g">
         <div id="cooperations">
             <figure>
                 <img src="./img/icons/startpage/leaf.svg">
@@ -713,7 +705,7 @@
         </div>
     </section>
 
-    <footer class="col-md-12">
+    <footer>
         <div>
             <figure>
                 <img src="./img/infographs/Rityta_1.svg" alt="Location of Weatherproof Family on a map over Sweden">
@@ -824,7 +816,7 @@
                 </section>
             </div>
         </div>
-        <div class="md-col-12" id="legals-copy">
+        <div id="legals-copy">
             <p id="legals">
                 <a href="http://www.datainspektionen.se/lagar-och-regler/personuppgiftslagen/">Om personuppgiftshantering</a> | <a href="http://www.datainspektionen.se/om-webbplatsen/anvandning-av-cookies/">Användning av cookies</a> | <a href="#">Köp - & leveransvilkor</a>
             </p>
@@ -838,7 +830,7 @@
         <p>Kontakt</p>
     </div>
 -->
-    <div class="col-md-10 col-md-offset-1  contact-slide">
+    <div class="contact-slide">
         <div class="info-form-holder">
             <div class="form-holder center-block col-md-4">
                 <h4> Kontakta oss</h4>
@@ -907,8 +899,6 @@
         </div>
     </div>
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="JS/custom.js"></script>
   </body>
 </html>
