@@ -1,4 +1,5 @@
 
+
 var setOffertUp = (function(){
 
     var eventHandelers = function(){
@@ -8,57 +9,176 @@ var setOffertUp = (function(){
         var standardObsticles = document.querySelectorAll('.standard-choices input');
         var firstNavItem = document.querySelector('.menu-1 > a');
         var backForthNavButton = document.querySelectorAll('.back-forth-menu > a');
-        var addObstacleButton = document.querySelectorAll('.quant > .quant-up');
-        var subtractObstacleButton = document.querySelectorAll('.quant > .quant-down');
         var selectedRoofModel = document.querySelectorAll('#takModell > input');
-        var allObstacles = document.querySelector(".roof-obstacles > table");
         var resetedExtras = document.querySelector(".roofMetrics > .wrapper > .extras").innerHTML;
+        var logisticsBoxes = document.querySelectorAll("#roofPaperAndScaffold > .box-Holder > input[type=checkbox]")
+        let offertForm = $("#offertForm")
+
+
+        //Insert factors for each roof
         var standardSet = [
             {
                 model:"tak1",
-                obstacles:["#ventilation", "#spigot", "#weatherproofing"]
+                name: "Sadeltak",
+                obstacles:["#ventilation", "#spigot", "#weatherproofing", "#roofDownpipes", "#roofGutters", "#footRinse"],
+                vindskivaFaktor: 0.2,
+                fotrannaFaktor:0.11,
+                snowProtectionFactor:0.11,
+                gutterFactor: 0.11
             },
             {
                 model:"tak2",
-                obstacles:["#ventilation", "#spigot", "#weatherproofing"]
+                name: "Pulpettak",
+                obstacles:["#ventilation", "#spigot", "#weatherproofing", "#roofDownpipes", "#roofGutters", "#footRinse"],
+                vindskivaFaktor: 0.3,
+                fotrannaFaktor: 0.11,
+                snowProtectionFactor:0.11,
+                gutterFactor: 0.11
             },
             {
                 model:"tak3",
-                obstacles:["#ventilation", "#spigot", "#weatherproofing"]
+                name: "Halvvalmat sadeltak",
+                obstacles:["#ventilation", "#spigot", "#weatherproofing", "#roofDownpipes", "#roofGutters", "#footRinse"],
+                vindskivaFaktor: 0.2,
+                fotrannaFaktor: 0.11,
+                snowProtectionFactor:0.11,
+                gutterFactor: 0.11
             },
             {
                 model:"tak4",
-                obstacles:["#ventilation", "#spigot", "#weatherproofing"]
+                name: "Vinkelhus",
+                obstacles:["#ventilation", "#spigot", "#roofDownpipes", "#roofGutters", "#footRinse", "#angleChute", "#nock"],
+                vinkelrannaFaktor: 0.06,
+                nockFaktor: 0.15,
+                fotrannaFaktor:0.27,
+                snowProtectionFactor:0.27,
+                gutterFactor: 0.27
             },
             {
                 model:"tak5",
-                obstacles:["#ventilation", "#spigot", "#weatherproofing"]
+                name: "Helvalmat sadeltak",
+                obstacles:["#ventilation", "#spigot", "#roofDownpipes", "#roofGutters", "#nock", "#footRinse"],
+                nockFaktor: 0.28,
+                fotrannaFaktor: 0.40,
+                snowProtectionFactor:0.40,
+                gutterFactor: 0.40
             },
             {
                 model:"tak6",
-                obstacles:["#ventilation", "#spigot", "#weatherproofing"]
+                name: "Mansardtak",
+                obstacles:["#ventilation", "#spigot", "#weatherproofing", "#roofDownpipes", "#roofGutters", "#nock", "#footRinse", "#roofBreak"],
+                nockFaktor: 0.7,
+                fotrannaFaktor: 0.14,
+                snowProtectionFactor:0.14,
+                gutterFactor: 0.14,
+                takbrottFaktor: 0.14,
+                vindskivaFaktor:0.2
             },
             {
                 model:"tak7",
-                obstacles:["#ventilation", "#spigot", "#weatherproofing"]
+                name: "Halvvalmat masardtak",
+                obstacles:["#ventilation", "#spigot", "#roofDownpipes", "#roofGutters", "#nock", "#footRinse", "#roofBreak"],
+                nockFaktor: 0.7,
+                fotrannaFaktor: 0.14,
+                snowProtectionFactor:.14,
+                gutterFactor: 0.14,
+                takbrottFaktor: 0.14
             },
             {
                 model:"tak8",
-                obstacles:["#ventilation", "#spigot", "#weatherproofing"]
+                name: "Helvalmat mansardtak",
+                obstacles:["#ventilation", "#spigot", "#roofDownpipes", "#roofGutters", "#nock", "#footRinse", "#roofBreak"],
+                nockFaktor: 0.21,
+                fotrannaFaktor: 0.24,
+                snowProtectionFactor:.24,
+                gutterFactor:0.24,
+                takbrottFaktor: 0.21
+            },
+            {
+                model:"tak9",
+                name: "Pyramidtak",
+                obstacles:["#ventilation", "#spigot", "#roofDownpipes", "#roofGutters", "#nock", "#footRinse"],
+                nockFaktor: 0.28,
+                fotrannaFaktor: 0.4,
+                snowProtectionFactor:0.4,
+                gutterFactor: 0.4
+            },
+            {
+                model:"tak10",
+                name: "Valmat pyramidtak",
+                obstacles:["#ventilation", "#spigot", "#roofDownpipes", "#roofGutters", "#nock", "#footRinse", "#roofBreak"],
+                nockFaktor: 0.21,
+                fotrannaFaktor: 0.24,
+                snowProtectionFactor:.24,
+                gutterFactor: 0.24,
+                takbrottFaktor: 0.21
+            },
+            {
+                model:"tak11",
+                name: "Motfallstak",
+                obstacles:["#ventilation", "#spigot", "#roofGenzimGutters", "#angleChute"],
+                vinkelrannaFaktor:0.1,
+                gezimFaktor:0.1
+            },
+            {
+                model:"tak12",
+                name: "Korstak",
+                obstacles:["#ventilation", "#spigot", "#weatherproofing", "#roofDownpipes", "#roofGutters"],
+                vinkelrannaFaktor:0.1,
+                vindskivaFaktor:0.2,
+                fotrannaFaktor:0.11,
+                snowProtectionFactor:0.11,
+                gutterFactor: 0.11
+            },
+            {
+                model:"tak13",
+                name: "Bågtak",
+                obstacles:["#ventilation", "#spigot", "#roofDownpipes", "#roofGutters"],
+                nockFaktor: 0.2,
+                fotrannaFaktor: 0.2,
+                snowProtectionFactor:0.2,
+                gutterFactor: 0.2,
+                takbrottFaktor: 0.2
+            },
+            {
+                model:"tak14",
+                name: "Kyrktorn",
+                obstacles:["#roofDownpipes", "#roofGutters"],
+                nockFaktor: 0.2,
+                fotrannaFaktor: 0.2,
+                snowProtectionFactor:0.2,
+                gutterFactor: 0.2,
+                takbrottFaktor: 0.2
             }
         ];
 
-
-        var setActivated = function(element){
+        const setActivated = function(element){
             var oldTarget = document.querySelector('.activated');
             oldTarget.classList.remove('activated')
             element.classList.add('activated');
             setCheckoutUp(element);
         }
 
-        var setCheckoutUp = function(element){
+        const countLogisticsPrice = () => {
+            let checkedLogistics = getPaperScaffolds()
+            let logisticPriceObject = getLogistics()
+            let totalPrice = checkedLogistics.reduce((price, logistic) => {
+                for (let j = 0; j < logisticPriceObject.length; j++){
+                    logisticPriceObject[j].name == logistic.name ? price += logisticPriceObject[j].total() * logistic.quantity : price
+                }
+                return price
+            }, 0)
+
+            document.querySelector('#logisticCosts').innerHTML = totalPrice + "kr"
+        }
+
+        const setCheckoutUp = function(element){
             if( element.id == "checkoutMenuItem" ){
                 addClass('showing', checkoutContent);
+
+                let algoParameters = setAlgoParameters(standardSet)
+                let thePriceObj = calculatingPrice(algoParameters)
+                setUpSummary(thePriceObj)
             }
             else{
                 if ( hasClass(checkoutContent, 'showing' )){
@@ -67,30 +187,17 @@ var setOffertUp = (function(){
             }
         }
 
-        for (var i = 0; i < selectedRoofModel.length; i++){
-            selectedRoofModel[i].addEventListener('click', function(){
-                resetStandard(resetedExtras);
-                var standardRoof = this.id;
-                setStandards(standardRoof, standardSet);
-
-            })
+        const setupStandardObsticle = () => {
+            resetStandard(resetedExtras);
+            var standardRoof = document.querySelector("#takModell > input[type=radio]:checked").id
+            setStandards(standardRoof, standardSet);
         }
 
-        for (var i = 0; i < addObstacleButton.length; i++){
-            addObstacleButton[i].addEventListener('click', function(event){
-                event.preventDefault();
-                var addObs = this;
-                addObstacle(addObs);
+        for (var i = 0; i < selectedRoofModel.length; i++){
+            selectedRoofModel[i].addEventListener('click', function(){
+                setupStandardObsticle()
             })
-        };
-
-        for (var i = 0; i < subtractObstacleButton.length; i++){
-            subtractObstacleButton[i].addEventListener('click', function(event){
-                event.preventDefault();
-                var subObs = this;
-                subtractObstacle(subObs);
-            })
-        };
+        }
 
         for (var i = 0; i < menuNavItems.length; i++){
             menuNavItems[i].addEventListener('click', function(event) {
@@ -106,6 +213,12 @@ var setOffertUp = (function(){
                 var theData = this.dataset.where;
                 var newPage = document.querySelector('#side-bar-nav > .' + theData + ' > a');
                 setActivated(newPage);
+            })
+        }
+
+        for (let i = 0; i < logisticsBoxes.length; i++){
+            logisticsBoxes[i].addEventListener('change', function(){
+                countLogisticsPrice()
             })
         }
 
@@ -145,12 +258,11 @@ var setOffertUp = (function(){
                 showExtraSection(theExtras, theCaret);
             });
 
-
             for (var j = 0; j < standardObsticles.length; j++){
                 standardObsticles[j].addEventListener('click', function(){
+                    var standardRoof = document.querySelector("#takModell > input[type=radio]:checked").id;
                     if (this.id == "standard-choice"){
                         resetStandard(resetedExtras);
-                        var standardRoof = document.querySelector("#takModell > input[type=radio]:checked").id;
                         setStandards(standardRoof, standardSet);
                         removeShowing(theCaret);
                     }
@@ -159,75 +271,774 @@ var setOffertUp = (function(){
                     }
                     else{
                         resetStandard(resetedExtras);
+                        var theSetOfStandards = standardSet.filter(function(standardModel){
+                            return standardModel.model === standardRoof
+                        })[0];
+                        setDisabled(theSetOfStandards)
                         addShowing(theExtras, theCaret);
                     }
                 });
             };
         };
 
+        Setup_AddSubtractObstacleEvents();
+        setupStandardObsticle()
         firstNavItem.focus();
     }
 
-    var offertCalculations = function(){
-
-    };
-
-
-    var setStandards = function(takmodell, setOfStandards){
-        var selectedStandardSet = setOfStandards.filter(function(standardModel){
-            return standardModel.model === takmodell;
-        })[0];
-
-        for (j = 0; j < selectedStandardSet.obstacles.length; j++){
-            addObstacle(selectedStandardSet.obstacles[j]);
-        };
-    };
-
-
-    var resetStandard = function(resetedList){
-        document.querySelector(".roofMetrics >.wrapper > .extras").innerHTML = resetedList;
+    const setAlgoParameters = function(standards){
+        let algoObject = [
+            {work: document.querySelector("#toDoCheckBoxes > .box-Holder > input[type=radio]:checked").value},
+            {model: getRoofModel(standards)},
+            {material: document.querySelector("#roofMaterial > .box-Holder > input[type=radio]:checked").value},
+            {measures: [
+                {kvm: document.querySelector("#offert-roofSquared").value.trim()},
+                {angle: document.querySelector("#offert-roofAngle").value.trim()},
+                {height: document.querySelector("#offert-roofHeight").value.trim()}
+            ]},
+            {obstacles: getCheckedObsticles(standards)},
+            {who: document.querySelector("#roofToWho > .box-Holder > input[type=radio]:checked").value},
+            {timeSchedule: document.querySelector("#roofWhatMonthToBegin").value},
+            {message:document.querySelector("#contact-message").value}
+        ]
+        return algoObject
     }
 
+    //Get the collecion of materials and the relevant costs for calculating the suggested price. This code can be found in ./materialcosts.js
+    const theOffertCosts = {
+        materialCosts: getroofMaterial(),
+        hinderCosts: getHinder(),
+        roofSec: getRoofSecurity(),
+        roofGarnish: getGarnish(),
+        roofDrainage: getWaterDrainage(),
+        roofExtraHinder: getExtraHinder(),
+    };
 
-    var subtractObstacle = function(subObs){
-        let countElement = $(subObs).parent().siblings('td.item-count');
-        if ($(countElement).text() > 0){
-            countElement.text(parseInt(countElement.text())-1);
-            return;
+    const getRoofModel = (models) => {
+        let modelID = document.querySelector("#takModell > input[type=radio]:checked").id
+        return models.filter((roofMod) => {
+            return roofMod.model == modelID
+        })
+    }
+
+    //Calculate and return the suggested Price based on user input
+    const calculatingPrice = userInputs => {
+        let squareParameter = getSquareParameter(userInputs)
+        let obsParameter = getObsticleParameter(userInputs)
+
+        let obsWorkPrice = totalObsticleWorkPrice(obsParameter)
+        let obsMaterialPrice = totalObsMaterialPrice(obsParameter)
+
+        let kvmWorkPrice = totalKvmWorkPrice(squareParameter[0].timmPeng, userInputs[3].measures[0].kvm)
+        let kvmMaterialPrice = totalKvmMaterialPrice(squareParameter[0].prisKvm, userInputs[3].measures[0].kvm)
+
+        let calcThis = {
+            "workPriceObsticles": obsWorkPrice,
+            "kvmWorkprice": kvmWorkPrice,
+            "slopeFactor": squareParameter[0].faktor,
+            "kvmMaterialPrice": kvmMaterialPrice,
+            "obsMaterialPrice": obsMaterialPrice
+        }
+
+        let finalPriceSuggestion = priceAlgorithm(calcThis)
+
+        return {
+            "material": squareParameter,
+            "obsticles": obsParameter,
+            "price": finalPriceSuggestion,
+            "ourInputs":userInputs
         }
     }
 
+    const getObsticleContentList = theCalcObj => {
+        let obsticleContetnList = $('ul.obsticle-summary')
+        $(obsticleContetnList).empty()
 
-    var addObstacle = function(addObs){
-        let countElement = $(addObs).parent().siblings('td.item-count');
-        countElement.text(parseInt(countElement.text())+1);
-        return;
-    }
-
-
-    var addClass = function(classToAdd, theElement){
-        var existingClass = theElement.className;
-
-        if (existingClass !=""){
-            classToAdd = " " + classToAdd;
+        for(let i = 0; i < theCalcObj.obsticles.length; i++){
+            switch (theCalcObj.obsticles[i].name) {
+                case 'Stor skorsten':
+                    $('<li/>', {html: theCalcObj.obsticles[i].name
+                        + ': '
+                        + theCalcObj.obsticles[i].quantity
+                        + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Liten skorsten':
+                    $('<li/>', {html: theCalcObj.obsticles[i].name
+                        + ': '
+                        + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Avluftstos':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Takfönster':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Ventilationshuv':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Taklucka':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Köksfläktshuv / Vent stor':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Takkupa mindre än 10 kvm':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Takkupa större än 10 kvm':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Takbrygga':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Snörasskydd':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Takstege':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Skorstensstege':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Luftad nock':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Vindskivor':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Hängrännor':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Stuprör':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Fotränna':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Ytterhörn fotränna':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Nock':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Takbrott':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Vinkelränna':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    break;
+                case 'Genzimrännor':
+                $('<li/>', {html: theCalcObj.obsticles[i].name
+                    + ': '
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    break;
+                default:
+                break;
+            }
         }
-        theElement.className = existingClass + classToAdd;
+        return obsticleContetnList
     }
 
+    const setUpSummary = (calcObj) => {
+        let roofSummary = document.querySelector('#roof-summary')
+        let contactSummary = document.querySelector('#contact-summary')
+        let priceSuggestion = document.querySelector('#price-suggestion')
+        let totalPrice = calcObj.price.work + calcObj.price.material
+        let lowerPriceEdge = Math.round((Math.ceil((totalPrice - (totalPrice * 0.1)) / 100) * 100) / 1000) * 1000
+        let upperPriceEdge = Math.round((Math.ceil((totalPrice + (totalPrice * 0.1)) / 100) * 100) / 1000) * 1000
 
-    var hasClass = function(element, theClass){
-        return (" " + element.className + " ").indexOf( " " + theClass + " " ) > -1;
+        let generatedRoofContent = '<p>Typ av jobb: ' + calcObj.ourInputs[0].work + '</p>'
+             + '<p>Takmodell: ' + calcObj.ourInputs[1].model[0].name + '</p>'
+             + '<p>Takmaterial: ' + calcObj.material[0].materialName + '</p>'
+             + '<p>Storlek: ' + calcObj.ourInputs[3].measures[0].kvm + 'm&sup2</p>'
+             + '<p>Takvinkel: ' + calcObj.ourInputs[3].measures[1].angle + '&deg</p>'
+             + '<p>Höjd: ' + calcObj.ourInputs[3].measures[2].height + 'm</p>'
+
+        getObsticleContentList(calcObj)
+
+        let generatedCustomerContent = '<p>Uppdragsgivare: ' + calcObj.ourInputs[5].who + '</p>'
+             + '<p>Tidsram: ' + calcObj.ourInputs[6].timeSchedule + '</p>'
+             + '<p>Meddelande: ' + calcObj.ourInputs[7].message + '</p>'
+
+        roofSummary.innerHTML = generatedRoofContent
+        contactSummary.innerHTML = generatedCustomerContent
+
+        let priceString = calcObj.ourInputs[1].model[0].name == "Kyrktorn" ? "Kontakta oss så hjälper vi dig" : Math.floor(lowerPriceEdge)
+        + ' - '
+        + Math.floor(upperPriceEdge)
+        + "kr"
+
+        priceSuggestion.innerHTML = priceString
+
+        /*
+        document.getElementById('submit-offert').addEventListener('click', function() {
+            if(doingForm(offertForm)){
+                swal({
+                    title:'Preliminärt prisförslag',
+                    text: priceString,
+                    icon:'success',
+                    button: 'yeehaw'
+                })
+            } else {
+                swal({
+                    title:'Något gick fel',
+                    text: "Ett fel uppstod",
+                    icon:'error',
+                    button: 'oops'
+                })
+            }
+            //form validation etc
+        })
+        */
     }
 
+    const doingForm = (theForm) => {
+        theForm.addEventListener('submit', function(e){
+            e.preventDefault()
 
-    return{
-        eventHandelers:eventHandelers,
+            let formName = $('#offert-firstname').val()
+            let formSurname = $('#offert-lastname').val()
+            let formCompany = $('#offert-companyName').val()
+            let formAdress = $('#offert-gata').val()
+            let formZipnumber = $('#offert-postnummer').val()
+            let formCity = $('#offert-city').val()
+            let formPhonenumber = $('#offert-phone').val()
+            let formEmail = $('#offert-email').val()
+
+            $.ajax({
+                type: 'POST',
+                url:'offertMail.php',
+                data: {
+                    name: formName,
+                    surname: formSurname,
+                    company: formCompany,
+                    adress: formAdress,
+                    zipNumber: formZipnumber,
+                    city: formCity,
+                    phoneNumber:formPhonenumber,
+                    email:formEmail,
+                    captcha:grecaptcha.getResponse()
+                },
+                success: function(){
+                    return true
+                },
+                error: function(){
+                    return false;
+                }
+            })
+        })
     }
 
-}());
+    const generatedPrice = () => {
+        let priceString = userInputObject[1].model[0].name == "Kyrktorn" ? "Kontakta oss så hjälper vi dig" : 'Enligt våra beräkningar skulle en offert på detta jobb hamna mellan: ' + Math.floor(lowerPriceEdge)
+        + ' - '
+        + Math.floor(upperPriceEdge)
+        + "kr"
+
+        return priceString
+    }
+
+    const totalObsticleWorkPrice = obsticles => {
+        let theTotalPrice = obsticles.reduce((theValue, oneObsticle) => {
+            theValue += oneObsticle.quantity * oneObsticle.workPrice
+            return theValue
+        }, 0)
+        return theTotalPrice
+    }
+
+    const totalKvmWorkPrice = (workCost, squareMeter) => {
+        return workCost * squareMeter
+    }
+
+    const totalObsMaterialPrice = obsticles => {
+        let totalMaterialValue = obsticles.reduce((theVal, theObs) => {
+            theVal += theObs.materialPrice
+            return theVal
+        }, 0)
+        return totalMaterialValue
+    }
+
+    const totalKvmMaterialPrice = (materialCost, kvmInput) => {
+        return materialCost * kvmInput
+    }
+
+    const priceAlgorithm = (calculationObject) => {
+        let work = (calculationObject.kvmWorkprice + calculationObject.workPriceObsticles) * calculationObject.slopeFactor
+
+        let material = calculationObject.kvmMaterialPrice + calculationObject.obsMaterialPrice
+
+        let price = {
+            "work": work,
+            "material": material
+        }
+        return price
+    }
+
+    //Calculate and return the total price of all the obsticles based on user input:
+    // * (Obsticles > 0) x (amount of obsticle)
+    const getObsticleParameter = userInputs => {
+        let calculatedPrice = 0
+        let userObs = userInputs[4].obstacles
+        let allObsticles = [
+            ...theOffertCosts.hinderCosts,
+            ...theOffertCosts.roofSec,
+            ...theOffertCosts.roofGarnish,
+            ...theOffertCosts.roofDrainage,
+            ...theOffertCosts.roofExtraHinder
+        ]
+
+        // Create an array with the selected Obsticles and calculate the total price of the specific obsticle. obsticle price * quantity
+        let calculatedObs = userObs.reduce((calculated, userOb) => {
+            allObsticles.forEach( each => {
+                if ( userOb.name == each.name ){
+                    userOb.workPrice = each.work
+                    userOb.materialPrice = each.materialCost
+                    userOb.totalPrice = userOb.quantity * each.total()
+                    calculated.push(userOb)
+                }
+            })
+            return calculated
+        }, [])
+
+        calculatedObs.forEach( o => calculatedPrice += o.totalPrice)
+        return calculatedObs
+    }
+
+    //Find and return the material object based on user input:
+    // * material (currently by string-matching, should be refactored to id format in the offert.html document, eg data-materialID: #)
+    // * angle
+    const getSquareParameter = userInputs => {
+        let userAngle = parseInt(userInputs[3].measures[1].angle)
+        let whatMaterial = theOffertCosts.materialCosts.filter(x => {
+            return x.material === userInputs[2].material
+        })[0]
+
+        let materialAngle = whatMaterial.vinklar.reduce((theArray ,theAngle) => {
+            let rangeSplit = theAngle.vinkel.split("-")
+            rangeSplit[0] = parseInt(rangeSplit[0])
+            rangeSplit[1] = parseInt(rangeSplit[1])
+
+            if(userAngle >= rangeSplit[0] && userAngle <= rangeSplit[1]){
+                theAngle.materialName = whatMaterial.material
+                theArray.push(theAngle)
+            }
+            return theArray
+        }, [])
+
+        return materialAngle
+    }
+
+    //Get the objects(hinder) of the table in the offert.html
+    const getTableObs = () => $.map(
+        document.querySelectorAll("table > tbody > tr"),
+        function(value){
+            return[value]
+        })
+        .filter((genomForing) => {
+            return genomForing.children[1].innerHTML > 0
+        })
+        .reduce((hinder, tableRow) => {
+            hinder.push({
+                name: tableRow.children[0].children[0].innerHTML,
+                quantity: tableRow.children[1].innerHTML.trim()
+            })
+            return hinder
+        }, []);
+        //Get hinder ENDS
+
+        const calcMeter = (factor, squareM) => {
+            return factor * squareM
+        }
+
+        const getCheckedWaterObs = (roof) => $.map(
+            document.querySelectorAll("#waterCheckBoxes > .box-Holder > input[type=checkbox]:checked"),
+            function(thevalue){
+                return[thevalue]
+            })
+            .reduce((waterSafetyArray, measure) => {
+                switch(measure.value){
+                    case "Hängrännor":
+                    waterSafetyArray.push({
+                        name: measure.value,
+                        quantity: calcMeter(roof[0].gutterFactor, document.querySelector("#offert-roofSquared").value.trim())
+                    })
+                    break;
+                    case "Stuprör":
+                    waterSafetyArray.push({
+                        name: measure.value,
+                        quantity: document.querySelector("#offert-roofSquared").value.trim() > 200 ? document.querySelector("#offert-roofHeight").value.trim() * 4 : document.querySelector("#offert-roofHeight").value.trim() * 2
+                    })
+                    break;
+                    case "Genzimrännor":
+                    waterSafetyArray.push({
+                        name: measure.value,
+                        quantity: calcMeter(roof[0].gezimFaktor, document.querySelector("#offert-roofSquared").value.trim())
+                    })
+                    break;
+                    default:
+                    break;
+                }
+                return waterSafetyArray
+            }, []);
+
+            const getCheckedSafety = (roof) => $.map(
+                document.querySelectorAll("#roof-security > .box-Holder > input[type=checkbox]:checked"),
+                function(theVal){
+                    return[theVal]
+                })
+                .reduce((safetyArray, safetyMeasure) => {
+                    switch(safetyMeasure.value){
+                        case "Takstege":
+                        safetyArray.push({
+                            name:safetyMeasure.value,
+                            quantity: 5
+                        })
+                        break;
+                        case "Skorstensstege":
+                        safetyArray.push({
+                            name:safetyMeasure.value,
+                            quantity: 5
+                        })
+                        break;
+                        case "Takbrygga":
+                        safetyArray.push({
+                            name:safetyMeasure.value,
+                            quantity: 1
+                        })
+                        break;
+                        case "Snörasskydd":
+                        safetyArray.push({
+                            name:safetyMeasure.value,
+                            quantity: calcMeter(roof[0].snowProtectionFactor, document.querySelector("#offert-roofSquared").value.trim())
+                        })
+                        break;
+                    }
+                    return safetyArray
+                }, [])
+
+            const getCheckedGarnish = (roof) => $.map(
+                document.querySelectorAll("#roof-garnish > .box-Holder > input[type=checkbox]:checked"),
+                function(theVal){
+                    return[theVal]
+                })
+                .reduce((garnishArray, oneGarnish) =>{
+                    switch(oneGarnish.value){
+                        case "Nock":
+                        garnishArray.push({
+                            name:oneGarnish.value,
+                            quantity: calcMeter(roof[0].nockFaktor, document.querySelector("#offert-roofSquared").value.trim())
+                        })
+                        break;
+                        case "Luftad nock":
+                        garnishArray.push({
+                            name:oneGarnish.value,
+                            quantity: calcMeter(roof[0].nockFaktor, document.querySelector("#offert-roofSquared").value.trim())
+                        })
+                        break;
+                        case "Vindskivor":
+                        garnishArray.push({
+                            name:oneGarnish.value,
+                            quantity: calcMeter(roof[0].vindskivaFaktor, document.querySelector("#offert-roofSquared").value.trim())
+                        })
+                        break;
+                        default:
+                        break;
+                    }
+
+                    return garnishArray
+                }, [])
+
+            const getCheckedExtras = (roof) => $.map(
+                document.querySelectorAll("#roof-extras > .box-Holder > input[type=checkbox]:checked"),
+                function(theVal){
+                    return[theVal]
+                })
+                .reduce((extras, obj) => {
+                    switch(obj.value){
+                        case "Fotränna":
+                        extras.push({
+                            name:obj.value,
+                            quantity: calcMeter(roof[0].fotrannaFaktor, document.querySelector("#offert-roofSquared").value.trim())
+                        })
+                        extras.push({
+                            name:"Ytterhörn fotränna",
+                            quantity: 4
+                        })
+                        break;
+                        case "Vinkelränna":
+                        extras.push({
+                            name:obj.value,
+                            quantity: calcMeter(roof[0].vinkelrannaFaktor, document.querySelector("#offert-roofSquared").value.trim())
+                        })
+                        break;
+                        case "Takbrott":
+                        extras.push({
+                            name:obj.value,
+                            quantity: calcMeter(roof[0].takbrottFaktor, document.querySelector("#offert-roofSquared").value.trim())
+                        })
+                        break;
+                        default:
+                        break;
+                    }
+                    return extras
+                }, [])
+
+            const getPaperScaffolds = (logisticObject) => $.map(
+                document.querySelectorAll("#roofPaperAndScaffold > .box-Holder > input[type=checkbox]:checked"),
+                function(val){
+                    return[val]
+                })
+                .reduce((logistics, whatLogistic) => {
+                    switch (whatLogistic.value){
+                        case "Takpapp":
+                        logistics.push({
+                            name: whatLogistic.value,
+                            quantity: document.querySelector("#offert-roofSquared").value.trim()
+                        })
+                        break;
+                        case "Byggnadsställning":
+                        logistics.push({
+                            name:whatLogistic.value,
+                            quantity: document.querySelector("#offert-roofHeight").value.trim()
+                        })
+                        break;
+                        case "Container":
+                        logistics.push({
+                            name:whatLogistic.value,
+                            quantity: 1
+                        })
+                        break;
+                        case "Transport / lyft":
+                        logistics.push({
+                            name:whatLogistic.value,
+                            quantity: 1
+                        })
+                        break;
+                        case "Rivning":
+                        logistics.push({
+                            name:whatLogistic.value,
+                            quantity: document.querySelector("#offert-roofSquared").value.trim()
+                        })
+                        break;
+                        default:
+                        break;
+                    }
+                    return logistics
+                }, [])
+                //get extras ENDS
+
+                const getCheckedObsticles = (standards) => {
+                    let theModelId = document.querySelector("#takModell > input[type=radio]:checked").id
+                    let roofMod = standards.filter((takmod) => takmod.model == theModelId)
+
+                    let allObsticales = [...getTableObs(), ...getCheckedWaterObs(roofMod), ...getCheckedSafety(roofMod), ...getCheckedGarnish(roofMod), ...getCheckedExtras(roofMod)]
+                    return allObsticales
+                }
+                //get checked obstacles ends
+
+                const Setup_AddSubtractObstacleEvents = function(){
+                    let ownChoices = document.querySelector('#own-obstacles')
+                    var addObstacleButton = document.querySelectorAll('.quant > .quant-up');
+                    var subtractObstacleButton = document.querySelectorAll('.quant > .quant-down');
+                    for (var i = 0; i < addObstacleButton.length; i++){
+                        addObstacleButton[i].addEventListener('click', function(event){
+                            event.preventDefault();
+                            var addObs = this;
+                            addObstacle(addObs);
+                            if (ownChoices.checked == false){
+                                ownChoices.checked = true
+                            }
+                        })
+                    };
+
+                    for (var i = 0; i < subtractObstacleButton.length; i++){
+                        subtractObstacleButton[i].addEventListener('click', function(event){
+                            event.preventDefault();
+                            var subObs = this;
+                            subtractObstacle(subObs);
+                            if (ownChoices.checked == false){
+                                ownChoices.checked = true
+                            }
+                        })
+                    };
+                }
+
+                const setDisabled = (theSet) => {
+                    if(theSet.nockFaktor){
+                        document.getElementById("airedNock").disabled = false
+                        document.getElementById("nock").disabled = false
+                    } else{
+                        document.getElementById("airedNock").disabled = true
+                        document.getElementById("nock").disabled = true
+                    }
+
+                    if(theSet.gezimFaktor){
+                        document.getElementById("roofGenzimGutters").disabled = false
+                        document.getElementById("roofGutters").disabled = true
+                    } else{
+                        document.getElementById("roofGenzimGutters").disabled = true
+                        document.getElementById("roofGutters").disabled = false
+                    }
+
+                    if(theSet.takbrottFaktor){
+                        document.getElementById("weatherproofing").disabled = false
+                    } else{
+                        document.getElementById("weatherproofing").disabled = true
+                    }
+
+                    if(theSet.takbrottFaktor){
+                        document.getElementById("roofBreak").disabled = false
+                    } else{
+                        document.getElementById("roofBreak").disabled = true
+                    }
+
+                    if(theSet.vinkelrannaFaktor){
+                        document.getElementById("angleChute").disabled = false
+                    } else{
+                        document.getElementById("angleChute").disabled = true
+                    }
+
+                    if(theSet.vindskivaFaktor){
+                        document.getElementById("weatherproofing").disabled = false
+                    } else{
+                        document.getElementById("weatherproofing").disabled = true
+                    }
+
+                    if(theSet.fotrannaFaktor){
+                        document.getElementById("footRinse").disabled = false
+                    } else{
+                        document.getElementById("footRinse").disabled = true
+                    }
+
+                    if(theSet.snowProtectionFactor){
+                        document.getElementById("snowSecurity").disabled = false
+                    } else{
+                        document.getElementById("snowSecurity").disabled = true
+                    }
 
 
-var init = function(){
+                }
+
+                const setStandards = function(takmodell, setOfStandards){
+                    var selectedStandardSet = setOfStandards.filter(function(standardModel){
+                        return standardModel.model === takmodell
+                    })[0];
+                    let ul = document.getElementById('standard-obstacle-list');
+                    let standardHeader = document.getElementById("roof-model-standard-obstacles")
+
+                    standardHeader.innerHTML = selectedStandardSet.name
+                    $(ul).empty()
+                    for (j = 0; j < selectedStandardSet.obstacles.length; j++){
+                        let li = document.createElement('li');
+                        let obstObj = document.querySelector(''+ selectedStandardSet.obstacles[j] +'')
+
+                        if(obstObj.tagName == "STRONG"){
+                            li.appendChild(document.createTextNode(''
+                            + obstObj.innerHTML
+                            + ''))
+                        } else if(obstObj.tagName == "INPUT"){
+                            li.appendChild(document.createTextNode(''
+                            + obstObj.value
+                            + ''))
+                        }
+                        ul.appendChild(li)
+                        addObstacle(selectedStandardSet.obstacles[j])
+                    }
+                    setDisabled(selectedStandardSet)
+                };
+
+                const resetStandard = function(resetedList){
+                    document.querySelector(".roofMetrics >.wrapper > .extras").innerHTML = resetedList;
+                    Setup_AddSubtractObstacleEvents();
+                }
+
+
+                const subtractObstacle = function(subObs){
+                    let countElement = $(subObs).parent().siblings('td.item-count');
+                    if ($(countElement).text() > 0){
+                        countElement.text(parseInt(countElement.text())-1);
+                        return;
+                    }
+                }
+
+
+                const addObstacle = function(addObs){
+                    let countElement = $(addObs)
+
+                    if($(countElement).is(':checkbox')){
+                        countElement.prop("checked", true)
+                    }
+                    else{
+                        let countElement = $(addObs).parent().siblings('td.item-count');
+                        countElement.text(parseInt(countElement.text())+1)
+                    }
+                    return;
+                }
+
+
+                const addClass = function(classToAdd, theElement){
+                    var existingClass = theElement.className;
+
+                    if (existingClass !== ""){
+                        classToAdd = " " + classToAdd;
+                    }
+                    theElement.className = existingClass + classToAdd;
+                }
+
+
+                const hasClass = function(element, theClass){
+                    return (" " + element.className + " ").indexOf( " " + theClass + " " ) > -1;
+                }
+
+
+                return{
+                    eventHandelers:eventHandelers,
+                }
+
+            }());
+
+
+const init = function(){
     setOffertUp.eventHandelers();
 }
 

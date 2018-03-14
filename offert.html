@@ -1,846 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WeatherProof Family</title>
     <link rel="stylesheet" href="css/app.css">
-  </head>
+</head>
 
-    <body>
-        <div class="col-md-12" id="underDevelopment">
-            <a href="index.html" id="getBackHome"><i class="fa fa-home" aria-hidden="true"></i>
-            </a>
-            <article>
-                <h1>Kul att du är nyfiken på våra tjänster!</h1>
-                <h2>Tjänsten är under utveckling, följ oss på sociala medier så får du veta mer.</h2>
-                <figure>
-                    <a href="https://www.facebook.com/wpfamiljen/" id="facebook">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.instagram.com/weatherproof_family/" id="instagram">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </figure>
-            </article>
-        </div>
-        <a id="brandLogo" class="col-md-4 navbar-brand offert-page" href="index.html">
-            <p>WeatherProof</p>
-            <p>Family</p>
+<body>
+    <div id="underDevelopment">
+        <a href="index.html" id="getBackHome"><i class="fa fa-home" aria-hidden="true"></i>
         </a>
+        <article>
+            <h1>Kul att du är nyfiken på våra tjänster!</h1>
+            <h2>Tjänsten är under utveckling, följ oss på sociala medier så får du veta mer.</h2>
+            <figure>
+                <a href="https://www.facebook.com/wpfamiljen/" id="facebook">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/weatherproof_family/" id="instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </figure>
+        </article>
+    </div>
 
-        <aside id="menu-side-bar">
-            <ul id="side-bar-nav">
+    <!--
+    LOGO
+    <a id="brandLogo" class="col-md-4 navbar-brand offert-page" href="index.html">
+    <p>WeatherProof</p>
+    <p>Family</p>
+</a>
+-->
 
-<!--                OFFERT PAGE1           -->
-                <li class="menu-1" data-offert="jobToDo" data-page="offert-page" title="Job to do" >
-                    <a href class="activated" data-page="offert-page">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                        Vad
-                    </a>
-                    <section class="jobToDo">
-                        <div class="wrapper">
-                            <div class="roofJobToDo">
-                                <fieldset class="form-group">
-                                    <legend>Vad ska göras?</legend>
-                                    <div class="col-md-12 control-group" id="toDoCheckBoxes">
+<aside id="menu-side-bar">
+    <ul id="side-bar-nav">
 
-                                        <div class="col-md-6 box-Holder">
-                                            <input id="newRoof" type="radio" name="whatJob" value="newRoof">
-                                            <label for="newRoof">Nyproduktion</label>
-                                        </div>
+        <!--                OFFERT PAGE1           -->
+        <li class="menu-1" data-offert="jobToDo" data-page="offert-page" title="Typ av jobb" >
+            <a href class="activated" data-page="offert-page">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                Vad
+            </a>
+            <section class="jobToDo">
+                <div class="wrapper">
+                    <div class="roofJobToDo">
+                        <fieldset>
+                            <legend>Vad ska göras?</legend>
+                            <div id="toDoCheckBoxes">
 
-                                        <div class="col-md-6 box-Holder">
-                                            <input id="reDoRoof" type="radio" name="whatJob" value="reDoRoof">
-                                            <label for="reDoRoof">Omläggning</label>
-                                        </div>
+                                <div class="box-Holder">
+                                    <input id="newRoof" type="radio" name="whatJob" value="Nyproduktion" checked>
+                                    <label for="newRoof">Nyproduktion</label>
+                                </div>
 
-                                        <div class="col-md-6 box-Holder">
-                                            <input id="repairRoof" type="radio" name="whatJob" value="repairRoof">
-                                            <label for="repairRoof">Reparation</label>
-                                        </div>
+                                <div class="box-Holder">
+                                    <input id="reDoRoof" type="radio" name="whatJob" value="Omläggning">
+                                    <label for="reDoRoof">Omläggning</label>
+                                </div>
 
-                                        <div class="col-md-6 box-Holder">
-                                            <input id="otherKindRoof" type="radio" name="whatJob" value="otherKindRoof">
-                                            <label for="otherKindRoof">Övrigt</label>
-                                        </div>
+                                <div class="box-Holder">
+                                    <input id="repairRoof" type="radio" name="whatJob" value="Reparation">
+                                    <label for="repairRoof">Reparation</label>
+                                </div>
 
-                                    </div>
-                                </fieldset>
+                                <div class="box-Holder">
+                                    <input id="otherKindRoof" type="radio" name="whatJob" value="Övrigt">
+                                    <label for="otherKindRoof">Övrigt</label>
+                                </div>
                             </div>
+                        </fieldset>
+                    </div>
 
-                            <div class="roofModels">
-                                <fieldset class="form-group">
-                                    <legend>Takmodeller</legend>
-                                    <div class="form-group" id="takModell">
-                                        <input id="tak1" type="radio" name="takmodeller">
-                                        <label class="offert-takmodeller un" for="tak1"></label>
-                                        <input id="tak2" type="radio" name="takmodeller">
-                                        <label class="offert-takmodeller deux" for="tak2"></label>
-                                        <input id="tak3" type="radio" name="takmodeller">
-                                        <label class="offert-takmodeller trois" for="tak3"></label>
-                                        <input id="tak4" type="radio" name="takmodeller">
-                                        <label class="offert-takmodeller quatre" for="tak4"></label>
+                    <div class="roofModels">
+                        <fieldset>
+                            <legend>Takmodeller</legend>
+                            <div id="takModell">
 
-                                        <input id="tak5" type="radio" name="takmodeller">
-                                        <label class="offert-takmodeller cinq" for="tak5"></label>
-                                        <input id="tak6" type="radio" name="takmodeller">
-                                        <label class="offert-takmodeller six" for="tak6"></label>
-                                        <input id="tak7" type="radio" name="takmodeller">
-                                        <label class="offert-takmodeller sept" for="tak7"></label>
-                                        <input id="tak8" type="radio" name="takmodeller">
-                                        <label class="offert-takmodeller huit" for="tak8"></label>
-                                    </div>
-                                </fieldset>
+                                <input id="tak1" type="radio" name="takmodeller" value="Sadeltak" checked>
+                                <label class="offert-takmodeller un" for="tak1"><p>Sadeltak</p></label>
+
+                                <input id="tak2" type="radio" name="takmodeller" value="Pulpettak">
+                                <label class="offert-takmodeller deux" for="tak2"><p>Pulpettak</p></label>
+
+                                <input id="tak3" type="radio" name="takmodeller" value="Halvvalmat sadeltak">
+                                <label class="offert-takmodeller trois" for="tak3"><p>Halvvalmat sadeltak</p></label>
+
+                                <input id="tak4" type="radio" name="takmodeller" value="Vinkelhus">
+                                <label class="offert-takmodeller quatre" for="tak4"><p>Vinkelhus</p></label>
+
+                                <input id="tak5" type="radio" name="takmodeller" value="Helvalmat sadeltak">
+                                <label class="offert-takmodeller cinq" for="tak5"><p>Helvalmat sadeltak</p></label>
+
+                                <input id="tak6" type="radio" name="takmodeller" value="Mansardtak">
+                                <label class="offert-takmodeller six" for="tak6"><p>Mansardtak</p></label>
+
+                                <input id="tak7" type="radio" name="takmodeller" value="Halvvalmat masardtak">
+                                <label class="offert-takmodeller sept" for="tak7"><p>Halvvalmat masardtak</p></label>
+
+                                <input id="tak8" type="radio" name="takmodeller" value="Helvalmat mansardtak">
+                                <label class="offert-takmodeller huit" for="tak8"><p>Helvalmat mansardtak</p></label>
+
+                                <input id="tak9" type="radio" name="takmodeller" value="Pyramidtak">
+                                <label class="offert-takmodeller neuf" for="tak9"><p>Pyramidtak</p></label>
+
+                                <input id="tak10" type="radio" name="takmodeller" value="Valmat pyramidtak">
+                                <label class="offert-takmodeller dix" for="tak10"><p>Valmat pyramidtak</p></label>
+
+                                <input id="tak11" type="radio" name="takmodeller" value="Motfallstak">
+                                <label class="offert-takmodeller onze" for="tak11"><p>Motfallstak</p></label>
+
+                                <input id="tak12" type="radio" name="takmodeller" value="Korstak">
+                                <label class="offert-takmodeller douze" for="tak12"><p>Korstak</p></label>
+
+                                <input id="tak13" type="radio" name="takmodeller" value="Bågtak">
+                                <label class="offert-takmodeller treize" for="tak13"><p>Bågtak</p></label>
+
+                                <input id="tak14" type="radio" name="takmodeller" value="Kyrktorn">
+                                <label class="offert-takmodeller quartoze" for="tak14"><p>Kyrktorn</p></label>
                             </div>
-                        </div>
-                    </section>
-                </li>
+                        </fieldset>
+                    </div>
+                    <div class="back-forth-menu">
+                        <a href="#" id="nextButton1" class="forth-navigation" data-where="menu-2">
+                            Nästa steg
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </li>
 
 <!--                OFFERT PAGE2           -->
-                <li class="menu-2" data-offert="roofMetrics" data-page="offert-page" title="Material and metrics">
-                    <a href="#" data-page="offert-page">
-                        <i class="fa fa-sliders" aria-hidden="true"></i>
-                        Detaljer
-                    </a>
-                    <section class="roofMetrics">
-                        <div class="wrapper">
-                            <div class="back-forth-menu">
-                                <a href="#" class="back-navigation" data-where="menu-1">
-                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                    Back
-                                </a>
-                                <a href="#" class="forth-navigation" data-where="menu-3">
-                                    Uppdrag
-                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="material-metric">
-                                <fieldset class="form-group">
-                                    <legend>Takmaterial</legend>
-                                    <div class="col-md-12 control-group" id="roofMaterial">
-
-                                        <div class="col-md-4 box-Holder">
-                                            <input type="radio" name="material" id="plate">
-                                            <label for="plate">Plåt</label>
-                                        </div>
-
-                                        <div class="col-md-4 box-Holder">
-                                            <input type="radio" name="material" id="zink-shine">
-                                            <label for="zink-shine">Zink Valsblank</label>
-                                        </div>
-
-                                        <div class="col-md-4 box-Holder">
-                                            <input type="radio" name="material" id="zink-preweather">
-                                            <label for="zink-preweather">Zink Förpatinerad</label>
-                                        </div>
-
-                                        <div class="col-md-4 box-Holder">
-                                            <input type="radio" name="material" id="aluminium">
-                                            <label for="aluminium">Aluminium</label>
-                                        </div>
-
-                                        <div class="col-md-4 box-Holder">
-                                            <input type="radio" name="material" id="copper">
-                                            <label for="copper">Koppar</label>
-                                        </div>
-
-                                        <div class="col-md-4 box-Holder">
-                                            <input type="radio" name="material" id="brass">
-                                            <label for="brass">Mässing</label>
-                                        </div>
-
-                                        <div class="col-md-4 box-Holder">
-                                            <input type="radio" name="material" id="stainless">
-                                            <label for="stainless">Rostfritt</label>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </div>
-
-                            <div class="metric-measures">
-                                <fieldset class="form-group">
-                                    <legend>Takmått</legend>
-                                    <div class="input-Holder col-md-6">
-                                        <label for="offert-roofAngle">Hur stort är taket? (kvm)</label>
-                                        <input type="number" id="offert-roofAngle" class="form-control" placeholder="t.ex: 100">
-                                    </div>
-
-                                    <div class="input-Holder col-md-6">
-                                        <label for="offert-roofAngle">Takets lutning ( grader &deg; )</label>
-                                        <input type="number" id="offert-roofAngle" class="form-control" placeholder="t.ex: 22">
-                                    </div>
-
-                                    <div class="input-Holder col-md-6">
-                                        <label for="offert-roofHeight">
-                                            <details>
-                                                <summary>Hur högt är huset? (m)</summary>
-                                                <p>(Ställning krävs på höjd över 1.25m enligt Arbetsmiljöverket)</p>
-                                            </details>
-                                        </label>
-                                        <input type="number" id="offert-roofHeight" class="form-control" placeholder="t.ex: 7">
-                                    </div>
-                                </fieldset>
-                            </div>
-
-                            <div class="obstacle-measures">
-                                <fieldset class="form-group">
-                                    <legend>Takgenomförningar</legend>
-                                    <div id="standardized-obstacles">
-                                        <div class="standard-explanation">
-                                            <h4>Standard för: <span id="roof-model-standard-obstacles">Sadeltak</span></h4>
-                                            <ul id="standard-obstacle-list" class="list-unstyled">
-                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                    Ventilationshuv
-                                                </li>
-                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                     Avluftstos
-                                                </li>
-                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                     Vindskivor
-                                                </li>
-                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                     Hängrännor
-                                                </li>
-                                                <li><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                     Stuprännor
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                        <div class="standard-choices">
-                                            <div class="box-Holder">
-                                                <input type="radio" name="standard-obstacles" id="standard-choice" checked>
-                                                <label for="standard-choice">Standard</label>
-                                            </div>
-
-                                            <div class="box-Holder">
-                                                <input type="radio" name="standard-obstacles" id="own-obstacles">
-                                                <label for="own-obstacles">Egna genomförningar</label>
-                                            </div>
-
-                                            <div class="box-Holder">
-                                                <input type="radio" name="standard-obstacles" id="no-obstacles">
-                                                <label for="no-obstacles">Inga genomförningar</label>
-                                            </div>
-                                        </div>
-                                        <div class="standard-advanced-instructions">
-                                            <h4>Stämmer inte listan?</h4>
-                                            <p>Du kan justera vilken typ och antal genomförningar i de avancerade inställningarna</p>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </div>
-
-                            <a href="#" class="extra-roof-dropBtn">Avancerat <span class="caret"></span></a>
-                            <div class="extras">
-                                <div class="roofBushing">
-                                    <fieldset class="form-group">
-                                        <legend>Takgenomförningar</legend>
-                                        <div class="roof-obstacles">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="bigChimney">Stor skorsten</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="smallChimney">Liten skorsten</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="spigot">Avluftstos</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item" >
-                                                            <strong id="roofWindow">Takfönster</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="ventilation">Ventilationshuv</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="roofHatch">Taklucka</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="kitchenVentilation">Köksfläktshuv / Vent stor</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="smallDormerWindow">Takkupa < 10 kvm</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="bigDormerWindow">Takkupa > 10 kvm</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </fieldset>
+        <li class="menu-2" data-offert="roofMetrics" data-page="offert-page" title="Detaljer">
+            <a href="#" data-page="offert-page">
+                <i class="fa fa-sliders" aria-hidden="true"></i>
+                Detaljer
+            </a>
+            <section class="roofMetrics">
+                <div class="wrapper">
+                    <div class="back-forth-menu">
+                        <a href="#" class="back-navigation" data-where="menu-1">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            Back
+                        </a>
+                        <a href="#" class="forth-navigation" data-where="menu-3">
+                            Vem
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="material-metric">
+                        <fieldset>
+                            <legend>Takmaterial</legend>
+                            <div id="roofMaterial">
+                                <div class="box-Holder">
+                                    <input type="radio" name="material" id="plate" value="Stålplåt" checked>
+                                    <label for="plate">Stålplåt</label>
                                 </div>
 
-                                <div class="roofWaterDrainage">
-                                    <fieldset class="form-group">
-                                        <legend>Vattenavrinning</legend>
-                                        <div class="col-md-12 control-group" id="waterCheckBoxes">
-                                            <div class="col-md-6 box-Holder">
-                                                <input id="roofDownpipes" type="checkbox" name="waterMeasures" value="roofDownpipes">
-                                                <label for="roofDownpipes">Stuprör</label>
-                                            </div>
-
-                                            <div class="col-md-6 box-Holder">
-                                                <input id="roofGutters" type="checkbox" name="waterMeasures" value="roofGutters">
-                                                <label for="roofGutters">Hängrännor</label>
-                                            </div>
-
-                                        </div>
-                                    </fieldset>
+                                <div class="box-Holder">
+                                    <input type="radio" name="material" id="zink-shine" value="Zink Valsblank">
+                                    <label for="zink-shine">Zink Valsblank</label>
                                 </div>
 
-                                <div class="roofSecurityMeasures">
-                                    <fieldset class="form-group">
-                                        <legend>Taksäkerhet</legend>
-                                        <div class="roof-security">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Takstege</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Skorstensstege</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Takbrygga</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Snörasskydd</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </fieldset>
+                                <div class="box-Holder">
+                                    <input type="radio" name="material" id="zink-preweather" value="Zink Förpatinerad">
+                                    <label for="zink-preweather">Zink Förpatinerad</label>
                                 </div>
 
-                                <div class="roofGarnish">
-                                    <fieldset class="form-group">
-                                        <legend>Garnering</legend>
-                                        <div class="roof-garnish">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Luftad nock</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong id="weatherproofing">Vindskivor</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Skorstensvalv</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </fieldset>
+                                <div class="box-Holder">
+                                    <input type="radio" name="material" id="aluminium" value="Aluminium">
+                                    <label for="aluminium">Aluminium</label>
                                 </div>
 
-                                <div class="roofExtras">
-                                    <fieldset class="form-group">
-                                        <legend>Extra</legend>
-                                        <div class="roof-extras">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Fotränna</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="item">
-                                                            <strong>Fotränna ytterhörn</strong>
-                                                        </td>
-                                                        <td class="item-count">
-                                                            0
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-up">+</a>
-                                                        </td>
-                                                        <td class="quant">
-                                                            <a href="#" class="quant-down">-</a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </fieldset>
+                                <div class="box-Holder">
+                                    <input type="radio" name="material" id="aluzink" value="Aluzink">
+                                    <label for="aluzink">Aluzink</label>
                                 </div>
 
-                                <div class="roofExtrasOnSquareMeter">
-                                    <fieldset class="form-group">
-                                        <legend>Övriga kostnader</legend>
-                                        <div class="col-md-12 control-group" id="roofPaperAndScaffold">
-                                            <div class="col-md-6 box-Holder">
-                                                <input id="roofPaper" type="checkbox" name="squaredCosts" value="roofPaper" checked>
-                                                <label for="roofPaper">Takpapp</label>
-                                            </div>
-
-                                            <div class="col-md-6 box-Holder">
-                                                <input id="roofScaffolds" type="checkbox" name="squaredCosts" value="roofScaffolds" checked>
-                                                <label for="roofScaffolds">Byggnadsställning</label>
-                                            </div>
-
-                                            <div class="col-md-6 box-Holder">
-                                                <input id="roofContainer" type="checkbox" name="squaredCosts" value="roofContainer" checked>
-                                                <label for="roofContainer">Container</label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
+                                <div class="box-Holder">
+                                    <input type="radio" name="material" id="stainless" value="Rostfritt">
+                                    <label for="stainless">Rostfritt</label>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </li>
+                        </fieldset>
+                    </div>
 
-
-<!--                OFFERT PAGE3           -->
-                <li class="menu-3" data-offert="toWhoWhen" data-page="offert-page" title="To who and when">
-                    <a href="#" data-page="offert-page">
-                        <i class="fa fa-users" aria-hidden="true"></i>
-                        Vem
-                    </a>
-                    <section class="toWhoWhen">
-                        <div class="wrapper">
-                            <div class="back-forth-menu">
-                                <a href="#" class="back-navigation" data-where="menu-2">
-                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                    Back
-                                </a>
-                                <a href="#" class="forth-navigation" data-where="menu-4">
-                                    Checkout
-                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="toWho">
-                                <fieldset class="form-group" id="smallerStuff">
-                                    <legend>Uppdraget ska utföras åt</legend>
-                                    <div class="col-md-12 control-group" id="roofToWho">
-
-                                        <div class="col-md-6 box-Holder">
-                                            <input type="radio" name="toWho" id="privateOwner">
-                                            <label for="privateOwner">Privatperson</label>
-                                        </div>
-
-                                        <div class="col-md-6 box-Holder">
-                                            <input type="radio" name="toWho" id="companyOwner">
-                                            <label for="companyOwner">Företag</label>
-                                        </div>
-
-                                        <div class="col-md-6 box-Holder">
-                                            <input type="radio" name="toWho" id="entrepreneurOwner">
-                                            <label for="entrepreneurOwner">Byggherre</label>
-                                        </div>
-
-                                        <div class="col-md-6 box-Holder">
-                                            <input type="radio" name="toWho" id="tenantOwner">
-                                            <label for="tenantOwner">Bostadsrättsförening</label>
-                                        </div>
-
-                                        <div class="col-md-6 box-Holder">
-                                            <input type="radio" name="toWho" id="nonProfitOwner">
-                                            <label for="nonProfitOwner">Ideell Förening</label>
-                                        </div>
-
-                                        <div class="col-md-6 box-Holder">
-                                            <input type="radio" name="toWho" id="municipalityOwner">
-                                            <label for="municipalityOwner">Kommun/Myndighet</label>
-                                        </div>
-
-                                    </div>
-                                </fieldset>
+                    <div class="metric-measures">
+                        <fieldset>
+                            <legend>Takmått</legend>
+                            <div class="input-Holder">
+                                <label for="offert-roofAngle">Hur stort är taket? (kvm)</label>
+                                <input type="number" id="offert-roofSquared" placeholder="t.ex: 100">
                             </div>
 
-                            <div class="toWhen">
-                                <fieldset class="form-group">
-                                    <legend>Tidsplanering</legend>
-                                    <div class="col-md-12 form-group input-Holder" id="roofWhenToBegin">
-                                        <label for="roofWhatMonthToBegin">När ska uppdraget påbörjas?</label>
-                                        <select class="form-control" title=" " id="roofWhatMonthToBegin">
-                                            <option>Snarast möjligt</option>
-                                            <option>Inom 1 månad</option>
-                                            <option>Inom 3 månader</option>
-                                            <option>Inom 6 månader</option>
-                                            <option>Inom 12 månader</option>
-                                            <option>Tidpunkt mindre viktig</option>
-                                        </select>
-                                    </div>
-                                </fieldset>
+                            <div class="input-Holder">
+                                <label for="offert-roofAngle">Takets lutning ( grader &deg; )</label>
+                                <input type="number" id="offert-roofAngle" placeholder="t.ex: 22" max="50" min="1">
                             </div>
 
-                            <div class="extraInput">
-                                <fieldset class="form-group">
-                                    <legend>Övrig information om ditt uppdrag</legend>
-                                    <div class="col-md-12 form-group" id="roofExtra">
-                                        <div class="form-group input-Holder">
-                                            <label for="contact-message">Meddelande:</label>
-                                            <textarea class="form-control" rows="6" id="contact-message"></textarea>
-                                        </div>
-                                        <div class="form-group input-Holder">
-                                            <label for="offert-fileUpload">
-                                                <details>
-                                                    <summary>Bifoga fil</summary>
-                                                    <p>Ex: ritning eller bild på projektet</p>
-                                                </details>
-                                            </label>
-                                            <input id="offert-fileUpload" class="btn btn-primary" type="file" name="extraFile">
-                                        </div>
-                                    </div>
-                                </fieldset>
+                            <div class="input-Holder">
+                                <label for="offert-roofHeight">
+                                    <details>
+                                        <summary>Hur högt är det till hängrännan? (m)</summary>
+                                        <p>(Ställning krävs på höjd över 1.25m enligt Arbetsmiljöverket)</p>
+                                    </details>
+                                </label>
+                                <input type="number" id="offert-roofHeight" placeholder="t.ex: 7">
                             </div>
-                        </div>
-                    </section>
-                </li>
+                        </fieldset>
+                    </div>
 
+                    <div class="obstacle-measures">
+                        <fieldset>
+                            <legend>Hinder</legend>
+                            <div id="standardized-obstacles">
+                                <div class="standard-explanation">
+                                    <h4>Standard för: <span id="roof-model-standard-obstacles">Sadeltak</span></h4>
+                                    <ul id="standard-obstacle-list">
+                                        <li>
+                                            Ventilationshuv
+                                        </li>
+                                        <li>
+                                            Avluftstos
+                                        </li>
+                                        <li>
+                                            Hängrännor
+                                        </li>
+                                        <li>
+                                            Stuprör
+                                        </li>
 
-<!--                OFFERT PAGE4           -->
-                <li class="menu-4" data-offert="offert-checkout" data-page="offert-page" title="Offert Checkout">
-                    <a href="#" id="checkoutMenuItem" data-page="offert-page">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        Checkout
-                    </a>
-                    <section class="offert-checkout">
-                        <div class="wrapper">
-                            <div class="offert-summary">
-                                <h2>Sammanställning</h2>
-                                <fieldset class="form-group">
-                                    <legend>Tak</legend>
-                                    <div class="col-md-12 control-group">
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4>Skorstenar, takkupor eller taksäkerhet?</h4>
+                                    <p>Har du fler eller andra hinder än vad som visas som standard? Byt till <strong>Ändra hinder</strong> och välj de hinder som finns på ditt tak för ett mer korrekt prisförslag.</p>
+                                    <div class="standard-choices">
+                                        <div class="box-Holder">
+                                            <input type="radio" name="standard-obstacles" id="standard-choice" checked>
+                                            <label for="standard-choice">Standard</label>
+                                        </div>
 
-                                    </div>
-                                </fieldset>
+                                        <div class="box-Holder">
+                                            <input type="radio" name="standard-obstacles" id="own-obstacles">
+                                            <label for="own-obstacles">Ändra</label>
+                                        </div>
 
-                                <fieldset class="form-group">
-                                    <legend>Kontakt och Tid</legend>
-                                    <div class="col-md-12 control-group">
-
-                                    </div>
-                                </fieldset>
-
-                                <div class="offert-suggestion">
-                                    <div class="suggestion-content">
-                                        <h3>Preliminärt prisförslag:</h3>
-                                        <p>Enligt våra beräkningar skulle en offert på detta jobb hamna mellan:</p>
-                                    </div>
-                                    <div class="suggested-price">
-                                        <h1>10 000 - 70 000 kr</h1>
+                                        <div class="box-Holder">
+                                            <input type="radio" name="standard-obstacles" id="no-obstacles">
+                                            <label for="no-obstacles">Inga</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </li>
-            </ul>
-        </aside>
+                        </fieldset>
+                    </div>
 
-<!--                OFFERT CHECKOUT          -->
-        <main id="checkout-wrapper">
-            <div class="container">
-                <header>
-                    <h3>Checkout</h3>
-                    <p>Fyll i kontaktuppgifter och skicka in offertförfrågan så kontaktar vi er för ett mer specifik och uträknad prisförslag på det jobb som ska utföras</p>
-                </header>
-
-                <div class="offert-process">
-                    <div class="row">
-                        <div class="col-md-4 process-step">
-                            <p><i class="fa fa-paper-plane-o" aria-hidden="true"></i></p>
-                            <h5>Skicka</h5>
+                    <a href="#" class="extra-roof-dropBtn">Avancerat <span class="caret"></span></a>
+                    <div class="back-forth-menu">
+                        <a href="#" id="nextButton2" class="forth-navigation" data-where="menu-3">
+                            Nästa steg
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="extras">
+                        <div class="roofBushing">
+                            <fieldset class="form-group">
+                                <legend>Takgenomförningar</legend>
+                                <div class="roof-obstacles">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item">
+                                                    <strong id="bigChimney">Stor skorsten</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item">
+                                                    <strong id="smallChimney">Liten skorsten</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item">
+                                                    <strong id="spigot" value ="spigot">Avluftstos</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item" >
+                                                    <strong id="roofWindow">Takfönster</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item">
+                                                    <strong id="ventilation" value="ventilation">Ventilationshuv</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item">
+                                                    <strong id="roofHatch">Taklucka</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item">
+                                                    <strong id="kitchenVentilation">Köksfläktshuv / Vent stor</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item">
+                                                    <strong id="smallDormerWindow">Takkupa mindre än 10 kvm</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td class="item">
+                                                    <strong id="bigDormerWindow">Takkupa större än 10 kvm</strong>
+                                                </td>
+                                                <td class="item-count">
+                                                    0
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-up">+</a>
+                                                </td>
+                                                <td class="quant">
+                                                    <a href="#" class="quant-down">-</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </fieldset>
                         </div>
 
-                        <div class="col-md-4 process-step">
-                            <p><i class="fa fa-bar-chart" aria-hidden="true"></i></p>
-                            <h5>Vi räknar</h5>
+                        <div class="roofWaterDrainage">
+                            <fieldset>
+                                <legend>Vattenavrinning</legend>
+                                <div id="waterCheckBoxes">
+                                    <div class="box-Holder">
+                                        <input id="roofDownpipes" type="checkbox" name="waterMeasures" value="Stuprör">
+                                        <label for="roofDownpipes">Stuprör</label>
+                                    </div>
+
+                                    <div class="box-Holder">
+                                        <input id="roofGutters" type="checkbox" name="waterMeasures" value="Hängrännor">
+                                        <label for="roofGutters">Hängrännor</label>
+                                    </div>
+
+                                    <div class="box-Holder">
+                                        <input id="roofGenzimGutters" type="checkbox" name="waterMeasures" value="Genzimrännor">
+                                        <label for="roofGenzimGutters">Genzimrännor</label>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
 
-                        <div class="col-md-4 process-step">
-                            <p><i class="fa fa-handshake-o" aria-hidden="true"></i></p>
-                            <h5>Specificerat prisförslag</h5>
+                        <div class="roofSecurityMeasures">
+                            <fieldset>
+                                <legend>Taksäkerhet</legend>
+                                <div id="roof-security">
+                                    <div class="box-Holder">
+                                        <input id="roofLadder" type="checkbox" name="securityMeasures" value="Takstege">
+                                        <label for="roofLadder">Takstege</label>
+                                    </div>
+                                    <div class="box-Holder">
+                                        <input id="chimneyLadder" type="checkbox" name="securityMeasures" value="Skorstensstege">
+                                        <label for="chimneyLadder">Skorstensstege</label>
+                                    </div>
+                                    <div class="box-Holder">
+                                        <input id="roofBridge" type="checkbox" name="securityMeasures" value="Takbrygga">
+                                        <label for="roofBridge">Takbrygga</label>
+                                    </div>
+                                    <div class="box-Holder">
+                                        <input id="snowSecurity" type="checkbox" name="securityMeasures" value="Snörasskydd">
+                                        <label for="snowSecurity">Snörasskydd</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="roofGarnish">
+                            <fieldset>
+                                <legend>Garnering</legend>
+                                <div id="roof-garnish">
+                                    <div class="box-Holder">
+                                        <input id="nock" type="checkbox" name="garnish" value="Nock">
+                                        <label for="nock">Nock</label>
+                                    </div>
+                                    <div class="box-Holder">
+                                        <input id="airedNock" type="checkbox" name="garnish" value="Luftad nock">
+                                        <label for="airedNock">Luftad nock</label>
+                                    </div>
+                                    <div class="box-Holder">
+                                        <input id="weatherproofing" type="checkbox" name="garnish" value="Vindskivor">
+                                        <label for="weatherproofing">Vindskivor</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="roofExtras">
+                            <fieldset>
+                                <legend>Extra</legend>
+                                <div id="roof-extras">
+                                    <div class="box-Holder">
+                                        <input id="footRinse" type="checkbox" name="extras" value="Fotränna">
+                                        <label for="footRinse">Fotränna</label>
+                                    </div>
+                                    <div class="box-Holder">
+                                        <input id="angleChute" type="checkbox" name="extras" value="Vinkelränna">
+                                        <label for="angleChute">Vinkelränna</label>
+                                    </div>
+                                    <div class="box-Holder">
+                                        <input id="roofBreak" type="checkbox" name="extras" value="Takbrott">
+                                        <label for="roofBreak">Takbrott</label>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                 </div>
+            </section>
+        </li>
 
-                <div class="offert-contact-info">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <form>
-                                <h4>Kontakuppgifter</h4>
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <label for="offert-email">Email<span>*</span></label>
-                                        <input type="email" id="offert-email" class="form-control" title="Du behöver fylla i en email. Vi kan inte ens skicka dig ett email om hur man skaffar en email om du inte har en email" name="offertEmail" required>
-                                    </div>
+<!--                OFFERT PAGE3           -->
+        <li class="menu-3" data-offert="toWhoWhen" data-page="offert-page"  title="Till vem och när">
+            <a href="#" data-page="offert-page">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                Vem
+            </a>
+            <section class="toWhoWhen">
+                <div class="wrapper">
+                    <div class="back-forth-menu">
+                        <a href="#" class="back-navigation" data-where="menu-2">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            Back
+                        </a>
+                        <a href="#" class="forth-navigation" data-where="menu-4">
+                            Checkout
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="toWho">
+                        <fieldset id="smallerStuff">
+                            <legend>Uppdraget ska utföras åt</legend>
+                            <div id="roofToWho">
+                                <div class="box-Holder">
+                                    <input type="radio" name="toWho" id="privateOwner" value="Privatperson" checked>
+                                    <label for="privateOwner">Privatperson</label>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <label for="offert-firstname">Namn<span>*</span></label>
-                                        <input type="text" id="offert-firstname" class="form-control" name="offertFirstname" required>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label for="offert-lastname">Efternamn<span>*</span></label>
-                                        <input type="text" id="offert-lastname" class="form-control" name="offertLastname" required>
-                                    </div>
+                                <div class="box-Holder">
+                                    <input type="radio" name="toWho" id="companyOwner" value="Företag">
+                                    <label for="companyOwner">Företag</label>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <label for="offert-adress">Adress<span>*</span></label>
-                                        <input placeholder="Gata" type="text" id="offert-gata" class="form-control" name="offertAdressStreet" required>
-                                        <input placeholder="Postnummer" type="number" id="offert-postnummer" class="form-control" name="offertAdressZip" required>
-                                    </div>
+                                <div class="box-Holder">
+                                    <input type="radio" name="toWho" id="entrepreneurOwner" value="Byggherre">
+                                    <label for="entrepreneurOwner">Byggherre</label>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-md-12 form-group">
-                                        <label for="offert-city">Stad<span>*</span></label>
-                                        <input type="text" id="offert-city" class="form-control" name="offertCity" required>
-                                    </div>
+                                <div class="box-Holder">
+                                    <input type="radio" name="toWho" id="tenantOwner" value="Bostadsrättsförening">
+                                    <label for="tenantOwner">Bostadsrättsförening</label>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-md-12 checkbox">
-                                        <label><input type="checkbox" value="" name="offertCallMe">Bli uppringd</label>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="offert-phone">Telefonnummer</label>
-                                        <input type="tel" id="offert-phone" class="form-control" name="offertPhonenNumber" disabled>
-                                    </div>
+                                <div class="box-Holder">
+                                    <input type="radio" name="toWho" id="nonProfitOwner" value="Ideell Förening">
+                                    <label for="nonProfitOwner">Ideell Förening</label>
                                 </div>
-                            </form>
+
+                                <div class="box-Holder">
+                                    <input type="radio" name="toWho" id="municipalityOwner" value="Kommun/Myndighet">
+                                    <label for="municipalityOwner">Kommun/Myndighet</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="toWhen">
+                        <fieldset>
+                            <legend>Tidsplanering</legend>
+                            <div class="input-Holder" id="roofWhenToBegin">
+                                <label for="roofWhatMonthToBegin">När ska uppdraget påbörjas?</label>
+                                <select id="roofWhatMonthToBegin">
+                                    <option value="Snarast möjligt" selected="selected">Snarast möjligt</option>
+                                    <option value="Inom 1 månad">Inom 1 månad</option>
+                                    <option value="Inom 3 månader">Inom 3 månader</option>
+                                    <option value="Inom 6 månader">Inom 6 månader</option>
+                                    <option value="Inom 12 månader">Inom 12 månader</option>
+                                    <option value="Tidpunkt mindre viktig">Tidpunkt mindre viktig</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="extraInput">
+                        <fieldset>
+                            <legend>Övrig information om ditt uppdrag</legend>
+                            <div id="roofExtraMessage">
+                                <div class="input-Holder">
+                                    <textarea rows="6" id="contact-message" placeholder="Meddelande..."></textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="back-forth-menu">
+                        <a href="#" id="nextButton3" class="forth-navigation" data-where="menu-4">
+                            Nästa steg
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </li>
+
+
+<!--                OFFERT PAGE4           -->
+        <li class="menu-4" data-offert="offert-checkout" data-page="offert-page" title="Checkout">
+            <a href="#" id="checkoutMenuItem" data-page="offert-page">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                Checkout
+            </a>
+            <section class="offert-checkout">
+                <div class="wrapper">
+                    <div class="offert-summary">
+                        <h2>Sammanställning</h2>
+                        <div class="offert-suggestion">
+                            <div class="suggestion-content">
+                                <h3>Preliminärt prisförslag:</h3>
+                                <p>Enligt våra beräkningar skulle en offert på detta jobb hamna mellan: <strong><span id="price-suggestion"></span></strong></p>
+                            </div>
                         </div>
 
-                        <div id="offert-submit-holder" class="row">
-                            <div class="col-md-12">
-                                <button id="submit-offert" name="offertSubmit" disabled>
-                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                    <strong>Skicka offertförfrågan</strong>
-                                </button>
+                        <fieldset>
+                            <legend>Tak</legend>
+                            <div id="roof-summary">
+
                             </div>
+                            <ul class="obsticle-summary"></ul>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Kontakt och Tid</legend>
+                            <div id="contact-summary">
+
+                            </div>
+                        </fieldset>
+
+                        <div class="roofExtrasOnSquareMeter">
+                            <fieldset>
+                                <legend>Logistik och övrigt</legend>
+                                <p>Vi gillar inte överraskande kostnader, därför vill vi på Weatherproof Family upplysa dig om kostnader som kan tillkomma på ditt projekt:</p>
+                                <div id="roofPaperAndScaffold">
+                                    <div class="box-Holder">
+                                        <input id="roofPaper" type="checkbox" name="squaredCosts" value="Takpapp">
+                                        <label for="roofPaper">Takpapp</label>
+                                    </div>
+                                    <div class="box-Holder">
+                                        <input id="roofScaffolds" type="checkbox" name="squaredCosts" value="Byggnadsställning">
+                                        <label for="roofScaffolds">Byggnadsställning</label>
+                                    </div>
+
+                                    <div class="box-Holder">
+                                        <input id="roofDemolition" type="checkbox" name="squaredCosts" value="Rivning">
+                                        <label for="roofDemolition">Rivning</label>
+                                    </div>
+
+                                    <div class="box-Holder">
+                                        <input id="roofContainer" type="checkbox" name="squaredCosts" value="Container">
+                                        <label for="roofContainer">Container</label>
+                                    </div>
+
+                                    <div class="box-Holder">
+                                        <input id="transportLift" type="checkbox" name="squaredCosts" value="Transport / lyft">
+                                        <label for="transportLift">Transport / lyft</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="logistics-price">
+                                <div class="suggestion-content">
+                                    <h3>Övriga kostnader:
+                                        <span id="logisticCosts">0kr</span>
+                                    </h3>
+                                    <div class="suggested-price">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </aside>
+
+<!--                OFFERT CHECKOUT          -->
+    <main id="checkout-wrapper">
+        <div class="container">
+            <header>
+                <h3>Checkout</h3>
+                <p>Fyll i kontaktuppgifter och skicka in offertförfrågan så kontaktar vi er för ett mer specifik och uträknad prisförslag på det jobb som ska utföras</p>
+            </header>
+
+            <div class="offert-process">
+                <div class="row">
+                    <div class="process-step">
+                        <p><i class="fa fa-paper-plane-o" aria-hidden="true"></i></p>
+                        <h5>Skicka</h5>
+                    </div>
+
+                    <div class="process-step">
+                        <p><i class="fa fa-bar-chart" aria-hidden="true"></i></p>
+                        <h5>Vi räknar</h5>
+                    </div>
+
+                    <div class="process-step">
+                        <p><i class="fa fa-handshake-o" aria-hidden="true"></i></p>
+                        <h5>Specificerat prisförslag</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offert-contact-info">
+                <div class="row">
+                    <div>
+                        <form id="offertForm">
+                            <h4>Kontakuppgifter</h4>
+                            <div class="row twos">
+                                <div>
+                                    <label for="offert-firstname">Namn<span>*</span></label>
+                                    <input type="text" id="offert-firstname" class="form-control" name="offertFirstname" required>
+                                </div>
+                                <div>
+                                    <label for="offert-lastname">Efternamn<span>*</span></label>
+                                    <input type="text" id="offert-lastname" class="form-control" name="offertLastname" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label for="offert-companyName">Företagsnamn<span></span></label>
+                                    <input type="text" id="offert-companyName" name="companyName">
+                                </div>
+                            </div>
+                            <div class="row twos">
+                                <div>
+                                    <label for="offert-adress">Adress<span>*</span></label>
+                                    <input placeholder="Gata" type="text" id="offert-gata" name="offertAdressStreet" required>
+                                </div>
+                                <div>
+                                    <label for="offert-postnummer">Postnummer<span>*</span></label>
+                                    <input placeholder="Postnummer" type="number" id="offert-postnummer" name="offertAdressZip" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div>
+                                    <label for="offert-city">Stad<span>*</span></label>
+                                    <input type="text" id="offert-city" name="offertCity" required>
+                                </div>
+                            </div>
+
+                            <div class="row twos">
+                                <div>
+                                    <label for="offert-phone">Telefonnummer<span>*</span></label>
+                                    <input type="tel" id="offert-phone" name="offertPhonenNumber" required>
+                                </div>
+
+                                <div>
+                                    <label for="offert-email">Email<span>*</span></label>
+                                    <input type="email" id="offert-email" title="Email" name="offertEmail" required>
+                                </div>
+                            </div>
+                            <!--<div class="g-recaptcha" data-sitekey="YOUR_KEY"></div>-->
+                        </form>
+                    </div>
+                    <div id="offert-submit-holder" class="row">
+                        <div>
+                            <button id="submit-offert" name="offertSubmit" >
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                <strong>Skicka offertförfrågan</strong>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="JS/materialcosts.js"></script>
+<script src="JS/offerten.js"></script>
 
-    </body>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
-    <script src="JS/offerten.js"></script>
-  </body>
 </html>

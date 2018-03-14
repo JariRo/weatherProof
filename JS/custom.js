@@ -9,7 +9,7 @@ var setItUp = (function(){
             if ($(document).scrollTop() > 50) {
                 $('nav').addClass('shrinkNav');
                 $('#brandLogo').addClass('shrinkLogo')
-                $('#contactInfo').addClass('shrinkContactInfo');
+                //$('#contactInfo').addClass('shrinkContactInfo');
             }
             else{
                 $('nav').removeClass('shrinkNav');

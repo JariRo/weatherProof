@@ -1,0 +1,26 @@
+{
+  "name": "weatherproof",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "sass": "^1.0.0-beta.5.2",
+    "sweetalert": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JariRo/weatherProof.git"
+  },
+  "author": "Jari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JariRo/weatherProof/issues"
+  },
+  "homepage": "https://github.com/JariRo/weatherProof#readme"
+}
