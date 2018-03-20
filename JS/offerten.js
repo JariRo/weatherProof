@@ -169,7 +169,7 @@ var setOffertUp = (function(){
                 return price
             }, 0)
 
-            document.querySelector('#logisticCosts').innerHTML = totalPrice + "kr"
+            document.querySelector('#logisticCosts').innerHTML = "Övriga kostnader: " + totalPrice + " kr"
         }
 
         const setCheckoutUp = function(element){
@@ -480,19 +480,18 @@ var setOffertUp = (function(){
     }
 
     const setUpSummary = (calcObj) => {
-        let roofSummary = document.querySelector('#roof-summary')
+        let sumWork = document.querySelector('#roof-summary > ul > li > #sumWork')
+        let sumModel = document.querySelector('#roof-summary > ul > li > #sumModel')
+        let sumMaterial = document.querySelector('#roof-summary > ul > li > #sumMaterial')
+        let sumSize = document.querySelector('#roof-summary > ul > li > #sumSize')
+        let sumAngle = document.querySelector('#roof-summary > ul > li > #sumAngle')
+        let sumHeight = document.querySelector('#roof-summary > ul > li > #sumHeight')
+
         let contactSummary = document.querySelector('#contact-summary')
         let priceSuggestion = document.querySelector('#price-suggestion')
         let totalPrice = calcObj.price.work + calcObj.price.material
         let lowerPriceEdge = Math.round((Math.ceil((totalPrice - (totalPrice * 0.1)) / 100) * 100) / 1000) * 1000
         let upperPriceEdge = Math.round((Math.ceil((totalPrice + (totalPrice * 0.1)) / 100) * 100) / 1000) * 1000
-
-        let generatedRoofContent = '<p>Typ av jobb: ' + calcObj.ourInputs[0].work + '</p>'
-             + '<p>Takmodell: ' + calcObj.ourInputs[1].model[0].name + '</p>'
-             + '<p>Takmaterial: ' + calcObj.material[0].materialName + '</p>'
-             + '<p>Storlek: ' + calcObj.ourInputs[3].measures[0].kvm + 'm&sup2</p>'
-             + '<p>Takvinkel: ' + calcObj.ourInputs[3].measures[1].angle + '&deg</p>'
-             + '<p>Höjd: ' + calcObj.ourInputs[3].measures[2].height + 'm</p>'
 
         getObsticleContentList(calcObj)
 
@@ -500,13 +499,19 @@ var setOffertUp = (function(){
              + '<p>Tidsram: ' + calcObj.ourInputs[6].timeSchedule + '</p>'
              + '<p>Meddelande: ' + calcObj.ourInputs[7].message + '</p>'
 
-        roofSummary.innerHTML = generatedRoofContent
+        sumWork.innerHTML = calcObj.ourInputs[0].work
+        sumModel.innerHTML = calcObj.ourInputs[1].model[0].name
+        sumMaterial.innerHTML = calcObj.material[0].materialName
+        sumSize.innerHTML = calcObj.ourInputs[3].measures[0].kvm
+        sumAngle.innerHTML = calcObj.ourInputs[3].measures[1].angle
+        sumHeight.innerHTML = calcObj.ourInputs[3].measures[2].height
+
         contactSummary.innerHTML = generatedCustomerContent
 
         let priceString = calcObj.ourInputs[1].model[0].name == "Kyrktorn" ? "Kontakta oss så hjälper vi dig" : Math.floor(lowerPriceEdge)
         + ' - '
         + Math.floor(upperPriceEdge)
-        + "kr"
+        + " kr"
 
         priceSuggestion.innerHTML = priceString
 

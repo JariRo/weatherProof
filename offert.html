@@ -46,8 +46,9 @@
             <section class="jobToDo">
                 <div class="wrapper">
                     <div class="roofJobToDo">
+
+                        <h3 class="fieldsetLabel">Vad ska göras</h3>
                         <fieldset>
-                            <legend>Vad ska göras?</legend>
                             <div id="toDoCheckBoxes">
 
                                 <div class="box-Holder">
@@ -73,11 +74,10 @@
                         </fieldset>
                     </div>
 
+                    <h3 class="fieldsetLabel">Takmodeller</h3>
                     <div class="roofModels">
                         <fieldset>
-                            <legend>Takmodeller</legend>
                             <div id="takModell">
-
                                 <input id="tak1" type="radio" name="takmodeller" value="Sadeltak" checked>
                                 <label class="offert-takmodeller un" for="tak1"><p>Sadeltak</p></label>
 
@@ -128,7 +128,7 @@
                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                         </a>
                     </div>
-                </div>
+´                </div>
             </section>
         </li>
 
@@ -140,6 +140,7 @@
             </a>
             <section class="roofMetrics">
                 <div class="wrapper">
+                    <!--
                     <div class="back-forth-menu">
                         <a href="#" class="back-navigation" data-where="menu-1">
                             <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -150,9 +151,11 @@
                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                         </a>
                     </div>
+                -->
+
+                    <h3 class="fieldsetLabel">Takmaterial</h3>
                     <div class="material-metric">
                         <fieldset>
-                            <legend>Takmaterial</legend>
                             <div id="roofMaterial">
                                 <div class="box-Holder">
                                     <input type="radio" name="material" id="plate" value="Stålplåt" checked>
@@ -187,9 +190,9 @@
                         </fieldset>
                     </div>
 
+                    <h3 class="fieldsetLabel">Takmått</h3>
                     <div class="metric-measures">
                         <fieldset>
-                            <legend>Takmått</legend>
                             <div class="input-Holder">
                                 <label for="offert-roofAngle">Hur stort är taket? (kvm)</label>
                                 <input type="number" id="offert-roofSquared" placeholder="t.ex: 100">
@@ -212,9 +215,9 @@
                         </fieldset>
                     </div>
 
+                    <h3 class="fieldsetLabel"> Hinder </h3>
                     <div class="obstacle-measures">
                         <fieldset>
-                            <legend>Hinder</legend>
                             <div id="standardized-obstacles">
                                 <div class="standard-explanation">
                                     <h4>Standard för: <span id="roof-model-standard-obstacles">Sadeltak</span></h4>
@@ -267,8 +270,8 @@
                     </div>
                     <div class="extras">
                         <div class="roofBushing">
+                            <h3 class="fieldsetLabel">Takgenomförningar</h3>
                             <fieldset class="form-group">
-                                <legend>Takgenomförningar</legend>
                                 <div class="roof-obstacles">
                                     <table>
                                         <tbody>
@@ -420,9 +423,9 @@
                             </fieldset>
                         </div>
 
+                        <h3 class="fieldsetLabel">Vattenavrinning</h3>
                         <div class="roofWaterDrainage">
                             <fieldset>
-                                <legend>Vattenavrinning</legend>
                                 <div id="waterCheckBoxes">
                                     <div class="box-Holder">
                                         <input id="roofDownpipes" type="checkbox" name="waterMeasures" value="Stuprör">
@@ -442,9 +445,9 @@
                             </fieldset>
                         </div>
 
+                        <h3 class="fieldsetLabel">Taksäkerhet</h3>
                         <div class="roofSecurityMeasures">
                             <fieldset>
-                                <legend>Taksäkerhet</legend>
                                 <div id="roof-security">
                                     <div class="box-Holder">
                                         <input id="roofLadder" type="checkbox" name="securityMeasures" value="Takstege">
@@ -466,9 +469,9 @@
                             </fieldset>
                         </div>
 
+                        <h3 class="fieldsetLabel">Garnering</h3>
                         <div class="roofGarnish">
                             <fieldset>
-                                <legend>Garnering</legend>
                                 <div id="roof-garnish">
                                     <div class="box-Holder">
                                         <input id="nock" type="checkbox" name="garnish" value="Nock">
@@ -486,9 +489,9 @@
                             </fieldset>
                         </div>
 
+                        <h3 class="fieldsetLabel">Extra</h3>
                         <div class="roofExtras">
                             <fieldset>
-                                <legend>Extra</legend>
                                 <div id="roof-extras">
                                     <div class="box-Holder">
                                         <input id="footRinse" type="checkbox" name="extras" value="Fotränna">
@@ -518,6 +521,7 @@
             </a>
             <section class="toWhoWhen">
                 <div class="wrapper">
+                    <!--
                     <div class="back-forth-menu">
                         <a href="#" class="back-navigation" data-where="menu-2">
                             <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -528,9 +532,12 @@
                             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                         </a>
                     </div>
+                -->
+
+                    <h3 class="fieldsetLabel">Uppdraget ska utföras åt</h3>
+
                     <div class="toWho">
                         <fieldset id="smallerStuff">
-                            <legend>Uppdraget ska utföras åt</legend>
                             <div id="roofToWho">
                                 <div class="box-Holder">
                                     <input type="radio" name="toWho" id="privateOwner" value="Privatperson" checked>
@@ -564,9 +571,10 @@
                             </div>
                         </fieldset>
                     </div>
+
+                    <h3 class="fieldsetLabel">Tidsplanering</h3>
                     <div class="toWhen">
                         <fieldset>
-                            <legend>Tidsplanering</legend>
                             <div class="input-Holder" id="roofWhenToBegin">
                                 <label for="roofWhatMonthToBegin">När ska uppdraget påbörjas?</label>
                                 <select id="roofWhatMonthToBegin">
@@ -581,9 +589,9 @@
                         </fieldset>
                     </div>
 
+                    <h3 class="fieldsetLabel">Övrig information om ditt uppdrag</h3>
                     <div class="extraInput">
                         <fieldset>
-                            <legend>Övrig information om ditt uppdrag</legend>
                             <div id="roofExtraMessage">
                                 <div class="input-Holder">
                                     <textarea rows="6" id="contact-message" placeholder="Meddelande..."></textarea>
@@ -611,32 +619,68 @@
             <section class="offert-checkout">
                 <div class="wrapper">
                     <div class="offert-summary">
-                        <h2>Sammanställning</h2>
                         <div class="offert-suggestion">
                             <div class="suggestion-content">
                                 <h3>Preliminärt prisförslag:</h3>
-                                <p>Enligt våra beräkningar skulle en offert på detta jobb hamna mellan: <strong><span id="price-suggestion"></span></strong></p>
+
+                                <p>Enligt våra beräkningar skulle en offert på detta jobb hamna mellan:
+                                </p>
+
+                                <p id="price-suggestion">0 kr</p>
+
+                                <p id="logisticCosts">Övriga kostnader: 0 kr</p>
                             </div>
                         </div>
 
-                        <fieldset>
-                            <legend>Tak</legend>
-                            <div id="roof-summary">
+                        <h3 class="summaryHeading">Sammanställning</h3>
 
+                        <h3 class="fieldsetLabel"><i class="fa fa-home"></i>
+
+Tak</h3>
+                        <fieldset>
+                            <h4>Detaljer</h4>
+                            <div id="roof-summary">
+                                <ul>
+                                    <li>Typ av jobb:
+                                        <span id="sumWork"></span>
+                                    </li>
+                                    <li>Takmodell:
+                                        <span id="sumModel"></span>
+                                    </li>
+                                    <li>Takmaterial:
+                                        <span id="sumMaterial"></span>
+                                    </li>
+                                    <li>Storlek:
+                                        <span id="sumSize"></span>
+                                        m&sup2
+                                    </li>
+                                    <li>Takvinkel:
+                                        <span id="sumAngle"></span>
+                                        &deg
+                                    </li>
+                                    <li>Höjd:
+                                        <span id="sumHeight"></span>
+                                        m
+                                    </li>
+                                </ul>
                             </div>
+
+                            <h4>Hinder</h4>
                             <ul class="obsticle-summary"></ul>
                         </fieldset>
 
+                        <h3 class="fieldsetLabel"><i class="fa fa-envelope"></i>
+
+</span>Kontakt och Tid</h3>
                         <fieldset>
-                            <legend>Kontakt och Tid</legend>
                             <div id="contact-summary">
 
                             </div>
                         </fieldset>
 
+                        <h3 class="fieldsetLabel"><span id="logistikIcon"></span>Logistik och övrigt</h3>
                         <div class="roofExtrasOnSquareMeter">
                             <fieldset>
-                                <legend>Logistik och övrigt</legend>
                                 <p>Vi gillar inte överraskande kostnader, därför vill vi på Weatherproof Family upplysa dig om kostnader som kan tillkomma på ditt projekt:</p>
                                 <div id="roofPaperAndScaffold">
                                     <div class="box-Holder">
@@ -664,15 +708,6 @@
                                     </div>
                                 </div>
                             </fieldset>
-                            <div class="logistics-price">
-                                <div class="suggestion-content">
-                                    <h3>Övriga kostnader:
-                                        <span id="logisticCosts">0kr</span>
-                                    </h3>
-                                    <div class="suggested-price">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -774,6 +809,8 @@
     </main>
 </body>
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="JS/materialcosts.js"></script>
