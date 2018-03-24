@@ -278,8 +278,8 @@ body{
                                 cursor:pointer;
                                 background-size:cover;
                                 background-repeat:no-repeat;
-                                width:22.2%;
-                                padding-top:22.2%;
+                                width:31.2%;
+                                padding-top:31.2%;
                                 //width:6vw;
                                 //height:6vw;
                                 //margin:1%;
@@ -294,6 +294,7 @@ body{
                                 filter: brightness(1.8) greyscale(1) opacity(0.7);
 
                                 p{
+                                    display:none;
                                     position:absolute;
                                     top:0;
                                     left:0;
@@ -303,81 +304,99 @@ body{
                             }
 
                             input:checked + .offert-takmodeller{
-                                -webkit-filter:none;
-                                -moz-filter:none;
-                                filter:none;
-                                opacity:1;
+                                -webkit-filter:hue-rotate(160deg) saturate(30);
+                                -moz-filter:hue-rotate(160deg) saturate(30);
+                                filter:hue-rotate(160deg) saturate(30);
+
                             }
 
                             .offert-takmodeller:hover{
                                 opacity:0.9;
-                                -webkit-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
-                                -moz-filter: brightness(1.2) greyscale(0.5) opacity(0.9);
-                                filter: brightness(1.2) greyscale(0.5) opacity(0.9);
+                                -webkit-filter:saturate(30) opacity(1);
+                                -moz-filter:saturate(30) opacity(1);
+                                filter:saturate(30) opacity(1);
+                                transition:200ms;
+                                transition-timing-function: ease-in-out;
+                                -webkit-transition:200ms;
+                                -webkit-transition-timing-function: ease-in-out;
+                                -moz-transition:200ms;
+                                -moz-transition-timing-function: ease-in-out;
                             }
 
                             .un{
                                 background:#D24D57;
-                                //background:url(../img/showcase.jpeg);
+                                background:url(../img/taktyper/sadeltak.svg);
                             }
 
                             .deux{
                                 background:#F5D76E;
-                                //background:url(../img/showcase.jpeg);
+                                background:url(../img/taktyper/pulpettak.svg);
                             }
 
                             .trois{
                                 background:#03C9A9;
-                                //background:url(../img/showcase.jpeg);
+                                background:url(../img/taktyper/Halvvalmat_sadeltak.svg);
                             }
 
                             .quatre{
                                 background:#663399;
-                                //background:url(../img/showcase.jpeg);
+                                background:url(../img/taktyper/Vinkeltak.svg);
                             }
 
                             .cinq{
                                 background:#663399;
-                                //background:url(../img/showcase.jpeg);
+                                background:url(../img/taktyper/Helvalmat_sadeltak.svg);
                             }
 
                             .six{
                                 background:#03C9A9;
-                                //background:url(../img/showcase.jpeg);
+                                background:url(../img/taktyper/Mansardtak.svg);
                             }
 
                             .sept{
                                 background:#F5D76E;
-                                //background:url(../img/showcase.jpeg);
+                                background:url(../img/taktyper/Halvvalmat_mansardtak.svg);
                             }
 
                             .huit{
                                 background:#F62459;
-                                //background:url(../img/showcase.jpeg);
+                                background:url(../img/taktyper/Helvalmat_mansardtak.svg);
                             }
 
                             .neuf{
                                 background:#947CB0;
+                                background:url(../img/taktyper/Pyramidtak.svg);
+
                             }
 
                             .dix{
                                 background:#52B3D9;
+                                background:url(../img/taktyper/Valmat_pyramidtak.svg);
+
                             }
 
                             .onze{
                                 background:#336E7B;
+                                background:url(../img/taktyper/Motfallstak.svg);
+
                             }
 
                             .douze{
                                 background:#3A539B;
+                                background:url(../img/taktyper/Korstak.svg);
+
                             }
 
                             .treize{
                                 background:#91B496;
+                                background:url(../img/taktyper/Bagtak.svg);
+
                             }
 
                             .quartoze{
                                 background:#86E2D5;
+                                background:url(../img/taktyper/Kyrktorn.svg);
+
                             }
                         }
 
