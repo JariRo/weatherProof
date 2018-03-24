@@ -13,7 +13,7 @@ var setOffertUp = (function(){
         var resetedExtras = document.querySelector(".roofMetrics > .wrapper > .extras").innerHTML;
         var logisticsBoxes = document.querySelectorAll("#roofPaperAndScaffold > .box-Holder > input[type=checkbox]")
         var submitButton = document.getElementById("submit-offert")
-        var offertForm = document.getElementById("offertForm")
+        var offertForm = $("#offertForm")
 
 
         //Insert factors for each roof
@@ -595,19 +595,26 @@ var setOffertUp = (function(){
                 dataString += "\n" + obsInfo
             }
 
+            console.log($(theForm).attr('action'))
+
+            let theData = {
+                name: formName + " " + formSurname,
+                email: formEmail,
+                content: dataString
+                //captcha:grecaptcha.getResponse()
+            }
+            console.log(theData)
             $.ajax({
                 type: 'POST',
-                url:'offertMail.php',
-                data:{
-                    title: formName + " " + formSurname,
-                    email: formEmail,
-                    content: dataString,
-                    captcha:grecaptcha.getResponse()
-                },
-                success: function(){
+                url: $(offertForm).attr('action'),
+                crossdomain: true,
+                data: theData,
+                done: function(response){
+                    console.log("It went through: " + response)
                     return true
                 },
-                error: function(){
+                fail: function(response){
+                    console.log("Error: " + response)
                     return false;
                 }
             })

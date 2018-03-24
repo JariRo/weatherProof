@@ -57,11 +57,11 @@ var setItUp = (function(){
         });
 
 
-        /* MATERIALVÄLJAREN
+        // MATERIALVÄLJAREN
         $('#matNav > .input-box > input').on('click', function(){
             showCategories();
         });
-        */
+
 
         /* PRODUKTER
         $('#productNavigation > .input-box > input').on('click', function(){

@@ -2835,7 +2835,6 @@ body {
               flex-wrap: wrap;
               justify-content: space-around; }
             #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell {
-              display: block;
               width: 100%; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input {
                 position: relative;
@@ -2856,8 +2855,9 @@ body {
                 cursor: pointer;
                 background-size: cover;
                 background-repeat: no-repeat;
-                width: 97px;
-                height: 97px;
+                width: 22.2%;
+                padding-top: 22.2%;
+                margin: 1%;
                 -webkit-transition: all 100ms ease-in;
                 -moz-transition: all 100ms ease-in;
                 transition: all 100ms ease-in;
@@ -2865,6 +2865,12 @@ body {
                 -webkit-filter: brightness(1.8) greyscale(1) opacity(0.7);
                 -moz-filter: brightness(1.8) greyscale(1) opacity(0.7);
                 filter: brightness(1.8) greyscale(1) opacity(0.7); }
+                #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell label p, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell label p {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .offert-takmodeller, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .offert-takmodeller {
                 -webkit-filter: none;
                 -moz-filter: none;
@@ -5460,6 +5466,271 @@ body {
           border-left: 1px solid #aaa; }
       .material-page #matNav .material-text-content p, .material-page #productNavigation .material-text-content p, .material-page #systemsNavigation .material-text-content p, .material-page #systemsNavigation-roof .material-text-content p, .material-page #systemsNavigation-facade .material-text-content p, .section-a > .products-page #matNav .material-text-content p, .section-a > .products-page #productNavigation .material-text-content p, .section-a > .products-page #systemsNavigation .material-text-content p, .section-a > .products-page #systemsNavigation-roof .material-text-content p, .section-a > .products-page #systemsNavigation-facade .material-text-content p, .showcase > .systems-page #matNav .material-text-content p, .showcase > .systems-page #productNavigation .material-text-content p, .showcase > .systems-page #systemsNavigation .material-text-content p, .showcase > .systems-page #systemsNavigation-roof .material-text-content p, .showcase > .systems-page #systemsNavigation-facade .material-text-content p, .section-a > .systems-page #matNav .material-text-content p, .section-a > .systems-page #productNavigation .material-text-content p, .section-a > .systems-page #systemsNavigation .material-text-content p, .section-a > .systems-page #systemsNavigation-roof .material-text-content p, .section-a > .systems-page #systemsNavigation-facade .material-text-content p {
         margin: 0; }
+
+#matNav {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: 1px #aaa solid; }
+  #matNav ul {
+    list-style: none; }
+  #matNav > .input-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+    #matNav > .input-box > input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      z-index: -1; }
+    #matNav > .input-box > label {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
+      border: 1px solid #444;
+      border-radius: 2px;
+      margin: 0 5px 5px 5px;
+      padding: 5px;
+      width: 23%;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 36px;
+      cursor: pointer; }
+      #matNav > .input-box > label span {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        width: 200%;
+        color: #000;
+        text-align: left; }
+    #matNav > .input-box > input[type="radio"]:checked + label {
+      color: #fff;
+      background: #8e44ad; }
+      #matNav > .input-box > input[type="radio"]:checked + label span {
+        color: #000; }
+    #matNav > .input-box > label {
+      -webkit-transition: 0.25s all ease;
+      -moz-transition: 0.25s all ease;
+      transition: 0.25s all ease; }
+  #matNav .type-holder-box {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto; }
+    #matNav .type-holder-box .type-holder {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      #matNav .type-holder-box .type-holder > li {
+        width: 20%;
+        min-width: 140px;
+        padding-top: 20%;
+        float: left;
+        color: #fff;
+        position: relative;
+        overflow: hidden; }
+        #matNav .type-holder-box .type-holder > li .material-specifics {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0; }
+          #matNav .type-holder-box .type-holder > li .material-specifics h2 {
+            font-size: 2em; }
+      #matNav .type-holder-box .type-holder > li:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.01);
+        -moz-transform: scale(1.01);
+        transform: scale(1.01);
+        -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        z-index: 2; }
+    #matNav .type-holder-box [data-material="type-1"] {
+      /*              WHITE COLORS                                 */
+      /*              GREY COLORS                                 */
+      /*              GREEN COLORS                                 */
+      /*              BLUE COLORS                                 */
+      /*              BROWN COLORS                                 */
+      /*              RED COLORS                                 */
+      /*              YELLOW COLORS                                 */
+      /*              METALLIC COLORS                                 */ }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-white {
+        background-color: #fff;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-antiquWhite {
+        background-color: #E4E4E4;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-ivoryWhite {
+        background-color: #EBEBE7;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-warmWhite {
+        background-color: #f6f5ee;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-greyWhite {
+        background-color: #D4D4CC;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-doveGrey {
+        background-color: #A29F96;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-zinkGrey {
+        background-color: #7B7A78;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-antracitGrey {
+        background-color: #2F343A;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-blyertsGrey {
+        background-color: #362D20;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightGrey {
+        background-color: #dddbcf;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-grey {
+        background-color: #ababa1;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkGrey {
+        background-color: #4b5054;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-graphite {
+        background-color: #47535b;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-black {
+        background-color: #000;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-verdigris {
+        background-color: #94C4B2;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-green {
+        background-color: #195D3A;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-forestGreen {
+        background-color: #354928;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-coniferousGreen {
+        background-color: #414329;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-moss {
+        background-color: #28310B;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkBlue {
+        background-color: #152D4B;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-blue {
+        background-color: #203E71;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-clearBlue {
+        background-color: #265397;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightBlue {
+        background-color: #56748C;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-brown {
+        background-color: #3f1509;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkBrown {
+        background-color: #372517;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-chocolateBrown {
+        background-color: #2E180E;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-redBrown {
+        background-color: #512218;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-brickRed {
+        background-color: #6A2C20;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-wineRed {
+        background-color: #582423;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-darkRed {
+        background-color: #5B130F;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-red {
+        background-color: #672724;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-terrakottaRed {
+        background-color: #7E1B1D;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-coralRed {
+        background-color: #6B2518;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-clearRed {
+        background-color: #8A1B13;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-classicRed {
+        background-color: #864F0C;
+        color: #fff; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-yellow {
+        background-color: #F1E50B;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-lightYellow {
+        background-color: #F4E287;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-sandYellow {
+        background-color: #F5E972;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-vanillaYellow {
+        background-color: #E5DBA3;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-light {
+        background-color: #B3B4B3;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-silverMetallic-dark {
+        background-color: #838588;
+        color: #000000; }
+      #matNav .type-holder-box [data-material="type-1"] > #material-name-plate-copper {
+        background-color: #9E7A4E;
+        color: #fff; }
+    #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-bright {
+      background-color: #d8dede;
+      color: #000000; }
+    #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-blueGrey {
+      background-color: #abb0a9;
+      color: #000000; }
+    #matNav .type-holder-box [data-material="type-2"] > #material-name-zink-graphiteGrey {
+      background-color: #44453f;
+      color: #fff; }
+  #matNav .material-text-content {
+    padding: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+    #matNav .material-text-content .material-intro {
+      width: 70%;
+      text-align: justify;
+      margin-right: auto;
+      margin-left: auto;
+      padding-bottom: 20px; }
+    #matNav .material-text-content h3 {
+      text-transform: uppercase;
+      font-size: 2.7rem;
+      color: #000;
+      margin: 35px 0 15px 0;
+      font-weight: bold; }
+    #matNav .material-text-content span {
+      font-weight: bold;
+      color: black; }
+    #matNav .material-text-content ul {
+      padding: 10px 0; }
+      #matNav .material-text-content ul > li {
+        width: 25%;
+        min-width: 200px;
+        float: left;
+        text-align: left;
+        border-right: 1px solid #aaa;
+        color: #444; }
+        #matNav .material-text-content ul > li p {
+          width: 90%;
+          padding-left: 10%; }
+      #matNav .material-text-content ul > li:first-of-type {
+        border-left: 1px solid #aaa; }
+    #matNav .material-text-content p {
+      margin: 0; }
 
 .section-a > .products-page #productNavigation {
   width: 96%;
