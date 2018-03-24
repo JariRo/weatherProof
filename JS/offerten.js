@@ -12,7 +12,8 @@ var setOffertUp = (function(){
         var selectedRoofModel = document.querySelectorAll('#takModell > input');
         var resetedExtras = document.querySelector(".roofMetrics > .wrapper > .extras").innerHTML;
         var logisticsBoxes = document.querySelectorAll("#roofPaperAndScaffold > .box-Holder > input[type=checkbox]")
-        let offertForm = $("#offertForm")
+        var submitButton = document.getElementById("submit-offert")
+        var offertForm = document.getElementById("offertForm")
 
 
         //Insert factors for each roof
@@ -515,9 +516,12 @@ var setOffertUp = (function(){
 
         priceSuggestion.innerHTML = priceString
 
-        /*
-        document.getElementById('submit-offert').addEventListener('click', function() {
-            if(doingForm(offertForm)){
+        document.getElementById("submit-offert").addEventListener('click', function(e) {
+            e.preventDefault()
+            doingForm(offertForm, calcObj)
+            console.log('')
+            /*
+            if(doingForm(offertForm, calcObj)){
                 swal({
                     title:'Preliminärt prisförslag',
                     text: priceString,
@@ -532,14 +536,26 @@ var setOffertUp = (function(){
                     button: 'oops'
                 })
             }
+            */
             //form validation etc
         })
-        */
     }
 
-    const doingForm = (theForm) => {
-        theForm.addEventListener('submit', function(e){
-            e.preventDefault()
+    const doingForm = (theForm, inputInfo) => {
+
+            console.log(inputInfo)
+            let inputMaterial = inputInfo.material[0].materialName
+            let inputWork = inputInfo.ourInputs[0].work
+            let inputModel = inputInfo.ourInputs[1].model[0].name
+            let inputSquare = inputInfo.ourInputs[3].measures[0].kvm
+            let inputAngle = inputInfo.ourInputs[3].measures[1].angle
+            let inputHeight = inputInfo.ourInputs[3].measures[2].height
+            let inputWho = inputInfo.ourInputs[5].who
+            let inputTime = inputInfo.ourInputs[6].timeSchedule
+            let inputMessage = inputInfo.ourInputs[7].message
+
+            let calculatedMaterialPrice = inputInfo.price.material
+            let calucaltedWorkPrice = inputInfo.price.work
 
             let formName = $('#offert-firstname').val()
             let formSurname = $('#offert-lastname').val()
@@ -550,18 +566,42 @@ var setOffertUp = (function(){
             let formPhonenumber = $('#offert-phone').val()
             let formEmail = $('#offert-email').val()
 
+            let dataString = "****Kontaktuppgifter****"
+                            + "\nNamn: " + formName
+                            + "\nEfternamn: " + formSurname
+                            + "\nFöretag: " + formCompany
+                            + "\nAdress: " + formAdress
+                            + "\nPostnr: " + formZipnumber
+                            + "\nStad: " + formCity
+                            + "\nTelefon: " + formPhonenumber
+                            + "\nEmail" + formEmail
+                            + "\n\n****Uppdraget****"
+                            + "\nMaterial: " + inputMaterial
+                            + "\nJobb: " + inputWork
+                            + "\nTakmodell: " + inputModel
+                            + "\nKvm: " + inputSquare
+                            + "\nVinkel: " + inputAngle
+                            + "\nHöjd: " + inputHeight
+                            + "\nBeställare: " + inputWho
+                            + "\nTidshorisont: " + inputTime
+                            + "\nMeddelande: " + inputMessage
+                            + "\nMaterialpris: " + calculatedMaterialPrice
+                            + "\nJobbpris: " + calucaltedWorkPrice
+                            + "\n\n****Hinder****"
+
+
+            for (let i = 0; i < inputInfo.obsticles.length; i++){
+                var obsInfo = "Hinder: " + inputInfo.obsticles[i].name + ", Mängd: " + inputInfo.obsticles[i].quantity
+                dataString += "\n" + obsInfo
+            }
+
             $.ajax({
                 type: 'POST',
                 url:'offertMail.php',
-                data: {
-                    name: formName,
-                    surname: formSurname,
-                    company: formCompany,
-                    adress: formAdress,
-                    zipNumber: formZipnumber,
-                    city: formCity,
-                    phoneNumber:formPhonenumber,
-                    email:formEmail,
+                data:{
+                    title: formName + " " + formSurname,
+                    email: formEmail,
+                    content: dataString,
                     captcha:grecaptcha.getResponse()
                 },
                 success: function(){
@@ -571,7 +611,6 @@ var setOffertUp = (function(){
                     return false;
                 }
             })
-        })
     }
 
     const generatedPrice = () => {

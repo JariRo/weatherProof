@@ -1,12 +1,7 @@
 <?php
-    $name=stripslashes($_POST["name"]);
-    $surname=stripslashes($_POST["surname"]);
-    $company=stripslashes($_POST["company"]);
-    $adress=stripslashes($_POST["adress"]);
-    $zipNumber=stripslashes($_POST["zipNumber"]);
-    $city=stripslashes($_POST["city"]);
-    $phoneNumber=stripslashes($_POST["phoneNumber"]);
+    $title=stripslashes($_POST["title"]);
     $email=stripslashes($_POST["email"]);
+    $content=stripslashes($_POST["content"]);
 
     $secret="API-key";
     $response=$_POST['captcha'];

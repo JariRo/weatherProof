@@ -250,8 +250,9 @@ body{
                         }
 
                         #takModell{
+                            display:block;
                             //display:flex;
-                            padding:1rem 0;
+                            //padding:1rem 0;
                             //flex-wrap: wrap;
                             //justify-content: center;
                             //align-content: center;
@@ -278,9 +279,11 @@ body{
                                 cursor:pointer;
                                 background-size:cover;
                                 background-repeat:no-repeat;
-                                width:6vw;
-                                height:6vw;
-                                margin:1%;
+                                width:97px;
+                                height:97px;
+                                //width:6vw;
+                                //height:6vw;
+                                //margin:1%;
                                 -webkit-transition: all 100ms ease-in;
                                 -moz-transition: all 100ms ease-in;
                                 transition: all 100ms ease-in;

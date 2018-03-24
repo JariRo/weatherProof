@@ -23,6 +23,10 @@
         margin-right: 5%;
         border-bottom:1px #aaa solid;
 
+        ul{
+            list-style: none;
+        }
+
         > .input-box{
             display:flex;
             flex-direction: row;
@@ -91,7 +95,7 @@
             margin-left: auto;
 
             .type-holder{
-                display:none;
+                //display:none;
                 list-style: none;
                 margin:0;
                 padding:0;

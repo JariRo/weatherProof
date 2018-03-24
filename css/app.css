@@ -2835,7 +2835,7 @@ body {
               flex-wrap: wrap;
               justify-content: space-around; }
             #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell {
-              padding: 1rem 0;
+              display: block;
               width: 100%; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input {
                 position: relative;
@@ -2856,9 +2856,8 @@ body {
                 cursor: pointer;
                 background-size: cover;
                 background-repeat: no-repeat;
-                width: 6vw;
-                height: 6vw;
-                margin: 1%;
+                width: 97px;
+                height: 97px;
                 -webkit-transition: all 100ms ease-in;
                 -moz-transition: all 100ms ease-in;
                 transition: all 100ms ease-in;
@@ -5203,6 +5202,8 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     border-bottom: 1px #aaa solid; }
+    .material-page #matNav ul, .material-page #productNavigation ul, .material-page #systemsNavigation ul, .material-page #systemsNavigation-roof ul, .material-page #systemsNavigation-facade ul, .section-a > .products-page #matNav ul, .section-a > .products-page #productNavigation ul, .section-a > .products-page #systemsNavigation ul, .section-a > .products-page #systemsNavigation-roof ul, .section-a > .products-page #systemsNavigation-facade ul, .showcase > .systems-page #matNav ul, .showcase > .systems-page #productNavigation ul, .showcase > .systems-page #systemsNavigation ul, .showcase > .systems-page #systemsNavigation-roof ul, .showcase > .systems-page #systemsNavigation-facade ul, .section-a > .systems-page #matNav ul, .section-a > .systems-page #productNavigation ul, .section-a > .systems-page #systemsNavigation ul, .section-a > .systems-page #systemsNavigation-roof ul, .section-a > .systems-page #systemsNavigation-facade ul {
+      list-style: none; }
     .material-page #matNav > .input-box, .material-page #productNavigation > .input-box, .material-page #systemsNavigation > .input-box, .material-page #systemsNavigation-roof > .input-box, .material-page #systemsNavigation-facade > .input-box, .section-a > .products-page #matNav > .input-box, .section-a > .products-page #productNavigation > .input-box, .section-a > .products-page #systemsNavigation > .input-box, .section-a > .products-page #systemsNavigation-roof > .input-box, .section-a > .products-page #systemsNavigation-facade > .input-box, .showcase > .systems-page #matNav > .input-box, .showcase > .systems-page #productNavigation > .input-box, .showcase > .systems-page #systemsNavigation > .input-box, .showcase > .systems-page #systemsNavigation-roof > .input-box, .showcase > .systems-page #systemsNavigation-facade > .input-box, .section-a > .systems-page #matNav > .input-box, .section-a > .systems-page #productNavigation > .input-box, .section-a > .systems-page #systemsNavigation > .input-box, .section-a > .systems-page #systemsNavigation-roof > .input-box, .section-a > .systems-page #systemsNavigation-facade > .input-box {
       display: flex;
       flex-direction: row;
@@ -5250,7 +5251,6 @@ body {
       margin-right: auto;
       margin-left: auto; }
       .material-page #matNav .type-holder-box .type-holder, .material-page #productNavigation .type-holder-box .type-holder, .material-page #systemsNavigation .type-holder-box .type-holder, .material-page #systemsNavigation-roof .type-holder-box .type-holder, .material-page #systemsNavigation-facade .type-holder-box .type-holder, .section-a > .products-page #matNav .type-holder-box .type-holder, .section-a > .products-page #productNavigation .type-holder-box .type-holder, .section-a > .products-page #systemsNavigation .type-holder-box .type-holder, .section-a > .products-page #systemsNavigation-roof .type-holder-box .type-holder, .section-a > .products-page #systemsNavigation-facade .type-holder-box .type-holder, .showcase > .systems-page #matNav .type-holder-box .type-holder, .showcase > .systems-page #productNavigation .type-holder-box .type-holder, .showcase > .systems-page #systemsNavigation .type-holder-box .type-holder, .showcase > .systems-page #systemsNavigation-roof .type-holder-box .type-holder, .showcase > .systems-page #systemsNavigation-facade .type-holder-box .type-holder, .section-a > .systems-page #matNav .type-holder-box .type-holder, .section-a > .systems-page #productNavigation .type-holder-box .type-holder, .section-a > .systems-page #systemsNavigation .type-holder-box .type-holder, .section-a > .systems-page #systemsNavigation-roof .type-holder-box .type-holder, .section-a > .systems-page #systemsNavigation-facade .type-holder-box .type-holder {
-        display: none;
         list-style: none;
         margin: 0;
         padding: 0; }
