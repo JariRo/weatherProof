@@ -2835,6 +2835,10 @@ body {
               flex-wrap: wrap;
               justify-content: space-around; }
             #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-content: center;
               width: 100%; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input {
                 position: relative;
@@ -2845,9 +2849,7 @@ body {
                 appearance: none;
                 z-index: -1; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell label, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell label {
-                float: left;
-                display: inline-block;
-                text-align: center;
+                display: block;
                 color: #f5f7f9;
                 font-size: 14px;
                 position: relative;
@@ -2855,16 +2857,11 @@ body {
                 cursor: pointer;
                 background-size: cover;
                 background-repeat: no-repeat;
-                width: 31.2%;
-                padding-top: 31.2%;
-                margin: 1%;
+                width: 32%;
                 -webkit-transition: all 100ms ease-in;
                 -moz-transition: all 100ms ease-in;
                 transition: all 100ms ease-in;
-                opacity: 0.7;
-                -webkit-filter: brightness(1.8) greyscale(1) opacity(0.7);
-                -moz-filter: brightness(1.8) greyscale(1) opacity(0.7);
-                filter: brightness(1.8) greyscale(1) opacity(0.7); }
+                opacity: 0.7; }
                 #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell label p, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell label p {
                   display: none;
                   position: absolute;
@@ -2872,63 +2869,192 @@ body {
                   left: 0;
                   right: 0;
                   bottom: 0; }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .offert-takmodeller, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .offert-takmodeller {
-                -webkit-filter: hue-rotate(160deg) saturate(30);
-                -moz-filter: hue-rotate(160deg) saturate(30);
-                filter: hue-rotate(160deg) saturate(30); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .offert-takmodeller:hover, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .offert-takmodeller:hover {
-                opacity: 0.9;
-                -webkit-filter: saturate(30) opacity(1);
-                -moz-filter: saturate(30) opacity(1);
-                filter: saturate(30) opacity(1);
+                #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell label img, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell label img {
+                  width: 10px;
+                  height: 10px; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .offert-takmodeller > svg > g > g text.cls-2, #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .offert-takmodeller > svg > g > g text.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .offert-takmodeller > svg > g > g tspan, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .offert-takmodeller > svg > g > g text.cls-2, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .offert-takmodeller > svg > g > g text.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .offert-takmodeller > svg > g > g tspan {
+                fill: #000; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .offert-takmodeller > svg > g > g polygon, #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .offert-takmodeller > svg > g > g path, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .offert-takmodeller > svg > g > g polygon, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .offert-takmodeller > svg > g > g path {
                 transition: 200ms;
                 transition-timing-function: ease-in-out;
                 -webkit-transition: 200ms;
                 -webkit-transition-timing-function: ease-in-out;
                 -moz-transition: 200ms;
                 -moz-transition-timing-function: ease-in-out; }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .un, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .un {
-                background: #D24D57;
-                background: url(../img/taktyper/sadeltak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .deux, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .deux {
-                background: #F5D76E;
-                background: url(../img/taktyper/pulpettak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .trois, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .trois {
-                background: #03C9A9;
-                background: url(../img/taktyper/Halvvalmat_sadeltak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quatre, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quatre {
-                background: #663399;
-                background: url(../img/taktyper/Vinkeltak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .cinq, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .cinq {
-                background: #663399;
-                background: url(../img/taktyper/Helvalmat_sadeltak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .six, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .six {
-                background: #03C9A9;
-                background: url(../img/taktyper/Mansardtak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .sept, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .sept {
-                background: #F5D76E;
-                background: url(../img/taktyper/Halvvalmat_mansardtak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .huit, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .huit {
-                background: #F62459;
-                background: url(../img/taktyper/Helvalmat_mansardtak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .neuf, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .neuf {
-                background: #947CB0;
-                background: url(../img/taktyper/Pyramidtak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .dix, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .dix {
-                background: #52B3D9;
-                background: url(../img/taktyper/Valmat_pyramidtak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .onze, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .onze {
-                background: #336E7B;
-                background: url(../img/taktyper/Motfallstak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze {
-                background: #3A539B;
-                background: url(../img/taktyper/Korstak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .treize, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .treize {
-                background: #91B496;
-                background: url(../img/taktyper/Bagtak.svg); }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quartoze, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quartoze {
-                background: #86E2D5;
-                background: url(../img/taktyper/Kyrktorn.svg); }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .un svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .un svg > g > g polygon.cls-3 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .un svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .un svg > g > g polygon.cls-4 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .un svg:hover > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .un svg:hover > g > g polygon.cls-3 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .un svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .un svg > g > g polygon.cls-3 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .un svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .un svg > g > g polygon.cls-4 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .un svg > g > g polygon.cls-2, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .un svg > g > g polygon.cls-2 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .deux svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .deux svg > g > g polygon.cls-4 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .deux svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .deux svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .deux svg:hover > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .deux svg:hover > g > g polygon.cls-4 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .trois svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .trois svg > g > g polygon.cls-3 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .trois svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .trois svg > g > g polygon.cls-4 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .trois svg:hover > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .trois svg:hover > g > g polygon.cls-3 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .trois svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .trois svg > g > g polygon.cls-3 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .trois svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .trois svg > g > g polygon.cls-4 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .trois svg > g > g polygon.cls-2, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .trois svg > g > g polygon.cls-2 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quatre svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quatre svg > g > g polygon.cls-5 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quatre svg > g > g polygon.cls-6, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quatre svg > g > g polygon.cls-6 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quatre svg:hover > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quatre svg:hover > g > g polygon.cls-5 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .quatre svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .quatre svg > g > g polygon.cls-5 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .quatre svg > g > g polygon.cls-6, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .quatre svg > g > g polygon.cls-6 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .quatre svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .quatre svg > g > g polygon.cls-4 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .cinq > svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .cinq > svg > g > g polygon.cls-4 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .cinq > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .cinq > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .cinq > svg:hover > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .cinq > svg:hover > g > g polygon.cls-4 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .cinq svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .cinq svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .cinq svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .cinq svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .cinq svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .cinq svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .six > svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .six > svg > g > g polygon.cls-3 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .six > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .six > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .six > svg:hover > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .six > svg:hover > g > g polygon.cls-3 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .six svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .six svg > g > g polygon.cls-3 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .six svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .six svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .six svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .six svg > g > g polygon.cls-4 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .sept > svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .sept > svg > g > g polygon.cls-4 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .sept > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .sept > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .sept > svg:hover > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .sept > svg:hover > g > g polygon.cls-4 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .sept svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .sept svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .sept svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .sept svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .sept svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .sept svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .huit > svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .huit > svg > g > g polygon.cls-4 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .huit > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .huit > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .huit > svg:hover > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .huit > svg:hover > g > g polygon.cls-4 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .huit svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .huit svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .huit svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .huit svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .huit svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .huit svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .neuf > svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .neuf > svg > g > g polygon.cls-4 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .neuf > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .neuf > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .neuf > svg:hover > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .neuf > svg:hover > g > g polygon.cls-4 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .neuf svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .neuf svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .neuf svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .neuf svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .neuf svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .neuf svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .dix > svg > g > g polygon.cls-6, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .dix > svg > g > g polygon.cls-6 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .dix > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .dix > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .dix > svg:hover > g > g polygon.cls-6, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .dix > svg:hover > g > g polygon.cls-6 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .dix svg > g > g polygon.cls-6, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .dix svg > g > g polygon.cls-6 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .dix svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .dix svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .dix svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .dix svg > g > g polygon.cls-4 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .onze > svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .onze > svg > g > g polygon.cls-4 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .onze > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .onze > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .onze > svg:hover > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .onze > svg:hover > g > g polygon.cls-4 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .onze svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .onze svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .onze svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .onze svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .onze svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .onze svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg > g > g polygon.cls-4 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg:hover > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg:hover > g > g polygon.cls-4 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .douze svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .douze svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .douze svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .douze svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .douze svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .douze svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .treize > svg > g > g path.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .treize > svg > g > g path.cls-4 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .treize > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .treize > svg > g > g polygon.cls-5 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .treize > svg:hover > g > g path.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .treize > svg:hover > g > g path.cls-4 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-4 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-5 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .deux svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .deux svg > g > g polygon.cls-3 {
+                fill: #EEEEEE; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quartoze > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quartoze > svg > g > g path.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quartoze > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quartoze > svg > g > g path.cls-5 {
+                fill: #ccc; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quartoze > svg > g > g polygon.cls-6, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quartoze > svg > g > g polygon.cls-6 {
+                fill: #fff; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quartoze > svg:hover > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .quartoze > svg:hover > g > g path.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quartoze > svg:hover > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .quartoze > svg:hover > g > g path.cls-5 {
+                fill: #2ABFBF; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .quatoze svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .quatoze svg > g > g path.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .quatoze svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .quatoze svg > g > g path.cls-5 {
+                fill: #26C281; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .quatoze svg > g > g polygon.cls-6, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .quatoze svg > g > g polygon.cls-6 {
+                fill: #FDE3A7; }
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .quatoze svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .quatoze svg > g > g polygon.cls-4 {
+                fill: #EEEEEE; }
             #menu-side-bar #side-bar-nav > li > section .wrapper fieldset .input-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset .input-Holder {
               display: flex;
               flex-direction: column;
@@ -3049,8 +3175,8 @@ body {
               top: -1.5px;
               width: 100%;
               height: 100%;
-              border-color: #4fbe79;
-              background: #4fbe79; }
+              border-color: #26C281;
+              background: #26C281; }
             #menu-side-bar #side-bar-nav > li > section .wrapper .box-Holder label, #menu-side-bar #side-bar-nav > li > section .wrapper .box-Holder label::before, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .box-Holder label, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .box-Holder label::before {
               -webkit-transition: 0.25s all ease;
               -moz-transition: 0.25s all ease;
@@ -3188,126 +3314,138 @@ body {
     #menu-side-bar #side-bar-nav > li:first-child {
       border-left: 0; }
 
-#checkout-wrapper {
-  padding-left: 500px;
-  display: none; }
-  #checkout-wrapper .container {
+main {
+  display: none;
+  padding-left: 500px; }
+  main .container {
     width: 100%;
     padding: 8% 10% 4%;
-    margin-top: -10px;
-    opacity: 0;
     transition: all 0.3s ease; }
-    #checkout-wrapper .container header {
-      text-align: center; }
-      #checkout-wrapper .container header h3 {
-        font-size: 40px;
-        font-weight: 400; }
-      #checkout-wrapper .container header p {
-        font-family: ProximaNova-Thin, sans-serif;
-        font-weight: 200;
-        max-width: 500px;
-        margin: 0 auto;
-        font-size: 18px;
-        letter-spacing: .5px; }
-    #checkout-wrapper .container .offert-process {
-      text-align: center;
-      padding: 20px 0;
-      max-width: 600px;
-      margin: 20px auto 0;
-      border-bottom: 1px solid #666; }
-      #checkout-wrapper .container .offert-process .row {
-        display: flex;
-        justify-content: space-between; }
-        #checkout-wrapper .container .offert-process .row div {
-          width: 33.33%; }
-      #checkout-wrapper .container .offert-process i {
-        font-size: 50px;
-        margin-bottom: 10px; }
-      #checkout-wrapper .container .offert-process h5 {
-        font-size: 12px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #666;
-        margin-bottom: 10px; }
-    #checkout-wrapper .container .offert-contact-info {
-      margin: 30px auto 0; }
-      #checkout-wrapper .container .offert-contact-info > .row {
+
+#side-content > .container {
+  width: 100%; }
+  #side-content > .container img {
+    width: 100%; }
+
+#side-content.showing {
+  display: block; }
+
+#checkout-wrapper .container {
+  margin-top: -10px;
+  opacity: 0;
+  transition: all 0.3s ease; }
+  #checkout-wrapper .container header {
+    text-align: center; }
+    #checkout-wrapper .container header h3 {
+      font-size: 40px;
+      font-weight: 400;
+      margin-top: 0; }
+    #checkout-wrapper .container header p {
+      font-family: ProximaNova-Thin, sans-serif;
+      font-weight: 200;
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 18px;
+      letter-spacing: .5px; }
+  #checkout-wrapper .container .offert-process {
+    text-align: center;
+    padding: 20px 0;
+    max-width: 600px;
+    margin: 20px auto 0;
+    border-bottom: 1px solid #666; }
+    #checkout-wrapper .container .offert-process .row {
+      display: flex;
+      justify-content: space-between; }
+      #checkout-wrapper .container .offert-process .row div {
+        width: 33.33%; }
+    #checkout-wrapper .container .offert-process i {
+      font-size: 50px;
+      margin-bottom: 10px; }
+    #checkout-wrapper .container .offert-process h5 {
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #666;
+      margin-bottom: 10px; }
+  #checkout-wrapper .container .offert-contact-info {
+    margin: 30px auto 0; }
+    #checkout-wrapper .container .offert-contact-info > .row {
+      position: relative;
+      overflow: hidden;
+      margin-left: 0;
+      margin-right: 0;
+      z-index: -1; }
+      #checkout-wrapper .container .offert-contact-info > .row > div {
         position: relative;
+        padding: 30px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; }
+        #checkout-wrapper .container .offert-contact-info > .row > div > form > h4 {
+          font-weight: 400;
+          border-bottom: 1px solid #666;
+          padding-bottom: 5px;
+          margin-bottom: 20px;
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: #666; }
+        #checkout-wrapper .container .offert-contact-info > .row > div > form .row {
+          color: #666;
+          font-size: 14px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: nowrap; }
+          #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div {
+            display: flex;
+            flex-direction: column;
+            width: 100%; }
+            #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div label {
+              margin-bottom: 5px; }
+              #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div label span {
+                color: #f5f7f9; }
+            #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div input {
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 8px;
+              font-size: 16px;
+              padding: 10px;
+              width: 100%; }
+        #checkout-wrapper .container .offert-contact-info > .row > div > form .twos > div {
+          width: 47.5%; }
+      #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder {
         overflow: hidden;
         margin-left: 0;
-        margin-right: 0;
-        z-index: -1; }
-        #checkout-wrapper .container .offert-contact-info > .row > div {
-          position: relative;
-          padding: 30px;
-          width: 80%;
-          margin-left: auto;
-          margin-right: auto; }
-          #checkout-wrapper .container .offert-contact-info > .row > div > form > h4 {
+        margin-right: 0; }
+        #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div {
+          text-align: center; }
+          #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert {
+            position: relative;
+            background: #34d293;
+            color: #f5f7f9;
+            border-radius: 99em;
+            text-align: left;
+            text-transform: none;
+            font-size: 13px;
+            padding: 15px 50px 15px 70px;
             font-weight: 400;
-            border-bottom: 1px solid #666;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666; }
-          #checkout-wrapper .container .offert-contact-info > .row > div > form .row {
-            color: #666;
-            font-size: 14px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: nowrap; }
-            #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div {
-              display: flex;
-              flex-direction: column;
-              width: 100%; }
-              #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div label {
-                margin-bottom: 5px; }
-                #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div label span {
-                  color: #f5f7f9; }
-              #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div input {
-                margin-bottom: 10px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                font-size: 16px;
-                padding: 10px;
-                width: 100%; }
-          #checkout-wrapper .container .offert-contact-info > .row > div > form .twos > div {
-            width: 47.5%; }
-        #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder {
-          overflow: hidden;
-          margin-left: 0;
-          margin-right: 0; }
-          #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div {
-            text-align: center; }
-            #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert {
-              position: relative;
-              background: #34d293;
-              color: #f5f7f9;
-              border-radius: 99em;
-              text-align: left;
-              text-transform: none;
-              font-size: 13px;
-              padding: 15px 50px 15px 70px;
-              font-weight: 400;
-              cursor: pointer;
-              z-index: -1; }
-              #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert i {
-                position: absolute;
-                color: #fff;
-                font-size: 30px;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 25px; }
-              #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert strong {
-                display: block;
-                font-size: 400;
-                font-size: 20px; }
-            #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert:disabled {
-              opacity: 0.4;
-              cursor: default; }
+            cursor: pointer;
+            z-index: -1; }
+            #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert i {
+              position: absolute;
+              color: #fff;
+              font-size: 30px;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 25px; }
+            #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert strong {
+              display: block;
+              font-size: 400;
+              font-size: 20px; }
+          #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert:disabled {
+            opacity: 0.4;
+            cursor: default; }
 
 #checkout-wrapper.showing {
   display: block; }

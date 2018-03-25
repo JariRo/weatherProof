@@ -10,6 +10,8 @@ var setOffertUp = (function(){
         var firstNavItem = document.querySelector('.menu-1 > a');
         var backForthNavButton = document.querySelectorAll('.back-forth-menu > a');
         var selectedRoofModel = document.querySelectorAll('#takModell > input');
+        var sideContent = document.querySelector("#side-content")
+        var sideContentImg = document.querySelector("#side-content > .container > img");
         var resetedExtras = document.querySelector(".roofMetrics > .wrapper > .extras").innerHTML;
         var logisticsBoxes = document.querySelectorAll("#roofPaperAndScaffold > .box-Holder > input[type=checkbox]")
         var submitButton = document.getElementById("submit-offert")
@@ -47,7 +49,7 @@ var setOffertUp = (function(){
             },
             {
                 model:"tak4",
-                name: "Vinkelhus",
+                name: "Vinkeltak",
                 obstacles:["#ventilation", "#spigot", "#roofDownpipes", "#roofGutters", "#footRinse", "#angleChute", "#nock"],
                 vinkelrannaFaktor: 0.06,
                 nockFaktor: 0.15,
@@ -176,6 +178,7 @@ var setOffertUp = (function(){
         const setCheckoutUp = function(element){
             if( element.id == "checkoutMenuItem" ){
                 addClass('showing', checkoutContent);
+                sideContent.classList.remove('showing')
 
                 let algoParameters = setAlgoParameters(standardSet)
                 let thePriceObj = calculatingPrice(algoParameters)
@@ -185,12 +188,18 @@ var setOffertUp = (function(){
                 if ( hasClass(checkoutContent, 'showing' )){
                     $(checkoutContent).removeClass('showing');
                 }
+                sideContent.classList.add('showing')
             }
         }
 
         const setupStandardObsticle = () => {
             resetStandard(resetedExtras);
-            var standardRoof = document.querySelector("#takModell > input[type=radio]:checked").id
+            let standardRoof = document.querySelector("#takModell > input[type=radio]:checked").id
+            let clickedValue = document.querySelector("#takModell > input[type=radio]:checked").value
+            clickedValue = clickedValue.split(' ').join('_')
+            clickedValue = clickedValue.split('å').join('a')
+            let theUrl = "../img/taktyper/" + clickedValue + ".svg"
+            sideContentImg.src = theUrl
             setStandards(standardRoof, standardSet);
         }
 
@@ -284,6 +293,7 @@ var setOffertUp = (function(){
 
         Setup_AddSubtractObstacleEvents();
         setupStandardObsticle()
+        setUptSVG()
         firstNavItem.focus();
     }
 
@@ -349,6 +359,42 @@ var setOffertUp = (function(){
             "price": finalPriceSuggestion,
             "ourInputs":userInputs
         }
+    }
+
+    const setUptSVG = () => {
+        jQuery('img.svg').each(function(){
+            var $img = jQuery(this);
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+
+            jQuery.get(imgURL, function(data) {
+                // Get the SVG tag, ignore the rest
+                var $svg = jQuery(data).find('svg');
+
+                // Add replaced image's ID to the new SVG
+                if(typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+                // Add replaced image's classes to the new SVG
+                if(typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                }
+
+                // Remove any invalid XML tags as per http://validator.w3.org
+                $svg = $svg.removeAttr('xmlns:a');
+
+                // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+                if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                    $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+                }
+
+                // Replace image with new SVG
+                $img.replaceWith($svg);
+
+            }, 'xml');
+
+        })
     }
 
     const getObsticleContentList = theCalcObj => {
