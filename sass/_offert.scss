@@ -365,10 +365,6 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-4{
-                                            fill:#FDE3A7;
-                                        }
-
                                         polygon.cls-2{
                                             fill:#EEEEEE;
                                         }
@@ -404,10 +400,6 @@ body{
                                     > g > g {
                                         polygon.cls-4{
                                             fill:#26C281;
-                                        }
-
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
                                         }
 
                                         polygon.cls-3{
@@ -447,10 +439,6 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-4{
-                                            fill:#FDE3A7;
-                                        }
-
                                         polygon.cls-2{
                                             fill:#EEEEEE;
                                         }
@@ -486,10 +474,6 @@ body{
                                     > g > g {
                                         polygon.cls-5{
                                             fill:#26C281;
-                                        }
-
-                                        polygon.cls-6{
-                                            fill:#FDE3A7;
                                         }
 
                                         polygon.cls-4{
@@ -529,10 +513,6 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
-                                        }
-
                                         polygon.cls-3{
                                             fill:#EEEEEE;
                                         }
@@ -568,10 +548,6 @@ body{
                                     > g > g {
                                         polygon.cls-3{
                                             fill:#26C281;
-                                        }
-
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
                                         }
 
                                         polygon.cls-4{
@@ -611,10 +587,6 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
-                                        }
-
                                         polygon.cls-3{
                                             fill:#EEEEEE;
                                         }
@@ -652,10 +624,6 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
-                                        }
-
                                         polygon.cls-3{
                                             fill:#EEEEEE;
                                         }
@@ -691,10 +659,6 @@ body{
                                     > g > g {
                                         polygon.cls-4{
                                             fill:#26C281;
-                                        }
-
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
                                         }
 
                                         polygon.cls-3{
@@ -735,10 +699,6 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
-                                        }
-
                                         polygon.cls-4{
                                             fill:#EEEEEE;
                                         }
@@ -776,10 +736,6 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
-                                        }
-
                                         polygon.cls-3{
                                             fill:#EEEEEE;
                                         }
@@ -792,10 +748,6 @@ body{
                                     > g > g {
                                         polygon.cls-4{
                                             fill:#26C281;
-                                        }
-
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
                                         }
 
                                         polygon.cls-3{
@@ -835,10 +787,6 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
-                                        }
-
                                         polygon.cls-3{
                                             fill:#EEEEEE;
                                         }
@@ -869,18 +817,14 @@ body{
                                  }
                             }
 
-                            input:checked + .deux{
+                            input:checked + .treize{
                                 svg{
                                     > g > g {
-                                        polygon.cls-4{
+                                        path.cls-4{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-5{
-                                            fill:#FDE3A7;
-                                        }
-
-                                        polygon.cls-3{
+                                        path.cls-3{
                                             fill:#EEEEEE;
                                         }
                                     }
@@ -915,10 +859,6 @@ body{
                                     > g > g {
                                         polygon.cls-5, path.cls-5{
                                             fill:#26C281;
-                                        }
-
-                                        polygon.cls-6{
-                                            fill:#FDE3A7;
                                         }
 
                                         polygon.cls-4{
@@ -1115,7 +1055,7 @@ body{
                         }
                     }
 
-                    #roofMaterial{
+                    #roofMaterial, #roofToWho{
                         display:flex;
                         flex-direction: row;
                         flex-wrap: wrap;
