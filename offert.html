@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <a href="index.html">
+        <img src="/img/weatherproof-family-black.svg" id="offertLogo">
+    </a>
     <div id="underDevelopment">
         <a href="index.html" id="getBackHome"><i class="fa fa-home" aria-hidden="true"></i>
         </a>
@@ -39,7 +42,7 @@
 
         <!--                OFFERT PAGE1           -->
         <li class="menu-1" data-offert="jobToDo" data-page="offert-page" title="Typ av jobb" >
-            <a href class="activated" data-page="offert-page">
+            <a href id="jobToDoMenuItem" class="activated" data-page="offert-page">
                 <i class="fa fa-home" aria-hidden="true"></i>
                 Vad
             </a>
@@ -173,7 +176,7 @@
 
 <!--                OFFERT PAGE2           -->
         <li class="menu-2" data-offert="roofMetrics" data-page="offert-page" title="Detaljer">
-            <a href="#" data-page="offert-page">
+            <a href="#" id="detailsMenuItem" data-page="offert-page">
                 <i class="fa fa-sliders" aria-hidden="true"></i>
                 Detaljer
             </a>
@@ -554,7 +557,7 @@
 
 <!--                OFFERT PAGE3           -->
         <li class="menu-3" data-offert="toWhoWhen" data-page="offert-page"  title="Till vem och när">
-            <a href="#" data-page="offert-page">
+            <a href="#" id="whoMenuItem" data-page="offert-page">
                 <i class="fa fa-users" aria-hidden="true"></i>
                 Vem
             </a>
@@ -753,10 +756,23 @@ Tak</h3>
             </li>
         </ul>
     </aside>
-    <main id="side-content" class="showing">
+    <main id="side-content1" class="showing">
         <div class="container">
             <img>
         </div>
+        <div class="background-content"></div>
+    </main>
+
+    <main id="side-content2" class="">
+        <div class="container">
+        </div>
+        <div class="background-content"></div>
+    </main>
+
+    <main id="side-content3" class="">
+        <div class="container">
+        </div>
+        <div class="background-content"></div>
     </main>
 
 <!--                OFFERT CHECKOUT          -->
@@ -852,6 +868,12 @@ Tak</h3>
                 </div>
             </div>
         </div>
+    </div>
+    <!--
+    <div class="background-content">
+        <img src="../img/pic-2.svg">
+    </div>
+-->
     </main>
 </body>
 <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -2647,6 +2647,13 @@ body {
   margin: 0;
   padding: 0; }
 
+#offertLogo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  z-index: 10000; }
+
 #underDevelopment {
   background: #2ABFBF;
   position: absolute;
@@ -3246,8 +3253,8 @@ body {
           display: inline-block;
           font-size: 14px;
           padding: 0.8em;
-          max-width: 45%;
-          min-width: 40%;
+          max-width: 48%;
+          min-width: 42%;
           margin: 0;
           color: #000;
           font-weight: 600; }
@@ -3286,19 +3293,53 @@ body {
 
 main {
   display: none;
-  padding-left: 500px; }
+  padding-left: 32%; }
   main .container {
     width: 100%;
-    padding: 8% 10% 4%;
     transition: all 0.3s ease; }
 
-#side-content > .container {
-  width: 100%; }
-  #side-content > .container img {
-    width: 100%; }
+#side-content1 > .container {
+  position: relative;
+  z-index: 2; }
+  #side-content1 > .container img {
+    width: 55%;
+    margin-top: 2%;
+    margin-left: 36%; }
 
-#side-content.showing {
+main > .background-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+#side-content1 > .background-content {
+  background: url("../img/pic-7.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 55% 98%;
+  opacity: 0.1; }
+
+#side-content2 > .background-content {
+  background: url("../img/pic-9.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 60% 98%;
+  opacity: 0.1; }
+
+#side-content3 > .background-content {
+  background: url("../img/pic-1.svg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 60% 98%;
+  opacity: 0.1; }
+
+#side-content1.showing, #side-content2.showing, #side-content3.showing {
   display: block; }
+
+#checkout-wrapper > .background-content img {
+  width: 20%; }
 
 #checkout-wrapper .container {
   margin-top: -10px;
@@ -3308,8 +3349,7 @@ main {
     text-align: center; }
     #checkout-wrapper .container header h3 {
       font-size: 40px;
-      font-weight: 400;
-      margin-top: 0; }
+      font-weight: 400; }
     #checkout-wrapper .container header p {
       font-family: ProximaNova-Thin, sans-serif;
       font-weight: 200;
@@ -3385,9 +3425,7 @@ main {
         #checkout-wrapper .container .offert-contact-info > .row > div > form .twos > div {
           width: 47.5%; }
       #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder {
-        overflow: hidden;
-        margin-left: 0;
-        margin-right: 0; }
+        overflow: hidden; }
         #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div {
           text-align: center; }
           #checkout-wrapper .container .offert-contact-info > .row > #offert-submit-holder > div #submit-offert {

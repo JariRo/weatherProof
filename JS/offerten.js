@@ -10,8 +10,10 @@ var setOffertUp = (function(){
         var firstNavItem = document.querySelector('.menu-1 > a');
         var backForthNavButton = document.querySelectorAll('.back-forth-menu > a');
         var selectedRoofModel = document.querySelectorAll('#takModell > input');
-        var sideContent = document.querySelector("#side-content")
-        var sideContentImg = document.querySelector("#side-content > .container > img");
+        var sideContent1 = document.querySelector("#side-content1")
+        var sideContentImg = document.querySelector("#side-content1 > .container > img");
+        var sideContent2 = document.querySelector("#side-content2")
+        var sideContent3 = document.querySelector("#side-content3")
         var resetedExtras = document.querySelector(".roofMetrics > .wrapper > .extras").innerHTML;
         var logisticsBoxes = document.querySelectorAll("#roofPaperAndScaffold > .box-Holder > input[type=checkbox]")
         var submitButton = document.getElementById("submit-offert")
@@ -177,18 +179,25 @@ var setOffertUp = (function(){
 
         const setCheckoutUp = function(element){
             if( element.id == "checkoutMenuItem" ){
-                addClass('showing', checkoutContent);
-                sideContent.classList.remove('showing')
+                let currentShowing = document.querySelector("main.showing")
+                currentShowing.classList.remove("showing")
+                checkoutContent.classList.add('showing')
 
                 let algoParameters = setAlgoParameters(standardSet)
                 let thePriceObj = calculatingPrice(algoParameters)
                 setUpSummary(thePriceObj)
-            }
-            else{
-                if ( hasClass(checkoutContent, 'showing' )){
-                    $(checkoutContent).removeClass('showing');
-                }
-                sideContent.classList.add('showing')
+            } else if(element.id == "jobToDoMenuItem"){
+                let currentShowing = document.querySelector("main.showing")
+                currentShowing.classList.remove("showing")
+                sideContent1.classList.add('showing')
+            } else if(element.id == "detailsMenuItem"){
+                let currentShowing = document.querySelector("main.showing")
+                currentShowing.classList.remove("showing")
+                sideContent2.classList.add('showing')
+            } else if(element.id == "whoMenuItem"){
+                let currentShowing = document.querySelector("main.showing")
+                currentShowing.classList.remove("showing")
+                sideContent3.classList.add('showing')
             }
         }
 
