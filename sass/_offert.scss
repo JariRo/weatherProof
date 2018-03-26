@@ -8,7 +8,7 @@ body{
     position:absolute;
     right:0;
     top:0;
-    padding:15px;
+    padding:20px 25px 5px 5px;
     z-index:10000;
 }
 
@@ -1272,8 +1272,8 @@ main{
 
     figure{
         position:absolute;
-        width:50%;
-        margin:8% 22.5%;
+        width:45%;
+        margin:10% 27.5%;
         opacity:0;
         transition:200ms;
         transition-timing-function: ease-in-out;
@@ -1289,7 +1289,6 @@ main{
 
     figure > svg{
         //position:absolute;
-        box-shadow: 0 0 1vw rgba(0,0,0, 0.5);
 
         > g > g > rect.cls-1{
             fill-opacity:0.2;
@@ -1298,17 +1297,21 @@ main{
         > g > g >text, > g > g > text > tspan{
             fill:#6d6d6d;
             stroke:#6d6d6d;
+            display:none;
         }
     }
 
     figure > figcaption{
 
-        h4{
+        h2{
             font-family: majestiBannerBold;
+            margin-top:0;
+            margin-bottom:5px;
         }
 
         p{
             font-size: 14px;
+            margin:0;
         }
 
     }
