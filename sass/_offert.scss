@@ -1270,21 +1270,26 @@ main{
     position:relative;
     z-index: 2;
 
-    img{
-        display: none;
-    }
-    svg{
+    figure{
         position:absolute;
-        width:55%;
-        margin:6% 22.5%;
+        width:50%;
+        margin:8% 22.5%;
         opacity:0;
-
         transition:200ms;
         transition-timing-function: ease-in-out;
         -webkit-transition:300ms;
         -webkit-transition-timing-function: ease-in-out;
         -moz-transition:300ms;
         -moz-transition-timing-function: ease-in-out;
+    }
+
+    img{
+        display: none;
+    }
+
+    figure > svg{
+        //position:absolute;
+        box-shadow: 0 0 1vw rgba(0,0,0, 0.5);
 
         > g > g > rect.cls-1{
             fill-opacity:0.2;
@@ -1296,12 +1301,23 @@ main{
         }
     }
 
-    svg.roof-showing{
+    figure > figcaption{
+
+        h4{
+            font-family: majestiBannerBold;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+    }
+
+    figure.roof-showing{
         opacity:1;
     }
 
-    svg.tak1{
-
+    .tak1 > svg{
         > g > g{
             polygon.cls-3{
                 fill:#26C281;
@@ -1314,7 +1330,8 @@ main{
             }
         }
     }
-    svg.tak2{
+
+    .tak2 > svg{
 
         > g > g{
             polygon.cls-4{
@@ -1328,7 +1345,7 @@ main{
             }
         }
     }
-    svg.tak3{
+    .tak3 > svg{
 
         > g > g{
             polygon.cls-3{
@@ -1342,7 +1359,7 @@ main{
             }
         }
     }
-    svg.tak4{
+    .tak4 > svg{
 
         > g > g{
             polygon.cls-5{
@@ -1356,7 +1373,7 @@ main{
             }
         }
     }
-    svg.tak5{
+    .tak5 > svg{
 
         > g > g{
             polygon.cls-4{
@@ -1370,7 +1387,7 @@ main{
             }
         }
     }
-    svg.tak6{
+    .tak6 > svg{
 
         > g > g{
             polygon.cls-3{
@@ -1384,7 +1401,7 @@ main{
             }
         }
     }
-    svg.tak7{
+    .tak7 > svg{
 
         > g > g{
             polygon.cls-4{
@@ -1398,7 +1415,7 @@ main{
             }
         }
     }
-    svg.tak8{
+    .tak8 > svg{
 
         > g > g{
             polygon.cls-4{
@@ -1412,7 +1429,7 @@ main{
             }
         }
     }
-    svg.tak9{
+    .tak9 > svg{
 
         > g > g{
             polygon.cls-4{
@@ -1426,7 +1443,7 @@ main{
             }
         }
     }
-    svg.tak10{
+    .tak10 > svg{
 
         > g > g{
             polygon.cls-6{
@@ -1440,7 +1457,7 @@ main{
             }
         }
     }
-    svg.tak11{
+    .tak11 > svg{
 
         > g > g{
             polygon.cls-4{
@@ -1454,7 +1471,7 @@ main{
             }
         }
     }
-    svg.tak12{
+    .tak12 > svg{
 
         > g > g{
             polygon.cls-4{
@@ -1468,7 +1485,7 @@ main{
             }
         }
     }
-    svg.tak13{
+    .tak13 > svg{
 
         > g > g{
             path.cls-4{
@@ -1482,7 +1499,7 @@ main{
             }
         }
     }
-    svg.tak14{
+    .tak14 > svg{
 
         > g > g{
             polygon.cls-5, path.cls-5{

@@ -3297,12 +3297,10 @@ main {
 #side-content1 > .container {
   position: relative;
   z-index: 2; }
-  #side-content1 > .container img {
-    display: none; }
-  #side-content1 > .container svg {
+  #side-content1 > .container figure {
     position: absolute;
-    width: 55%;
-    margin: 6% 22.5%;
+    width: 50%;
+    margin: 8% 22.5%;
     opacity: 0;
     transition: 200ms;
     transition-timing-function: ease-in-out;
@@ -3310,96 +3308,104 @@ main {
     -webkit-transition-timing-function: ease-in-out;
     -moz-transition: 300ms;
     -moz-transition-timing-function: ease-in-out; }
-    #side-content1 > .container svg > g > g > rect.cls-1 {
+  #side-content1 > .container img {
+    display: none; }
+  #side-content1 > .container figure > svg {
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5); }
+    #side-content1 > .container figure > svg > g > g > rect.cls-1 {
       fill-opacity: 0.2; }
-    #side-content1 > .container svg > g > g > text, #side-content1 > .container svg > g > g > text > tspan {
+    #side-content1 > .container figure > svg > g > g > text, #side-content1 > .container figure > svg > g > g > text > tspan {
       fill: #6d6d6d;
       stroke: #6d6d6d; }
-  #side-content1 > .container svg.roof-showing {
+  #side-content1 > .container figure > figcaption h4 {
+    font-family: majestiBannerBold; }
+  #side-content1 > .container figure > figcaption p {
+    font-size: 14px; }
+  #side-content1 > .container figure.roof-showing {
     opacity: 1; }
-  #side-content1 > .container svg.tak1 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak1 > svg > g > g polygon.cls-3 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak1 > g > g polygon.cls-2 {
+  #side-content1 > .container .tak1 > svg > g > g polygon.cls-2 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak1 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak1 > svg > g > g polygon.cls-4 {
     fill: #fff; }
-  #side-content1 > .container svg.tak2 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak2 > svg > g > g polygon.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak2 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak2 > svg > g > g polygon.cls-3 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak2 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak2 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak3 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak3 > svg > g > g polygon.cls-3 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak3 > g > g polygon.cls-2 {
+  #side-content1 > .container .tak3 > svg > g > g polygon.cls-2 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak3 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak3 > svg > g > g polygon.cls-4 {
     fill: #fff; }
-  #side-content1 > .container svg.tak4 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak4 > svg > g > g polygon.cls-5 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak4 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak4 > svg > g > g polygon.cls-4 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak4 > g > g polygon.cls-6 {
+  #side-content1 > .container .tak4 > svg > g > g polygon.cls-6 {
     fill: #fff; }
-  #side-content1 > .container svg.tak5 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak5 > svg > g > g polygon.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak5 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak5 > svg > g > g polygon.cls-3 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak5 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak5 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak6 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak6 > svg > g > g polygon.cls-3 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak6 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak6 > svg > g > g polygon.cls-4 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak6 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak6 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak7 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak7 > svg > g > g polygon.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak7 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak7 > svg > g > g polygon.cls-3 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak7 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak7 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak8 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak8 > svg > g > g polygon.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak8 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak8 > svg > g > g polygon.cls-3 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak8 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak8 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak9 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak9 > svg > g > g polygon.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak9 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak9 > svg > g > g polygon.cls-3 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak9 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak9 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak10 > g > g polygon.cls-6 {
+  #side-content1 > .container .tak10 > svg > g > g polygon.cls-6 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak10 > g > g polygon.cls-4, #side-content1 > .container svg.tak10 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak10 > svg > g > g polygon.cls-4, #side-content1 > .container .tak10 > svg > g > g polygon.cls-5 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak10 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak10 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak11 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak11 > svg > g > g polygon.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak11 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak11 > svg > g > g polygon.cls-3 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak11 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak11 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak12 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak12 > svg > g > g polygon.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak12 > g > g polygon.cls-3 {
+  #side-content1 > .container .tak12 > svg > g > g polygon.cls-3 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak12 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak12 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak13 > g > g path.cls-4 {
+  #side-content1 > .container .tak13 > svg > g > g path.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak13 > g > g polygon.cls-3, #side-content1 > .container svg.tak13 > g > g path.cls-3 {
+  #side-content1 > .container .tak13 > svg > g > g polygon.cls-3, #side-content1 > .container .tak13 > svg > g > g path.cls-3 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak13 > g > g polygon.cls-5 {
+  #side-content1 > .container .tak13 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container svg.tak14 > g > g polygon.cls-5, #side-content1 > .container svg.tak14 > g > g path.cls-5 {
+  #side-content1 > .container .tak14 > svg > g > g polygon.cls-5, #side-content1 > .container .tak14 > svg > g > g path.cls-5 {
     fill: #26C281; }
-  #side-content1 > .container svg.tak14 > g > g polygon.cls-4 {
+  #side-content1 > .container .tak14 > svg > g > g polygon.cls-4 {
     fill: #EEEEEE; }
-  #side-content1 > .container svg.tak14 > g > g polygon.cls-6 {
+  #side-content1 > .container .tak14 > svg > g > g polygon.cls-6 {
     fill: #fff; }
 
 main > .background-content {
