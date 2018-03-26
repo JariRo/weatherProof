@@ -193,7 +193,7 @@ body{
 
                         #nextButton1, #nextButton2, #nextButton3{
                             width:25%;
-                            background:#34d293;
+                            background:#4ECDC4;
                             margin-bottom:10px;
                             float:right;
                             color:#f5f7f9;
@@ -707,7 +707,7 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-4{
+                                        polygon.cls-4, polygon.cls-5{
                                             fill:#EEEEEE;
                                         }
                                     }
@@ -738,20 +738,6 @@ body{
                             }
 
                             input:checked + .onze{
-                                svg{
-                                    > g > g {
-                                        polygon.cls-4{
-                                            fill:#26C281;
-                                        }
-
-                                        polygon.cls-3{
-                                            fill:#EEEEEE;
-                                        }
-                                    }
-                                }
-                            }
-
-                            input:checked + .deux{
                                 svg{
                                     > g > g {
                                         polygon.cls-4{
@@ -832,7 +818,7 @@ body{
                                             fill:#26C281;
                                         }
 
-                                        path.cls-3{
+                                        path.cls-3, polygon.cls-3{
                                             fill:#EEEEEE;
                                         }
                                     }
@@ -862,7 +848,7 @@ body{
                                  }
                             }
 
-                            input:checked + .quatoze{
+                            input:checked + .quartoze{
                                 svg{
                                     > g > g {
                                         polygon.cls-5, path.cls-5{
@@ -1285,9 +1271,230 @@ main{
     z-index: 2;
 
     img{
+        display: none;
+    }
+    svg{
+        position:absolute;
         width:55%;
-        margin-top:2%;
-        margin-left:36%;
+        margin:2% 22.5%;
+        opacity:0;
+
+        transition:200ms;
+        transition-timing-function: ease-in-out;
+        -webkit-transition:300ms;
+        -webkit-transition-timing-function: ease-in-out;
+        -moz-transition:300ms;
+        -moz-transition-timing-function: ease-in-out;
+
+        > g > g > rect.cls-1{
+            fill-opacity:0.2;
+        }
+
+        > g > g >text, > g > g > text > tspan{
+            fill:#6d6d6d;
+            stroke:#6d6d6d;
+        }
+    }
+
+    svg.roof-showing{
+        opacity:1;
+    }
+
+    svg.tak1{
+
+        > g > g{
+            polygon.cls-3{
+                fill:#26C281;
+            }
+            polygon.cls-2{
+                fill:#EEEEEE;
+            }
+            polygon.cls-4{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak2{
+
+        > g > g{
+            polygon.cls-4{
+                fill:#26C281;
+            }
+            polygon.cls-3{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak3{
+
+        > g > g{
+            polygon.cls-3{
+                fill:#26C281;
+            }
+            polygon.cls-2{
+                fill:#EEEEEE;
+            }
+            polygon.cls-4{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak4{
+
+        > g > g{
+            polygon.cls-5{
+                fill:#26C281;
+            }
+            polygon.cls-4{
+                fill:#EEEEEE;
+            }
+            polygon.cls-6{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak5{
+
+        > g > g{
+            polygon.cls-4{
+                fill:#26C281;
+            }
+            polygon.cls-3{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak6{
+
+        > g > g{
+            polygon.cls-3{
+                fill:#26C281;
+            }
+            polygon.cls-4{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak7{
+
+        > g > g{
+            polygon.cls-4{
+                fill:#26C281;
+            }
+            polygon.cls-3{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak8{
+
+        > g > g{
+            polygon.cls-4{
+                fill:#26C281;
+            }
+            polygon.cls-3{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak9{
+
+        > g > g{
+            polygon.cls-4{
+                fill:#26C281;
+            }
+            polygon.cls-3{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak10{
+
+        > g > g{
+            polygon.cls-6{
+                fill:#26C281;
+            }
+            polygon.cls-4, polygon.cls-5{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak11{
+
+        > g > g{
+            polygon.cls-4{
+                fill:#26C281;
+            }
+            polygon.cls-3{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak12{
+
+        > g > g{
+            polygon.cls-4{
+                fill:#26C281;
+            }
+            polygon.cls-3{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak13{
+
+        > g > g{
+            path.cls-4{
+                fill:#26C281;
+            }
+            polygon.cls-3, path.cls-3{
+                fill:#EEEEEE;
+            }
+            polygon.cls-5{
+                fill:#fff;
+            }
+        }
+    }
+    svg.tak14{
+
+        > g > g{
+            polygon.cls-5, path.cls-5{
+                fill:#26C281;
+            }
+            polygon.cls-4{
+                fill:#EEEEEE;
+            }
+            polygon.cls-6{
+                fill:#fff;
+            }
+        }
     }
 }
 
@@ -1306,7 +1513,6 @@ main > .background-content{
     background-repeat: no-repeat;
     background-position: 55% 98%;
     opacity:0.1;
-
 }
 
 #side-content2 > .background-content {

@@ -204,12 +204,20 @@ var setOffertUp = (function(){
         const setupStandardObsticle = () => {
             resetStandard(resetedExtras);
             let standardRoof = document.querySelector("#takModell > input[type=radio]:checked").id
-            let clickedValue = document.querySelector("#takModell > input[type=radio]:checked").value
+            //let clickedValue = document.querySelector("#takModell > input[type=radio]:checked").value
+            /*
             clickedValue = clickedValue.split(' ').join('_')
             clickedValue = clickedValue.split('å').join('a')
             let theUrl = "../img/taktyper/" + clickedValue + ".svg"
             sideContentImg.src = theUrl
+            */
+            showSVG(standardRoof)
             setStandards(standardRoof, standardSet);
+        }
+
+        const showSVG = (roofID) => {
+            document.querySelector("#side-content1 > .container > .roof-showing").classList.remove('roof-showing')
+            document.querySelector("#side-content1 > .container > ." + roofID).classList.add("roof-showing")
         }
 
         for (var i = 0; i < selectedRoofModel.length; i++){
