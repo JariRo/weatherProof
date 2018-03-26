@@ -8,7 +8,7 @@ body{
     position:absolute;
     right:0;
     top:0;
-    padding:20px 25px 5px 5px;
+    padding:25px 30px 5px 5px;
     z-index:10000;
 }
 
@@ -1577,16 +1577,16 @@ main > .background-content{
             text-align: center;
 
             h3{
-                font-size: 40px;
+                font-size: 30px;
                 font-weight: 400;
-                //margin-top:10px;
+                margin:60px 0 5px 0;
             }
             p{
                 font-family: ProximaNova-Thin, sans-serif;
                 font-weight: 200;
                 max-width: 500px;
                 margin:0 auto;
-                font-size: 18px;
+                font-size: 14px;
                 letter-spacing: .5px;
 
             }
@@ -1594,9 +1594,9 @@ main > .background-content{
 
         .offert-process{
             text-align: center;
-            padding:20px 0;
+            padding:10px 0;
             max-width:600px;
-            margin:20px auto 0;
+            margin:5px auto 0;
             border-bottom:1px solid #666;
             //display: flex;
 
@@ -1610,7 +1610,7 @@ main > .background-content{
             }
 
             i {
-                font-size: 50px;
+                font-size: 30px;
                 margin-bottom:10px;
             }
 
@@ -1636,7 +1636,7 @@ main > .background-content{
 
                 > div {
                     position:relative;
-                    padding:30px;
+                    padding:20px 30px 30px;
                     width:80%;
                     margin-left: auto;
                     margin-right: auto;
@@ -1678,7 +1678,7 @@ main > .background-content{
                                     margin-bottom:10px;
                                     border:1px solid #ccc;
                                     border-radius:8px;
-                                    font-size: 16px;
+                                    font-size: 14px;
                                     padding:10px;
                                     width:100%;
                                 }
@@ -1698,7 +1698,7 @@ main > .background-content{
 
                 > #offert-submit-holder{
                     overflow:hidden;
-
+                    padding:0;
 
                     > div{
                         text-align: center;
@@ -1710,7 +1710,6 @@ main > .background-content{
                             border-radius:99em;
                             text-align: left;
                             text-transform: none;
-                            font-size: 13px;
                             padding:15px 50px 15px 70px;
                             font-weight: 400;
                             cursor:pointer;
@@ -1719,7 +1718,7 @@ main > .background-content{
                             i{
                                 position:absolute;
                                 color:#fff;
-                                font-size: 30px;
+                                font-size: 20px;
                                 top:50%;
                                 transform:translateY(-50%);
                                 left:25px;
@@ -1728,7 +1727,7 @@ main > .background-content{
                             strong{
                                 display:block;
                                 font-size: 400;
-                                font-size: 20px;
+                                font-size: 16px;
                             }
                         }
 
