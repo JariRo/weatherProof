@@ -2789,6 +2789,11 @@ body {
           color: #4ECDC4;
           padding: 0.45em 0;
           margin: 0; }
+        #menu-side-bar #side-bar-nav > li > section .fieldsetLabel.roofmat {
+          padding-bottom: 0; }
+        #menu-side-bar #side-bar-nav > li > section .bandteckning {
+          margin: 0;
+          font-size: 0.7em; }
         #menu-side-bar #side-bar-nav > li > section .wrapper, #menu-side-bar #side-bar-nav > li > section .wrapper .extras {
           margin-top: -0.8em;
           opacity: 0; }
@@ -3036,7 +3041,7 @@ body {
               z-index: 701; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset .input-Holder label, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset .input-Holder label {
                 margin-bottom: 5px;
-                color: #666;
+                color: #000;
                 font-size: 14px; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset .input-Holder label > details > summary, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset .input-Holder label > details > summary {
                 outline: none; }
@@ -3123,7 +3128,7 @@ body {
               cursor: pointer;
               z-index: 701;
               font-size: 14px;
-              color: #666; }
+              color: #000; }
             #menu-side-bar #side-bar-nav > li > section .wrapper .box-Holder label::before, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .box-Holder label::before {
               content: ' ';
               position: absolute;
@@ -3181,7 +3186,7 @@ body {
                 #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles .standard-explanation #standard-obstacle-list li, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles .standard-explanation #standard-obstacle-list li {
                   margin-bottom: 12px;
                   font-size: 14px;
-                  color: #666; }
+                  color: #000; }
             #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles .standard-choices, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles .standard-choices {
               display: flex;
               flex-direction: row;
@@ -3193,7 +3198,7 @@ body {
                 justify-content: center; }
             #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles > div > p, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles > div > p {
               font-size: 14px;
-              color: #666; }
+              color: #000; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .extras {
           transition: all 0.5s ease;
           position: relative;
@@ -3201,7 +3206,8 @@ body {
         #menu-side-bar #side-bar-nav > li > section .wrapper .extras .roofBushing {
           padding-top: 1.4em; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .offert-summary p {
-          font-size: 14px; }
+          font-size: 14px;
+          line-height: 18px; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .offert-summary .obsticle-summary {
           list-style: none;
           font-size: 14px;
@@ -3213,10 +3219,10 @@ body {
           padding-bottom: 2em; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .offert-summary .summaryHeading {
           border-bottom: 1px solid #ccc;
-          color: #666;
+          color: #000;
           margin: 1em 0; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .offert-summary fieldset > #roof-summary {
-          color: #666;
+          color: #000;
           margin-bottom: 0.5em; }
           #menu-side-bar #side-bar-nav > li > section .wrapper .offert-summary fieldset > #roof-summary ul {
             font-size: 14px;
@@ -3315,6 +3321,7 @@ main {
   #side-content1 > .container figure > svg > g > g > text, #side-content1 > .container figure > svg > g > g > text > tspan {
     fill: #6d6d6d;
     stroke: #6d6d6d;
+    stroke: none;
     display: none; }
   #side-content1 > .container figure > figcaption h2 {
     font-family: majestiBannerBold;
@@ -3322,7 +3329,8 @@ main {
     margin-bottom: 5px; }
   #side-content1 > .container figure > figcaption p {
     font-size: 14px;
-    margin: 0; }
+    margin: 0;
+    line-height: 22px; }
   #side-content1 > .container figure.roof-showing {
     opacity: 1; }
   #side-content1 > .container .tak1 > svg > g > g polygon.cls-4 {
@@ -3423,21 +3431,21 @@ main > .background-content {
   background-size: 32%;
   background-repeat: no-repeat;
   background-position: 48% 98%;
-  opacity: 0.08; }
+  opacity: 0.06; }
 
 #side-content2 > .background-content {
   background: url("../img/pic-9.svg");
   background-size: 32%;
   background-repeat: no-repeat;
   background-position: 60% 98%;
-  opacity: 0.08; }
+  opacity: 0.06; }
 
 #side-content3 > .background-content {
   background: url("../img/pic-1.svg");
   background-size: 32%;
   background-repeat: no-repeat;
   background-position: 50% 98%;
-  opacity: 0.08; }
+  opacity: 0.06; }
 
 #side-content1.showing, #side-content2.showing, #side-content3.showing {
   display: block; }
@@ -3454,14 +3462,17 @@ main > .background-content {
     #checkout-wrapper .container header h3 {
       font-size: 30px;
       font-weight: 400;
-      margin: 60px 0 5px 0; }
+      margin: 115px 0 5px 0; }
     #checkout-wrapper .container header p {
       font-family: ProximaNova-Thin, sans-serif;
       font-weight: 200;
       max-width: 500px;
       margin: 0 auto;
       font-size: 14px;
-      letter-spacing: .5px; }
+      letter-spacing: .5px;
+      line-height: 20px; }
+      #checkout-wrapper .container header p span {
+        font-weight: 600; }
   #checkout-wrapper .container .offert-process {
     text-align: center;
     padding: 10px 0;
@@ -3478,10 +3489,10 @@ main > .background-content {
       margin-bottom: 10px; }
     #checkout-wrapper .container .offert-process h5 {
       font-size: 12px;
-      font-weight: 400;
+      font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #666;
+      color: #000;
       margin-bottom: 10px; }
   #checkout-wrapper .container .offert-contact-info {
     margin: 30px auto 0; }
@@ -3493,21 +3504,21 @@ main > .background-content {
       z-index: -1; }
       #checkout-wrapper .container .offert-contact-info > .row > div {
         position: relative;
-        padding: 20px 30px 30px;
+        padding: 20px 100px 30px 100px;
         width: 80%;
         margin-left: auto;
         margin-right: auto; }
         #checkout-wrapper .container .offert-contact-info > .row > div > form > h4 {
-          font-weight: 400;
+          font-weight: 800;
           border-bottom: 1px solid #666;
           padding-bottom: 5px;
           margin-bottom: 20px;
           font-size: 12px;
           text-transform: uppercase;
           letter-spacing: 1px;
-          color: #666; }
+          color: #000; }
         #checkout-wrapper .container .offert-contact-info > .row > div > form .row {
-          color: #666;
+          color: #000;
           font-size: 14px;
           display: flex;
           justify-content: space-between;

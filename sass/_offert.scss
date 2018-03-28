@@ -184,6 +184,16 @@ body{
                     margin:0;
                 }
 
+                .fieldsetLabel.roofmat{
+                    padding-bottom:0;
+                }
+
+                .bandteckning{
+                    margin:0;
+                    font-size: 0.7em;
+                }
+
+
                 .wrapper, .wrapper .extras{
                     margin-top:-0.8em;
                     opacity:0;
@@ -866,7 +876,7 @@ body{
 
                             label{
                                 margin-bottom:5px;
-                                color:#666;
+                                color:#000;
                                 font-size: 14px;
                             }
 
@@ -995,7 +1005,7 @@ body{
                             cursor:pointer;
                             z-index: 701;
                             font-size: 14px; //changed
-                            color:#666; //changed
+                            color:#000; //changed
                         }
 
                         label::before{
@@ -1078,7 +1088,7 @@ body{
                                 li{
                                     margin-bottom:12px;
                                     font-size: 14px;
-                                    color:#666;
+                                    color:#000;
                                 }
                             }
                         }
@@ -1099,7 +1109,7 @@ body{
 
                         > div > p {
                             font-size: 14px;
-                            color:#666;
+                            color:#000;
                         }
                     }
                 }
@@ -1118,6 +1128,7 @@ body{
 
                     p{
                         font-size: 14px;
+                        line-height: 18px;
                     }
 
                     .obsticle-summary{
@@ -1137,12 +1148,12 @@ body{
 
                     .summaryHeading{
                         border-bottom: 1px solid #ccc;
-                        color:#666;
+                        color:#000;
                         margin:1em 0;
                     }
 
                     fieldset > #roof-summary{
-                        color:#666;
+                        color:#000;
                         margin-bottom: 0.5em;
 
                         ul{
@@ -1291,6 +1302,7 @@ main{
         > g > g >text, > g > g > text > tspan{
             fill:#6d6d6d;
             stroke:#6d6d6d;
+            stroke:none;
             display:none;
         }
     }
@@ -1306,6 +1318,7 @@ main{
         p{
             font-size: 14px;
             margin:0;
+            line-height: 22px;
         }
 
     }
@@ -1526,7 +1539,7 @@ main > .background-content{
     background-size:32%;
     background-repeat: no-repeat;
     background-position: 48% 98%;
-    opacity:0.08;
+    opacity:0.06;
 }
 
 #side-content2 > .background-content {
@@ -1534,7 +1547,7 @@ main > .background-content{
     background-size:32%;
     background-repeat: no-repeat;
     background-position: 60% 98%;
-    opacity:0.08;
+    opacity:0.06;
 
 }
 
@@ -1543,7 +1556,7 @@ main > .background-content{
     background-size:32%;
     background-repeat: no-repeat;
     background-position: 50% 98%;
-    opacity:0.08;
+    opacity:0.06;
 }
 
 #side-content1.showing, #side-content2.showing, #side-content3.showing,{
@@ -1573,7 +1586,7 @@ main > .background-content{
             h3{
                 font-size: 30px;
                 font-weight: 400;
-                margin:60px 0 5px 0;
+                margin:115px 0 5px 0;
             }
             p{
                 font-family: ProximaNova-Thin, sans-serif;
@@ -1582,7 +1595,11 @@ main > .background-content{
                 margin:0 auto;
                 font-size: 14px;
                 letter-spacing: .5px;
+                line-height: 20px;
 
+                span{
+                    font-weight: 600;
+                }
             }
         }
 
@@ -1610,10 +1627,10 @@ main > .background-content{
 
             h5{
                 font-size: 12px;
-                font-weight: 400;
+                font-weight: 800;
                 text-transform: uppercase;
                 letter-spacing: 1px;
-                color:#666;
+                color:#000;
                 margin-bottom:10px;
             }
         }
@@ -1630,7 +1647,7 @@ main > .background-content{
 
                 > div {
                     position:relative;
-                    padding:20px 30px 30px;
+                    padding:20px 100px 30px 100px;
                     width:80%;
                     margin-left: auto;
                     margin-right: auto;
@@ -1638,18 +1655,18 @@ main > .background-content{
                     > form {
 
                         > h4{
-                            font-weight: 400;
+                            font-weight: 800;
                             border-bottom:1px solid #666;
                             padding-bottom:5px;
                             margin-bottom:20px;
                             font-size: 12px;
                             text-transform: uppercase;
                             letter-spacing: 1px;
-                            color:#666,
+                            color:#000,
                         }
 
                         .row{
-                            color:#666;
+                            color:#000;
                             font-size: 14px;
                             display:flex;
                             justify-content: space-between;
