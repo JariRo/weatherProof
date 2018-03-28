@@ -2651,7 +2651,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 25px 30px 5px 5px;
+  padding: 35px 35px 5px 5px;
   z-index: 10000; }
 
 #underDevelopment {
@@ -2786,14 +2786,15 @@ body {
           font-weight: 600;
           text-decoration: none; }
         #menu-side-bar #side-bar-nav > li > section .fieldsetLabel {
-          color: #4ECDC4;
+          color: #2abfbf;
           padding: 0.45em 0;
           margin: 0; }
         #menu-side-bar #side-bar-nav > li > section .fieldsetLabel.roofmat {
           padding-bottom: 0; }
         #menu-side-bar #side-bar-nav > li > section .bandteckning {
           margin: 0;
-          font-size: 0.7em; }
+          font-size: 0.8em;
+          padding: 8px 0; }
         #menu-side-bar #side-bar-nav > li > section .wrapper, #menu-side-bar #side-bar-nav > li > section .wrapper .extras {
           margin-top: -0.8em;
           opacity: 0; }
@@ -3198,7 +3199,8 @@ body {
                 justify-content: center; }
             #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles > div > p, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles > div > p {
               font-size: 14px;
-              color: #000; }
+              color: #000;
+              line-height: 20px; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .extras {
           transition: all 0.5s ease;
           position: relative;
@@ -3328,7 +3330,7 @@ main {
     margin-top: 0;
     margin-bottom: 5px; }
   #side-content1 > .container figure > figcaption p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     line-height: 22px; }
   #side-content1 > .container figure.roof-showing {

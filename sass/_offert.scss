@@ -8,7 +8,7 @@ body{
     position:absolute;
     right:0;
     top:0;
-    padding:25px 30px 5px 5px;
+    padding:35px 35px 5px 5px;
     z-index:10000;
 }
 
@@ -179,7 +179,7 @@ body{
                 }
 
                 .fieldsetLabel{
-                    color:#4ECDC4;
+                    color:#2abfbf;
                     padding:0.45em 0;
                     margin:0;
                 }
@@ -190,7 +190,8 @@ body{
 
                 .bandteckning{
                     margin:0;
-                    font-size: 0.7em;
+                    font-size: 0.8em;
+                    padding:8px 0;
                 }
 
 
@@ -1110,6 +1111,7 @@ body{
                         > div > p {
                             font-size: 14px;
                             color:#000;
+                            line-height: 20px;
                         }
                     }
                 }
@@ -1316,7 +1318,7 @@ main{
         }
 
         p{
-            font-size: 14px;
+            font-size: 16px;
             margin:0;
             line-height: 22px;
         }
