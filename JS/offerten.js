@@ -171,10 +171,17 @@ var setOffertUp = (function(){
                 for (let j = 0; j < logisticPriceObject.length; j++){
                     logisticPriceObject[j].name == logistic.name ? price += logisticPriceObject[j].total() * logistic.quantity : price
                 }
-                return price
+                return Math.round(price)
             }, 0)
 
-            document.querySelector('#logisticCosts').innerHTML = "Övriga kostnader: " + totalPrice + " kr"
+            let punkt = "."
+            totalprice_String = JSON.stringify(totalPrice)
+            if (totalprice_String.length == 5){
+                totalprice_String
+                totalprice_String = [totalprice_String.slice(0, 2), punkt, totalprice_String.slice(1)].join('')
+            }
+
+            document.querySelector('#logisticCosts').innerHTML = "Övriga kostnader: " + totalprice_String + " kr"
         }
 
         const setCheckoutUp = function(element){
@@ -422,119 +429,119 @@ var setOffertUp = (function(){
             switch (theCalcObj.obsticles[i].name) {
                 case 'Stor skorsten':
                     $('<li/>', {html: theCalcObj.obsticles[i].name
-                        + ': '
+                        + ': <span>'
                         + theCalcObj.obsticles[i].quantity
-                        + 'st'}).appendTo(obsticleContetnList)
+                        + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Liten skorsten':
                     $('<li/>', {html: theCalcObj.obsticles[i].name
-                        + ': '
-                        + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                        + ': <span>'
+                        + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Avluftstos':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Takfönster':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Ventilationshuv':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Taklucka':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Köksfläktshuv / Vent stor':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Takkupa mindre än 10 kvm':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Takkupa större än 10 kvm':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Takbrygga':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Snörasskydd':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Takstege':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Skorstensstege':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Luftad nock':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Vindskivor':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Hängrännor':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Stuprör':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Fotränna':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Ytterhörn fotränna':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + theCalcObj.obsticles[i].quantity + 'st'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + theCalcObj.obsticles[i].quantity + 'st</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Nock':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Takbrott':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Vinkelränna':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm&sup2</span>'}).appendTo(obsticleContetnList)
                     break;
                 case 'Genzimrännor':
                 $('<li/>', {html: theCalcObj.obsticles[i].name
-                    + ': '
-                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm'}).appendTo(obsticleContetnList)
+                    + ': <span>'
+                    + Math.round(theCalcObj.obsticles[i].quantity) + 'm</span>'}).appendTo(obsticleContetnList)
                     break;
                 default:
                 break;
@@ -551,17 +558,49 @@ var setOffertUp = (function(){
         let sumAngle = document.querySelector('#roof-summary > ul > li > #sumAngle')
         let sumHeight = document.querySelector('#roof-summary > ul > li > #sumHeight')
 
-        let contactSummary = document.querySelector('#contact-summary')
+        let contracter = document.querySelector('#contact-summary > ul > li > #contracter')
+        let timePlane = document.querySelector('#contact-summary > ul > li > #timePlan')
+        let customMessage = document.querySelector('#contact-summary > ul > li > #customMessage')
+
+
         let priceSuggestion = document.querySelector('#price-suggestion')
         let totalPrice = calcObj.price.work + calcObj.price.material
         let lowerPriceEdge = Math.round((Math.ceil((totalPrice - (totalPrice * 0.1)) / 100) * 100) / 1000) * 1000
         let upperPriceEdge = Math.round((Math.ceil((totalPrice + (totalPrice * 0.1)) / 100) * 100) / 1000) * 1000
 
-        getObsticleContentList(calcObj)
+        lowerPriceEdge = Math.floor(lowerPriceEdge)
+        upperPriceEdge = Math.floor(upperPriceEdge)
 
-        let generatedCustomerContent = '<p>Uppdragsgivare: ' + calcObj.ourInputs[5].who + '</p>'
-             + '<p>Tidsram: ' + calcObj.ourInputs[6].timeSchedule + '</p>'
-             + '<p>Meddelande: ' + calcObj.ourInputs[7].message + '</p>'
+        lowerPriceEdge_String = JSON.stringify(lowerPriceEdge)
+        upperPriceEdge_String = JSON.stringify(upperPriceEdge)
+
+        let punkt = "."
+        if (lowerPriceEdge_String.length == 5){
+            lowerPriceEdge_String = [lowerPriceEdge_String.slice(0, 2), punkt, lowerPriceEdge_String.slice(2)].join('')
+        }else if (lowerPriceEdge_String.length == 6){
+            lowerPriceEdge_String = [lowerPriceEdge_String.slice(0, 3), punkt, lowerPriceEdge_String.slice(3)].join('')
+        }else if (lowerPriceEdge_String.length == 7){
+            lowerPriceEdge_String = [lowerPriceEdge_String.slice(0, 1), punkt, lowerPriceEdge_String.slice(1)].join('')
+            lowerPriceEdge_String = [lowerPriceEdge_String.slice(0, 5), punkt, lowerPriceEdge_String.slice(5)].join('')
+        }else if (lowerPriceEdge_String.length >= 8){
+            lowerPriceEdge_String = [lowerPriceEdge_String.slice(0, 2), punkt, lowerPriceEdge_String.slice(2)].join('')
+            lowerPriceEdge_String = [lowerPriceEdge_String.slice(0, 6), punkt, lowerPriceEdge_String.slice(6)].join('')
+        }
+
+        if (upperPriceEdge_String.length == 5){
+            upperPriceEdge_String = [upperPriceEdge_String.slice(0, 2), punkt, upperPriceEdge_String.slice(2)].join('')
+        }else if (upperPriceEdge_String.length == 6){
+            upperPriceEdge_String = [upperPriceEdge_String.slice(0, 3), punkt, upperPriceEdge_String.slice(3)].join('')
+        }else if (upperPriceEdge_String.length == 7){
+            upperPriceEdge_String = [upperPriceEdge_String.slice(0, 1), punkt, upperPriceEdge_String.slice(1)].join('')
+            upperPriceEdge_String = [upperPriceEdge_String.slice(0,5), punkt, upperPriceEdge_String.slice(5)].join('')
+        }else if (upperPriceEdge_String.length >= 8){
+            upperPriceEdge_String = [upperPriceEdge_String.slice(0, 2), punkt, upperPriceEdge_String.slice(2)].join('')
+            upperPriceEdge_String = [upperPriceEdge_String.slice(0, 6), punkt, upperPriceEdge_String.slice(6)].join('')
+        }
+
+
+        getObsticleContentList(calcObj)
 
         sumWork.innerHTML = calcObj.ourInputs[0].work
         sumModel.innerHTML = calcObj.ourInputs[1].model[0].name
@@ -570,11 +609,15 @@ var setOffertUp = (function(){
         sumAngle.innerHTML = calcObj.ourInputs[3].measures[1].angle
         sumHeight.innerHTML = calcObj.ourInputs[3].measures[2].height
 
-        contactSummary.innerHTML = generatedCustomerContent
+        contracter.innerHTML = calcObj.ourInputs[5].who
+        timePlane.innerHTML = calcObj.ourInputs[6].timeSchedule
+        customMessage.innerHTML = calcObj.ourInputs[7].message
 
-        let priceString = calcObj.ourInputs[1].model[0].name == "Kyrktorn" ? "Kontakta oss så hjälper vi dig" : Math.floor(lowerPriceEdge)
+        //contactSummary.innerHTML = generatedCustomerContent
+
+        let priceString = calcObj.ourInputs[1].model[0].name == "Kyrktorn" ? "Kontakta oss så hjälper vi dig" : lowerPriceEdge_String
         + ' - '
-        + Math.floor(upperPriceEdge)
+        + upperPriceEdge_String
         + " kr"
 
         priceSuggestion.innerHTML = priceString

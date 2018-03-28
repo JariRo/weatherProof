@@ -171,7 +171,7 @@ body{
 
                 .wrapper > .extra-roof-dropBtn{
                     font-size: 1.1em;
-                    color:#4a4a4a;
+                    color:#000;
                     padding:0.8em;
                     position:relative;
                     font-weight: 600;
@@ -179,7 +179,7 @@ body{
                 }
 
                 .fieldsetLabel{
-                    color:#2abfbf;
+                    color:#05ADAC;
                     padding:0.45em 0;
                     margin:0;
                 }
@@ -204,7 +204,7 @@ body{
 
                         #nextButton1, #nextButton2, #nextButton3{
                             width:25%;
-                            background:#2abfbf;
+                            background:#05ADAC;
                             margin-bottom:10px;
                             float:right;
                             color:#f5f7f9;
@@ -257,7 +257,7 @@ body{
                         border-radius: 1.7px;
                         //border:none;
                         padding:1em;
-                        color:#4a4a4a;
+                        color:#000;
                         margin-bottom:0.6em;
                         background:#fff;
 
@@ -322,13 +322,6 @@ body{
 
                             }
 
-                            input:checked + .offert-takmodeller{
-                                //-webkit-filter:hue-rotate(160deg) saturate(30);
-                                //-moz-filter:hue-rotate(160deg) saturate(30);
-                                //filter:hue-rotate(160deg) saturate(30);
-
-                            }
-
                             .offert-takmodeller > svg > g > g{
 
                                 text.cls-2, text.cls-5, tspan{
@@ -365,7 +358,7 @@ body{
                                 svg:hover{
                                     > g > g {
                                         polygon.cls-3{
-                                            fill:#2ABFBF;
+                                            fill:#05ADAC;
                                         }
                                     }
                                 }
@@ -402,7 +395,7 @@ body{
                                 svg:hover{
                                     > g > g {
                                         polygon.cls-4{
-                                            fill:#2ABFBF;
+                                            fill:#05ADAC;
                                         }
                                     }
                                 }
@@ -439,7 +432,7 @@ body{
                                 svg:hover{
                                     > g > g {
                                         polygon.cls-3{
-                                            fill:#2ABFBF;
+                                            fill:#05ADAC;
                                         }
                                     }
                                 }
@@ -476,7 +469,7 @@ body{
                                 svg:hover{
                                     > g > g {
                                         polygon.cls-5{
-                                            fill:#2ABFBF;
+                                            fill:#05ADAC;
                                         }
                                     }
                                 }
@@ -513,7 +506,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          polygon.cls-4{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -550,7 +543,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          polygon.cls-3{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -587,7 +580,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          polygon.cls-4{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -624,7 +617,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          polygon.cls-4{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -661,7 +654,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          polygon.cls-4{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -698,7 +691,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          polygon.cls-6{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -736,7 +729,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          polygon.cls-4{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -773,7 +766,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          path.cls-5{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -810,7 +803,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          path.cls-4{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -847,7 +840,7 @@ body{
                                  > svg:hover{
                                      > g > g {
                                          polygon.cls-5, path.cls-5{
-                                             fill:#2ABFBF;
+                                             fill:#05ADAC;
                                          }
                                      }
                                  }
@@ -960,7 +953,7 @@ body{
                                 height:2.5em;
                                 margin-bottom:10px;
                                 font-size: 0.875em;
-                                color:#4a4a4a;
+                                color:#000;
                                 background-color:#fff;
                                 border:1px solid #ccc;
                                 border-radius:8px;
@@ -973,7 +966,7 @@ body{
                                 padding:10px;
                                 margin-bottom:10px;
                                 font-size: 0.875em;
-                                color:#4a4a4a;
+                                color:#000;
                                 background-color:#fff;
                                 border:1px solid #ccc;
                                 border-radius: 8px;
@@ -985,7 +978,7 @@ body{
                         display:flex;
                         align-content: center;
                         width:50%;
-                        color:#4a4a4a;
+                        color:#000;
 
                         input[type="checkbox"],
                         input[type="radio"]{
@@ -1037,8 +1030,8 @@ body{
                             top:-1.5px;
                             width:100%;
                             height:100%;
-                            border-color: #2abfbf;
-                            background: #2abfbf;
+                            border-color: #05ADAC;
+                            background: #05ADAC;
                         }
 
                         label, label::before{
@@ -1129,8 +1122,8 @@ body{
                 .wrapper .offert-summary {
 
                     p{
-                        font-size: 14px;
-                        line-height: 18px;
+                        font-size: 15px;
+                        line-height: 20px;
                     }
 
                     .obsticle-summary{
@@ -1142,6 +1135,11 @@ body{
 
                     .obsticle-summary > li{
                         padding: 0.6em 0;
+                        font-weight: 600;
+
+                        > span{
+                            font-weight: 400;
+                        }
                     }
 
                     .offert-suggestion{
@@ -1154,7 +1152,7 @@ body{
                         margin:1em 0;
                     }
 
-                    fieldset > #roof-summary{
+                    fieldset > #roof-summary, fieldset > #contact-summary{
                         color:#000;
                         margin-bottom: 0.5em;
 
@@ -1176,15 +1174,20 @@ body{
                     }
 
                     fieldset > h4{
-                        border-bottom:1px solid #ccc;
+                        border-bottom:1px solid #000;
                         padding-bottom:2px;
                         margin-bottom:0.5em;
                         margin-top:0.8em;
+                        font-size: 17px;
+                    }
+
+                    .suggestion-content > p{
+                        margin:0;
                     }
 
                     #price-suggestion{
                         display: inline-block;
-                        font-size: 14px;
+                        font-size: 16px;
                         padding:0.8em;
                         border:1px solid #666;
                         border-radius: 1.45px;
@@ -1194,15 +1197,16 @@ body{
                         color:#000;
                         margin:0;
                         font-weight: 600;
+                        margin-top:7px;
                     }
 
                     #logisticCosts{
                         display:inline-block;
-                        font-size: 14px;
-                        padding:0.8em;
-                        max-width: 48%;
+                        font-size: 16px;
+                        padding:0.8em 0 0.8em 0.8em;
+                        max-width: 50%;
                         min-width: 42%;
-                        margin:0;
+                        margin:7px 0 0 0;
                         color:#000;
                         font-weight: 600;
                     }
@@ -1216,7 +1220,7 @@ body{
 
             ~ section{
                 background:#f5f7f9;
-                color:#4a4a4a;
+                color:#000;
             }
 
             i{
@@ -1718,7 +1722,7 @@ main > .background-content{
 
                         #submit-offert{
                             position:relative;
-                            background:#2abfbf;
+                            background:#05ADAC;
                             color:#f5f7f9;
                             border-radius:99em;
                             text-align: left;

@@ -55,7 +55,7 @@
                             <div id="toDoCheckBoxes">
 
                                 <div class="box-Holder">
-                                    <input id="newRoof" type="radio" name="whatJob" value="Nyproduktion" checked>
+                                    <input id="newRoof" type="radio" name="whatJob" value="Nyproduktion">
                                     <label for="newRoof">Nyproduktion</label>
                                 </div>
 
@@ -205,7 +205,7 @@
                         <fieldset>
                             <div id="roofMaterial">
                                 <div class="box-Holder">
-                                    <input type="radio" name="material" id="plate" value="Stålplåt" checked>
+                                    <input type="radio" name="material" id="plate" value="Stålplåt">
                                     <label for="plate">Stålplåt</label>
                                 </div>
 
@@ -289,7 +289,7 @@
                                     <p>Har du fler eller andra hinder än vad som visas som standard? Byt till <strong>Ändra hinder</strong> och välj de hinder som finns på ditt tak för ett mer korrekt prisförslag.</p>
                                     <div class="standard-choices">
                                         <div class="box-Holder">
-                                            <input type="radio" name="standard-obstacles" id="standard-choice" checked>
+                                            <input type="radio" name="standard-obstacles" id="standard-choice">
                                             <label for="standard-choice">Standard</label>
                                         </div>
 
@@ -587,7 +587,7 @@
                         <fieldset id="smallerStuff">
                             <div id="roofToWho">
                                 <div class="box-Holder">
-                                    <input type="radio" name="toWho" id="privateOwner" value="Privatperson" checked>
+                                    <input type="radio" name="toWho" id="privateOwner" value="Privatperson">
                                     <label for="privateOwner">Privatperson</label>
                                 </div>
 
@@ -668,8 +668,9 @@
                     <div class="offert-summary">
                         <div class="offert-suggestion">
                             <div class="suggestion-content">
-                                <h3>Preliminärt prisförslag:</h3>
+                                <h3>Ditt preliminära prisförslag:</h3>
 
+                                <p>Prisförslaget baseras på dina inmatade uppgifter.</p>
                                 <p>Enligt våra beräkningar skulle en offert på detta jobb hamna mellan:
                                 </p>
 
@@ -718,14 +719,24 @@ Tak</h3>
 
                         <h3 class="fieldsetLabel"><i class="fa fa-envelope"></i>
 
-</span>Kontakt och Tid</h3>
+                        <span>Kontakt och Tid</h3></span>
                         <fieldset>
                             <div id="contact-summary">
-
+                                <ul>
+                                    <li>Uppdragsgivare:
+                                        <span id="contracter"></span>
+                                    </li>
+                                    <li>Tidsplanering:
+                                        <span id="timePlan"></span>
+                                    </li>
+                                    <li>Meddelande:
+                                        <span id="customMessage"></span>
+                                    </li>
+                                </ul>
                             </div>
                         </fieldset>
 
-                        <h3 class="fieldsetLabel"><span id="logistikIcon"></span>Logistik och övrigt</h3>
+                        <h3 class="fieldsetLabel"><span id="logistikIcon"></span>Övriga kostnader</h3>
                         <div class="roofExtrasOnSquareMeter">
                             <fieldset>
                                 <p>Vi gillar inte överraskande kostnader, därför vill vi på Weatherproof Family upplysa dig om kostnader som kan tillkomma på ditt projekt:</p>
