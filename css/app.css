@@ -2844,7 +2844,6 @@ body {
             #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell {
               display: flex;
               flex-wrap: wrap;
-              justify-content: space-between;
               align-content: center;
               width: 100%; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input {
@@ -2865,6 +2864,7 @@ body {
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 32%;
+                margin: 0 0.5%;
                 -webkit-transition: all 100ms ease-in;
                 -moz-transition: all 100ms ease-in;
                 transition: all 100ms ease-in;
@@ -2998,15 +2998,15 @@ body {
                 fill: #26C281; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .onze svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .onze svg > g > g polygon.cls-3 {
                 fill: #EEEEEE; }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg > g > g polygon.cls-4 {
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg > g > g path.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg > g > g path.cls-5 {
                 fill: #ccc; }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg > g > g polygon.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg > g > g polygon.cls-5 {
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg > g > g path.cls-6, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg > g > g path.cls-6 {
                 fill: #fff; }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg:hover > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg:hover > g > g polygon.cls-4 {
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .douze > svg:hover > g > g path.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .douze > svg:hover > g > g path.cls-5 {
                 fill: #2ABFBF; }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .douze svg > g > g polygon.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .douze svg > g > g polygon.cls-4 {
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .douze svg > g > g path.cls-5, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .douze svg > g > g path.cls-5 {
                 fill: #26C281; }
-              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .douze svg > g > g polygon.cls-3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .douze svg > g > g polygon.cls-3 {
+              #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell input:checked + .douze svg > g > g path.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell input:checked + .douze svg > g > g path.cls-4 {
                 fill: #EEEEEE; }
               #menu-side-bar #side-bar-nav > li > section .wrapper fieldset #takModell .treize > svg > g > g path.cls-4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras fieldset #takModell .treize > svg > g > g path.cls-4 {
                 fill: #ccc; }
@@ -3325,9 +3325,9 @@ main {
     margin: 0; }
   #side-content1 > .container figure.roof-showing {
     opacity: 1; }
-  #side-content1 > .container .tak1 > svg > g > g polygon.cls-3 {
+  #side-content1 > .container .tak1 > svg > g > g polygon.cls-4 {
     fill: #26C281; }
-  #side-content1 > .container .tak1 > svg > g > g polygon.cls-2 {
+  #side-content1 > .container .tak1 > svg > g > g polygon.cls-6 {
     fill: #EEEEEE; }
   #side-content1 > .container .tak1 > svg > g > g polygon.cls-4 {
     fill: #fff; }
@@ -3391,11 +3391,11 @@ main {
     fill: #EEEEEE; }
   #side-content1 > .container .tak11 > svg > g > g polygon.cls-5 {
     fill: #fff; }
-  #side-content1 > .container .tak12 > svg > g > g polygon.cls-4 {
+  #side-content1 > .container .tak12 > svg > g > g path.cls-5 {
     fill: #26C281; }
-  #side-content1 > .container .tak12 > svg > g > g polygon.cls-3 {
+  #side-content1 > .container .tak12 > svg > g > g path.cls-4 {
     fill: #EEEEEE; }
-  #side-content1 > .container .tak12 > svg > g > g polygon.cls-5 {
+  #side-content1 > .container .tak12 > svg > g > g path.cls-6 {
     fill: #fff; }
   #side-content1 > .container .tak13 > svg > g > g path.cls-4 {
     fill: #26C281; }

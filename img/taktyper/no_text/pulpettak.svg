@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 198.69 185.89"
+   id="svg398"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pulpettak.svg">
+  <metadata
+     id="metadata434">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview432"
+     showgrid="false"
+     inkscape:zoom="1.269568"
+     inkscape:cx="99.345001"
+     inkscape:cy="92.945"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1-2" />
+  <defs
+     id="defs400">
+    <style
+       id="style402">.cls-1,.cls-5{fill:#fff;}.cls-2{font-size:18px;font-family:ProximaNova-Regular, Proxima Nova;}.cls-3{fill:#f5f7f9;}.cls-3,.cls-4,.cls-5{stroke:#000;stroke-miterlimit:10;}.cls-4{fill:#d6d6d6;}.cls-5{stroke-width:0.75px;}</style>
+  </defs>
+  <title
+     id="title404">Asset 12</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2">
+    <g
+       id="Layer_1-2"
+       data-name="Layer 1">
+      <rect
+         class="cls-1"
+         width="198.69"
+         height="185.89"
+         id="rect408" />
+      <polygon
+         class="cls-3"
+         points="92.53,139.01 92.53,83.44 172.31,54.67 172.31,98.6 172.31,98.6 "
+         id="polygon412"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#f5f7f9;stroke:#000000;stroke-miterlimit:10" />
+      <polygon
+         class="cls-3"
+         points="32.21,112.61 32.21,39.59 92.53,83.44 92.53,139.01 92.53,139.01 "
+         id="polygon414"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#f5f7f9;stroke:#000000;stroke-miterlimit:10" />
+      <polygon
+         class="cls-4"
+         points="92.53,83.44 32.21,39.59 116.74,23.91 172.31,54.67 172.31,54.67 "
+         id="polygon416"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#d6d6d6;stroke:#000000;stroke-miterlimit:10" />
+      <polygon
+         class="cls-5"
+         points="45.01,115.17 45.03,99.74 49.83,101.68 49.81,117.12 49.81,117.12 "
+         id="polygon418"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.75px;stroke-miterlimit:10" />
+      <polygon
+         class="cls-5"
+         points="37.91,112.17 37.91,96.84 42.71,98.93 42.71,114.2 42.71,114.2 "
+         id="polygon420"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.75px;stroke-miterlimit:10" />
+      <polygon
+         class="cls-5"
+         points="58.58,117.19 58.58,104.97 68.08,108.94 68.08,121.07 68.08,121.07 "
+         id="polygon422"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.75px;stroke-miterlimit:10" />
+      <polygon
+         class="cls-5"
+         points="72.25,122.94 72.25,110.7 82.17,114.89 82.17,127.03 82.17,127.03 "
+         id="polygon424"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.75px;stroke-miterlimit:10" />
+      <polygon
+         class="cls-5"
+         points="104.06,123.87 104.02,111.69 117.25,106.18 117.25,117.21 117.25,117.21 "
+         id="polygon426"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.75px;stroke-miterlimit:10" />
+      <polygon
+         class="cls-5"
+         points="139.35,106.77 139.32,97.04 149.25,92.91 149.25,101.78 149.25,101.78 "
+         id="polygon428"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.75px;stroke-miterlimit:10" />
+      <polygon
+         class="cls-5"
+         points="159.98,104.58 159.98,89.1 166.34,86.33 166.34,101.22 166.34,101.22 "
+         id="polygon430"
+         transform="translate(2.3630085,34.657458)"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.75px;stroke-miterlimit:10" />
+    </g>
+  </g>
+</svg>

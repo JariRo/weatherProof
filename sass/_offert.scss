@@ -259,9 +259,7 @@ body{
 
                         #takModell{
                             display:flex;
-                            //padding:1rem 0;
                             flex-wrap: wrap;
-                            justify-content: space-between;
                             align-content: center;
                             width:100%;
 
@@ -286,11 +284,7 @@ body{
                                 background-size:cover;
                                 background-repeat:no-repeat;
                                 width:32%;
-                                //padding-top:31.2%;
-                                //width:6vw;
-                                //height:6vw;
-                                //margin:1%;
-                                //margin:1%;
+                                margin:0 0.5%;
                                 -webkit-transition: all 100ms ease-in;
                                 -moz-transition: all 100ms ease-in;
                                 transition: all 100ms ease-in;
@@ -756,18 +750,18 @@ body{
                                 //background:url(../img/taktyper/Korstak.svg);
                                 > svg{
                                     > g > g {
-                                        polygon.cls-4{
+                                        path.cls-5{
                                             fill:#ccc;
                                         }
 
-                                        polygon.cls-5{
+                                        path.cls-6{
                                             fill:#fff;
                                         }
                                     }
                                 }
                                  > svg:hover{
                                      > g > g {
-                                         polygon.cls-4{
+                                         path.cls-5{
                                              fill:#2ABFBF;
                                          }
                                      }
@@ -777,11 +771,11 @@ body{
                             input:checked + .douze{
                                 svg{
                                     > g > g {
-                                        polygon.cls-4{
+                                        path.cls-5{
                                             fill:#26C281;
                                         }
 
-                                        polygon.cls-3{
+                                        path.cls-4{
                                             fill:#EEEEEE;
                                         }
                                     }
@@ -1322,10 +1316,10 @@ main{
 
     .tak1 > svg{
         > g > g{
-            polygon.cls-3{
+            polygon.cls-4{
                 fill:#26C281;
             }
-            polygon.cls-2{
+            polygon.cls-6{
                 fill:#EEEEEE;
             }
             polygon.cls-4{
@@ -1477,13 +1471,13 @@ main{
     .tak12 > svg{
 
         > g > g{
-            polygon.cls-4{
+            path.cls-5{
                 fill:#26C281;
             }
-            polygon.cls-3{
+            path.cls-4{
                 fill:#EEEEEE;
             }
-            polygon.cls-5{
+            path.cls-6{
                 fill:#fff;
             }
         }
