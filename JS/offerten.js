@@ -176,9 +176,10 @@ var setOffertUp = (function(){
 
             let punkt = "."
             totalprice_String = JSON.stringify(totalPrice)
+
             if (totalprice_String.length == 5){
                 totalprice_String
-                totalprice_String = [totalprice_String.slice(0, 2), punkt, totalprice_String.slice(1)].join('')
+                totalprice_String = [totalprice_String.slice(0, 2), punkt, totalprice_String.slice(2)].join('')
             }
 
             document.querySelector('#logisticCosts').innerHTML = "Övriga kostnader: " + totalprice_String + " kr"
