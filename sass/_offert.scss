@@ -1,4 +1,4 @@
-body{
+    body{
     width:100vw;
     margin:0;
     padding:0;
@@ -197,7 +197,7 @@ body{
 
                 .wrapper, .wrapper .extras{
                     margin-top:-0.8em;
-                    opacity:0;
+                    //opacity:0;
 
                     .back-forth-menu{
                         position:relative;
@@ -214,6 +214,7 @@ body{
                             padding:10px 10px 10px 10px;
                             font-weight: 400;
                             font-size: 0.8em;
+                            text-align: center;
                         }
 
                         a:first-child, a:nth-child(2){
@@ -1060,8 +1061,8 @@ body{
                     }
 
                     #standardized-obstacles{
-                        display:flex;
-                        flex-direction: column;
+                        //display:flex;
+                        //flex-direction: column;
                         padding: 0 20px;
 
                         h4{
@@ -1108,9 +1109,10 @@ body{
                 }
 
                 .wrapper .extras{
-                    transition: all 0.5s ease;
-                    position:relative;
-                    z-index: -1;
+                    display: none;
+                    transition: all 0.6s ease;
+                    //position:relative;
+                    //z-index: -1;
                 }
 
                 .wrapper .extras .roofBushing{
@@ -1233,12 +1235,13 @@ body{
                 z-index:705;
 
                 > .wrapper,
-                > .wrapper .extras.showing{
-                    //display:block;
+                > .wrapper{
+                    display:block;
                     transition: all 0.6s ease;
                     margin-top:0px;
                     opacity:1;
                     z-index:705;
+                    top:0;
 
                     fieldset text-area{
                         text-align: left !important;
@@ -1253,6 +1256,16 @@ body{
                         border-bottom:4px dashed;
                         border-right: 4px solid transparent;
                         border-left:4px solid transparent;
+                    }
+                }
+
+                > .wrapper .extras.showing{
+                    margin-top:0px;
+                    transition: all 0.65s ease;
+                    //opacity:1;
+
+                    fieldset text-area{
+                        text-align: left !important;
                     }
                 }
             }
@@ -1683,10 +1696,6 @@ main > .background-content{
 
                                 label{
                                     margin-bottom:5px;
-
-                                    span{
-                                        color:#f5f7f9;
-                                    }
                                 }
 
                                 input{
@@ -1778,3 +1787,229 @@ main > .background-content{
         }
     }
 }
+
+
+
+
+
+
+
+//MEDIA Queries
+
+
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width:568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation:portrait){
+
+        main.side-content{
+            display:none !important;
+        }
+
+        main.side-content#checkout-wrapper{
+            display:none !important;
+            padding:0 !important;
+            position:absolute;
+            top:564px;
+            right:0;
+            left:0;
+            background:#fff;
+            z-index: 5000;
+
+            header{
+
+                h3{
+                    margin-top:1em;
+                }
+                p{
+                    padding:0 13px;
+                }
+            }
+
+            .offert-process{
+                max-width:290px;
+
+                .row{
+                    justify-content: space-around;
+
+                    .process-step{
+                        width:27%;
+
+                        > p > i{
+                            font-size: 29px;
+                        }
+
+                        h5{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+
+            .offert-contact-info{
+
+                .row > div{
+                    padding:0 !important;
+                    max-width: 100% !important;
+
+
+                    > #offertForm{
+
+                        .twos{
+                            display:block !important;
+
+                            > div {
+                                width:100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        main.side-content.showing#checkout-wrapper{
+            display: block !important;
+        }
+
+        #offertLogo{
+            position:sticky;
+            top:0;
+            left:0;
+            right:0;
+            //width:80% !important;
+            max-width:60% !important;
+            margin-right: auto;
+            margin-left: auto;
+            padding:10px 20px 10px 20px;
+            overflow:scroll;
+        }
+
+        #menu-side-bar{
+            width:100%;
+
+            #side-bar-nav{
+                width:100%;
+                top:54px;
+                box-shadow: none;
+
+
+                > li{
+                    width:25vw;
+                    height:25vw;
+
+                    > a{
+                        font-size: 0.55em !important;
+                        padding:1em !important;
+                    }
+
+                    > section {
+                        top:4em;
+                        padding:0.8em 1.05em 0 1.05em;
+                    }
+                }
+            }
+        }
+
+        .offert-takmodeller{
+            width:49% !important;
+        }
+
+        #nextButton1, #nextButton2, #nextButton3{
+            //width:32% !important;
+            font-size: 0.75em !important;
+        }
+
+        #toDoCheckBoxes, #roofMaterial{
+            flex-direction: column;
+            justify-content: flex-start !important;
+
+            .box-Holder{
+                width:75% !important;
+            }
+        }
+
+        #standardized-obstacles{
+            padding:0 !important;
+
+        }
+
+        #standard-obstacle-list{
+        }
+
+        .standard-choices{
+            flex-wrap: wrap;
+            padding-bottom:0 !important;
+
+            .box-Holder{
+            width:50% !important;
+            justify-content: flex-start !important;
+            }
+        }
+
+
+        .roof-obstacles > table > tbody > tr > td.item{
+            padding-left:7px !important;
+            width:55% !important;
+        }
+
+        .roof-obstacles > table > tbody > tr > td.item-count{
+            width:7% !important;
+            padding:2px;
+        }
+
+        .roof-obstacles > table > tbody > tr > td.quant{
+            width:15% !important;
+        }
+
+        #roof-garnish{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .box-Holder{
+                width:52% !important;
+            }
+        }
+
+        #roofToWho{
+            flex-direction: column !important;
+
+            .box-Holder{
+                width:70% !important;
+            }
+        }
+
+        .offert-suggestion{
+            padding-bottom:0 !important;
+        }
+
+        .suggestion-content p:nth-child(1), .suggestion-content p:nth-child(2){
+            display:none;
+        }
+
+        #price-suggestion{
+            max-width: 100% !important;
+            min-width: 100% !important;
+        }
+
+        #logisticCosts{
+            min-width: 100% !important;
+            max-width: 100% !important;
+            padding-left:0 !important;
+            padding-right:0 !important;
+        }
+
+        #roofPaperAndScaffold{
+            flex-direction: column;
+
+            .box-Holder{
+                width:70% !important;
+            }
+        }
+
+        #submit-offert{
+            padding-left: 50px !important;
+            padding-right: 30px !important;
+        }
+    }

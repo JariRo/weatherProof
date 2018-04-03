@@ -273,7 +273,10 @@ var setOffertUp = (function(){
 
             var removeShowing = function(theArrow){
                 $(extrasButton).removeClass('showing');
-                $('.extras').removeClass('showing');
+                let xtras = $(".extras");
+                $(xtras).removeClass('showing');
+                jQuery(xtras).fadeOut(600);
+                //$("#side-bar-nav > li > section").animate({scrollTop: $('#nextButton2').offset().top}, 600);
                 theArrow.className = 'caret';
             }
 
@@ -285,6 +288,9 @@ var setOffertUp = (function(){
                     addClass('showing', extrasButton);
                     addClass('showing', theSection);
                     theArrow.className = "caret-up";
+                    jQuery(theSection).fadeIn(600);
+                    //$("#side-bar-nav > li > section").animate({scrollTop: $(".roofBushing").offset().top}, 600);
+
                 }
             };
 

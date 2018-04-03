@@ -2796,8 +2796,7 @@ body {
           font-size: 0.8em;
           padding: 8px 0; }
         #menu-side-bar #side-bar-nav > li > section .wrapper, #menu-side-bar #side-bar-nav > li > section .wrapper .extras {
-          margin-top: -0.8em;
-          opacity: 0; }
+          margin-top: -0.8em; }
           #menu-side-bar #side-bar-nav > li > section .wrapper .back-forth-menu, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .back-forth-menu {
             position: relative; }
             #menu-side-bar #side-bar-nav > li > section .wrapper .back-forth-menu #nextButton1, #menu-side-bar #side-bar-nav > li > section .wrapper .back-forth-menu #nextButton2, #menu-side-bar #side-bar-nav > li > section .wrapper .back-forth-menu #nextButton3, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .back-forth-menu #nextButton1, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .back-forth-menu #nextButton2, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .back-forth-menu #nextButton3 {
@@ -2810,7 +2809,8 @@ body {
               text-transform: none;
               padding: 10px 10px 10px 10px;
               font-weight: 400;
-              font-size: 0.8em; }
+              font-size: 0.8em;
+              text-align: center; }
             #menu-side-bar #side-bar-nav > li > section .wrapper .back-forth-menu a:first-child, #menu-side-bar #side-bar-nav > li > section .wrapper .back-forth-menu a:nth-child(2), #menu-side-bar #side-bar-nav > li > section .wrapper .extras .back-forth-menu a:first-child, #menu-side-bar #side-bar-nav > li > section .wrapper .extras .back-forth-menu a:nth-child(2) {
               font-family: ProximaNova-Bold,sans-serif;
               font-weight: 400;
@@ -3172,8 +3172,6 @@ body {
           #menu-side-bar #side-bar-nav > li > section .wrapper #waterCheckBoxes > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper #roof-security > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper #roofPaperAndScaffold > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper #roof-garnish > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper #roof-extras > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #waterCheckBoxes > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #roof-security > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #roofPaperAndScaffold > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #roof-garnish > .box-Holder, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #roof-extras > .box-Holder {
             float: left; }
           #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles {
-            display: flex;
-            flex-direction: column;
             padding: 0 20px; }
             #menu-side-bar #side-bar-nav > li > section .wrapper #standardized-obstacles h4, #menu-side-bar #side-bar-nav > li > section .wrapper .extras #standardized-obstacles h4 {
               margin: 0;
@@ -3202,9 +3200,8 @@ body {
               color: #000;
               line-height: 20px; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .extras {
-          transition: all 0.5s ease;
-          position: relative;
-          z-index: -1; }
+          display: none;
+          transition: all 0.6s ease; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .extras .roofBushing {
           padding-top: 1.4em; }
         #menu-side-bar #side-bar-nav > li > section .wrapper .offert-summary p {
@@ -3281,16 +3278,18 @@ body {
       color: #f5f7f9;
       z-index: 705; }
       #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper,
-      #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper .extras.showing {
+      #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper {
+        display: block;
         transition: all 0.6s ease;
         margin-top: 0px;
         opacity: 1;
-        z-index: 705; }
+        z-index: 705;
+        top: 0; }
         #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper fieldset text-area,
-        #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper .extras.showing fieldset text-area {
+        #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper fieldset text-area {
           text-align: left !important; }
         #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper .caret-up,
-        #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper .extras.showing .caret-up {
+        #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper .caret-up {
           display: inline-block;
           width: 0;
           height: 0;
@@ -3299,6 +3298,11 @@ body {
           border-bottom: 4px dashed;
           border-right: 4px solid transparent;
           border-left: 4px solid transparent; }
+      #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper .extras.showing {
+        margin-top: 0px;
+        transition: all 0.65s ease; }
+        #menu-side-bar #side-bar-nav a.activated ~ section > .wrapper .extras.showing fieldset text-area {
+          text-align: left !important; }
     #menu-side-bar #side-bar-nav > li:first-child {
       border-left: 0; }
 
@@ -3538,8 +3542,6 @@ main > .background-content {
             width: 100%; }
             #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div label {
               margin-bottom: 5px; }
-              #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div label span {
-                color: #f5f7f9; }
             #checkout-wrapper .container .offert-contact-info > .row > div > form .row > div input {
               margin-bottom: 10px;
               border: 1px solid #ccc;
@@ -3592,6 +3594,140 @@ main > .background-content {
     #checkout-wrapper.showing .offert-contact-info > .row #offert-submit-holder > div > #submit-offert {
       z-index: 705; }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  main.side-content {
+    display: none !important; }
+
+  main.side-content#checkout-wrapper {
+    display: none !important;
+    padding: 0 !important;
+    position: absolute;
+    top: 564px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 5000; }
+    main.side-content#checkout-wrapper header h3 {
+      margin-top: 1em; }
+    main.side-content#checkout-wrapper header p {
+      padding: 0 13px; }
+    main.side-content#checkout-wrapper .offert-process {
+      max-width: 290px; }
+      main.side-content#checkout-wrapper .offert-process .row {
+        justify-content: space-around; }
+        main.side-content#checkout-wrapper .offert-process .row .process-step {
+          width: 27%; }
+          main.side-content#checkout-wrapper .offert-process .row .process-step > p > i {
+            font-size: 29px; }
+          main.side-content#checkout-wrapper .offert-process .row .process-step h5 {
+            font-size: 10px; }
+    main.side-content#checkout-wrapper .offert-contact-info .row > div {
+      padding: 0 !important;
+      max-width: 100% !important; }
+      main.side-content#checkout-wrapper .offert-contact-info .row > div > #offertForm .twos {
+        display: block !important; }
+        main.side-content#checkout-wrapper .offert-contact-info .row > div > #offertForm .twos > div {
+          width: 100% !important; }
+
+  main.side-content.showing#checkout-wrapper {
+    display: block !important; }
+
+  #offertLogo {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 60% !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 20px 10px 20px;
+    overflow: scroll; }
+
+  #menu-side-bar {
+    width: 100%; }
+    #menu-side-bar #side-bar-nav {
+      width: 100%;
+      top: 54px;
+      box-shadow: none; }
+      #menu-side-bar #side-bar-nav > li {
+        width: 25vw;
+        height: 25vw; }
+        #menu-side-bar #side-bar-nav > li > a {
+          font-size: 0.55em !important;
+          padding: 1em !important; }
+        #menu-side-bar #side-bar-nav > li > section {
+          top: 4em;
+          padding: 0.8em 1.05em 0 1.05em; }
+
+  .offert-takmodeller {
+    width: 49% !important; }
+
+  #nextButton1, #nextButton2, #nextButton3 {
+    font-size: 0.75em !important; }
+
+  #toDoCheckBoxes, #roofMaterial {
+    flex-direction: column;
+    justify-content: flex-start !important; }
+    #toDoCheckBoxes .box-Holder, #roofMaterial .box-Holder {
+      width: 75% !important; }
+
+  #standardized-obstacles {
+    padding: 0 !important; }
+
+  .standard-choices {
+    flex-wrap: wrap;
+    padding-bottom: 0 !important; }
+    .standard-choices .box-Holder {
+      width: 50% !important;
+      justify-content: flex-start !important; }
+
+  .roof-obstacles > table > tbody > tr > td.item {
+    padding-left: 7px !important;
+    width: 55% !important; }
+
+  .roof-obstacles > table > tbody > tr > td.item-count {
+    width: 7% !important;
+    padding: 2px; }
+
+  .roof-obstacles > table > tbody > tr > td.quant {
+    width: 15% !important; }
+
+  #roof-garnish {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #roof-garnish .box-Holder {
+      width: 52% !important; }
+
+  #roofToWho {
+    flex-direction: column !important; }
+    #roofToWho .box-Holder {
+      width: 70% !important; }
+
+  .offert-suggestion {
+    padding-bottom: 0 !important; }
+
+  .suggestion-content p:nth-child(1), .suggestion-content p:nth-child(2) {
+    display: none; }
+
+  #price-suggestion {
+    max-width: 100% !important;
+    min-width: 100% !important; }
+
+  #logisticCosts {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+  #roofPaperAndScaffold {
+    flex-direction: column; }
+    #roofPaperAndScaffold .box-Holder {
+      width: 70% !important; }
+
+  #submit-offert {
+    padding-left: 50px !important;
+    padding-right: 30px !important; } }
 section {
   width: 100%; }
 
